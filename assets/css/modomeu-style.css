@@ -1,0 +1,205 @@
+/*
+Theme Name: Modo Meu 5.0
+Theme URI: http://modomeu.com
+Description: Modo Meu 5.0
+Author: Benjamin Studio
+Author URI: http://benjaminstudio.com.br/
+Version: 1.0
+Tags: -
+ */
+@font-face {
+  font-family: "Archive-Normal";
+  src: url("../fonts/Archive.eot?") format("eot"), url("../fonts/Archive.woff") format("woff"), url("../fonts/Archive.ttf") format("truetype"), url("../fonts/Archive.svg#Archive") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: arial;
+  font-style: normal;
+  line-height: 1.4;
+  margin: 0;
+  zoom: 1;
+  -webkit-animation-delay: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  background: url('../img/background-modo-meu.png') repeat;
+}
+/*------- Aligns, Margins, Paddings and floats --------*/
+.a-left {
+  text-align: left;
+}
+.a-right {
+  text-align: right;
+}
+.a-center {
+  text-align: center;
+}
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+.margin-auto {
+  margin: 0 auto;
+}
+.no-mp {
+  margin: 0;
+  padding: 0;
+}
+.opacity-white {
+  background: #fff;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.b-bottom-gray {
+  border-bottom: 2px solid #d6d6d6;
+}
+.icon-category {
+  width: 32px;
+}
+/*------- Aligns, Margins, Paddings and floats --------*/
+/*------- Backgrounds Categories --------*/
+/*------- Backgrounds Categories --------*/
+.link-rosa {
+  color: #e73064;
+}
+/*------- Defaults -------*/
+a {
+  font-family: 'Archive-Normal', sans-serif;
+  color: #3a4192;
+  text-decoration: none;
+  webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+a:hover {
+  color: #12aec0;
+}
+img {
+  border: none;
+}
+/*------- Defaults -------*/
+.menu-top {
+  background: #f1f1f1;
+  padding: 0.5em 0;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  z-index: 9999;
+}
+.menu-top nav {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.menu-top nav a {
+  font-size: 11pt;
+  padding-right: 0.5em;
+}
+.site {
+  max-width: 1170px;
+}
+.header {
+  margin-top: 5%;
+}
+.header .logo-top {
+  margin-left: 2%;
+}
+.header .header-right {
+  width: 80%;
+  margin-top: 1%;
+}
+.header .header-right .banner-top {
+  max-width: 728px;
+  max-height: 90px;
+  width: 728px;
+  height: 90px;
+  margin: 0 auto;
+  border: 1px solid #e73064;
+}
+.header .header-right .menu-category {
+  margin-top: 1em;
+  background: #fff;
+  padding: 10px 0;
+}
+.header .header-right .menu-category a {
+  font-size: 13pt;
+  padding: 0 1%;
+}
+.main-content {
+  width: 100%;
+  margin-top: 1em;
+}
+.main-content .content {
+  width: 70%;
+}
+.main-content .content .highlights-home .post-data {
+  font-family: 'Archive-Normal', sans-serif;
+  color: #12aec0;
+  font-size: 10pt;
+  padding: 0.5em 1em;
+}
+.main-content .content .highlights-home .highlights-home-first {
+  width: 33%;
+}
+.main-content .content .highlights-home .highlights-home-right {
+  width: 60%;
+}
+.main-content .sidebar {
+  width: 30%;
+}
+/*------- Media Queries -------*/
+@media only screen and (max-width: 980px) {
+  .header .logo-top {
+    margin-left: 2%;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header .header-right {
+    width: 70%;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .menu-top {
+    display: none;
+  }
+  .header .logo-top {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .header .header-right {
+    width: 100%;
+  }
+  .header .header-right .banner-top {
+    display: none;
+  }
+  .header .sidebar {
+    display: none;
+  }
+}
+@media screen and (max-width: 44em) {
+  .menu-top {
+    display: none;
+  }
+  .header .logo-top {
+    width: 40%;
+    margin: 0 30%;
+  }
+  .header .header-right {
+    width: 100%;
+  }
+  .header .header-right .banner-top {
+    display: none;
+  }
+  .header .sidebar {
+    display: none;
+  }
+}
+/*------- Media Queries -------*/
