@@ -48,9 +48,9 @@ body {
 .f-right { float: right; }
 .margin-auto { margin: 0 auto; }
 .no-mp { margin: 0; padding: 0; }
-.opacity-white{ background: #fff; opacity: 0.8; filter: alpha(opacity=80); }
+.opacity-background-white { background: rgba(255, 255, 255, 0.8); }
 .b-bottom-gray { border-bottom: 2px solid @color-border; }
-.icon-category { width: 32px; }
+.icon-category { width: 32px; padding: 0.7em; }
 /*------- Aligns, Margins, Paddings and floats --------*/
 
 /*------- Backgrounds Categories --------*/
@@ -149,9 +149,10 @@ img { border: none; }
 		.highlights-home {
 
 			h3 {
-				//padding: 0em 2em 0em 3.5em;
-				//margin: 0.5em 0;
-			}			
+                font-size: 14pt;
+				padding: 0em 1em 0 3em;
+				margin: 0.2em 0;
+			}            
 
 			.post-data {
 				font-family: @main-font-family;
@@ -162,10 +163,35 @@ img { border: none; }
 
 			.highlights-home-first {
 				width: 33%;
+                
+                .highlights-home-first-img {
+                    margin-bottom: 2%;
+                }                
 			}
 
 			.highlights-home-right {
-				width: 60%;
+				width: 64%;
+
+				.highlights-home {					
+                    margin-bottom: 6%;
+                    .highlights-home-img { width: 41.5%; margin-bottom: -2px; }
+                    
+                    .icon-category { padding: 2em 1.0em 1.5em 1.5em; }
+                    h3 { padding: 1em 1em 0 3em; }
+                    
+                    .highlights-home-right-data {
+                        position: relative;
+                        width: 58%;
+                        min-height: 180px;
+                        
+                        .post-data {
+                            padding-left: 2em;
+                            padding-bottom: 0.5em    ;
+                            position: absolute;
+                            bottom: 0;
+                        }
+                    }
+				}				
 			}
 		}
 
@@ -194,8 +220,17 @@ img { border: none; }
 	.header {
 		.header-right {
 			width: 70%;
+            
+            .menu-category { 
+                shape-margin: 0.5em;
+                padding: 0;
+            }
 		}
-	}
+	}    
+    
+    .highlights-home-first { display: none; }
+    
+    .sidebar { display: none; }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {

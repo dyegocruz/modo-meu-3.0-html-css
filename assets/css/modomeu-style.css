@@ -49,16 +49,15 @@ body {
   margin: 0;
   padding: 0;
 }
-.opacity-white {
-  background: #fff;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+.opacity-background-white {
+  background: rgba(255, 255, 255, 0.8);
 }
 .b-bottom-gray {
   border-bottom: 2px solid #d6d6d6;
 }
 .icon-category {
   width: 32px;
+  padding: 0.7em;
 }
 /*------- Aligns, Margins, Paddings and floats --------*/
 /*------- Backgrounds Categories --------*/
@@ -137,6 +136,11 @@ img {
 .main-content .content {
   width: 70%;
 }
+.main-content .content .highlights-home h3 {
+  font-size: 14pt;
+  padding: 0em 1em 0 3em;
+  margin: 0.2em 0;
+}
 .main-content .content .highlights-home .post-data {
   font-family: 'Archive-Normal', sans-serif;
   color: #12aec0;
@@ -146,8 +150,35 @@ img {
 .main-content .content .highlights-home .highlights-home-first {
   width: 33%;
 }
+.main-content .content .highlights-home .highlights-home-first .highlights-home-first-img {
+  margin-bottom: 2%;
+}
 .main-content .content .highlights-home .highlights-home-right {
-  width: 60%;
+  width: 64%;
+}
+.main-content .content .highlights-home .highlights-home-right .highlights-home {
+  margin-bottom: 6%;
+}
+.main-content .content .highlights-home .highlights-home-right .highlights-home .highlights-home-img {
+  width: 41.5%;
+  margin-bottom: -2px;
+}
+.main-content .content .highlights-home .highlights-home-right .highlights-home .icon-category {
+  padding: 2em 1.0em 1.5em 1.5em;
+}
+.main-content .content .highlights-home .highlights-home-right .highlights-home h3 {
+  padding: 1em 1em 0 3em;
+}
+.main-content .content .highlights-home .highlights-home-right .highlights-home .highlights-home-right-data {
+  position: relative;
+  width: 58%;
+  min-height: 180px;
+}
+.main-content .content .highlights-home .highlights-home-right .highlights-home .highlights-home-right-data .post-data {
+  padding-left: 2em;
+  padding-bottom: 0.5em    ;
+  position: absolute;
+  bottom: 0;
 }
 .main-content .sidebar {
   width: 30%;
@@ -164,6 +195,16 @@ img {
 @media only screen and (max-width: 768px) {
   .header .header-right {
     width: 70%;
+  }
+  .header .header-right .menu-category {
+    shape-margin: 0.5em;
+    padding: 0;
+  }
+  .highlights-home-first {
+    display: none;
+  }
+  .sidebar {
+    display: none;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
