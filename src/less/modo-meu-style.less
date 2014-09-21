@@ -12,6 +12,7 @@ Tags: -
 @second-font-family: 'Dosis', sans-serif;
 @color-text: #898989; //texto cinza claro
 @color-border: #d6d6d6; //borda cinza escura
+@color-pagination: #d1d1d3;
 @color-turquesa: #12aec0;
 @color-roxo: #3a4192;
 @color-rosa: #e73064;
@@ -212,7 +213,7 @@ strong, b { font-weight: bold; }
 
         }
         
-        .content-posts{
+        .content-posts {
              width: 100%;
             
             .post {
@@ -285,7 +286,7 @@ strong, b { font-weight: bold; }
                         color: @color-text;
                         width: 100%;
                         font-size: 11pt;
-                        margin-top: 1em;
+                        margin: 1em 0;
                         
                         a {
                             font-family: @second-font-family;
@@ -303,6 +304,43 @@ strong, b { font-weight: bold; }
                     width: 90%;
                     height: 2px;                        
                     background: @color-border;
+                }
+                
+            }
+            
+            .pagination {
+                width: 100%;
+                margin: 2.5em 0;
+                font-size: 14pt;                
+                
+                a {
+                    color: #fff;
+                    background: @color-pagination;
+                    padding: 0.5em 0.7em 0.4em 0.7em;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    border-radius: 3px;
+                    margin: 0 0.1em;
+                    
+                    &:hover {
+                        background: @color-turquesa;
+                    }
+                }
+                
+                .ellipsis {
+                    background: none;
+                    color: @color-roxo;
+                    &:hover {
+                        background: none;
+                    }
+                }
+                
+                .arrow {
+                    background: @color-roxo;
+                    .arrow-img {
+                        width: 7px;
+                        height: 13px;
+                    }
                 }
             }
         }
@@ -380,6 +418,7 @@ strong, b { font-weight: bold; }
 			.banner-top { display: none; }			
 		}
     }
+    
     .main-content {
         .content{
             .content-posts {

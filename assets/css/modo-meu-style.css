@@ -306,7 +306,7 @@ b {
   color: #898989;
   width: 100%;
   font-size: 11pt;
-  margin-top: 1em;
+  margin: 1em 0;
 }
 .main-content .content .content-posts .post .post-footer .post-category-tag a {
   font-family: 'Dosis', sans-serif;
@@ -321,6 +321,37 @@ b {
   width: 90%;
   height: 2px;
   background: #d6d6d6;
+}
+.main-content .content .content-posts .pagination {
+  width: 100%;
+  margin: 2.5em 0;
+  font-size: 14pt;
+}
+.main-content .content .content-posts .pagination a {
+  color: #fff;
+  background: #d1d1d3;
+  padding: 0.5em 0.7em 0.4em 0.7em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0 0.1em;
+}
+.main-content .content .content-posts .pagination a:hover {
+  background: #12aec0;
+}
+.main-content .content .content-posts .pagination .ellipsis {
+  background: none;
+  color: #3a4192;
+}
+.main-content .content .content-posts .pagination .ellipsis:hover {
+  background: none;
+}
+.main-content .content .content-posts .pagination .arrow {
+  background: #3a4192;
+}
+.main-content .content .content-posts .pagination .arrow .arrow-img {
+  width: 7px;
+  height: 13px;
 }
 .main-content .sidebar {
   width: 30%;
