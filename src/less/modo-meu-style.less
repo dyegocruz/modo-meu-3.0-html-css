@@ -8,7 +8,8 @@ Version: 1.0
 Tags: -
  */
 
-@main-font-family: 'Archive-Normal', sans-serif;
+@main-font-family: 'archive', sans-serif;
+@second-font-family: 'Dosis', sans-serif;
 @color-text: #898989; //texto cinza claro
 @color-border: #d6d6d6; //borda cinza escura
 @color-turquesa: #12aec0;
@@ -17,7 +18,7 @@ Tags: -
 @color-menu-top: #f1f1f1;
 
 @font-face {
-	font-family: "Archive-Normal";
+	font-family: 'archive', sans-serif;
 	src: url("../fonts/Archive.eot?") format("eot"), 
 		url("../fonts/Archive.woff") format("woff"), 
 		url("../fonts/Archive.ttf") format("truetype"),
@@ -223,7 +224,7 @@ strong, b { font-weight: bold; }
                 }
                 
                 .post-content {
-                    margin-top: 1em;
+                    margin: 1em 0;
                     color: @color-text;                    
                     
                     img { max-width: 100%; }
@@ -247,10 +248,13 @@ strong, b { font-weight: bold; }
                     a, h1, h2, h3 { font-weight: bold; }                                        
                 }
                 
-                .post-footer {
+                .post-footer {                    
                     font-family: @main-font-family;
                     color: @color-turquesa;
                     font-weight: normal;
+                    margin-top: .5em;
+                    padding: 0 1em;
+                    border-bottom: 2px solid @color-border;
                     
                     .post-meta { width: 32.5%; float: left; }
                     .author {
@@ -261,7 +265,7 @@ strong, b { font-weight: bold; }
                     
                     .social {
                         margin-top: .5em;
-                        .fb-like { position: relative; top: -5px; }                        
+                        .fb-like { position: relative; top: -7px; }                        
                     }
                     
                     .comments {
@@ -276,7 +280,21 @@ strong, b { font-weight: bold; }
                     }
                     
                     .post-category-tag {
+                        font-family: @second-font-family;
+                        text-transform: uppercase;
+                        color: @color-text;
                         width: 100%;
+                        font-size: 11pt;
+                        margin-top: 1em;
+                        
+                        a {
+                            font-family: @second-font-family;
+                            font-weight: bold;
+                            color: @color-turquesa;
+                            &:hover {
+                                color: @color-roxo;
+                            }
+                        }
                     }
                 }
                 
@@ -304,9 +322,7 @@ strong, b { font-weight: bold; }
 		}
 	}
 
-	.sidebar {
-		display: none;
-	}
+	.sidebar { display: none; }
 }
 
 @media only screen and (max-width: 768px) {
@@ -328,9 +344,7 @@ strong, b { font-weight: bold; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
 
-	.menu-top {
-		display: none;
-	}
+	.menu-top { display: none; }
 
 	.header {		
 		.logo-top {
@@ -342,22 +356,16 @@ strong, b { font-weight: bold; }
 
 			width: 100%;
 
-			.banner-top {
-				display: none;
-			}			
-		}
-
-		.sidebar {
-			display: none;
-		}
+			.banner-top { display: none; }			
+		}		
 	}
+    
+    .sidebar { display: none; }
 }
 
 @media screen and (max-width: 44em) {
 
-	.menu-top {
-		display: none;
-	}
+	.menu-top { display: none; }
 
 	.header {		
 		.logo-top {
@@ -369,15 +377,24 @@ strong, b { font-weight: bold; }
 
 			width: 100%;
 
-			.banner-top {
-				display: none;
-			}			
+			.banner-top { display: none; }			
 		}
-
-		.sidebar {
-			display: none;
-		}
-	}
+    }
+    .main-content {
+        .content{
+            .content-posts {
+                .post {
+                    .post-footer {
+                        .post-meta {
+                            width: 100%;
+                        }
+                    }    
+                }
+            }
+        }        
+    }
+    
+    .sidebar {  display: none; }
 }
 
 @media only screen and (max-width: 480px), screen and (max-width: 568px), screen and (max-width: 768px), screen and (max-width: 768px) {
@@ -385,7 +402,7 @@ strong, b { font-weight: bold; }
         .content {
             width: 100%;
         }
-    }    
+    }
 }
 
 /*------- Media Queries -------*/
