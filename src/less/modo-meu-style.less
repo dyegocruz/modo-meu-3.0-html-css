@@ -17,6 +17,7 @@ Tags: -
 @color-roxo: #3a4192;
 @color-rosa: #e73064;
 @color-menu-top: #f1f1f1;
+@max-width-container: 1170px;
 
 @font-face {
 	font-family: 'archive', sans-serif;
@@ -102,9 +103,8 @@ strong, b { font-weight: bold; }
 
 	nav{
 
-		max-width: 1170px;
+		max-width: @max-width-container;
 		width: 100%;
-		margin: 0 auto;
 		position: relative;
 
 		a {
@@ -136,7 +136,6 @@ strong, b { font-weight: bold; }
 			max-height: 90px;
 			width: 728px;
 			height: 90px;
-			margin: 0 auto;
 			border: 1px solid @color-rosa;
 		}
 
@@ -349,6 +348,25 @@ strong, b { font-weight: bold; }
 	.sidebar {
 		width: 30%;
 	}
+}
+
+.main-footer-container {
+    width: 100%;
+	bottom: 0px;
+	left: 0px;
+	position: fixed;
+	z-index: 9999;
+    background: @color-turquesa;
+    
+    .footer {
+        max-width: @max-width-container;
+        width: 100%;        
+    }
+    
+    .footer-benjamin {
+        width: 100%;
+        background: @color-roxo;        
+    }
 }
 
 /*------- Media Queries -------*/

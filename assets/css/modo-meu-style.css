@@ -126,7 +126,6 @@ b {
 .menu-top nav {
   max-width: 1170px;
   width: 100%;
-  margin: 0 auto;
   position: relative;
 }
 .menu-top nav a {
@@ -151,7 +150,6 @@ b {
   max-height: 90px;
   width: 728px;
   height: 90px;
-  margin: 0 auto;
   border: 1px solid #e73064;
 }
 .header .header-right .menu-category {
@@ -355,6 +353,22 @@ b {
 }
 .main-content .sidebar {
   width: 30%;
+}
+.main-footer-container {
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  position: fixed;
+  z-index: 9999;
+  background: #12aec0;
+}
+.main-footer-container .footer {
+  max-width: 1170px;
+  width: 100%;
+}
+.main-footer-container .footer-benjamin {
+  width: 100%;
+  background: #3a4192;
 }
 /*------- Media Queries -------*/
 @media only screen and (max-width: 980px) {
