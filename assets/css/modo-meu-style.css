@@ -118,10 +118,10 @@ b {
   background: #f1f1f1;
   padding: 0.5em 0;
   width: 100%;
-  top: 0px;
-  left: 0px;
-  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 9999;
+  position: fixed;
 }
 .menu-top nav {
   max-width: 1170px;
@@ -358,7 +358,6 @@ b {
   width: 100%;
   bottom: 0px;
   left: 0px;
-  position: fixed;
   z-index: 9999;
   background: #12aec0;
 }
@@ -366,7 +365,12 @@ b {
   max-width: 1170px;
   width: 100%;
 }
+.main-footer-container .footer .social {
+  width: 36px;
+  height: 36px;
+}
 .main-footer-container .footer-benjamin {
+  color: #fff;
   width: 100%;
   background: #3a4192;
 }

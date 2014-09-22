@@ -96,10 +96,10 @@ strong, b { font-weight: bold; }
 	background: @color-menu-top;
 	padding: 0.5em 0;
 	width: 100%;
-	top: 0px;
-	left: 0px;
-	position: fixed;
+	top: 0;
+	left: 0;	
 	z-index: 9999;
+    position: fixed;
 
 	nav{
 
@@ -353,17 +353,22 @@ strong, b { font-weight: bold; }
 .main-footer-container {
     width: 100%;
 	bottom: 0px;
-	left: 0px;
-	position: fixed;
+	left: 0px;	
 	z-index: 9999;
     background: @color-turquesa;
     
-    .footer {
+    .footer {        
         max-width: @max-width-container;
-        width: 100%;        
+        width: 100%;
+        
+        .social {
+            width: 36px;
+            height: 36px;
+        }
     }
     
     .footer-benjamin {
+        color: #fff;
         width: 100%;
         background: @color-roxo;        
     }
