@@ -284,7 +284,7 @@ strong, b { font-weight: bold; }
                         text-transform: uppercase;
                         color: @color-text;
                         width: 100%;
-                        font-size: 11pt;
+                        font-size: 10pt;
                         margin: 1em 0;
                         
                         a {
@@ -362,7 +362,8 @@ strong, b { font-weight: bold; }
         width: 100%;
         
         .widget {
-            float: left;
+            margin: 1em;
+            float: left;            
         }
         
         .logo-modo-meu {
@@ -370,6 +371,13 @@ strong, b { font-weight: bold; }
                 width: 90px;
                 height: 87px;
             }
+            
+            .copyright {
+                font-family: @second-font-family;
+                font-size: 8pt;
+                color:  @color-roxo;
+            }
+
         }
         
         .social {
@@ -389,7 +397,7 @@ strong, b { font-weight: bold; }
         
         .text {
             width: 49%;
-            padding-right: 1em;
+            padding-right: 0.5em;
         }
                         
         .logo-container {
@@ -477,6 +485,13 @@ strong, b { font-weight: bold; }
     
     .main-content {
         .content{
+            
+            .content-highlights {
+                .highlights-home {
+                    .highlights-home-right { width: 100%; }
+                }
+            }
+            
             .content-posts {
                 .post {
                     .post-footer {
@@ -487,6 +502,14 @@ strong, b { font-weight: bold; }
                 }
             }
         }        
+    }
+    
+    .main-footer-container {
+        .footer-benjamin {
+            .logo-container { 
+                padding-top: 2em;
+            }
+        }
     }
     
     .sidebar {  display: none; }
