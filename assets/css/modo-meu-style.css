@@ -365,6 +365,13 @@ b {
   max-width: 1170px;
   width: 100%;
 }
+.main-footer-container .footer .widget {
+  float: left;
+}
+.main-footer-container .footer .logo-modo-meu img {
+  width: 90px;
+  height: 87px;
+}
 .main-footer-container .footer .social {
   width: 36px;
   height: 36px;
