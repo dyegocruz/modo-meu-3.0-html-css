@@ -286,7 +286,7 @@ b {
 }
 .main-content .content .content-posts .post .post-footer .social .fb-like {
   position: relative;
-  top: -7px;
+  top: -6px;
 }
 .main-content .content .content-posts .post .post-footer .comments {
   margin-top: 1.3em;
@@ -370,9 +370,25 @@ b {
   height: 36px;
 }
 .main-footer-container .footer-benjamin {
+  font-family: 'Dosis', sans-serif;
+  font-size: 9pt;
+  text-transform: uppercase;
   color: #fff;
   width: 100%;
   background: #3a4192;
+  padding: 1.2em 0;
+}
+.main-footer-container .footer-benjamin .text {
+  width: 49%;
+  padding-right: 1em;
+}
+.main-footer-container .footer-benjamin .logo-container {
+  width: 49%;
+  padding-top: 0.3em;
+}
+.main-footer-container .footer-benjamin .logo-container .logo-benjamin img {
+  width: 146px;
+  height: 26px;
 }
 /*------- Media Queries -------*/
 @media only screen and (max-width: 980px) {

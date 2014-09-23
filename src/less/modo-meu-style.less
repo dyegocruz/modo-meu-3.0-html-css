@@ -265,7 +265,7 @@ strong, b { font-weight: bold; }
                     
                     .social {
                         margin-top: .5em;
-                        .fb-like { position: relative; top: -7px; }                        
+                        .fb-like { position: relative; top: -6px; }                        
                     }
                     
                     .comments {
@@ -368,14 +368,31 @@ strong, b { font-weight: bold; }
     }
     
     .footer-benjamin {
+        font-family: @second-font-family;
+        font-size: 9pt;
+        text-transform: uppercase;
         color: #fff;
         width: 100%;
         background: @color-roxo;
+        padding: 1.2em 0;
         
-        .logo-benjamin {
-            width: 146px;
-            height: 26px;
+        .text {
+            width: 49%;
+            padding-right: 1em;
         }
+                        
+        .logo-container {
+            width: 49%;
+            padding-top: 0.3em;
+            .logo-benjamin {                        
+            
+                img { 
+                    width: 146px;
+                    height: 26px;
+                }            
+            }
+        }
+                
     }
 }
 
