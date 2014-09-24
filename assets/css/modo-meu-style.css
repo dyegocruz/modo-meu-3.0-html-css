@@ -375,8 +375,9 @@ b {
 }
 .main-footer-container .footer .logo-modo-meu .copyright {
   font-family: 'Dosis', sans-serif;
-  font-size: 8pt;
+  font-size: 8.5pt;
   color: #3a4192;
+  text-transform: uppercase;
 }
 .main-footer-container .footer .social {
   width: 36px;
