@@ -425,57 +425,100 @@ strong, b { font-weight: bold; }
 
 /*------- Media Queries -------*/
 
-@media only screen and (max-width: 980px) {
-	.header {		
-		.logo-top {		
-			margin-left: 2%;
-		}
-	}
+//@media only screen and (max-width: 980px) {
+//	.header {
+//		.logo-top {
+//			margin-left: 2%;
+//		}
+//	}
+//
+//	.sidebar { display: none; }
+//}
 
-	.sidebar { display: none; }
+//@media only screen and (max-width: 768px) {
+//
+//}
+
+//@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+//
+//	.menu-top { display: none; }
+//
+//	.header {
+//		.logo-top {
+//			width: 100%;
+//			margin-left: 0%;
+//		}
+//
+//		.header-right {
+//			width: 100%;
+//			.banner-top { display: none; }
+//		}
+//	}
+//
+//    .sidebar { display: none; }
+//}
+
+//@media screen and (max-width: 44em) {
+//
+//	.menu-top { display: none; }
+//
+//	.header {
+//		.logo-top {
+//			width: 40%;
+//			margin: 0 30%;
+//		}
+//
+//		.header-right {
+//
+//			width: 100%;
+//
+//			.banner-top { display: none; }
+//		}
+//    }
+//
+//    .main-content {
+//        .content{
+//
+//            .content-highlights {
+//                .highlights-home {
+//                    .highlights-home-right { width: 100%; }
+//                }
+//            }
+//
+//            .content-posts {
+//                .post {
+//                    .post-footer {
+//                        .post-meta {
+//                            width: 100%;
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//    }
+//
+//    .main-footer-container {
+//        .footer-benjamin {
+//            .logo-container {
+//                padding-top: 2em;
+//            }
+//        }
+//    }
+//
+//    .sidebar {  display: none; }
+//}
+
+@media only screen and (max-width: 480px), screen and (max-width: 568px), screen and (max-width: 768px) {
+    .main-content {
+        .content {
+            width: 100%;
+        }
+    }
 }
 
-@media only screen and (max-width: 768px) {
-	.header {
-		.header-right {
-			width: 70%;
-            
-            .menu-category { 
-                shape-margin: 0.5em;
-                padding: 0;
-            }
-		}
-	}    
-    
-    .highlights-home-first { display: none; }
-    
-    .sidebar { display: none; }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-
-	.menu-top { display: none; }
-
-	.header {		
-		.logo-top {
-			width: 100%;
-			margin-left: 0%;
-		}
-
-		.header-right {
-
-			width: 100%;
-
-			.banner-top { display: none; }			
-		}		
-	}
-    
-    .sidebar { display: none; }
-}
-
-@media screen and (max-width: 44em) {
-
-	.menu-top { display: none; }
+/* Mobile  */
+@media screen and (min-width: @screen-mobile-1) {
+    .menu-top { display: none; }
 
 	.header {		
 		.logo-top {
@@ -484,13 +527,13 @@ strong, b { font-weight: bold; }
 		}
 
 		.header-right {
-
 			width: 100%;
-
 			.banner-top { display: none; }			
 		}
     }
     
+     .highlights-home-first { display: none; }
+
     .main-content {
         .content{
             
@@ -522,13 +565,70 @@ strong, b { font-weight: bold; }
     
     .sidebar {  display: none; }
 }
+//
+///* Mobile landscape */
+@media screen and (min-width: @screen-mobile-2) and (orientation: landscape) {
+    .menu-top { display: none; }
 
-@media only screen and (max-width: 480px), screen and (max-width: 568px), screen and (max-width: 768px), screen and (max-width: 768px) {
-    .main-content {
-        .content {
-            width: 100%;
-        }
-    }
+	.header {
+		.logo-top {
+			width: 100%;
+			margin-left: 0%;
+		}
+
+		.header-right {
+			width: 100%;
+			.banner-top { display: none; }
+		}
+	}
+
+     .highlights-home-first { display: none; }
+
+    .sidebar { display: none; }
 }
+//
+///* Tablet */
+@media screen and (min-width: @screen-tablet) {
+    .header {
+		.header-right {
+			width: 70%;
+
+            .menu-category {
+                shape-margin: 0.5em;
+                padding: 0;
+            }
+		}
+	}
+
+    .highlights-home-first { display: none; }
+
+    .sidebar { display: none; }
+}
+
+/* Tablet landscape */
+@media screen and (min-width: @screen-tablet) and (orientation: landscape) {
+
+     .sidebar {  display: block; }
+}
+
+/* Desktop */
+@media screen and (min-width: @screen-desktop) {
+
+    .header {
+		.logo-top {
+			width: auto;
+			margin: 0 0 0 2%;
+		}
+
+		.header-right {
+			width: 100%;
+			.banner-top { display: none; }
+		}
+    }
+
+}
+//
+///* Tv */
+//@media screen and (min-width: @screen-tv) { }
 
 /*------- Media Queries -------*/
