@@ -412,7 +412,7 @@ b {
   font-size: 11pt;
 }
 .main-footer-container .footer .menu-bottom .menu-bottom-element {
-  padding: 2% 0;
+  padding: 2.5% 0;
 }
 .main-footer-container .footer .menu-bottom .menu-bottom-header {
   font-family: 'archive', sans-serif;
@@ -438,10 +438,27 @@ b {
   color: #12aec0;
 }
 .main-footer-container .footer .archive {
-  width: 18%;
+  width: 20%;
+  margin-top: 4%;
   font-family: 'archive', sans-serif;
   font-size: 10pt;
   color: #fff;
+}
+.main-footer-container .footer .archive select {
+  width: 100%;
+  height: 36px;
+  margin-top: 5%;
+  padding-left: 10px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 10pt;
+  color: #3a4192;
+  background: url("../img/arrow-down.png") no-repeat 95% 50% #ffffff;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 .main-footer-container .footer .postal-code {
   width: 10%;
@@ -466,7 +483,6 @@ b {
 }
 .main-footer-container .footer-benjamin .logo-container {
   width: 49%;
-  padding-top: 0.3em;
 }
 .main-footer-container .footer-benjamin .logo-container .logo-benjamin img {
   width: 146px;
@@ -498,7 +514,7 @@ b {
     width: 100%;
   }
   .main-footer-container .footer-benjamin .logo-container {
-    padding-top: 2em;
+    padding-top: 3%;
   }
   .sidebar {
     display: none;
@@ -523,6 +539,9 @@ b {
   }
   .main-content .content .content-posts .post .post-footer .post-meta {
     width: 32.5%;
+  }
+  .main-footer-container .footer-benjamin .logo-container {
+    padding-top: 0.3%;
   }
 }
 /* Tablet */
