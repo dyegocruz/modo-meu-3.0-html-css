@@ -387,21 +387,17 @@ b {
   margin: 2%;
   float: left;
 }
-.main-footer-container .footer .logo-modo-meu {
-  width: 10%;
-}
 .main-footer-container .footer .logo-modo-meu img {
   width: 90px;
   height: 87px;
 }
 .main-footer-container .footer .logo-modo-meu .copyright {
   font-family: 'Dosis', sans-serif;
-  font-size: 8.5pt;
+  font-size: 9pt;
   color: #3a4192;
   text-transform: uppercase;
 }
 .main-footer-container .footer .menu-bottom {
-  width: 30%;
   background: #fff;
   margin-top: 3%;
   -webkit-border-radius: 3px;
@@ -438,7 +434,6 @@ b {
   color: #12aec0;
 }
 .main-footer-container .footer .archive {
-  width: 20%;
   margin-top: 4%;
   font-family: 'archive', sans-serif;
   font-size: 10pt;
@@ -461,12 +456,99 @@ b {
   border-radius: 3px;
 }
 .main-footer-container .footer .postal-code {
-  width: 10%;
+  margin-top: 4%;
+  font-family: 'archive', sans-serif;
+  font-size: 10pt;
+  text-transform: uppercase;
+  color: #fff;
 }
-.main-footer-container .footer .social {
-  width: 32%;
+.main-footer-container .footer .postal-code .postal-code-data {
+  margin-top: 10%;
+  font-family: 'Dosis', sans-serif;
+  font-size: 10pt;
+  color: #3a4192;
+}
+.main-footer-container .footer .social-footer {
+  margin: 4% 0 0 0;
+}
+.main-footer-container .footer .social-footer .social {
+  margin: 1%;
+  float: left;
   width: 36px;
   height: 36px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+.main-footer-container .footer .social-footer .twitter,
+.main-footer-container .footer .social-footer .facebook,
+.main-footer-container .footer .social-footer .feed,
+.main-footer-container .footer .social-footer .gplus,
+.main-footer-container .footer .social-footer .youtube,
+.main-footer-container .footer .social-footer .pinterest,
+.main-footer-container .footer .social-footer .filmow,
+.main-footer-container .footer .social-footer .alvanista {
+  background-color: #35bac9;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-footer-container .footer .social-footer .twitter:hover,
+.main-footer-container .footer .social-footer .facebook:hover,
+.main-footer-container .footer .social-footer .feed:hover,
+.main-footer-container .footer .social-footer .gplus:hover,
+.main-footer-container .footer .social-footer .youtube:hover,
+.main-footer-container .footer .social-footer .pinterest:hover,
+.main-footer-container .footer .social-footer .filmow:hover,
+.main-footer-container .footer .social-footer .alvanista:hover {
+  background-color: #fff;
+}
+.main-footer-container .footer .social-footer .twitter {
+  background-image: url('../img/Twitter-branco.png');
+}
+.main-footer-container .footer .social-footer .twitter:hover {
+  background-image: url('../img/Twitter-turquesa.png');
+}
+.main-footer-container .footer .social-footer .facebook {
+  background-image: url('../img/Facebook-branco.png');
+}
+.main-footer-container .footer .social-footer .facebook:hover {
+  background-image: url('../img/Facebook-turquesa.png');
+}
+.main-footer-container .footer .social-footer .feed {
+  background-image: url('../img/Feed-branco.png');
+}
+.main-footer-container .footer .social-footer .feed:hover {
+  background-image: url('../img/Feed-turquesa.png');
+}
+.main-footer-container .footer .social-footer .gplus {
+  background-image: url('../img/Gplus-branco.png');
+}
+.main-footer-container .footer .social-footer .gplus:hover {
+  background-image: url('../img/Gplus-turquesa.png');
+}
+.main-footer-container .footer .social-footer .youtube {
+  background-image: url('../img/YouTube-branco.png');
+}
+.main-footer-container .footer .social-footer .youtube:hover {
+  background-image: url('../img/YouTube-turquesa.png');
+}
+.main-footer-container .footer .social-footer .pinterest {
+  background-image: url('../img/Pinterest-branco.png');
+}
+.main-footer-container .footer .social-footer .pinterest:hover {
+  background-image: url('../img/Pinterest-turquesa.png');
+}
+.main-footer-container .footer .social-footer .filmow {
+  background-image: url('../img/Filmow-branco.png');
+}
+.main-footer-container .footer .social-footer .filmow:hover {
+  background-image: url('../img/Filmow-turquesa.png');
+}
+.main-footer-container .footer .social-footer .alvanista {
+  background-image: url('../img/Alvanista-branco.png');
+}
+.main-footer-container .footer .social-footer .alvanista:hover {
+  background-image: url('../img/Alvanista-turquesa.png');
 }
 .main-footer-container .footer-benjamin {
   font-family: 'Dosis', sans-serif;
@@ -510,8 +592,8 @@ b {
   .main-content .content .content-highlights .highlights-home .highlights-home-right {
     width: 100%;
   }
-  .main-content .content .content-posts .post .post-footer .post-meta {
-    width: 100%;
+  .main-footer-container .footer .social-footer {
+    width: 50%;
   }
   .main-footer-container .footer-benjamin .logo-container {
     padding-top: 3%;
@@ -556,6 +638,21 @@ b {
   }
   .main-content .content .content-highlights .highlights-home .highlights-home-right {
     width: 64%;
+  }
+  .main-footer-container .footer .logo-modo-meu {
+    width: 8%;
+  }
+  .main-footer-container .footer .menu-bottom {
+    width: 28%;
+  }
+  .main-footer-container .footer .archive {
+    width: 18%;
+  }
+  .main-footer-container .footer .postal-code {
+    width: 10%;
+  }
+  .main-footer-container .footer .social-footer {
+    width: 17%;
   }
 }
 /* Tablet landscape */
