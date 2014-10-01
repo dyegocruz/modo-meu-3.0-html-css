@@ -13,10 +13,8 @@ $( document ).ready(function() {
 $(window).scroll(function(){
 
     scroll_page = $(document).scrollTop();
-    console.log(scroll_page);
-    //console.log();
-    var footerPosition = ($(document).innerHeight() - $('.main-footer-container').innerHeight());
-    console.log($('.main-footer-container').innerHeight());
+    window_height = $(window).height();
+
     if (scroll_page >= 150){
         $('.menu-top').fadeOut();
     }else {
@@ -29,11 +27,7 @@ $(window).scroll(function(){
         $('.buttom-back-to-top').fadeOut();
     }
 
-    if(scroll_page == footerPosition){
-        $('.buttom-back-to-top').css('position','absolute').css('bottom','100%');
-    }
-
-     if ($(window).scrollTop() + $(window).height() > $('.main-footer-container').offset().top) {
+    if (scroll_page + window_height > $('.main-footer-container').offset().top) {
          $('.buttom-back-to-top').css('position','absolute').css('bottom','99%');
     } else {
          $('.buttom-back-to-top').css('position','fixed').css('bottom','5%');

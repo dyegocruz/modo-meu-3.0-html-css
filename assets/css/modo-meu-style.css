@@ -374,7 +374,14 @@ b {
   height: 13px;
 }
 .main-content .sidebar {
-  width: 30%;
+  width: 27%;
+}
+.main-content .sidebar .highlights-podcast .highlights-podcast-img {
+  width: 100%;
+}
+.main-content .sidebar .highlights-podcast .post-data {
+  margin-top: 5%;
+  padding: 0 4%;
 }
 .buttom-back-to-top {
   display: none;
