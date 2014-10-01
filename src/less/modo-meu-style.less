@@ -37,7 +37,9 @@ Tags: -
 	font-style: normal;
 }
 
-body {	
+html, body { height: 100%; }
+
+body {
 	font-family: arial;	
     font-size: 100%;
 	font-style: normal;
@@ -359,7 +361,27 @@ strong, b { font-weight: bold; }
 	}
 }
 
+.buttom-back-to-top {
+    display: none;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    background: @color-roxo;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    .border-radius();
+
+    &:hover { background: @color-turquesa; }
+
+    img {
+        width: 13px;
+        height: 7px;
+    }
+}
+
 .main-footer-container {
+    position: relative;
     width: 100%;
 	bottom: 0px;
 	left: 0px;	

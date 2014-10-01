@@ -13,6 +13,10 @@ Tags: -
   font-weight: normal;
   font-style: normal;
 }
+html,
+body {
+  height: 100%;
+}
 body {
   font-family: arial;
   font-size: 100%;
@@ -372,7 +376,28 @@ b {
 .main-content .sidebar {
   width: 30%;
 }
+.buttom-back-to-top {
+  display: none;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  background: #3a4192;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.buttom-back-to-top:hover {
+  background: #12aec0;
+}
+.buttom-back-to-top img {
+  width: 13px;
+  height: 7px;
+}
 .main-footer-container {
+  position: relative;
   width: 100%;
   bottom: 0px;
   left: 0px;
