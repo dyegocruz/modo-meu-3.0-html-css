@@ -71,7 +71,7 @@ body {
   color: #e73064;
 }
 .post-data {
-  font-size: 10pt;
+  font-size: 9pt;
   font-family: 'archive', sans-serif;
   color: #12aec0;
 }
@@ -234,7 +234,7 @@ a:hover {
 .main-content .content .content-highlights .highlights-home .highlights-home-right .highlights-home .highlights-home-right-data {
   position: relative;
   width: 58%;
-  min-height: 180px;
+  min-height: 170px;
 }
 .main-content .content .content-highlights .highlights-home .highlights-home-right .highlights-home .highlights-home-right-data .post-data {
   padding-left: 10%;
@@ -381,7 +381,7 @@ a:hover {
   height: 13px;
 }
 .main-content .sidebar {
-  width: 27%;
+  width: 32%;
 }
 .main-content .sidebar .widget {
   width: 100%;
@@ -424,7 +424,14 @@ a:hover {
 .main-content .sidebar .search form .input-submit:hover {
   cursor: pointer;
 }
-.buttom-back-to-top {
+.main-content .sidebar .social nav a {
+  float: left;
+  margin: 0 1px;
+}
+.main-content .sidebar .social nav a img {
+  width: auto;
+}
+.button-back-to-top {
   display: none;
   position: fixed;
   right: 5%;
@@ -439,10 +446,10 @@ a:hover {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.buttom-back-to-top:hover {
+.button-back-to-top:hover {
   background: #12aec0;
 }
-.buttom-back-to-top img {
+.button-back-to-top img {
   width: 13px;
   height: 7px;
 }
@@ -752,7 +759,7 @@ a:hover {
     display: block;
   }
   .main-content .content {
-    width: 70%;
+    width: 66%;
   }
 }
 /* Tv */
