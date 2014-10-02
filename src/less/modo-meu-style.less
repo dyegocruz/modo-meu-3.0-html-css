@@ -367,10 +367,20 @@ a {
             width: 100%;
             margin-bottom: 10%;
             float: left;
+            text-align: center;
+
             .opacity-background-white();
+
+            h2 {
+                color: @color-turquesa;
+                font-family: @main-font-family;
+                min-height: 32px;
+                margin-bottom: 5%;
+            }
         }
 
         .highlights-podcast {
+            .a-left();
             .border-radius();
 
             .highlights-podcast-img {
@@ -431,19 +441,36 @@ a {
         }
 
         .postal-code {
-            text-align: center;
-            color: @color-turquesa;
 
-            h2 {
-                font-family: @main-font-family;
-                min-height: 32px;
-                margin-bottom: 5%;
-                background: url('../img/icon-postal-code.png') no-repeat 20% 20%;
-            }
-
+            h2 { background: url('../img/icon-postal-code.png') no-repeat 20% 20%; }
             p {
                 font-family: @second-font-family;
                 color: @color-text;
+            }
+        }
+
+        .partners {
+
+            h2 { background: url('../img/icon-partners.png') no-repeat 18% 20%; }
+
+            nav {
+                width: 80%;
+                margin: 0 auto;
+
+                img { width: 80px; height: 80px; }
+            }
+        }
+
+        .facebook-box{
+            h2 {
+                background: url('../img/icon-like.png') no-repeat 22%;
+                padding-top: 2%;
+            }
+        }
+
+        .gplus-box {
+            h2 {
+                background: url('../img/icon-plus.png') no-repeat 27%;
             }
         }
 	}
