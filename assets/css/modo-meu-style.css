@@ -245,6 +245,10 @@ a:hover {
 .main-content .content .content-posts {
   width: 100%;
 }
+.main-content .content .content-posts .post {
+  float: left;
+  margin-bottom: 5%;
+}
 .main-content .content .content-posts .post .post-header {
   padding: .5em;
 }
@@ -387,6 +391,7 @@ a:hover {
   width: 100%;
   margin-bottom: 10%;
   float: left;
+  background: rgba(255, 255, 255, 0.9);
 }
 .main-content .sidebar .highlights-podcast {
   -webkit-border-radius: 3px;
@@ -427,7 +432,7 @@ a:hover {
 }
 .main-content .sidebar .social nav a {
   float: left;
-  margin: 0 1px;
+  margin: 0 0 0 3px;
 }
 .main-content .sidebar .social nav a img {
   width: auto;
@@ -437,6 +442,20 @@ a:hover {
   width: 300px;
   height: 300px;
   border: 1px solid;
+}
+.main-content .sidebar .postal-code {
+  text-align: center;
+  color: #12aec0;
+}
+.main-content .sidebar .postal-code h2 {
+  font-family: 'archive', sans-serif;
+  min-height: 32px;
+  margin-bottom: 5%;
+  background: url('../img/icon-postal-code.png') no-repeat 20% 20%;
+}
+.main-content .sidebar .postal-code p {
+  font-family: 'Dosis', sans-serif;
+  color: #898989;
 }
 .button-back-to-top {
   display: none;

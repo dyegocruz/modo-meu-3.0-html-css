@@ -229,6 +229,9 @@ a {
              width: 100%;
             
             .post {
+                .f-left();
+                margin-bottom: 5%;
+
                 .post-header {
                     padding: .5em;
                     
@@ -364,6 +367,7 @@ a {
             width: 100%;
             margin-bottom: 10%;
             float: left;
+            .opacity-background-white();
         }
 
         .highlights-podcast {
@@ -410,7 +414,7 @@ a {
             nav {
                 a {
                     float: left;
-                    margin: 0 1px;
+                    margin: 0 0 0 3px;
 
                     img { width: auto; }
                 }
@@ -423,6 +427,23 @@ a {
                 width: 300px;
                 height: 300px;
                 border: 1px solid;
+            }
+        }
+
+        .postal-code {
+            text-align: center;
+            color: @color-turquesa;
+
+            h2 {
+                font-family: @main-font-family;
+                min-height: 32px;
+                margin-bottom: 5%;
+                background: url('../img/icon-postal-code.png') no-repeat 20% 20%;
+            }
+
+            p {
+                font-family: @second-font-family;
+                color: @color-text;
             }
         }
 	}
