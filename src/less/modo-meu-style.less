@@ -215,6 +215,7 @@ a {
         
         .content-highlights {
             width: 100%;
+            .f-left();
 
             .highlights-home {
 
@@ -262,6 +263,8 @@ a {
                 }
             }
 
+
+
         }
         
         .content-posts {
@@ -279,7 +282,6 @@ a {
                 }
                 
                 .post-content {
-                    margin: 1em 0;
                     color: @color-text;                    
                     
                     img { max-width: 100%; }
@@ -795,6 +797,13 @@ a {
                     .highlights-home-right { width: 100%; }
                 }
             }
+            .content-posts {
+                .post {
+                    .post-content{
+                        margin: 10% 0;
+                    }
+                }
+            }
         }        
     }
     
@@ -836,6 +845,9 @@ a {
             }
             .content-posts {
                 .post {
+                    .post-content{
+                        margin: 2% 0;
+                    }
                     .post-footer {
                         .post-meta {
                             width: 32.5%;
