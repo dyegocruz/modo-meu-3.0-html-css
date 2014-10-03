@@ -57,6 +57,9 @@ body {
 .opacity-background-white {
   background: rgba(255, 255, 255, 0.9);
 }
+.opacity-background-gray {
+  background: rgba(137, 137, 137, 0.2);
+}
 .b-bottom-gray {
   border-bottom: 2px solid #d6d6d6;
 }
@@ -392,6 +395,7 @@ a:hover {
   margin-bottom: 10%;
   float: left;
   text-align: center;
+  text-transform: uppercase;
   background: rgba(255, 255, 255, 0.9);
 }
 .main-content .sidebar .widget h2 {
@@ -475,6 +479,51 @@ a:hover {
 }
 .main-content .sidebar .gplus-box h2 {
   background: url('../img/icon-plus.png') no-repeat 27%;
+}
+.main-content .sidebar .newsletter h2 {
+  padding: 0 32%;
+  background: url('../img/icon-postal-code.png') no-repeat 22%;
+  text-align: left;
+}
+.main-content .sidebar .newsletter form {
+  font-family: 'Dosis', sans-serif;
+  color: #898989;
+  width: 70%;
+  margin: 0 auto;
+}
+.main-content .sidebar .newsletter form dt,
+.main-content .sidebar .newsletter form dd {
+  margin: 4% 0;
+}
+.main-content .sidebar .newsletter form dt {
+  float: left;
+}
+.main-content .sidebar .newsletter form dd {
+  text-align: right;
+}
+.main-content .sidebar .newsletter form dd .input-text {
+  font-family: 'archive', sans-serif;
+  color: #898989;
+  padding: 5%;
+  border: none;
+  background: rgba(137, 137, 137, 0.2);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.main-content .sidebar .newsletter form .input-submit {
+  font-family: 'archive', sans-serif;
+  font-size: 12pt;
+  color: #3a4192;
+  background: none;
+  border: none;
+  float: right;
+  webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.main-content .sidebar .newsletter form .input-submit:hover {
+  cursor: pointer;
+  color: #12aec0;
 }
 .button-back-to-top {
   display: none;
