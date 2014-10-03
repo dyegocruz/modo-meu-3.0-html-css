@@ -170,14 +170,17 @@ a:hover {
   top: 0;
   z-index: 99999;
   width: 100%;
-  padding: 0% 5%;
+  padding: 0% 8%;
   background: #3a4192;
 }
 .menu-floating nav {
   min-height: 70px;
 }
+.menu-floating nav .logo {
+  padding-left: 1%;
+}
 .menu-floating nav a {
-  padding: 1%;
+  padding-right: 1.3%;
   color: #fff;
 }
 .menu-floating nav a:hover {
@@ -189,6 +192,9 @@ a:hover {
   width: auto;
   position: relative;
   top: 0.8em;
+}
+.menu-floating nav .link-rosa {
+  color: #e73064;
 }
 .site {
   max-width: 1170px;
