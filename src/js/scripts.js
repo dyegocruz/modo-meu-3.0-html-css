@@ -14,7 +14,9 @@ $(window).scroll(function(){
 
     if (scroll_page >= 150){
         $('.menu-top').fadeOut();
+        $('.menu-floating').fadeIn();
     }else {
+        $('.menu-floating').fadeOut();
         $('.menu-top').fadeIn();
     }
 

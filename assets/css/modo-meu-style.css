@@ -164,6 +164,32 @@ a:hover {
   font-size: 11pt;
   padding-right: 1%;
 }
+.menu-floating {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  padding: 0% 5%;
+  background: #3a4192;
+}
+.menu-floating nav {
+  min-height: 70px;
+}
+.menu-floating nav a {
+  padding: 1%;
+  color: #fff;
+}
+.menu-floating nav a:hover {
+  color: #12aec0;
+  webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.menu-floating nav a img {
+  width: auto;
+  position: relative;
+  top: 0.8em;
+}
 .site {
   max-width: 1170px;
 }
@@ -325,10 +351,10 @@ a:hover {
   top: -6px;
 }
 .main-content .content .content-posts .post .post-footer .comments {
-  margin-top: 1.3em;
+  margin-top: 3%;
 }
 .main-content .content .content-posts .post .post-footer .comments a {
-  font-size: 16pt;
+  font-size: 15pt;
 }
 .main-content .content .content-posts .post .post-footer .comments a img {
   width: 32px;
@@ -392,7 +418,7 @@ a:hover {
 }
 .main-content .sidebar .widget {
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 9%;
   float: left;
   text-align: center;
   text-transform: uppercase;

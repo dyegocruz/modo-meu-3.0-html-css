@@ -135,6 +135,36 @@ a {
 	}
 }
 
+.menu-floating {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    padding: 0% 5%;
+    background: @color-roxo;
+
+    nav {
+        min-height: 70px;
+
+        a{
+            padding: 1%;
+            color: #fff;
+
+            &:hover {
+                color: @color-turquesa;
+                .transition(0.3s);
+            }
+
+            img {
+                width: auto;
+                position: relative;
+                top: 0.8em;
+            }
+        }
+    }
+}
+
 .site {
 	max-width: 1170px;	
 }
@@ -290,9 +320,9 @@ a {
                     }
                     
                     .comments {
-                        margin-top: 1.3em;                               
+                        margin-top: 3%;
                         a {                            
-                            font-size: 16pt;
+                            font-size: 15pt;
                             img {                                
                                 width: 32px;
                                 margin: 0 0 0 1.5em;
@@ -370,7 +400,7 @@ a {
 
         .widget {
             width: 100%;
-            margin-bottom: 10%;
+            margin-bottom: 9%;
             float: left;
             text-align: center;
             text-transform: uppercase;
