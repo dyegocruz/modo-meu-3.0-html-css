@@ -170,7 +170,7 @@ a:hover {
   top: 0;
   z-index: 99999;
   width: 100%;
-  padding: 0% 8%;
+  padding: 0% 6%;
   background: #3a4192;
 }
 .menu-floating nav {
@@ -212,7 +212,7 @@ a:hover {
 .header .header-right .banner-top {
   max-width: 728px;
   max-height: 90px;
-  width: 728px;
+  width: 90%;
   height: 90px;
   border: 1px solid #e73064;
 }
@@ -241,9 +241,13 @@ a:hover {
   padding: 2% 5%;
 }
 .main-content .content .content-highlights .highlights-home .highlights-home-first {
+  min-height: 370px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+}
+.main-content .content .content-highlights .highlights-home .highlights-home-first h3 {
+  min-height: 82px;
 }
 .main-content .content .content-highlights .highlights-home .highlights-home-first .highlights-home-first-img {
   margin-bottom: 2%;
@@ -868,11 +872,24 @@ a:hover {
   .main-footer-container .footer .social-footer {
     width: 17%;
   }
+  .sidebar {
+    display: none;
+  }
 }
 /* Tablet landscape */
 @media screen and (min-width: 768px) and (orientation: landscape) {
-  .sidebar {
+  .header .logo-top {
+    width: auto;
+    margin: 0 0 0 2%;
+  }
+  .header .header-right {
+    width: 75%;
+  }
+  .header .header-right .banner-top {
     display: block;
+  }
+  .sidebar {
+    display: none;
   }
 }
 /* Desktop */
@@ -880,18 +897,14 @@ a:hover {
   .menu-top {
     display: block;
   }
-  .header .logo-top {
-    width: auto;
-    margin: 0 0 0 2%;
-  }
   .header .header-right {
     width: 83%;
   }
-  .header .header-right .banner-top {
-    display: block;
-  }
   .main-content .content {
     width: 66%;
+  }
+  .sidebar {
+    display: block;
   }
 }
 /* Tv */
