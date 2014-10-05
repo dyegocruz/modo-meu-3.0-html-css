@@ -293,7 +293,11 @@ a:hover {
   padding: .5em;
 }
 .main-content .content .content-posts .post .post-header .title {
-  margin-bottom: .5em;
+  margin-bottom: 2%;
+}
+.main-content .content .content-posts .post .post-header .title h2 {
+  font-family: 'archive', sans-serif;
+  color: #3a4192;
 }
 .main-content .content .content-posts .post .post-header .post-data {
   left: 1.5em;
