@@ -5,6 +5,10 @@ $( document ).ready(function() {
         return false;
     });
 
+    $('.highlights-internal a').hover(function(){
+        //alert('oi');
+    });
+
 });
 
 $(window).scroll(function(){
