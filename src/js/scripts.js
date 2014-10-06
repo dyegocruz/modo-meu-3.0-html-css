@@ -5,9 +5,10 @@ $( document ).ready(function() {
         return false;
     });
 
-    $('.highlights-internal a').hover(function(){
-        //alert('oi');
-    });
+//    $('.highlights-internal a').hover(function(){
+//        //alert('oi');
+//        $(this).find('.highlight-title').fadeIn();
+//    });
 
 });
 
