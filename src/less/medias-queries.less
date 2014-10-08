@@ -1,0 +1,183 @@
+/* Mobile  */
+@media screen and (min-width: @screen-mobile-1) {
+    .menu-top { display: none; }
+
+	.header {
+		.logo-top {
+			width: 40%;
+			margin: 0 30%;
+		}
+
+		.header-right {
+			width: 100%;
+			.banner-top { display: none; }
+		}
+    }
+
+    .main-content {
+        .content{
+            .content-highlights {
+                .highlights-home {
+                    .highlights-home-first { display: none; }
+                    .highlights-home-right { width: 100%; }
+                }
+
+                .highlights-internal{ display: none; }
+            }
+
+            .content-posts {
+                .post {
+                    .post-content{
+                        margin: 10% 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-footer-container {
+
+        .footer {
+            .social-footer { width: 50%; }
+        }
+
+        .footer-benjamin {
+            .logo-container {
+                padding-top: 3%;
+            }
+        }
+    }
+
+    .sidebar { display: none; }
+}
+
+/* Mobile landscape */
+@media screen and (min-width: @screen-mobile-2) and (orientation: landscape) {
+    .menu-top { display: none; }
+
+	.header {
+		.header-right {
+			width: 100%;
+			.banner-top { display: none; }
+		}
+	}
+
+    .main-content {
+        .content{
+            width: 100%;
+
+            .content-highlights {
+                .highlights-home {
+                    .highlights-home-first { display: none; }
+                }
+            }
+            .content-posts {
+                .post {
+                    .post-content{
+                        margin: 2% 0;
+                    }
+                    .post-footer {
+                        .post-meta {
+                            width: 32.5%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .main-footer-container {
+        .footer-benjamin {
+            .logo-container { padding-top: 0.3%; }
+        }
+    }
+
+}
+
+/* Tablet */
+@media screen and (min-width: @screen-tablet) {
+    .header {
+		.header-right {
+            .menu-category {
+                margin-top: 2%;
+                padding: 0;
+            }
+		}
+	}
+
+    .main-content {
+        .content{
+            .content-highlights {
+                .highlights-home {
+                    .highlights-home-first {
+                        display: block;
+                        width: 33%;
+                    }
+
+                    .highlights-home-right {
+                        width: 64%;
+                    }
+                }
+
+                .highlights-internal{ display: block; }
+            }
+
+        }
+    }
+
+    .main-footer-container {
+        .footer{
+            .logo-modo-meu{ width: 8%; }
+            .menu-bottom { width: 28%; }
+            .archive { width: 18%; }
+            .postal-code { width: 10%; }
+            .social-footer { width: 17%; }
+        }
+    }
+
+    .sidebar {  display: none; }
+}
+
+/* Tablet landscape */
+@media screen and (min-width: @screen-tablet) and (orientation: landscape) {
+
+    .header {
+		.logo-top {
+			width: auto;
+			margin: 0 0 0 2%;
+		}
+
+		.header-right {
+            width: 75%;
+			.banner-top { display: block; }
+		}
+    }
+
+
+    .sidebar {  display: none; }
+}
+
+/* Desktop */
+@media screen and (min-width: @screen-desktop) {
+
+    .menu-top { display: block; }
+
+    .header {
+
+		.header-right {
+            width: 83%;
+		}
+    }
+
+    .main-content {
+        .content {
+            width: 66%;
+        }
+    }
+
+    .sidebar {  display: block; }
+}
+
+/* Tv */
+//@media screen and (min-width: @screen-tv) { }
