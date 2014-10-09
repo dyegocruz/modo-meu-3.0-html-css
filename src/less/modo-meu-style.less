@@ -349,7 +349,12 @@ a {
                 .post-content {
                     color: @color-text;                    
                     
-                    img { max-width: 100%; }
+                    img {
+                        max-width: 100%;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
                     
                     p {
                         font-family: "Arial";
@@ -465,9 +470,11 @@ a {
             }
         }
 
-        .posts-related {
+        .post-comment {
+            margin-bottom: 3%;
             padding: 0 2%;
             .f-left();
+
             h2 {
                 margin-bottom: 2%;
                 font-family: @main-font-family;
@@ -475,6 +482,9 @@ a {
                 text-transform: uppercase;
                 color: @color-text;
             }
+        }
+
+        .posts-related {
 
             ul {
                 li {

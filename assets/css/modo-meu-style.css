@@ -373,6 +373,9 @@ a:hover {
 }
 .main-content .content .content-posts .post .post-content img {
   max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-content .content .content-posts .post .post-content p {
   font-family: "Arial";
@@ -493,11 +496,12 @@ a:hover {
   width: 7px;
   height: 13px;
 }
-.main-content .content .posts-related {
+.main-content .content .post-comment {
+  margin-bottom: 3%;
   padding: 0 2%;
   float: left;
 }
-.main-content .content .posts-related h2 {
+.main-content .content .post-comment h2 {
   margin-bottom: 2%;
   font-family: 'archive', sans-serif;
   font-weight: normal;
