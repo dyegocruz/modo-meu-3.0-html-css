@@ -194,11 +194,14 @@ a:hover {
   top: 0;
   z-index: 99999;
   width: 100%;
-  padding: 0% 6%;
+  padding: 0;
   background: #3a4192;
 }
 .menu-floating nav {
+  max-width: 1170px;
   min-height: 70px;
+  width: 100%;
+  margin: 0 auto;
 }
 .menu-floating nav .logo {
   padding-left: 1%;
