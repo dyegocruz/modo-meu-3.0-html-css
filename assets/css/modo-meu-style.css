@@ -392,6 +392,12 @@ a:hover {
 .main-content .content-pages .content-highlights .highlights-internal a:hover .highlight-title {
   display: block;
 }
+.main-content .content .page-title,
+.main-content .content-pages .page-title {
+  font-family: 'archive', sans-serif;
+  color: #898989;
+  text-transform: uppercase;
+}
 .main-content .content .content-posts,
 .main-content .content-pages .content-posts {
   width: 100%;
@@ -467,6 +473,11 @@ a:hover {
 .main-content .content .content-posts .post .post-content h3,
 .main-content .content-pages .content-posts .post .post-content h3 {
   font-weight: bold;
+}
+.main-content .content .content-posts .post .post-more,
+.main-content .content-pages .content-posts .post .post-more {
+  text-align: right;
+  padding-right: 2%;
 }
 .main-content .content .content-posts .post .post-footer,
 .main-content .content-pages .content-posts .post .post-footer {
