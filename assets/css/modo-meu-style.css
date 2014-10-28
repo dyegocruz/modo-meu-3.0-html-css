@@ -394,6 +394,7 @@ a:hover {
 }
 .main-content .content .page-title,
 .main-content .content-pages .page-title {
+  padding: 1% 0;
   font-family: 'Archive', sans-serif;
   color: #898989;
   text-transform: uppercase;
@@ -770,6 +771,13 @@ a:hover {
   min-height: 32px;
   margin-bottom: 5%;
 }
+.main-content .sidebar .widget p {
+  font-size: 11pt;
+  color: #898989;
+}
+.main-content .sidebar .widget .widget-url {
+  margin: 5% 0;
+}
 .main-content .sidebar .highlights-podcast {
   text-align: left;
   -webkit-border-radius: 3px;
@@ -894,6 +902,37 @@ a:hover {
 .main-content .sidebar .about-513-sidebar h2 {
   margin-top: 3%;
   background: url('../img/icon-513.png') no-repeat 20% 20%;
+}
+.main-content .sidebar .about-513-sidebar p {
+  text-transform: none;
+  text-align: left;
+  padding: 0 10%;
+  margin: 0 auto;
+}
+.main-content .sidebar .send-email h2 {
+  background: url('../img/icon-postal-code.png') no-repeat 20% 20%;
+}
+.main-content .sidebar .send-email p {
+  padding: 0 10%;
+  font-family: 'Dosis', sans-serif;
+}
+.main-content .sidebar .button-subscribe-feed {
+  text-align: center;
+}
+.main-content .sidebar .button-subscribe-feed a {
+  color: #fff;
+  background: #3a4192;
+  font-size: 18pt;
+  padding: 5% 15%;
+  webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.main-content .sidebar .button-subscribe-feed a:hover {
+  color: #3a4192;
+  background: #12aec0;
 }
 .button-back-to-top {
   display: none;

@@ -350,6 +350,7 @@ a {
         }
         
         .page-title {
+            padding: 1% 0;
             font-family: @main-font-family;
             color: @color-text;
             text-transform: uppercase;
@@ -661,6 +662,14 @@ a {
                 min-height: 32px;
                 margin-bottom: 5%;
             }
+
+            p {
+                font-size: 11pt;
+                color: @color-text;
+            }
+
+            .widget-url { margin: 5% 0; }
+
         }
 
         .highlights-podcast {
@@ -793,6 +802,40 @@ a {
             h2 {
                 margin-top: 3%;
                 background: url('../img/icon-513.png') no-repeat 20% 20%;
+            }
+
+            p {
+                text-transform: none;
+                text-align: left;
+                padding: 0 10%;
+                margin: 0 auto;
+            }
+        }
+
+        .send-email {
+
+            h2 { background: url('../img/icon-postal-code.png') no-repeat 20% 20%; }
+
+            p {
+                padding: 0 10%;
+                font-family: @second-font-family;
+            }
+        }
+
+        .button-subscribe-feed {
+            text-align: center;
+            a {
+                color: #fff;
+                background: @color-roxo;
+                font-size: 18pt;
+                padding: 5% 15%;
+                .transition(0.5s);
+                .border-radius();
+
+                &:hover {
+                    color: @color-roxo;
+                    background: @color-turquesa;
+                }
             }
         }
 	}
