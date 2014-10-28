@@ -888,6 +888,13 @@ a:hover {
   cursor: pointer;
   color: #12aec0;
 }
+.main-content .sidebar .about-513-sidebar .img-about-513-sidebar {
+  width: 85%;
+}
+.main-content .sidebar .about-513-sidebar h2 {
+  margin-top: 3%;
+  background: url('../img/icon-513.png') no-repeat 20% 20%;
+}
 .button-back-to-top {
   display: none;
   position: fixed;
