@@ -621,12 +621,11 @@ a {
             width: 100%;
             .opacity-background-white();
 
-            .text-page {
+            .text-page, .template-page {
                 color: @color-text;
 
                 p,h2,h3,h4 { padding: 1% 2%; }
                 h2, h3, h4 { font-family: @main-font-family; text-transform: uppercase; }
-
 
                 h2 {
                     font-size: 20pt;
@@ -640,6 +639,25 @@ a {
                     .transition(0.3s);
 
                     &:hover { color: @color-turquesa; }
+                }
+            }
+
+            .template-page {
+                width: 100%;
+
+                .editor {
+                    width: 50%;
+                    text-align: left;
+                    overflow: hidden;
+                    position: relative;
+                    max-height: 200px;
+                    .f-left();
+
+                    .editor-photo {
+                        width: 35%;
+                        .f-left();
+                        .border-radius();
+                    }
                 }
             }
         }
