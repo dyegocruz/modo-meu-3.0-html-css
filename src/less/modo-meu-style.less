@@ -110,6 +110,17 @@ body {
     }
 }
 
+.social {
+    nav {
+        a {
+            float: left;
+            margin: 0 0 0 3px;
+
+            img { width: auto; }
+        }
+    }
+}
+
 /*------- Functions -------*/
 @-webkit-keyframes fadeIn {  0% { opacity: 0; } 100% { opacity: 1; } }
 @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
@@ -617,7 +628,7 @@ a {
 
         .content-page {
             margin-bottom: 5%;
-            padding: 3% 0;
+            padding: 1% 0;
             width: 100%;
             .opacity-background-white();
 
@@ -643,20 +654,41 @@ a {
             }
 
             .template-page {
-                width: 100%;
+                width: 95%;
 
-                .editor {
-                    width: 50%;
-                    text-align: left;
-                    overflow: hidden;
-                    position: relative;
-                    max-height: 200px;
+                .editores {
+                    margin: 2% 0;
                     .f-left();
 
-                    .editor-photo {
-                        width: 35%;
+                    .editor {
+                        width: 50%;
+                        text-align: left;
+                        overflow: hidden;
+                        position: relative;
+                        max-height: 200px;
                         .f-left();
-                        .border-radius();
+
+                        .editor-photo {
+                            width: 40%;
+                            margin-right: 4%;
+                            .f-left();
+                            .border-radius();
+                        }
+
+                        p {
+                            font-size: 11pt;
+                            width: 50%;
+                            padding: 0;
+                            margin-top: 2%;
+                            .f-left();
+                        }
+
+                        .social {
+                            width: 51%;
+                            position: absolute;
+                            right: 5%;
+                            bottom: 0;
+                        }
                     }
                 }
             }
@@ -727,17 +759,6 @@ a {
                     background: url('../img/button-search.png') no-repeat center;
 
                     &:hover { cursor: pointer; }
-                }
-            }
-        }
-
-        .social {
-            nav {
-                a {
-                    float: left;
-                    margin: 0 0 0 3px;
-
-                    img { width: auto; }
                 }
             }
         }

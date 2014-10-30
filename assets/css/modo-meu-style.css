@@ -141,6 +141,13 @@ body {
   cursor: pointer;
   color: #12aec0;
 }
+.social nav a {
+  float: left;
+  margin: 0 0 0 3px;
+}
+.social nav a img {
+  width: auto;
+}
 /*------- Functions -------*/
 @-webkit-keyframes fadeIn {
   0% {
@@ -720,7 +727,7 @@ a:hover {
 }
 .main-content .content-pages .content-page {
   margin-bottom: 5%;
-  padding: 3% 0;
+  padding: 1% 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.9);
 }
@@ -767,9 +774,13 @@ a:hover {
   color: #12aec0;
 }
 .main-content .content-pages .content-page .template-page {
-  width: 100%;
+  width: 95%;
 }
-.main-content .content-pages .content-page .template-page .editor {
+.main-content .content-pages .content-page .template-page .editores {
+  margin: 2% 0;
+  float: left;
+}
+.main-content .content-pages .content-page .template-page .editores .editor {
   width: 50%;
   text-align: left;
   overflow: hidden;
@@ -777,12 +788,26 @@ a:hover {
   max-height: 200px;
   float: left;
 }
-.main-content .content-pages .content-page .template-page .editor .editor-photo {
-  width: 35%;
+.main-content .content-pages .content-page .template-page .editores .editor .editor-photo {
+  width: 40%;
+  margin-right: 4%;
   float: left;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+}
+.main-content .content-pages .content-page .template-page .editores .editor p {
+  font-size: 11pt;
+  width: 50%;
+  padding: 0;
+  margin-top: 2%;
+  float: left;
+}
+.main-content .content-pages .content-page .template-page .editores .editor .social {
+  width: 51%;
+  position: absolute;
+  right: 5%;
+  bottom: 0;
 }
 .main-content .sidebar {
   width: 32%;
@@ -845,13 +870,6 @@ a:hover {
 }
 .main-content .sidebar .search form .input-submit:hover {
   cursor: pointer;
-}
-.main-content .sidebar .social nav a {
-  float: left;
-  margin: 0 0 0 3px;
-}
-.main-content .sidebar .social nav a img {
-  width: auto;
 }
 .main-content .sidebar .adsense .box {
   margin: 0 auto;
