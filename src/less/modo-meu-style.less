@@ -661,18 +661,20 @@ a {
                     .f-left();
 
                     .editor {
-                        width: 50%;
                         text-align: left;
-                        overflow: hidden;
                         position: relative;
-                        max-height: 200px;
                         .f-left();
 
                         .editor-photo {
                             width: 40%;
                             margin-right: 4%;
+                            max-height: 200px;
+                            overflow: hidden;
+                            position: relative;
                             .f-left();
                             .border-radius();
+
+                            img { width: 100%; }
                         }
 
                         p {
@@ -684,10 +686,11 @@ a {
                         }
 
                         .social {
-                            width: 51%;
-                            position: absolute;
-                            right: 5%;
-                            bottom: 0;
+                            .f-left();
+
+                            nav {
+                                a { margin: 0 0 0 1px; }
+                            }
                         }
                     }
                 }
