@@ -812,6 +812,23 @@ a:hover {
 .main-content .content-pages .content-page .template-page .editores .editor .social nav a {
   margin: 0 0 0 1px;
 }
+.main-content .content-pages .content-page .template-page .colaboradores {
+  width: 100%;
+  margin: 2% 0;
+  float: left;
+}
+.main-content .content-pages .content-page .template-page .colaboradores .colaborador {
+  width: 20%;
+  margin: 0 2% 3% 2%;
+  float: left;
+}
+.main-content .content-pages .content-page .template-page .colaboradores .colaborador .colaborador-photo {
+  margin-bottom: 5%;
+}
+.main-content .content-pages .content-page .template-page .colaboradores .colaborador p {
+  margin-top: 5%;
+  font-size: 11pt;
+}
 .main-content .sidebar {
   width: 32%;
 }
