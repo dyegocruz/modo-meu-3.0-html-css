@@ -800,17 +800,14 @@ a:hover {
   width: 100%;
 }
 .main-content .content-pages .content-page .template-page .editores .editor p {
-  font-size: 11pt;
   width: 50%;
   padding: 0;
   margin-top: 2%;
   float: left;
 }
-.main-content .content-pages .content-page .template-page .editores .editor .social {
+.main-content .content-pages .content-page .template-page .editores .editor p a {
+  margin-right: 1%;
   float: left;
-}
-.main-content .content-pages .content-page .template-page .editores .editor .social nav a {
-  margin: 0 0 0 1px;
 }
 .main-content .content-pages .content-page .template-page .colaboradores {
   width: 100%;
@@ -818,7 +815,6 @@ a:hover {
   float: left;
 }
 .main-content .content-pages .content-page .template-page .colaboradores .colaborador {
-  width: 20%;
   margin: 0 2% 3% 2%;
   float: left;
 }
@@ -827,7 +823,20 @@ a:hover {
 }
 .main-content .content-pages .content-page .template-page .colaboradores .colaborador p {
   margin-top: 5%;
+}
+.main-content .content-pages .content-page .template-page .editor p,
+.main-content .content-pages .content-page .template-page .colaborador p {
   font-size: 11pt;
+}
+.main-content .content-pages .content-page .template-page .editor p img,
+.main-content .content-pages .content-page .template-page .colaborador p img {
+  width: 43px;
+}
+.main-content .content-pages .content-page .template-page hr {
+  width: 65%;
+  border: none;
+  height: 2px;
+  background: #d6d6d6;
 }
 .main-content .sidebar {
   width: 32%;
@@ -1263,6 +1272,10 @@ a:hover {
   }
   .main-content .content-pages .content-page .template-page .editores .editor .social {
     margin-top: 2%;
+    width: 100%;
+  }
+  .main-content .content-pages .content-page .template-page .colaboradores .colaborador {
+    width: 45%;
   }
   .main-footer-container .footer .social-footer {
     width: 50%;
@@ -1300,6 +1313,12 @@ a:hover {
   .main-content .content-pages .content-highlights .highlights-internal {
     display: none;
   }
+  .main-content .content-pages .content-page .template-page .editores .editor .social {
+    width: 50%;
+  }
+  .main-content .content-pages .content-page .template-page .colaboradores .colaborador {
+    width: 29%;
+  }
   .main-footer-container .footer-benjamin .logo-container {
     padding-top: 0.3%;
   }
@@ -1333,6 +1352,9 @@ a:hover {
   }
   .main-content .content-pages .content-page .template-page .editores .editor .social {
     margin-top: 5%;
+  }
+  .main-content .content-pages .content-page .template-page .colaboradores .colaborador {
+    width: 20%;
   }
   .main-footer-container .footer .logo-modo-meu {
     width: 8%;

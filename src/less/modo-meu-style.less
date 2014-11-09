@@ -678,18 +678,14 @@ a {
                         }
 
                         p {
-                            font-size: 11pt;
                             width: 50%;
                             padding: 0;
                             margin-top: 2%;
                             .f-left();
-                        }
 
-                        .social {
-                            .f-left();
-
-                            nav {
-                                a { margin: 0 0 0 1px; }
+                            a {
+                                margin-right: 1%;
+                                .f-left();
                             }
                         }
                     }
@@ -701,17 +697,27 @@ a {
                     .f-left();
 
                     .colaborador {
-                        width: 20%;
                         margin: 0 2% 3% 2%;
                         .f-left();
 
                         .colaborador-photo { margin-bottom: 5%; }
 
-                        p {
-                            margin-top: 5%;
-                            font-size: 11pt;
-                        }
+                        p { margin-top: 5%; }
                     }
+                }
+
+                .editor, .colaborador {
+                    p {
+                        font-size: 11pt;
+                        img { width: 43px; }
+                    }
+                }
+
+                hr {
+                    width: 65%;
+                    border: none;
+                    height: 2px;
+                    background: @color-border;
                 }
             }
         }
