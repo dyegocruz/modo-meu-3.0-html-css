@@ -838,6 +838,22 @@ a:hover {
   height: 2px;
   background: #d6d6d6;
 }
+.main-content .content-pages .content-page .template-page .sobre {
+  float: left;
+}
+.main-content .content-pages .content-page .template-page .sobre .sobre-photo {
+  width: 30%;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.main-content .content-pages .content-page .template-page .sobre P {
+  text-align: left;
+  width: 65%;
+  font-size: 11pt;
+  float: left;
+}
 .main-content .sidebar {
   width: 32%;
 }
