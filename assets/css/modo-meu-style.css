@@ -229,6 +229,7 @@ a:hover {
   min-height: 70px;
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 .menu-floating nav .logo {
   padding-left: 1%;
@@ -839,6 +840,7 @@ a:hover {
   background: #d6d6d6;
 }
 .main-content .content-pages .content-page .template-page .sobre {
+  margin-bottom: 3%;
   float: left;
 }
 .main-content .content-pages .content-page .template-page .sobre .sobre-photo {
@@ -851,6 +853,22 @@ a:hover {
 .main-content .content-pages .content-page .template-page .sobre P {
   text-align: left;
   width: 65%;
+  font-size: 11pt;
+  float: left;
+}
+.main-content .content-pages .content-page .template-page .podcast-513 {
+  float: left;
+}
+.main-content .content-pages .content-page .template-page .podcast-513 .podcast-513-photo {
+  width: 25%;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.main-content .content-pages .content-page .template-page .podcast-513 P {
+  text-align: left;
+  width: 70%;
   font-size: 11pt;
   float: left;
 }
@@ -1254,6 +1272,15 @@ a:hover {
   .menu-top {
     display: none;
   }
+  .menu-floating .logo {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .menu-floating .logo img {
+    width: 50%;
+  }
   .header .logo-top {
     width: 40%;
     margin: 0 30%;
@@ -1308,6 +1335,9 @@ a:hover {
   .menu-top {
     display: none;
   }
+  .menu-floating .logo img {
+    width: 30%;
+  }
   .header .header-right {
     width: 100%;
   }
@@ -1341,6 +1371,13 @@ a:hover {
 }
 /* Tablet */
 @media screen and (min-width: 768px) {
+  .menu-floating .logo {
+    width: auto;
+    float: none;
+  }
+  .menu-floating .logo img {
+    width: auto;
+  }
   .header .header-right .menu-category {
     margin-top: 2%;
     padding: 0;
