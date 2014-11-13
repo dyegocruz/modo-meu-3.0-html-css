@@ -443,6 +443,8 @@ a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 .main-content .content .content-posts .post .post-content p,
 .main-content .content-pages .content-posts .post .post-content p {
@@ -463,15 +465,22 @@ a:hover {
 .main-content .content-pages .content-posts .post .post-content p a:hover {
   color: #3a4192;
 }
+.main-content .content .content-posts .post .post-content ul,
+.main-content .content-pages .content-posts .post .post-content ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
 .main-content .content .content-posts .post .post-content p,
 .main-content .content-pages .content-posts .post .post-content p,
+.main-content .content .content-posts .post .post-content ul,
+.main-content .content-pages .content-posts .post .post-content ul,
 .main-content .content .content-posts .post .post-content h1,
 .main-content .content-pages .content-posts .post .post-content h1,
 .main-content .content .content-posts .post .post-content h2,
 .main-content .content-pages .content-posts .post .post-content h2,
 .main-content .content .content-posts .post .post-content h3,
 .main-content .content-pages .content-posts .post .post-content h3 {
-  padding: .5em 1em;
+  padding: 1%;
 }
 .main-content .content .content-posts .post .post-content a,
 .main-content .content-pages .content-posts .post .post-content a,
