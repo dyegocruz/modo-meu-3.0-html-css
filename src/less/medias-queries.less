@@ -151,6 +151,17 @@
                 }
             }
         }
+
+        .content, .content-pages {
+            .content-highlights {
+                .highlights-internal {
+                    a {
+                        color: @color-roxo;
+                        .highlight-title { display: block; }
+                    }
+                }
+            }
+        }
     }
 
     .main-footer-container {
@@ -285,6 +296,20 @@
 
                 .highlights-internal { width: 66%; }
                 .sidebar{ .f-right(); }
+            }
+        }
+
+        .content, .content-pages {
+            .content-highlights {
+                .highlights-internal {
+                    a {
+                        .highlight-title { display: none; }
+                        &:hover {
+                            color: @color-roxo;
+                            .highlight-title { display: block; }
+                        }
+                    }
+                }
             }
         }
     }

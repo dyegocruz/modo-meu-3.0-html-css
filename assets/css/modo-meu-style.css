@@ -392,14 +392,6 @@ a:hover {
   padding: 0 15%;
   text-align: center;
 }
-.main-content .content .content-highlights .highlights-internal a:hover,
-.main-content .content-pages .content-highlights .highlights-internal a:hover {
-  color: #3a4192;
-}
-.main-content .content .content-highlights .highlights-internal a:hover .highlight-title,
-.main-content .content-pages .content-highlights .highlights-internal a:hover .highlight-title {
-  display: block;
-}
 .main-content .content .page-title,
 .main-content .content-pages .page-title {
   padding: 1% 0;
@@ -1385,6 +1377,14 @@ a:hover {
   .main-content .content-pages .content-page .template-page .colaboradores .colaborador {
     width: 29%;
   }
+  .main-content .content .content-highlights .highlights-internal a,
+  .main-content .content-pages .content-highlights .highlights-internal a {
+    color: #3a4192;
+  }
+  .main-content .content .content-highlights .highlights-internal a .highlight-title,
+  .main-content .content-pages .content-highlights .highlights-internal a .highlight-title {
+    display: block;
+  }
   .main-footer-container .footer .social-footer {
     margin: 4% 38%;
     width: 25%;
@@ -1496,6 +1496,18 @@ a:hover {
   }
   .main-content .content-pages .content-highlights .sidebar {
     float: right;
+  }
+  .main-content .content .content-highlights .highlights-internal a .highlight-title,
+  .main-content .content-pages .content-highlights .highlights-internal a .highlight-title {
+    display: none;
+  }
+  .main-content .content .content-highlights .highlights-internal a:hover,
+  .main-content .content-pages .content-highlights .highlights-internal a:hover {
+    color: #3a4192;
+  }
+  .main-content .content .content-highlights .highlights-internal a:hover .highlight-title,
+  .main-content .content-pages .content-highlights .highlights-internal a:hover .highlight-title {
+    display: block;
   }
   .sidebar {
     display: block;
