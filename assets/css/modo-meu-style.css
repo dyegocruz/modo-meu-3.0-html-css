@@ -614,7 +614,6 @@ a:hover {
 .main-content .content .post-box-element,
 .main-content .content-pages .post-box-element {
   width: 100%;
-  margin-bottom: 3%;
   float: left;
 }
 .main-content .content .post-box-element h2,
@@ -632,7 +631,7 @@ a:hover {
 }
 .main-content .content .posts-related ul li,
 .main-content .content-pages .posts-related ul li {
-  width: 23%;
+  min-height: 190px;
   margin-left: 2.5%;
   padding-bottom: 2%;
   float: left;
@@ -645,6 +644,10 @@ a:hover {
 .main-content .content .posts-related ul li:nth-child(1),
 .main-content .content-pages .posts-related ul li:nth-child(1) {
   margin: 0;
+}
+.main-content .content .posts-related ul li .thumb-related-post,
+.main-content .content-pages .posts-related ul li .thumb-related-post {
+  height: 120px;
 }
 .main-content .content .posts-related ul li .icon-category,
 .main-content .content-pages .posts-related ul li .icon-category {
@@ -1310,6 +1313,10 @@ a:hover {
   .main-content .content .content-posts .post .post-content {
     margin: 10% 0;
   }
+  .main-content .content .posts-related ul li {
+    width: 47%;
+    margin-bottom: 5%;
+  }
   .main-content .content-pages .content-highlights .highlights-internal {
     display: none;
   }
@@ -1367,6 +1374,9 @@ a:hover {
   }
   .main-content .content .content-posts .post .post-footer .post-meta {
     width: 32.5%;
+  }
+  .main-content .content .posts-related ul li {
+    width: 23%;
   }
   .main-content .content-pages .content-highlights .highlights-internal {
     display: none;

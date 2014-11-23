@@ -530,8 +530,7 @@ a {
         }
 
         .post-box-element {
-            width: 100%;
-            margin-bottom: 3%;
+            width: 100%;            
             .f-left();
 
             h2 {
@@ -550,7 +549,7 @@ a {
                 padding: 0 2%;
 
                 li {
-                    width: 23%;
+                    min-height: 190px;         
                     margin-left: 2.5%;
                     padding-bottom: 2%;
                     &:nth-child(1){
@@ -562,9 +561,11 @@ a {
                     .b-bottom-gray();
                     .opacity-background-white();
 
+                    .thumb-related-post { height: 120px; }
+
                     .icon-category {
                         padding: 3% 5%;
-                    }
+                    }                    
                 }
             }
         }
