@@ -66,13 +66,41 @@ body {
 .b-bottom-gray {
   border-bottom: 2px solid #d6d6d6;
 }
-.icon-category {
-  width: 32px;
-  padding: 0.7em;
-}
 /*------- Aligns, Margins, Paddings and floats --------*/
 /*------- Backgrounds Categories --------*/
 /*------- Backgrounds Categories --------*/
+/*------- Icons --------*/
+.icon-category {
+  padding: 0.7em;
+}
+.icon-513,
+.colunas,
+.fotografia,
+.modomeu {
+  width: 33px;
+  height: 31px;
+}
+.cinema-e-tv,
+.design,
+.musica,
+.internet {
+  width: 32px;
+  height: 31px;
+}
+.eventos,
+.lugar {
+  width: 24px;
+  height: 32px;
+}
+.literatura {
+  width: 24px;
+  height: 34px;
+}
+.game {
+  width: 24px;
+  height: 31px;
+}
+/*------- Icons --------*/
 .link-rosa {
   color: #e73064;
 }
@@ -126,6 +154,7 @@ body {
   color: #898989;
   border: none;
   background: none;
+  outline: none;
 }
 .input-submit-generic {
   font-family: 'Archive', sans-serif;
@@ -922,6 +951,9 @@ a:hover {
   margin-top: 10%;
   padding: 0 4%;
 }
+.main-content .sidebar .highlights-podcast .post-data p {
+  color: #12aec0;
+}
 .main-content .sidebar .search {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1525,3 +1557,9 @@ a:hover {
 }
 /* Tv */
 /*------- Media Queries -------*/
+/*------- Ajustes -------*/
+.podPress_content img {
+  width: auto;
+  float: left;
+}
+/*------- Ajustes -------*/

@@ -38,7 +38,8 @@ module.exports = function(grunt) {
         less: {
             main: {                
                 files: {
-                    "assets/css/modo-meu-style.css": "src/less/modo-meu-style.less"
+                    "assets/css/modo-meu-style.css": "src/less/modo-meu-style.less",
+                    "../modomeu/wp-content/themes/modo-meu-theme-3.0/css/modo-meu-style.css": "src/less/modo-meu-style.less"
                 }
             }
         },

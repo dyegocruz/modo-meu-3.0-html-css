@@ -67,12 +67,48 @@ body {
 .opacity-background-gray-internal { background: rgba(239, 240, 255, 0.9); }
 
 .b-bottom-gray { border-bottom: 2px solid @color-border; }
-.icon-category { width: 32px; padding: 0.7em; }
 /*------- Aligns, Margins, Paddings and floats --------*/
 
 /*------- Backgrounds Categories --------*/
 
 /*------- Backgrounds Categories --------*/
+
+/*------- Icons --------*/
+.icon-category { padding: 0.7em; }
+
+.icon-513,
+.colunas,
+.fotografia,
+.modomeu {
+    width: 33px;
+    height: 31px;
+}
+
+.cinema-e-tv,
+.design,
+.musica,
+.internet {
+    width: 32px;
+    height: 31px;
+}
+
+.eventos,
+.lugar {
+    width: 24px;
+    height: 32px;
+}
+
+.literatura {
+    width: 24px;
+    height: 34px;
+}
+
+.game {
+    width: 24px;
+    height: 31px;
+}
+
+/*------- Icons --------*/
 
 .link-rosa { color: @color-rosa; }
 .post-data { font-size: 9pt; font-family: @main-font-family; color: @color-turquesa; }
@@ -93,6 +129,7 @@ body {
     color: @color-text;
     border: none;
     background: none;
+    outline: none;
 }
 
 .input-submit-generic {
@@ -808,6 +845,10 @@ a {
             .post-data {
                 margin-top: 10%;
                 padding: 0 4%;
+                
+                p {
+                    color: @color-turquesa;
+                }
             }
         }
 
@@ -1165,3 +1206,8 @@ a {
 @import "medias-queries.less";
 
 /*------- Media Queries -------*/
+
+
+/*------- Ajustes -------*/
+.podPress_content img { width: auto; float: left; }
+/*------- Ajustes -------*/
