@@ -29,7 +29,7 @@ body {
   -webkit-animation-duration: 0.1s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: linear;
-  background: url('../img/background-modo-meu.png') repeat;
+  background: url('../images/background-modo-meu.png') repeat;
 }
 /*------- Aligns, Margins, Paddings and floats --------*/
 .a-left {
@@ -974,7 +974,7 @@ a:hover {
   border: none;
   width: 16px;
   height: 16px;
-  background: url('../img/button-search.png') no-repeat center;
+  background: url('../images/button-search.png') no-repeat center;
 }
 .main-content .sidebar .search form .input-submit:hover {
   cursor: pointer;
@@ -986,14 +986,14 @@ a:hover {
   border: 1px solid;
 }
 .main-content .sidebar .postal-code h2 {
-  background: url('../img/icon-postal-code.png') no-repeat 20% 20%;
+  background: url('../images/icon-postal-code.png') no-repeat 20% 20%;
 }
 .main-content .sidebar .postal-code p {
   font-family: 'Dosis', sans-serif;
   color: #898989;
 }
 .main-content .sidebar .partners h2 {
-  background: url('../img/icon-partners.png') no-repeat 18% 20%;
+  background: url('../images/icon-partners.png') no-repeat 18% 20%;
 }
 .main-content .sidebar .partners nav {
   width: 80%;
@@ -1004,15 +1004,15 @@ a:hover {
   height: 80px;
 }
 .main-content .sidebar .facebook-box h2 {
-  background: url('../img/icon-like.png') no-repeat 22%;
+  background: url('../images/icon-like.png') no-repeat 22%;
   padding-top: 2%;
 }
 .main-content .sidebar .gplus-box h2 {
-  background: url('../img/icon-plus.png') no-repeat 27%;
+  background: url('../images/icon-plus.png') no-repeat 27%;
 }
 .main-content .sidebar .newsletter h2 {
   padding: 0 32%;
-  background: url('../img/icon-postal-code.png') no-repeat 22%;
+  background: url('../images/icon-postal-code.png') no-repeat 22%;
   text-align: left;
 }
 .main-content .sidebar .newsletter form {
@@ -1057,7 +1057,7 @@ a:hover {
 }
 .main-content .sidebar .about-513-sidebar h2 {
   margin-top: 3%;
-  background: url('../img/icon-513.png') no-repeat 20% 20%;
+  background: url('../images/icon-513.png') no-repeat 20% 20%;
 }
 .main-content .sidebar .about-513-sidebar p {
   text-transform: none;
@@ -1066,7 +1066,7 @@ a:hover {
   margin: 0 auto;
 }
 .main-content .sidebar .send-email h2 {
-  background: url('../img/icon-postal-code.png') no-repeat 20% 20%;
+  background: url('../images/icon-postal-code.png') no-repeat 20% 20%;
 }
 .main-content .sidebar .send-email p {
   padding: 0 10%;
@@ -1188,7 +1188,7 @@ a:hover {
   font-size: 10pt;
   text-transform: uppercase;
   color: #3a4192;
-  background: url("../img/arrow-down.png") no-repeat 95% 50% #ffffff;
+  background: url("../images/arrow-down.png") no-repeat 95% 50% #ffffff;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1241,52 +1241,52 @@ a:hover {
   background-color: #fff;
 }
 .main-footer-container .footer .social-footer .twitter {
-  background-image: url('../img/Twitter-branco.png');
+  background-image: url('../images/twitter-branco.png');
 }
 .main-footer-container .footer .social-footer .twitter:hover {
-  background-image: url('../img/Twitter-turquesa.png');
+  background-image: url('../images/twitter-turquesa.png');
 }
 .main-footer-container .footer .social-footer .facebook {
-  background-image: url('../img/Facebook-branco.png');
+  background-image: url('../images/facebook-branco.png');
 }
 .main-footer-container .footer .social-footer .facebook:hover {
-  background-image: url('../img/Facebook-turquesa.png');
+  background-image: url('../images/facebook-turquesa.png');
 }
 .main-footer-container .footer .social-footer .feed {
-  background-image: url('../img/Feed-branco.png');
+  background-image: url('../images/feed-branco.png');
 }
 .main-footer-container .footer .social-footer .feed:hover {
-  background-image: url('../img/Feed-turquesa.png');
+  background-image: url('../images/feed-turquesa.png');
 }
 .main-footer-container .footer .social-footer .gplus {
-  background-image: url('../img/Gplus-branco.png');
+  background-image: url('../images/gplus-branco.png');
 }
 .main-footer-container .footer .social-footer .gplus:hover {
-  background-image: url('../img/Gplus-turquesa.png');
+  background-image: url('../images/gplus-turquesa.png');
 }
 .main-footer-container .footer .social-footer .youtube {
-  background-image: url('../img/YouTube-branco.png');
+  background-image: url('../images/youtube-branco.png');
 }
 .main-footer-container .footer .social-footer .youtube:hover {
-  background-image: url('../img/YouTube-turquesa.png');
+  background-image: url('../images/youtube-turquesa.png');
 }
 .main-footer-container .footer .social-footer .pinterest {
-  background-image: url('../img/Pinterest-branco.png');
+  background-image: url('../images/pinterest-branco.png');
 }
 .main-footer-container .footer .social-footer .pinterest:hover {
-  background-image: url('../img/Pinterest-turquesa.png');
+  background-image: url('../images/pinterest-turquesa.png');
 }
 .main-footer-container .footer .social-footer .filmow {
-  background-image: url('../img/Filmow-branco.png');
+  background-image: url('../images/filmow-branco.png');
 }
 .main-footer-container .footer .social-footer .filmow:hover {
-  background-image: url('../img/Filmow-turquesa.png');
+  background-image: url('../images/filmow-turquesa.png');
 }
 .main-footer-container .footer .social-footer .alvanista {
-  background-image: url('../img/Alvanista-branco.png');
+  background-image: url('../images/alvanista-branco.png');
 }
 .main-footer-container .footer .social-footer .alvanista:hover {
-  background-image: url('../img/Alvanista-turquesa.png');
+  background-image: url('../images/alvanista-turquesa.png');
 }
 .main-footer-container .footer-benjamin {
   font-family: 'Dosis', sans-serif;

@@ -28,30 +28,30 @@ Tags: -
 @default-radius: 3px;
 
 @font-face {
-	font-family: "Archive";
-	src: url("fonts/Archive.eot?") format("eot"),
-		url("fonts/Archive.woff") format("woff"),
-		url("fonts/Archive.ttf") format("truetype"),
-		url("fonts/Archive.svg#Archive") format("svg");
-	font-weight: normal;
-	font-style: normal;
+    font-family: "Archive";
+    src: url("fonts/Archive.eot?") format("eot"),
+        url("fonts/Archive.woff") format("woff"),
+        url("fonts/Archive.ttf") format("truetype"),
+        url("fonts/Archive.svg#Archive") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 html, body { height: 100%; }
 
 body {
-	font-family: arial;	
+    font-family: arial; 
     font-size: 100%;
-	font-style: normal;
-	line-height: 1.4;
-	margin: 0;    
-	zoom: 1;
-	-webkit-animation-delay: 0.1s;
-	-webkit-animation-name: fontfix;
-	-webkit-animation-duration: 0.1s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-timing-function: linear;
-	background: url('../img/background-modo-meu.png') repeat;
+    font-style: normal;
+    line-height: 1.4;
+    margin: 0;    
+    zoom: 1;
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    background: url('../images/background-modo-meu.png') repeat;
 }
 
 /*------- Aligns, Margins, Paddings and floats --------*/
@@ -172,7 +172,7 @@ body {
 
 .transition(@value){
     webkit-transition-duration: @value;
-	transition-duration: @value;
+    transition-duration: @value;
 }
 
 /*------- Defaults -------*/
@@ -185,39 +185,39 @@ img { border: none; }
 strong, b { font-weight: bold; }
 
 a {
-	font-family: @main-font-family;
-	color: @color-roxo;	
-	text-decoration: none;
-	.transition(0.3s);
-	
-	&:hover{
-		color: @color-turquesa;
-	}
+    font-family: @main-font-family;
+    color: @color-roxo; 
+    text-decoration: none;
+    .transition(0.3s);
+    
+    &:hover{
+        color: @color-turquesa;
+    }
 }
 
 /*------- Defaults -------*/
 
 .menu-top {
-	background: @color-menu-top;
-	padding: 0.6% 0;
-	width: 100%;
-	top: 0;
-	left: 0;	
-	z-index: 9999;
+    background: @color-menu-top;
+    padding: 0.6% 0;
+    width: 100%;
+    top: 0;
+    left: 0;    
+    z-index: 9999;
     position: fixed;
 
-	nav{
+    nav{
 
-		max-width: @max-width-container;
-		width: 100%;
-		position: relative;
+        max-width: @max-width-container;
+        width: 100%;
+        position: relative;
 
-		a {
-			font-size: 11pt;
-			padding-right: 1%;
-		}		
-		
-	}
+        a {
+            font-size: 11pt;
+            padding-right: 1%;
+        }       
+        
+    }
 }
 
 .menu-floating {
@@ -259,46 +259,46 @@ a {
 }
 
 .site {
-	max-width: @max-width-container;
+    max-width: @max-width-container;
 }
 
 .header {
 
-	margin-top: 5%;
+    margin-top: 5%;
 
-	.logo-top {		
-		margin-left: 2%;
-	}
+    .logo-top {     
+        margin-left: 2%;
+    }
 
-	.header-right {		
-		width: 80%;
-		margin-top: 1%;
+    .header-right {     
+        width: 80%;
+        margin-top: 1%;
 
-		.banner-top {			
-			max-width: 728px;
-			max-height: 90px;
-			width: 90%;
-			height: 90px;
-			border: 1px solid @color-rosa;
-		}
+        .banner-top {           
+            max-width: 728px;
+            max-height: 90px;
+            width: 90%;
+            height: 90px;
+            border: 1px solid @color-rosa;
+        }
 
-		.menu-category {
-			
-			margin-top: 1em;
-			background: #fff;
-			padding: 10px 0;
+        .menu-category {
+            
+            margin-top: 1em;
+            background: #fff;
+            padding: 10px 0;
 
-			a {
-				font-size: 13pt;
-				padding: 0 1%;
-			}
-		}
-	}
+            a {
+                font-size: 13pt;
+                padding: 0 1%;
+            }
+        }
+    }
 }
 
 .main-content {
-	width: 100%;
-	margin-top: 1%;
+    width: 100%;
+    margin-top: 1%;
     
     .content, .content-pages {
         
@@ -331,7 +331,7 @@ a {
                 .highlights-home-right {
                     width: 64%;
 
-                    .highlights-home {					
+                    .highlights-home {                  
                         margin-bottom: 6%;
                         .highlights-home-img { width: 41.5%; margin-bottom: -2px; }
                         .border-radius();
@@ -351,7 +351,7 @@ a {
                                 bottom: 0;
                             }
                         }
-                    }				
+                    }               
                 }
             }
 
@@ -807,8 +807,8 @@ a {
         }
     }
     
-	.sidebar {
-		width: 32%;
+    .sidebar {
+        width: 32%;
 
         .widget {
             width: 100%;
@@ -872,7 +872,7 @@ a {
                     border: none;
                     width: 16px;
                     height: 16px;
-                    background: url('../img/button-search.png') no-repeat center;
+                    background: url('../images/button-search.png') no-repeat center;
 
                     &:hover { cursor: pointer; }
                 }
@@ -890,7 +890,7 @@ a {
 
         .postal-code {
 
-            h2 { background: url('../img/icon-postal-code.png') no-repeat 20% 20%; }
+            h2 { background: url('../images/icon-postal-code.png') no-repeat 20% 20%; }
             p {
                 font-family: @second-font-family;
                 color: @color-text;
@@ -899,7 +899,7 @@ a {
 
         .partners {
 
-            h2 { background: url('../img/icon-partners.png') no-repeat 18% 20%; }
+            h2 { background: url('../images/icon-partners.png') no-repeat 18% 20%; }
 
             nav {
                 width: 80%;
@@ -911,19 +911,19 @@ a {
 
         .facebook-box{
             h2 {
-                background: url('../img/icon-like.png') no-repeat 22%;
+                background: url('../images/icon-like.png') no-repeat 22%;
                 padding-top: 2%;
             }
         }
 
         .gplus-box {
-            h2 { background: url('../img/icon-plus.png') no-repeat 27%; }
+            h2 { background: url('../images/icon-plus.png') no-repeat 27%; }
         }
 
         .newsletter {
             h2 {
                 padding: 0 32%;
-                background: url('../img/icon-postal-code.png') no-repeat 22%;
+                background: url('../images/icon-postal-code.png') no-repeat 22%;
 
                 .a-left();
             }
@@ -956,7 +956,7 @@ a {
 
             h2 {
                 margin-top: 3%;
-                background: url('../img/icon-513.png') no-repeat 20% 20%;
+                background: url('../images/icon-513.png') no-repeat 20% 20%;
             }
 
             p {
@@ -969,7 +969,7 @@ a {
 
         .send-email {
 
-            h2 { background: url('../img/icon-postal-code.png') no-repeat 20% 20%; }
+            h2 { background: url('../images/icon-postal-code.png') no-repeat 20% 20%; }
 
             p {
                 padding: 0 10%;
@@ -992,7 +992,7 @@ a {
                 }
             }
         }
-	}
+    }
 }
 
 .button-back-to-top {
@@ -1018,9 +1018,9 @@ a {
 .main-footer-container {
     position: relative;
     width: 100%;
-	bottom: 0px;
-	left: 0px;	
-	z-index: 9999;
+    bottom: 0px;
+    left: 0px;  
+    z-index: 9999;
     background: @color-turquesa;
     
     .footer {        
@@ -1094,7 +1094,7 @@ a {
                 font-size: 10pt;
                 text-transform: uppercase;
                 color: @color-roxo;
-                background: url("../img/arrow-down.png") no-repeat 95% 50% #fff;
+                background: url("../images/arrow-down.png") no-repeat 95% 50% #fff;
                 border: none;
                 -webkit-appearance: none;
                  -moz-appearance: none;
@@ -1139,36 +1139,36 @@ a {
 
 
             .twitter {
-                background-image: url('../img/Twitter-branco.png');
-                &:hover{ background-image: url('../img/Twitter-turquesa.png'); }
+                background-image: url('../images/twitter-branco.png');
+                &:hover{ background-image: url('../images/twitter-turquesa.png'); }
             }
             .facebook {
-                background-image: url('../img/Facebook-branco.png');
-                &:hover{ background-image: url('../img/Facebook-turquesa.png'); }
+                background-image: url('../images/facebook-branco.png');
+                &:hover{ background-image: url('../images/facebook-turquesa.png'); }
             }
             .feed {
-                background-image: url('../img/Feed-branco.png');
-                &:hover{ background-image: url('../img/Feed-turquesa.png'); }
+                background-image: url('../images/feed-branco.png');
+                &:hover{ background-image: url('../images/feed-turquesa.png'); }
             }
             .gplus {
-                background-image: url('../img/Gplus-branco.png');
-                &:hover{ background-image: url('../img/Gplus-turquesa.png'); }
+                background-image: url('../images/gplus-branco.png');
+                &:hover{ background-image: url('../images/gplus-turquesa.png'); }
             }
             .youtube {
-                background-image: url('../img/YouTube-branco.png');
-                &:hover{ background-image: url('../img/YouTube-turquesa.png'); }
+                background-image: url('../images/youtube-branco.png');
+                &:hover{ background-image: url('../images/youtube-turquesa.png'); }
             }
             .pinterest {
-                background-image: url('../img/Pinterest-branco.png');
-                &:hover{ background-image: url('../img/Pinterest-turquesa.png'); }
+                background-image: url('../images/pinterest-branco.png');
+                &:hover{ background-image: url('../images/pinterest-turquesa.png'); }
             }
             .filmow {
-                background-image: url('../img/Filmow-branco.png');
-                &:hover{ background-image: url('../img/Filmow-turquesa.png'); }
+                background-image: url('../images/filmow-branco.png');
+                &:hover{ background-image: url('../images/filmow-turquesa.png'); }
             }
             .alvanista {
-                background-image: url('../img/Alvanista-branco.png');
-                &:hover{ background-image: url('../img/Alvanista-turquesa.png'); }
+                background-image: url('../images/alvanista-branco.png');
+                &:hover{ background-image: url('../images/alvanista-turquesa.png'); }
             }
         }
     }
