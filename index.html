@@ -51,7 +51,7 @@
 
 	<div class="menu-floating">
 	    <nav>
-            <a href="#" class="logo"><img src="/assets/img/logo-menu-horizontal.png" /></a>
+            <a href="#" class="logo"><img src="/assets/images/logo-menu-horizontal.png" /></a>
 	        <a href="#">Cinema & TV</a>
             <a href="#">Colunas</a>
             <a href="#">Design</a>
@@ -69,25 +69,40 @@
 		<header class="header">
 			<h1 class="logo-top f-left">			    
                 <a href="#">
-                    <img src="assets/img/logo-modo-meu.png">
+                    <img src="assets/images/logo-modo-meu.png">
                 </a> 				
 			</h1>
 			<div class="header-right f-right">
 				<div class="banner-top margin-auto">
 					banner-top
 				</div>
-				<nav class="menu-category a-center">
-					<a href="#">Cinema & TV</a>
-					<a href="#">Colunas</a>
-					<a href="#">Design</a>
-					<a href="#">Evento</a>
-					<a href="#">Fotografia</a>
-					<a href="#">Game</a>
-					<a href="#">Internet</a>
-					<a href="#">Literatura</a>
-					<a href="#">Música</a>
-				</nav>
-			</div>			
+				<ul class="menu-category f-left a-center">
+					<li class="menu-categ-item">
+                        <a href="#" id="menu-categ-0">Cinema & TV</a>
+                        <ul class="submenu-category a-center menu-categ-0">
+                            <li><a href="#">Mary disse</a></li>
+                            <li><a href="#">Uma vida de merda</a></li>
+                            <li><a href="#">Aprendendo sozinha</a></li>
+                        </ul>
+                    </li>
+					<li class="menu-categ-item"><a href="#" id="menu-categ-1">Colunas</a></li>
+					<li class="menu-categ-item"><a href="#" id="menu-categ-2">Design</a></li>
+					<li class="menu-categ-item"><a href="#" id="menu-categ-3">Evento</a></li>
+					<li class="menu-categ-item"><a href="#" id="menu-categ-4">Fotografia</a></li>
+					<li class="menu-categ-item"><a href="#" id="menu-categ-5">Game</a></li>
+					<li class="menu-categ-item"><a href="#" id="menu-categ-6">Internet</a></li>
+					<li class="menu-categ-item"><a href="#" id="menu-categ-7">Literatura</a></li>
+					<li class="menu-categ-item"><a href="#" id="menu-categ-8">Música</a></li>
+					
+<!--
+					<nav class="submenu-category a-center menu-categ-1">
+                        <a href="#">Mary disse</a>
+                        <a href="#">Uma vida de merda</a>
+                        <a href="#">Aprendendo sozinha</a>
+                    </nav>
+-->
+				</ul>				
+			</div>
 		</header>
 
 		<div class="main-content f-left">
@@ -97,10 +112,10 @@
                 <section class="content-highlights">
                     <div class="highlights-home">
                         <div class="highlights-home-first opacity-background-white b-bottom-gray f-left">
-                            <img class="highlights-home-first-img" src="assets/img/hightlight-1.jpg">
+                            <img class="highlights-home-first-img" src="assets/images/hightlight-1.jpg">
                             <div class="icon-category cinema-e-tv f-left">
                                 <a href="#">
-                                    <img src="assets/img/cat-cinema-e-tv.png" />
+                                    <img src="assets/images/cat-cinema-e-tv.png" />
                                 </a>
                             </div>
                             <h3>							
@@ -113,11 +128,11 @@
                         </div>
                         <div class="highlights-home-right opacity-background-white f-right">    
                             <div class="highlights-home b-bottom-gray f-left">
-                                <img src="assets/img/hightlight-2.jpg" class="highlights-home-img f-left">
+                                <img src="assets/images/hightlight-2.jpg" class="highlights-home-img f-left">
                                 <div class="highlights-home-right-data f-left">
                                     <div class="icon-category f-left">
                                         <a href="#">                               
-                                            <img src="assets/img/cat-musica.png" />
+                                            <img src="assets/images/cat-musica.png" />
                                         </a>
                                     </div>
                                     <h3>							
@@ -130,11 +145,11 @@
                                 </div>
                             </div>
                             <div class="highlights-home opacity-background-white b-bottom-gray f-left">
-                                <img src="assets/img/hightlight-3.jpg" class="highlights-home-img f-left">
+                                <img src="assets/images/hightlight-3.jpg" class="highlights-home-img f-left">
                                 <div class="highlights-home-right-data f-left">
                                     <div class="icon-category f-left">
                                         <a href="#">                               
-                                            <img src="assets/img/cat-cinema-e-tv.png" />
+                                            <img src="assets/images/cat-cinema-e-tv.png" />
                                         </a>
                                     </div>
                                     <h3>							
@@ -158,7 +173,7 @@
                             <div class="title">
                                 <div class="icon-category literatura f-left">
                                     <a href="#">                               
-                                        <img src="assets/img/cat-literatura.png" />
+                                        <img src="assets/images/cat-literatura.png" />
                                     </a>
                                 </div>
                                 <h2>							
@@ -178,7 +193,7 @@
                                 add_filter('the_content', 'filter_ptags_on_images'); -->
                         
                         <div class="post-content">
-                            <a href="#"><img src="assets/img/image-post-01.jpg" /></a>
+                            <a href="#"><img src="assets/images/image-post-01.jpg" /></a>
                             <h3>Você conhece Zac Brown Band? (h3)</h3>
                             <p>H5 - A alguns meses atrás comentei sobre o novo álbum da banda Foo Fighters, que está previsto para o segundo semestre de 2014 e de acordo com o próprio Dave Grohl, esse será o trabalho mais revolucionário dos últimos tempos (<a href="#">falei disso aqui - h2</a>). Bem, mas o objetivo desse post não é falar de como o Foo Fighters é uma banda incrível (afinal, todo mundo já sabe), mas sim do grupo <strong>Zac Brown Band (h4)</strong>, no qual Dave apadrinhou e esteve presente na produção de seus últimos álbuns, (The Grohl Sessions Vol. 1 e 2).</p>
                             <p>Para não deixar ninguém por fora do assunto, já que não conheço muita gente que os conhece o grupo, a banda do vocalista Zac Brown, com 12 anos de estrada, possui sete e integrantes – Zac Brown (vocal e violão), Jimmy De Martini (violino e vocal), John Driskell Hopkins (baixo e vocal), Coy Bowles (violão e teclado), Chris Fryar (percussão) e Clay Cook (violão, teclado, bandolim, guitarra e vocal) – e se classifica no clássico gênero Country, com bota, chapéu, músicas irresistíveis e tudo.</p>
@@ -191,7 +206,7 @@
                         
                         <footer class="post-footer opacity-background-white f-left">
                             <div class="author post-meta">
-                                <img class="f-left" src="assets/img/image-author-01.jpg" />
+                                <img class="f-left" src="assets/images/image-author-01.jpg" />
                                 <p>Post escrito por:</p>
                                 <h2><a href="#">Mariana Fernandes</a></h2>
                             </div>
@@ -202,7 +217,7 @@
                             </div>
                             <div class="comments a-center post-meta">                                
                                 <a href="#">
-                                    <img class="f-left" src="assets/img/icon-comments.png" />
+                                    <img class="f-left" src="assets/images/icon-comments.png" />
                                     Comentário(s) >
                                 </a>                                
                             </div>
@@ -216,7 +231,7 @@
                             <div class="title">
                                 <div class="icon-category f-left">
                                     <a href="#">
-                                        <img src="assets/img/cat-musica.png" />
+                                        <img src="assets/images/cat-musica.png" />
                                     </a>
                                 </div>
                                 <h2>
@@ -236,7 +251,7 @@
                                 add_filter('the_content', 'filter_ptags_on_images'); -->
 
                         <div class="post-content">
-                            <a href="#"><img src="assets/img/image-post-01.jpg" /></a>
+                            <a href="#"><img src="assets/images/image-post-01.jpg" /></a>
                             <h3>Você conhece Zac Brown Band? (h3)</h3>
                             <p>H5 - A alguns meses atrás comentei sobre o novo álbum da banda Foo Fighters, que está previsto para o segundo semestre de 2014 e de acordo com o próprio Dave Grohl, esse será o trabalho mais revolucionário dos últimos tempos (<a href="#">falei disso aqui - h2</a>). Bem, mas o objetivo desse post não é falar de como o Foo Fighters é uma banda incrível (afinal, todo mundo já sabe), mas sim do grupo <strong>Zac Brown Band (h4)</strong>, no qual Dave apadrinhou e esteve presente na produção de seus últimos álbuns, (The Grohl Sessions Vol. 1 e 2).</p>
                             <p>Para não deixar ninguém por fora do assunto, já que não conheço muita gente que os conhece o grupo, a banda do vocalista Zac Brown, com 12 anos de estrada, possui sete e integrantes – Zac Brown (vocal e violão), Jimmy De Martini (violino e vocal), John Driskell Hopkins (baixo e vocal), Coy Bowles (violão e teclado), Chris Fryar (percussão) e Clay Cook (violão, teclado, bandolim, guitarra e vocal) – e se classifica no clássico gênero Country, com bota, chapéu, músicas irresistíveis e tudo.</p>
@@ -249,7 +264,7 @@
 
                         <footer class="post-footer opacity-background-white f-left">
                             <div class="author post-meta">
-                                <img class="f-left" src="assets/img/image-author-01.jpg" />
+                                <img class="f-left" src="assets/images/image-author-01.jpg" />
                                 <p>Post escrito por:</p>
                                 <h2><a href="#">Mariana Fernandes</a></h2>
                             </div>
@@ -260,7 +275,7 @@
                             </div>
                             <div class="comments a-center post-meta">
                                 <a href="#">
-                                    <img class="f-left" src="assets/img/icon-comments.png" />
+                                    <img class="f-left" src="assets/images/icon-comments.png" />
                                     Comentário(s) >
                                 </a>
                             </div>
@@ -272,7 +287,7 @@
                     
                     
                     <nav class="pagination a-center f-left">
-                        <a href="#" class="arrow"><img class="arrow-img" src="assets/img/pagination-arrow-left.png" /></a>
+                        <a href="#" class="arrow"><img class="arrow-img" src="assets/images/pagination-arrow-left.png" /></a>
                         <a href="#" class="current">1</a>
                         <a href="#">2</a>
                         <a href="#">3</a>
@@ -280,7 +295,7 @@
                         <a href="#">5</a>
                         <a href="#" class="ellipsis">...</a>
                         <a href="#">175</a>
-                        <a href="#" class="arrow"><img class="arrow-img" src="assets/img/pagination-arrow-right.png" /></a>
+                        <a href="#" class="arrow"><img class="arrow-img" src="assets/images/pagination-arrow-right.png" /></a>
                     </nav>                    
                     
                 </section>
@@ -290,10 +305,10 @@
 
 			<aside class="sidebar a-left f-right">
 				<div class="highlights-podcast widget b-bottom-gray">
-                    <img class="highlights-podcast-img" src="assets/img/hightlight-podcast.jpg">
+                    <img class="highlights-podcast-img" src="assets/images/hightlight-podcast.jpg">
                     <div class="icon-category icon-513 f-left">
                         <a href="#">
-                            <img src="assets/img/cat-513.png" />
+                            <img src="assets/images/cat-513.png" />
                         </a>
                     </div>
                     <h3>
@@ -312,14 +327,14 @@
                 </div>
                 <div class="social widget">
                      <nav>
-                         <a href="#"><img src="/assets/img/twitter.png" /></a>
-                         <a href="#"><img src="/assets/img/facebook.png" /></a>
-                         <a href="#"><img src="/assets/img/feed.png" /></a>
-                         <a href="#"><img src="/assets/img/gplus.png" /></a>
-                         <a href="#"><img src="/assets/img/youtube.png" /></a>
-                         <a href="#"><img src="/assets/img/pinterest.png" /></a>
-                         <a href="#"><img src="/assets/img/filmow.png" /></a>
-                         <a href="#"><img src="/assets/img/alvanista.png" /></a>
+                         <a href="#"><img src="/assets/images/twitter.png" /></a>
+                         <a href="#"><img src="/assets/images/facebook.png" /></a>
+                         <a href="#"><img src="/assets/images/feed.png" /></a>
+                         <a href="#"><img src="/assets/images/gplus.png" /></a>
+                         <a href="#"><img src="/assets/images/youtube.png" /></a>
+                         <a href="#"><img src="/assets/images/pinterest.png" /></a>
+                         <a href="#"><img src="/assets/images/filmow.png" /></a>
+                         <a href="#"><img src="/assets/images/alvanista.png" /></a>
                      </nav>
                 </div>
                 <div class="adsense widget">
@@ -340,12 +355,12 @@
                 <div class="partners widget">
                     <h2>Super parceiros</h2>
                     <nav>
-                        <a href="#"><img src="assets/img/image-partner-default.png" /></a>
-                        <a href="#"><img src="assets/img/image-partner-default.png" /></a>
-                        <a href="#"><img src="assets/img/image-partner-default.png" /></a>
-                        <a href="#"><img src="assets/img/image-partner-default.png" /></a>
-                        <a href="#"><img src="assets/img/image-partner-default.png" /></a>
-                        <a href="#"><img src="assets/img/image-partner-default.png" /></a>
+                        <a href="#"><img src="assets/images/image-partner-default.png" /></a>
+                        <a href="#"><img src="assets/images/image-partner-default.png" /></a>
+                        <a href="#"><img src="assets/images/image-partner-default.png" /></a>
+                        <a href="#"><img src="assets/images/image-partner-default.png" /></a>
+                        <a href="#"><img src="assets/images/image-partner-default.png" /></a>
+                        <a href="#"><img src="assets/images/image-partner-default.png" /></a>
                     </nav>
                 </div>
 
@@ -376,10 +391,10 @@
 	</div>
 
     <footer class="main-footer-container f-left">
-       <a href="#" class="button-back-to-top"><img src="assets/img/arrow-up-white.png" /></a>
+       <a href="#" class="button-back-to-top"><img src="assets/images/arrow-up-white.png" /></a>
         <div class="footer margin-auto">
             <div class="logo-modo-meu widget">
-                <a href="#"><img src="assets/img/logo-modo-meu-white.png" /></a>
+                <a href="#"><img src="assets/images/logo-modo-meu-white.png" /></a>
                 <div class="copyright">
                     Modo Meu - All<br />
                     Rights Reserved<br />
@@ -430,7 +445,7 @@
        
        <div class="footer-benjamin a-center f-left">
            <div class="text a-right f-left">Site planejado, produzido e<br />pertencente ao Benjamin studio ©</div>
-           <div class="logo-container a-left f-left"><a href="#" class="logo-benjamin"><img src="assets/img/logo-benjamin.png" /></a></div>
+           <div class="logo-container a-left f-left"><a href="#" class="logo-benjamin"><img src="assets/images/logo-benjamin.png" /></a></div>
        </div>
 	</footer>
 	

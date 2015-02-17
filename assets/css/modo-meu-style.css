@@ -67,8 +67,6 @@ body {
   border-bottom: 2px solid #d6d6d6;
 }
 /*------- Aligns, Margins, Paddings and floats --------*/
-/*------- Backgrounds Categories --------*/
-/*------- Backgrounds Categories --------*/
 /*------- Icons --------*/
 .icon-category {
   padding: 0.7em;
@@ -298,16 +296,40 @@ a:hover {
   max-height: 90px;
   width: 90%;
   height: 90px;
-  border: 1px solid #e73064;
 }
 .header .header-right .menu-category {
   margin-top: 1em;
   background: #fff;
   padding: 10px 0;
+  width: 100%;
+  position: relative;
+  webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
-.header .header-right .menu-category a {
+.header .header-right .menu-category .arrow-menu {
+  background: url('../images/arrow-down-gray.png') center 30px no-repeat;
+}
+.header .header-right .menu-category li {
+  webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  display: inline-block;
+  padding: 1%;
+}
+.header .header-right .menu-category li a {
   font-size: 13pt;
-  padding: 0 1%;
+}
+.header .header-right .menu-category li .submenu-category {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  /*a {
+                        font-size: 10pt;
+                        color: @color-rosa;
+                        &:hover{
+                            color: @color-turquesa;
+                        }
+                    }*/
 }
 .main-content {
   width: 100%;
@@ -467,6 +489,19 @@ a:hover {
   margin-right: auto;
   margin-top: 2%;
   margin-bottom: 2%;
+}
+.main-content .content .content-posts .post .post-content .podPress_content,
+.main-content .content-pages .content-posts .post .post-content .podPress_content {
+  padding: 0 1%;
+}
+.main-content .content .content-posts .post .post-content .podPress_content audio,
+.main-content .content-pages .content-posts .post .post-content .podPress_content audio {
+  width: 100%;
+}
+.main-content .content .content-posts .post .post-content .podPress_content img,
+.main-content .content-pages .content-posts .post .post-content .podPress_content img {
+  width: auto;
+  float: left;
 }
 .main-content .content .content-posts .post .post-content p,
 .main-content .content-pages .content-posts .post .post-content p {
@@ -1308,6 +1343,10 @@ a:hover {
   width: 146px;
   height: 26px;
 }
+#comments,
+#disqus_thread {
+  width: 100%;
+}
 /*------- Media Queries -------*/
 /* Mobile  */
 @media screen and (min-width: 320px) {
@@ -1445,8 +1484,8 @@ a:hover {
     width: auto;
   }
   .header .header-right .menu-category {
-    margin-top: 2%;
-    padding: 0;
+    margin-top: 1%;
+    padding: 0 0 3% 5%;
   }
   .main-content .content .content-highlights .highlights-home .highlights-home-first {
     display: block;
@@ -1557,9 +1596,3 @@ a:hover {
 }
 /* Tv */
 /*------- Media Queries -------*/
-/*------- Ajustes -------*/
-.podPress_content img {
-  width: auto;
-  float: left;
-}
-/*------- Ajustes -------*/

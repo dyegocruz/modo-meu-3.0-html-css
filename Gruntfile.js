@@ -30,8 +30,10 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
           },
           build: {
-            src: 'src/js/scripts.js',
-            dest: 'assets/js/scripts.js'
+            files: {
+                'assets/js/scripts.js': ['src/js/scripts.js'],
+                '../modomeu/wp-content/themes/modo-meu-theme-3.0/js/scripts.js': ['src/js/scripts.js']
+            }
           }
         },
         

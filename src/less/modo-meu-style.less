@@ -69,10 +69,6 @@ body {
 .b-bottom-gray { border-bottom: 2px solid @color-border; }
 /*------- Aligns, Margins, Paddings and floats --------*/
 
-/*------- Backgrounds Categories --------*/
-
-/*------- Backgrounds Categories --------*/
-
 /*------- Icons --------*/
 .icon-category { padding: 0.7em; }
 
@@ -263,7 +259,6 @@ a {
 }
 
 .header {
-
     margin-top: 5%;
 
     .logo-top {     
@@ -278,20 +273,45 @@ a {
             max-width: 728px;
             max-height: 90px;
             width: 90%;
-            height: 90px;
-            border: 1px solid @color-rosa;
+            height: 90px;            
         }
 
-        .menu-category {
-            
+        .menu-category {         
             margin-top: 1em;
             background: #fff;
             padding: 10px 0;
-
-            a {
-                font-size: 13pt;
-                padding: 0 1%;
+            width: 100%;
+            position: relative;
+            .transition(0.3s);
+            
+            .arrow-menu {
+                background: url('../images/arrow-down-gray.png') center 30px no-repeat;
             }
+
+            li {
+                .transition(0.3s);
+                display: inline-block;
+                padding: 1%;                
+
+                a {                    
+                    font-size: 13pt;                    
+                }                
+
+                .submenu-category {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+
+                    /*a {
+                        font-size: 10pt;
+                        color: @color-rosa;
+                        &:hover{
+                            color: @color-turquesa;
+                        }
+                    }*/
+                }
+            }                            
         }
     }
 }
@@ -331,7 +351,7 @@ a {
                 .highlights-home-right {
                     width: 64%;
 
-                    .highlights-home {                  
+                    .highlights-home {
                         margin-bottom: 6%;
                         .highlights-home-img { width: 41.5%; margin-bottom: -2px; }
                         .border-radius();
@@ -434,7 +454,18 @@ a {
                         margin-top: 2%;
                         margin-bottom: 2%;
                     }
-                    
+                     
+                    //Ajustes PodPress                    
+                    .podPress_content { 
+                        padding: 0 1%; 
+                        
+                        audio { width: 100%; }
+                        img { 
+                            width: auto; 
+                            float: left; 
+                        }
+                    }                    
+
                     p {
                         font-family: "Arial";
                         font-size: 11pt;
@@ -1201,13 +1232,9 @@ a {
     }
 }
 
-/*------- Media Queries -------*/
+//Ajustes Disqus
+#comments, #disqus_thread { width: 100%; }
 
+/*------- Media Queries -------*/
 @import "medias-queries.less";
-
 /*------- Media Queries -------*/
-
-
-/*------- Ajustes -------*/
-.podPress_content img { width: auto; float: left; }
-/*------- Ajustes -------*/
