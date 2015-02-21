@@ -1,3 +1,6 @@
 ### grunt ###
 # Grunt usually compiles files inside this directory
 node_modules/
+
+#Mac Files
+*.DS_Store

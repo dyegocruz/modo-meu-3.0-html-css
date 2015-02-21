@@ -290,6 +290,67 @@ a:hover {
 .header .header-right {
   width: 80%;
   margin-top: 1%;
+  /*.menu-category {
+            margin-top: 1em;
+            background: #fff;
+            padding: 10px 0;
+            width: 100%;
+            position: relative;
+            .transition(0.3s);
+
+            li {
+                display: inline-block;
+                margin: 1%;
+
+                .arrow-menu {
+                    display: none;
+                    position: absolute;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    right: 0;
+                    width: 7px;
+                    height: 5px;
+                    margin: 0 auto;
+                    background: url('../images/arrow-down-gray.png') no-repeat;
+                }
+
+                a {
+                    font-size: 13pt;
+                }
+
+                ul {
+                    width: 80%;
+                    opacity: 0;
+                    position: absolute;
+                    visibility: hidden;
+                    z-index: 1;
+                    -webkit-transition: all .25s ease;
+                       -moz-transition: all .25s ease;
+                        -ms-transition: all .25s ease;
+                         -o-transition: all .25s ease;
+                            transition: all .25s ease;
+
+                    li {
+                        a {
+                            font-size: 10pt;
+                            color: @color-rosa;
+                            &:hover{
+                                color: @color-turquesa;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .arrow-menu { display: block; }
+                    ul {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }*/
 }
 .header .header-right .banner-top {
   max-width: 728px;
@@ -298,38 +359,37 @@ a:hover {
   height: 90px;
 }
 .header .header-right .menu-category {
-  margin-top: 1em;
-  background: #fff;
-  padding: 10px 0;
-  width: 100%;
   position: relative;
-  webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.header .header-right .menu-category .arrow-menu {
-  background: url('../images/arrow-down-gray.png') center 30px no-repeat;
+  text-align: center;
+  margin-bottom: 40px;
+  background: #fff;
 }
 .header .header-right .menu-category li {
-  webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
   display: inline-block;
-  padding: 1%;
 }
 .header .header-right .menu-category li a {
-  font-size: 13pt;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
 }
-.header .header-right .menu-category li .submenu-category {
-  display: none;
+.header .header-right .menu-category li:hover ul {
+  display: block;
   position: absolute;
+  text-align: left;
   left: 0;
   width: 100%;
-  /*a {
-                        font-size: 10pt;
-                        color: @color-rosa;
-                        &:hover{
-                            color: @color-turquesa;
-                        }
-                    }*/
+  top: 38px;
+}
+.header .header-right .menu-category li ul {
+  background: #fff;
+  display: none;
+}
+.header .header-right .menu-category li ul li a {
+  font-size: 10pt;
+  color: #e73064;
+}
+.header .header-right .menu-category li ul li:hover a {
+  color: #12aec0;
 }
 .main-content {
   width: 100%;
@@ -1483,10 +1543,14 @@ a:hover {
   .menu-floating .logo img {
     width: auto;
   }
-  .header .header-right .menu-category {
-    margin-top: 1%;
-    padding: 0 0 3% 5%;
-  }
+  /*.header {
+		.header-right {
+            .menu-category {
+                margin-top: 1%;
+                padding: 0 0 3% 0%;
+            }
+		}
+	}*/
   .main-content .content .content-highlights .highlights-home .highlights-home-first {
     display: block;
     width: 33%;

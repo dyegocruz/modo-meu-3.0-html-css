@@ -5,12 +5,9 @@ $( document ).ready(function() {
         return false;
     });
     
-    $('.menu-categ-item a').hover(function(){        
-        $(this).parent().toggleClass('arrow-menu');
-        // $('.'+$(this).parent().attr('id')).fadeToggle();
-        // console.log('oie');
-        $('.'+$(this).attr('id')).fadeToggle();
-    });
+    // $('.menu-categ-item a').hover(function(){        
+    //     $(this).parent().toggleClass('arrow-menu');
+    // });
 
 });
 
