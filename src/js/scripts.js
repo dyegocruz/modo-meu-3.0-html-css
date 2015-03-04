@@ -5,11 +5,24 @@ $( document ).ready(function() {
         return false;
     });
     
-    // $('.menu-categ-item a').hover(function(){        
-    //     $(this).parent().toggleClass('arrow-menu');
+    $('.menu-category li').live('hover',function(){
+        var position = parseInt($(this).position().left);
+        $(this).find('ul').css({left: position});
+         $(this).center($(this).find('ul'));
+        
+    });//.mouseout(function() {
+    //     var position = parseInt($(this).position().left);
+    //     $(this).find('ul').css({left: position});
     // });
 
 });
+
+jQuery.fn.center = function (obj) {
+  var loc = obj.offset();
+  this.css("top",(obj.outerHeight() - this.outerHeight()) / 2 + loc.top + 'px');
+  this.css("left",(obj.outerWidth() - this.outerWidth())  / 2 + loc.left+ 'px');
+  return this;
+}
 
 $(window).scroll(function(){
 

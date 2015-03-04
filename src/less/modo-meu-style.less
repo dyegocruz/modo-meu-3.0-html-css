@@ -155,8 +155,12 @@ body {
 }
 
 /*------- Functions -------*/
+
 @-webkit-keyframes fadeIn {  0% { opacity: 0; } 100% { opacity: 1; } }
-@keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes fadeIn { 
+    from { opacity: 0; }
+    to   { opacity: 1; } 
+}
 
 .fadeIn(@time){
     -webkit-animation-name: fadeIn;
@@ -168,7 +172,7 @@ body {
 
 .transition(@value){
     webkit-transition-duration: @value;
-    transition-duration: @value;
+    transition-duration: @value;    
 }
 
 /*------- Defaults -------*/
@@ -283,7 +287,9 @@ a {
             background: #fff;
 
             li {
+                .transition(0.3s);
                 display: inline-block;
+                background: none;
 
                 a {
                     display: block;
@@ -291,8 +297,30 @@ a {
                     padding:10px;
                 }
 
+                ul {                     
+                    background: #fff;
+                    display: none;                                
+                    li {                        
+                        a {
+                            font-size: 10pt;
+                            color: @color-rosa;
+                        }
+
+                        &:hover {                            
+                            background: none;
+
+                            a {
+                                color: @color-turquesa;
+                            }
+                        }
+                    }
+                }
+
                 &:hover {
-                    ul {
+                    background: url('../images/arrow-down-gray.png') 50% 33px no-repeat;
+                     
+                    ul {                        
+                        .fadeIn(0.5s);           
                         display: block;
                         position: absolute;
                         text-align: left;
@@ -300,24 +328,8 @@ a {
                         width: 100%;
                         top: 38px;
                     }
-                }
-
-                ul {
-                    background: #fff;
-                    display: none;
-                    li {
-                        a {
-                            font-size: 10pt;
-                            color: @color-rosa;
-                        }
-
-                        &:hover {
-                            a {
-                                color: @color-turquesa;
-                            }
-                        }
-                    }
-                }
+                }         
+                
             }
         }
 
@@ -984,8 +996,7 @@ a {
             .box{
                 margin: 0 auto;
                 width: 300px;
-                height: 250px;
-                border: 1px solid;
+                height: 250px;                
             }
         }
 

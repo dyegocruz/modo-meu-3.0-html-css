@@ -185,10 +185,10 @@ body {
   }
 }
 @keyframes fadeIn {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
@@ -365,20 +365,15 @@ a:hover {
   background: #fff;
 }
 .header .header-right .menu-category li {
+  webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   display: inline-block;
+  background: none;
 }
 .header .header-right .menu-category li a {
   display: block;
   text-decoration: none;
   padding: 10px;
-}
-.header .header-right .menu-category li:hover ul {
-  display: block;
-  position: absolute;
-  text-align: left;
-  left: 0;
-  width: 100%;
-  top: 38px;
 }
 .header .header-right .menu-category li ul {
   background: #fff;
@@ -388,8 +383,26 @@ a:hover {
   font-size: 10pt;
   color: #e73064;
 }
+.header .header-right .menu-category li ul li:hover {
+  background: none;
+}
 .header .header-right .menu-category li ul li:hover a {
   color: #12aec0;
+}
+.header .header-right .menu-category li:hover {
+  background: url('../images/arrow-down-gray.png') 50% 33px no-repeat;
+}
+.header .header-right .menu-category li:hover ul {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  display: block;
+  position: absolute;
+  text-align: left;
+  left: 0;
+  width: 100%;
+  top: 38px;
 }
 .main-content {
   width: 100%;
@@ -1078,7 +1091,6 @@ a:hover {
   margin: 0 auto;
   width: 300px;
   height: 250px;
-  border: 1px solid;
 }
 .main-content .sidebar .postal-code h2 {
   background: url('../images/icon-postal-code.png') no-repeat 20% 20%;
