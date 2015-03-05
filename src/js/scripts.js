@@ -5,15 +5,11 @@ $( document ).ready(function() {
         return false;
     });
     
-    $('.menu-category li').live('hover',function(){
-        var position = parseInt($(this).position().left);
-        $(this).find('ul').css({left: position});
-         $(this).center($(this).find('ul'));
-        
-    });//.mouseout(function() {
-    //     var position = parseInt($(this).position().left);
-    //     $(this).find('ul').css({left: position});
-    // });
+    $('.menu-category li').hover(function(){
+        var pLeft = parseInt($(this).position().left);
+        var p = pLeft-(pLeft*(10/100));
+        $(this).find('ul').css({left: pLeft});        
+    });
 
 });
 
