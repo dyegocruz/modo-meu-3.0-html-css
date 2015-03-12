@@ -7,8 +7,13 @@ $( document ).ready(function() {
     
     $('.menu-category li').hover(function(){
         var pLeft = parseInt($(this).position().left);
-        var p = pLeft-(pLeft*(10/100));
-        $(this).find('ul').css({left: pLeft});        
+        var pRight = parseInt(($(window).width() - ($(this).offset().left + $(this).outerWidth())));        
+
+        if(pLeft > 484){            
+            $(this).find('ul').css({right: pRight/3, left:'none', position: 'absolute'});            
+        }else{         
+            $(this).find('ul').css({left: pLeft});
+        }        
     });
 
 });
