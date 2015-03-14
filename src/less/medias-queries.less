@@ -22,6 +22,18 @@
 		.header-right {
 			width: 100%;
 			.banner-top { display: none; }
+
+            .menu-category {
+                li {
+                    &:hover{
+                        background: none;
+
+                        ul{
+                            display: none;
+                        }                        
+                    }
+                }
+            }
 		}
     }
 
@@ -281,7 +293,7 @@
 
 		.header-right {
             width: 75%;
-			.banner-top { display: block; }
+			.banner-top { display: block; }            
 		}
     }
 
@@ -297,6 +309,18 @@
 
 		.header-right {
             width: 83%;
+
+            .menu-category {
+                li {
+                    &:hover{
+                        background: url('../images/arrow-down-gray.png') 50% 33px no-repeat;
+
+                        ul{
+                            display: block;
+                        }
+                    }
+                }
+            }
 		}
     }
 
@@ -331,6 +355,3 @@
 
     .sidebar {  display: block; }
 }
-
-/* Tv */
-//@media screen and (min-width: @screen-tv) { }

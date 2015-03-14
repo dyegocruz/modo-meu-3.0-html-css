@@ -38,8 +38,8 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     <!-- /Facebook -->
-
-	<div class="menu-top">
+    
+	<div class="menu-top" style="display:none;">
 		<nav class="margin-auto">
 			<a href="#">Sobre</a>
 			<a href="#">Equipe</a>
@@ -49,7 +49,7 @@
 		</nav>
 	</div>
 
-	<div class="menu-floating">
+	<div class="menu-floating" style="display:none;">
 	    <nav>
             <a href="#" class="logo"><img src="/assets/images/logo-menu-horizontal.png" /></a>
 	        <a href="#">Cinema & TV</a>
@@ -65,7 +65,7 @@
 	    </nav>
 	</div>
 
-	<div class="site margin-auto">
+	<main class="site margin-auto">
 		<header class="header">
 			<h1 class="logo-top f-left">
                 <a href="#">
@@ -76,79 +76,59 @@
 				<div class="banner-top margin-auto">
 					banner-top
 				</div>
-				<!--<ul class="menu-category f-left a-center">
-					<li class="menu-categ-item p-relative">
-                        <a href="#" id="menu-categ-0">Cinema & TV</a>
-                        <div class="arrow-menu"></div>
-                        <ul class="submenu-category a-center menu-categ-0">
-                            <li><a href="#">Mary disse</a></li>
-                            <li><a href="#">Uma vida de merda</a></li>
-                            <li><a href="#">Aprendendo sozinha</a></li>
-                        </ul>
-                    </li>
-					<li class="menu-categ-item p-relative">
-                        <a href="#" id="menu-categ-1">Colunas</a>
-                        <div class="arrow-menu"></div>
-                    </li>
-					<li class="menu-categ-item p-relative"><a href="#" id="menu-categ-2">Design</a></li>
-					<li class="menu-categ-item p-relative"><a href="#" id="menu-categ-3">Evento</a></li>
-					<li class="menu-categ-item p-relative"><a href="#" id="menu-categ-4">Fotografia</a></li>
-					<li class="menu-categ-item p-relative"><a href="#" id="menu-categ-5">Game</a></li>
-					<li class="menu-categ-item p-relative"><a href="#" id="menu-categ-6">Internet</a></li>
-					<li class="menu-categ-item p-relative"><a href="#" id="menu-categ-7">Literatura</a></li>
-					<li class="menu-categ-item p-relative"><a href="#" id="menu-categ-8">Música</a></li>
-
-				</ul>-->
-                <ul class="menu-category">
-                    <li class="menu"><a href="#">Cinema & TV</a>                        
-                        <ul>
-                            <li><a href="#">Submenu 1-1</a></li>
-                            <li><a href="#">Submenu 1-2</a></li>
-                            <li><a href="#">Submenu 1-3</a></li>
-                            <li><a href="#">Submenu 1-4</a></li>
-                        </ul>
-                    </li>
-					<li class="menu"><a href="#">Colunas</a>
-                        <ul>
-                            <li><a href="#">Submenu 2-1</a></li>
-                            <li><a href="#">Submenu 2-2</a></li>
-                            <li><a href="#">Submenu 2-3</a></li>
-                        </ul>
-                    </li>
-					<li class="menu"><a href="#">Design</a>
-                        <ul>
-                            <li><a href="#">Submenu 3-1</a></li>
-                            <li><a href="#">Submenu 3-2</a></li>
-                            <li><a href="#">Submenu 3-3</a></li>
-                            <li><a href="#">Submenu 3-4</a></li>
-                            <li><a href="#">Submenu 3-5</a></li>
-                        </ul>
-                    </li>
-					<li class="menu"><a href="#">Evento</a>
-                        <ul>
-                            <li><a href="#">Submenu 4-1</a></li>
-                            <li><a href="#">Submenu 4-2</a></li>
-                            <li><a href="#">Submenu 4-3</a></li>
-                            <li><a href="#">Submenu 4-4</a></li>
-                        </ul>
-                    </li>
-					<li><a href="#">Fotografia</a>
-                        <ul>
-                            <li><a href="#">Submenu 5-1</a></li>
-                            <li><a href="#">Submenu 5-2</a></li>
-                            <li><a href="#">Submenu 5-3</a></li>
-                        </ul>
-					</li>
-					<li class="menu"><a href="#">Game</a></li>
-					<li class="menu"><a href="#">Internet</a></li>
-					<li class="menu"><a href="#">Literatura</a></li>
-					<li class="menu"><a href="#">Música</a><ul>
-                            <li><a href="#">Submenu 4-1</a></li>
-                            <li><a href="#">Submenu 4-2</a></li>
-                            <li><a href="#">Submenu 4-3</a></li>
-                            <li><a href="#">Submenu 4-4</a></li>
-                        </ul></li>
-				</ul>
+			     <nav>
+                    <ul class="menu-category">
+                        <li class="menu"><a href="#">Cinema & TV</a>                        
+                            <ul>
+                                <li><a href="#">Submenu 1-1</a></li>
+                                <li><a href="#">Submenu 1-2</a></li>
+                                <li><a href="#">Submenu 1-3</a></li>
+                                <li><a href="#">Submenu 1-4</a></li>
+                            </ul>
+                        </li>
+    					<li class="menu"><a href="#">Colunas</a>
+                            <ul>
+                                <li><a href="#">Submenu 2-1</a></li>
+                                <li><a href="#">Submenu 2-2</a></li>
+                                <li><a href="#">Submenu 2-3</a></li>
+                            </ul>
+                        </li>
+    					<li class="menu"><a href="#">Design</a>
+                            <ul>
+                                <li><a href="#">Submenu 3-1</a></li>
+                                <li><a href="#">Submenu 3-2</a></li>
+                                <li><a href="#">Submenu 3-3</a></li>
+                                <li><a href="#">Submenu 3-4</a></li>
+                                <li><a href="#">Submenu 3-5</a></li>
+                            </ul>
+                        </li>
+    					<li class="menu"><a href="#">Evento</a>
+                            <ul>
+                                <li><a href="#">Submenu 4-1</a></li>
+                                <li><a href="#">Submenu 4-2</a></li>
+                                <li><a href="#">Submenu 4-3</a></li>
+                                <li><a href="#">Submenu 4-4</a></li>
+                            </ul>
+                        </li>
+    					<li><a href="#">Fotografia</a>
+                            <ul>
+                                <li><a href="#">Submenu 5-1</a></li>
+                                <li><a href="#">Submenu 5-2</a></li>
+                                <li><a href="#">Submenu 5-3</a></li>
+                            </ul>
+    					</li>
+    					<li class="menu"><a href="#">Game</a></li>
+    					<li class="menu"><a href="#">Internet</a></li>
+    					<li class="menu"><a href="#">Literatura</a></li>
+    					<li class="menu"><a href="#">Música</a><ul>
+                                <li><a href="#">Submenu 4-1</a></li>
+                                <li><a href="#">Submenu 4-2</a></li>
+                                <li><a href="#">Submenu 4-3</a></li>
+                                <li><a href="#">Submenu 4-4</a></li>
+                            </ul>
+                        </li>
+    				</ul>
+                </nav>
 			</div>
 		</header>
 
@@ -435,7 +415,7 @@
 			</aside>
 		</div>
 
-	</div>
+	</main>
 
     <footer class="main-footer-container f-left">
        <a href="#" class="button-back-to-top"><img src="assets/images/arrow-up-white.png" /></a>

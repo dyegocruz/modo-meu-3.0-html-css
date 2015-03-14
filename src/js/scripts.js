@@ -1,5 +1,9 @@
 $( document ).ready(function() {
 
+    $('.slide-menu-control a').click(function(){
+        
+    });
+
     $('.button-back-to-top').click( function(e) {
         $('html, body').animate({scrollTop: 0}, 1000);
         return false;
@@ -13,17 +17,10 @@ $( document ).ready(function() {
             $(this).find('ul').css({right: pRight/3, left:'none', position: 'absolute'});            
         }else{         
             $(this).find('ul').css({left: pLeft});
-        }        
-    });
+        }
+    });    
 
 });
-
-jQuery.fn.center = function (obj) {
-  var loc = obj.offset();
-  this.css("top",(obj.outerHeight() - this.outerHeight()) / 2 + loc.top + 'px');
-  this.css("left",(obj.outerWidth() - this.outerWidth())  / 2 + loc.left+ 'px');
-  return this;
-}
 
 $(window).scroll(function(){
 

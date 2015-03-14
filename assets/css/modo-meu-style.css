@@ -328,19 +328,13 @@ a:hover {
 .header .header-right .menu-category li ul li:hover a {
   color: #12aec0;
 }
-.header .header-right .menu-category li:hover {
-  background: url('../images/arrow-down-gray.png') 50% 33px no-repeat;
-}
 .header .header-right .menu-category li:hover ul {
   -webkit-animation-name: fadeIn;
   -webkit-animation-duration: 0.5s;
   animation-name: fadeIn;
   animation-duration: 0.5s;
-  display: block;
   position: absolute;
   text-align: left;
-  /*left: 60px;
-                        right: 50px;                */
   width: auto;
   top: 38px;
 }
@@ -1384,6 +1378,12 @@ a:hover {
   .header .header-right .banner-top {
     display: none;
   }
+  .header .header-right .menu-category li:hover {
+    background: none;
+  }
+  .header .header-right .menu-category li:hover ul {
+    display: none;
+  }
   .main-content .content .content-highlights .highlights-home .highlights-home-first {
     display: none;
   }
@@ -1579,6 +1579,12 @@ a:hover {
   .header .header-right {
     width: 83%;
   }
+  .header .header-right .menu-category li:hover {
+    background: url('../images/arrow-down-gray.png') 50% 33px no-repeat;
+  }
+  .header .header-right .menu-category li:hover ul {
+    display: block;
+  }
   .main-content .content {
     width: 66%;
   }
@@ -1610,5 +1616,4 @@ a:hover {
     display: block;
   }
 }
-/* Tv */
 /*------- Media Queries -------*/
