@@ -278,6 +278,7 @@ a {
             max-height: 90px;
             width: 90%;
             height: 90px;
+            border: 1px solid @color-rosa;
         }
 
         .menu-category {
@@ -294,14 +295,16 @@ a {
                 a {
                     display: block;
                     text-decoration: none;
-                    padding:10px;
+                    margin: 10px;
                 }
 
-                ul {                     
+                ul {
                     background: #fff;
                     display: none;                                
                     li {                        
                         a {
+                            margin: 0px 5px;
+                            padding: 0;
                             font-size: 10pt;
                             color: @color-rosa;
                         }
@@ -319,11 +322,11 @@ a {
                 &:hover {                    
                      
                     ul {                                        
-                        .fadeIn(0.5s);                        
+                        .fadeIn(0.5s);       
                         position: absolute;
-                        text-align: left;                        
+                        text-align: left;
                         width: auto;
-                        top: 38px;                        
+                        top: 38px;
                     }
                 }         
                 
@@ -346,7 +349,7 @@ a {
             .highlights-home {
 
                 h3 {
-                    padding: 0 5% 0 15%;
+                    padding: 0 5% 0 20%;
                     margin: 1% 0;
                 }
 
@@ -835,7 +838,7 @@ a {
                     }
                 }
 
-                .podcast-513{
+                .podcast-513 {
                     .f-left();
 
                     .podcast-513-photo {
@@ -844,11 +847,11 @@ a {
                         .border-radius();
                     }
 
-                    P {
+                    p {
                         text-align: left;
-                        width: 70%;
+                        width: 100%;
                         font-size: 11pt;
-                        .f-left();
+                        .a-center();
                     }
                 }
             }
@@ -1177,13 +1180,12 @@ a {
 
             .twitter, .facebook, .feed,
             .gplus, .youtube, .pinterest,
-            .filmow, .alvanista {
+            .filmow, .instagram {
                 background-color: @color-turquesa-transparency;
                 background-repeat: no-repeat;
                 background-position: center;
                 &:hover { background-color: #fff; }
             }
-
 
             .twitter {
                 background-image: url('../images/twitter-branco.png');
@@ -1213,9 +1215,9 @@ a {
                 background-image: url('../images/filmow-branco.png');
                 &:hover{ background-image: url('../images/filmow-turquesa.png'); }
             }
-            .alvanista {
-                background-image: url('../images/alvanista-branco.png');
-                &:hover{ background-image: url('../images/alvanista-turquesa.png'); }
+            .instagram {
+                background-image: url('../images/instagram-branco.png');
+                &:hover{ background-image: url('../images/instagram-turquesa.png'); }
             }
         }
     }
@@ -1249,7 +1251,7 @@ a {
 }
 
 //Ajustes Disqus
-#comments, #disqus_thread { width: 100%; }
+#comments, #disqus_thread { width: 100%; .f-left(); }
 
 /*------- Media Queries -------*/
 @import "medias-queries.less";

@@ -296,6 +296,7 @@ a:hover {
   max-height: 90px;
   width: 90%;
   height: 90px;
+  border: 1px solid #e73064;
 }
 .header .header-right .menu-category {
   position: relative;
@@ -312,13 +313,15 @@ a:hover {
 .header .header-right .menu-category li a {
   display: block;
   text-decoration: none;
-  padding: 10px;
+  margin: 10px;
 }
 .header .header-right .menu-category li ul {
   background: #fff;
   display: none;
 }
 .header .header-right .menu-category li ul li a {
+  margin: 0px 5px;
+  padding: 0;
   font-size: 10pt;
   color: #e73064;
 }
@@ -349,7 +352,7 @@ a:hover {
 }
 .main-content .content .content-highlights .highlights-home h3,
 .main-content .content-pages .content-highlights .highlights-home h3 {
-  padding: 0 5% 0 15%;
+  padding: 0 5% 0 20%;
   margin: 1% 0;
 }
 .main-content .content .content-highlights .highlights-home .post-data,
@@ -950,11 +953,11 @@ a:hover {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.main-content .content-pages .content-page .template-page .podcast-513 P {
+.main-content .content-pages .content-page .template-page .podcast-513 p {
   text-align: left;
-  width: 70%;
+  width: 100%;
   font-size: 11pt;
-  float: left;
+  text-align: center;
 }
 .main-content .sidebar {
   width: 32%;
@@ -1266,7 +1269,7 @@ a:hover {
 .main-footer-container .footer .social-footer .youtube,
 .main-footer-container .footer .social-footer .pinterest,
 .main-footer-container .footer .social-footer .filmow,
-.main-footer-container .footer .social-footer .alvanista {
+.main-footer-container .footer .social-footer .instagram {
   background-color: #35bac9;
   background-repeat: no-repeat;
   background-position: center;
@@ -1278,7 +1281,7 @@ a:hover {
 .main-footer-container .footer .social-footer .youtube:hover,
 .main-footer-container .footer .social-footer .pinterest:hover,
 .main-footer-container .footer .social-footer .filmow:hover,
-.main-footer-container .footer .social-footer .alvanista:hover {
+.main-footer-container .footer .social-footer .instagram:hover {
   background-color: #fff;
 }
 .main-footer-container .footer .social-footer .twitter {
@@ -1323,11 +1326,11 @@ a:hover {
 .main-footer-container .footer .social-footer .filmow:hover {
   background-image: url('../images/filmow-turquesa.png');
 }
-.main-footer-container .footer .social-footer .alvanista {
-  background-image: url('../images/alvanista-branco.png');
+.main-footer-container .footer .social-footer .instagram {
+  background-image: url('../images/instagram-branco.png');
 }
-.main-footer-container .footer .social-footer .alvanista:hover {
-  background-image: url('../images/alvanista-turquesa.png');
+.main-footer-container .footer .social-footer .instagram:hover {
+  background-image: url('../images/instagram-turquesa.png');
 }
 .main-footer-container .footer-benjamin {
   font-family: 'Dosis', sans-serif;
@@ -1352,6 +1355,7 @@ a:hover {
 #comments,
 #disqus_thread {
   width: 100%;
+  float: left;
 }
 /*------- Media Queries -------*/
 /* Mobile  */
@@ -1579,8 +1583,11 @@ a:hover {
   .header .header-right {
     width: 83%;
   }
+  .header .header-right .menu-category li {
+    padding: 0px;
+  }
   .header .header-right .menu-category li:hover {
-    background: url('../images/arrow-down-gray.png') 50% 33px no-repeat;
+    background: url('../images/arrow-down-gray.png') 50% 85% no-repeat;
   }
   .header .header-right .menu-category li:hover ul {
     display: block;

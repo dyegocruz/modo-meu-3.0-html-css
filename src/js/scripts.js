@@ -13,11 +13,11 @@ $( document ).ready(function() {
         var pLeft = parseInt($(this).position().left);
         var pRight = parseInt(($(window).width() - ($(this).offset().left + $(this).outerWidth())));        
 
-        if(pLeft > 484){            
-            $(this).find('ul').css({right: pRight/3, left:'none', position: 'absolute'});            
-        }else{         
+        // if(pLeft > 484){
+        //     $(this).find('ul').css({right: pRight/3, left:'none', position: 'absolute'});            
+        // }else{         
             $(this).find('ul').css({left: pLeft});
-        }
+        //}
     });    
 
 });
