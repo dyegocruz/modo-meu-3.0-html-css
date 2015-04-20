@@ -227,6 +227,12 @@ em {
   font-style: italic;
 }
 /*------- Defaults -------*/
+.category .page-title,
+.search .page-title {
+  background: #fff;
+  width: 100%;
+  float: left;
+}
 .menu-top {
   background: #f1f1f1;
   padding: 0.6% 0;
