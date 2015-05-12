@@ -38,7 +38,7 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     <!-- /Facebook -->
-    
+
 	<div class="menu-top" style="display:none;">
 		<nav class="margin-auto">
 			<a href="#">Sobre</a>
@@ -87,7 +87,7 @@
 				</div>
 			     <nav>
                     <ul class="menu-category">
-                        <li class="menu"><a href="#">Cinema & TV</a>                        
+                        <li class="menu"><a href="#">Cinema & TV</a>
                             <ul>
                                 <li><a href="#">Submenu 1-1</a></li>
                                 <li><a href="#">Submenu 1-2</a></li>
@@ -247,9 +247,11 @@
                                 <h2><a href="#">Mariana Fernandes</a></h2>
                             </div>
                             <div class="social a-center post-meta">
-                                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="box_count" data-action="like" data-show-faces="false" data-share="false"></div>
-                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://dev.twitter.com/pages/tweet_button" data-via="your_screen_name" data-lang="en" data-related="anywhereTheJavascriptAPI" data-count="vertical">Tweet</a>
-                                <div class="g-plusone" data-size="tall" data-href="http://modomeu.com"></div>
+                                <div>
+                                    <div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="box_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="<?php the_title(); ?>" data-url="<?php the_permalink(); ?>" data-via="modomeu" data-lang="en" data-related="anywhereTheJavascriptAPI" data-count="vertical">Tweet</a>
+                                    <div class="g-plusone" data-size="tall" data-href="<?php the_permalink(); ?>"></div>
+                                </div>
                             </div>
                             <div class="comments a-center post-meta">
                                 <a href="#">
@@ -257,6 +259,7 @@
                                     Comentário(s) >
                                 </a>
                             </div>
+                            <div class="button-share-facebook f-left"><div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button"></div></div>
                             <div class="post-category-tag f-left">
                                 Categoria(s): <a href="#">Música</a> Tags: <a href="#">country</a>, <a href="#">Dave Grohl</a>, <a href="#">foo fighters</a>, <a href="#">The Foundation</a>, <a href="#">The Grohl Sessions</a>, <a href="#">Zac Brown Band</a>
                             </div>

@@ -2,5 +2,7 @@
 # Grunt usually compiles files inside this directory
 node_modules/
 
+.settings/
+
 #Mac Files
 .DS_Store

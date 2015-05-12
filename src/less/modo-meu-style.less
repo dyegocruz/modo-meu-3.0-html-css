@@ -1,7 +1,7 @@
 /*
-Theme Name: Modo Meu 5.0
+Theme Name: Modo Meu 3.0
 Theme URI: http://modomeu.com
-Description: Modo Meu 5.0
+Description: Modo Meu 3.0
 Author: Benjamin Studio
 Author URI: http://benjaminstudio.com.br/
 Version: 1.0
@@ -157,9 +157,9 @@ body {
 /*------- Functions -------*/
 
 @-webkit-keyframes fadeIn {  0% { opacity: 0; } 100% { opacity: 1; } }
-@keyframes fadeIn { 
+@keyframes fadeIn {
     from { opacity: 0; }
-    to   { opacity: 1; } 
+    to   { opacity: 1; }
 }
 
 .fadeIn(@time){
@@ -172,7 +172,7 @@ body {
 
 .transition(@value){
     webkit-transition-duration: @value;
-    transition-duration: @value;    
+    transition-duration: @value;
 }
 
 /*------- Defaults -------*/
@@ -206,7 +206,7 @@ em {
         background: #fff;
         width: 100%;
         .f-left();
-    }   
+    }
 }
 
 .menu-top {
@@ -290,7 +290,7 @@ em {
             max-height: 90px;
             width: 90%;
             height: 90px;*/
-            width: 80%;            
+            width: 80%;
             border: 1px solid @color-rosa;
         }
 
@@ -313,8 +313,8 @@ em {
 
                 ul {
                     background: #fff;
-                    display: none;                                
-                    li {                        
+                    display: none;
+                    li {
                         a {
                             margin: 0px 5px;
                             padding: 0;
@@ -322,7 +322,7 @@ em {
                             color: @color-rosa;
                         }
 
-                        &:hover {                            
+                        &:hover {
                             background: none;
 
                             a {
@@ -332,20 +332,20 @@ em {
                     }
                 }
 
-                &:hover {                    
-                     
-                    ul {                                        
-                        .fadeIn(0.5s);       
+                &:hover {
+
+                    ul {
+                        .fadeIn(0.5s);
                         position: absolute;
                         text-align: left;
                         width: auto;
                         top: 38px;
                     }
-                }         
-                
+                }
+
             }
         }
-        
+
     }
 }
 
@@ -354,6 +354,14 @@ em {
     margin-top: 1%;
 
     .content, .content-pages {
+
+        .highlight-podcast-mobile {
+            width: 100%;
+
+            h3 {
+                padding-top: 5px;
+            }
+        }
 
         .content-highlights {
             width: 100%;
@@ -480,7 +488,7 @@ em {
                 .post-content {
                     color: @color-text;
 
-                    img {                        
+                    img {
                         max-width: 100%;
                         display: block;
                         margin-left: auto;
@@ -553,7 +561,7 @@ em {
                     }
 
                     .comments {
-                        margin-top: 3%;
+                        margin-top: 1%;
                         a {
                             font-size: 15pt;
                             img {
@@ -561,6 +569,12 @@ em {
                                 margin: 0 0 0 1.5em;
                             }
                         }
+                    }
+
+                    .button-share-facebook {
+                        width: 35%;
+                        text-align: center;
+                        margin-top: 1%;
                     }
 
                     .post-category-tag {
@@ -775,7 +789,7 @@ em {
                     .f-left();
 
                     .parceiro-item, .parceiro-item-full {
-                        float: left;                        
+                        float: left;
                     }
 
                     .parceiro-item {
@@ -873,7 +887,7 @@ em {
                         font-size: 11pt;
                         .f-left();
                     }
-                }                
+                }
 
                 .podcast-513 {
                     .f-left();
@@ -919,7 +933,12 @@ em {
             }
 
             .widget-url { margin: 5% 0; }
+        }
 
+        .textwidget {
+            text-align: center;
+
+            img { width: auto; }
         }
 
         .highlights-podcast {
@@ -971,7 +990,7 @@ em {
             .box{
                 margin: 0 auto;
                 width: 300px;
-                height: 250px;                
+                height: 250px;
             }
         }
 

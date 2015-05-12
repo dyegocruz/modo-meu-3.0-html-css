@@ -1,7 +1,7 @@
 /*
-Theme Name: Modo Meu 5.0
+Theme Name: Modo Meu 3.0
 Theme URI: http://modomeu.com
-Description: Modo Meu 5.0
+Description: Modo Meu 3.0
 Author: Benjamin Studio
 Author URI: http://benjaminstudio.com.br/
 Version: 1.0
@@ -355,6 +355,14 @@ em {
   width: 100%;
   margin-top: 1%;
 }
+.main-content .content .highlight-podcast-mobile,
+.main-content .content-pages .highlight-podcast-mobile {
+  width: 100%;
+}
+.main-content .content .highlight-podcast-mobile h3,
+.main-content .content-pages .highlight-podcast-mobile h3 {
+  padding-top: 5px;
+}
 .main-content .content .content-highlights,
 .main-content .content-pages .content-highlights {
   width: 100%;
@@ -615,7 +623,7 @@ em {
 }
 .main-content .content .content-posts .post .post-footer .comments,
 .main-content .content-pages .content-posts .post .post-footer .comments {
-  margin-top: 3%;
+  margin-top: 1%;
 }
 .main-content .content .content-posts .post .post-footer .comments a,
 .main-content .content-pages .content-posts .post .post-footer .comments a {
@@ -625,6 +633,12 @@ em {
 .main-content .content-pages .content-posts .post .post-footer .comments a img {
   width: 32px;
   margin: 0 0 0 1.5em;
+}
+.main-content .content .content-posts .post .post-footer .button-share-facebook,
+.main-content .content-pages .content-posts .post .post-footer .button-share-facebook {
+  width: 35%;
+  text-align: center;
+  margin-top: 1%;
 }
 .main-content .content .content-posts .post .post-footer .post-category-tag,
 .main-content .content-pages .content-posts .post .post-footer .post-category-tag {
@@ -1024,6 +1038,12 @@ em {
 }
 .main-content .sidebar .widget .widget-url {
   margin: 5% 0;
+}
+.main-content .sidebar .textwidget {
+  text-align: center;
+}
+.main-content .sidebar .textwidget img {
+  width: auto;
 }
 .main-content .sidebar .highlights-podcast {
   text-align: left;
@@ -1499,6 +1519,9 @@ em {
   }
   .main-content .content .content-posts .post .post-footer .post-meta {
     width: 32.5%;
+  }
+  .main-content .content .content-posts .post .post-footer .post-meta.comments {
+    width: 34%;
   }
   .main-content .content .posts-related ul li {
     width: 23%;
