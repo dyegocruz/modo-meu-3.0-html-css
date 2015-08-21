@@ -294,7 +294,15 @@ em {
   margin-top: 5%;
 }
 .header .logo-top {
+  display: block;
   margin-left: 2%;
+}
+.header .logo-top h1 {
+  background-image: url('../images/logo-modo-meu.png');
+  background-repeat: no-repeat;
+  width: 167px;
+  height: 160px;
+  text-indent: -9999px;
 }
 .header .header-right {
   width: 80%;
@@ -305,8 +313,7 @@ em {
             max-height: 90px;
             width: 90%;
             height: 90px;*/
-  width: 80%;
-  border: 1px solid #e73064;
+  width: 75%;
 }
 .header .header-right .menu-category {
   position: relative;
@@ -426,7 +433,6 @@ em {
 .main-content .content-pages .content-highlights .highlights-home .highlights-home-right .highlights-home .highlights-home-right-data .post-data {
   padding-left: 10%;
   padding-bottom: 2%;
-  position: absolute;
   bottom: 0;
 }
 .main-content .content .content-highlights .highlights-internal,
@@ -1435,8 +1441,7 @@ em {
     width: 50%;
   }
   .header .logo-top {
-    width: 40%;
-    margin: 0 30%;
+    margin: 0 25%;
   }
   .header .header-right {
     width: 100%;
@@ -1503,6 +1508,9 @@ em {
   }
   .menu-floating .logo img {
     width: 30%;
+  }
+  .header .logo-top {
+    margin: 0 40%;
   }
   .header .header-right {
     width: 100%;
@@ -1623,7 +1631,6 @@ em {
 /* Tablet landscape */
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .header .logo-top {
-    width: auto;
     margin: 0 0 0 2%;
   }
   .header .header-right {
