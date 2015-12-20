@@ -279,16 +279,12 @@ em {
 
     .logo-top {
         display: block;
-        margin-left: 2%;        
-        
+        margin-left: 2%;
 
         h1 {
-            background-image: url('../images/logo-modo-meu.png'); 
             background-repeat: no-repeat;
-            width: 167px;
-            height: 160px; 
             text-indent: -9999px;
-        }       
+        }
     }
 
     .header-right {
@@ -568,6 +564,7 @@ em {
                     .social {
                         margin-top: .5em;
                         .fb-like { position: relative; top: -6px; }
+                        img { width: auto; }
                     }
 
                     .comments {
@@ -613,6 +610,13 @@ em {
                     background: @color-border;
                 }
 
+            }
+
+            .banners {
+                width: 100%;
+                text-align: center;
+
+                img { max-width: 468px; }
             }
 
             .pagination {
@@ -919,8 +923,7 @@ em {
         }
     }
 
-    .sidebar {
-        width: 32%;
+    .sidebar {    
 
         .widget {
             width: 100%;

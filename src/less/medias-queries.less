@@ -17,6 +17,13 @@
 		.logo-top {
 			//width: 40%;
 			margin: 0 25%;
+
+            h1 {
+                background-image: url('../images/logo-modo-meu-mobile.png');
+                width: 175px;
+                height: 55px;
+                margin-bottom: 10%;
+            }
 		}
 
 		.header-right {
@@ -38,7 +45,9 @@
     }
 
     .main-content {
-        .content{
+        .content{            
+            width: 100%;
+
             .content-highlights {
                 .highlights-home {
                     .highlights-home-first { display: none; }
@@ -66,6 +75,16 @@
             }
         }
 
+
+        .content-posts {
+            .post {
+                .post-footer {
+                    .post-meta {
+                        width: 100%;
+                    }
+                }
+            }
+        }
 
         .content-pages {
             .content-highlights {
@@ -111,7 +130,8 @@
         }
     }
 
-    .sidebar { display: none; }
+    //.sidebar { display: none; }
+    .sidebar { width: 100%; }
 }
 
 /* Mobile landscape */
@@ -128,7 +148,7 @@
 
         .logo-top {
             //width: 40%;
-            margin: 0 40%;
+            margin: 0 40%;            
         }
 
 		.header-right {
@@ -138,14 +158,14 @@
 	}
 
     .main-content {
-        .content{
-            width: 100%;
+        .content{            
 
             .content-highlights {
                 .highlights-home {
                     .highlights-home-first { display: none; }
                 }
             }
+
             .content-posts {
                 .post {
                     .post-content{
@@ -226,6 +246,16 @@
         }
     }
 
+    .header {
+        .logo-top {
+            h1 {
+                background-image: url('../images/logo-modo-meu.png');
+                width: 167px;
+                height: 160px;
+            }
+        }
+    }
+
     /*.header {
 		.header-right {
             .menu-category {
@@ -289,7 +319,7 @@
         }
     }
 
-    .sidebar {  display: none; }
+    //.sidebar {  display: none; }
 }
 
 /* Tablet landscape */
@@ -307,7 +337,12 @@
 		}
     }
 
-    .sidebar {  display: none; }
+    .main-content {
+        .content { width: 66%; }
+    }
+
+    //.sidebar {  display: none; }
+    .sidebar { width: 32%; }
 }
 
 /* Desktop */
@@ -337,8 +372,7 @@
 		}
     }
 
-    .main-content {
-        .content { width: 66%; }
+    .main-content {        
 
         .content-pages {
             width: 100%;

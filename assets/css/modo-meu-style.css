@@ -298,10 +298,7 @@ em {
   margin-left: 2%;
 }
 .header .logo-top h1 {
-  background-image: url('../images/logo-modo-meu.png');
   background-repeat: no-repeat;
-  width: 167px;
-  height: 160px;
   text-indent: -9999px;
 }
 .header .header-right {
@@ -627,6 +624,10 @@ em {
   position: relative;
   top: -6px;
 }
+.main-content .content .content-posts .post .post-footer .social img,
+.main-content .content-pages .content-posts .post .post-footer .social img {
+  width: auto;
+}
 .main-content .content .content-posts .post .post-footer .comments,
 .main-content .content-pages .content-posts .post .post-footer .comments {
   margin-top: 1%;
@@ -671,6 +672,15 @@ em {
   width: 90%;
   height: 2px;
   background: #d6d6d6;
+}
+.main-content .content .content-posts .banners,
+.main-content .content-pages .content-posts .banners {
+  width: 100%;
+  text-align: center;
+}
+.main-content .content .content-posts .banners img,
+.main-content .content-pages .content-posts .banners img {
+  max-width: 468px;
 }
 .main-content .content .content-posts .pagination,
 .main-content .content-pages .content-posts .pagination {
@@ -1020,9 +1030,6 @@ em {
   width: 100%;
   font-size: 11pt;
   text-align: center;
-}
-.main-content .sidebar {
-  width: 32%;
 }
 .main-content .sidebar .widget {
   width: 100%;
@@ -1443,6 +1450,12 @@ em {
   .header .logo-top {
     margin: 0 25%;
   }
+  .header .logo-top h1 {
+    background-image: url('../images/logo-modo-meu-mobile.png');
+    width: 175px;
+    height: 55px;
+    margin-bottom: 10%;
+  }
   .header .header-right {
     width: 100%;
     /*.banner-top { display: none; }*/
@@ -1452,6 +1465,9 @@ em {
   }
   .header .header-right .menu-category li:hover ul {
     display: none;
+  }
+  .main-content .content {
+    width: 100%;
   }
   .main-content .content .content-highlights .highlights-home .highlights-home-first {
     display: none;
@@ -1468,6 +1484,9 @@ em {
   .main-content .content .posts-related ul li {
     width: 47%;
     margin-bottom: 5%;
+  }
+  .main-content .content-posts .post .post-footer .post-meta {
+    width: 100%;
   }
   .main-content .content-pages .content-highlights .highlights-internal {
     display: none;
@@ -1498,7 +1517,7 @@ em {
     padding-top: 3%;
   }
   .sidebar {
-    display: none;
+    width: 100%;
   }
 }
 /* Mobile landscape */
@@ -1515,9 +1534,6 @@ em {
   .header .header-right {
     width: 100%;
     /*.banner-top { display: none; }*/
-  }
-  .main-content .content {
-    width: 100%;
   }
   .main-content .content .content-highlights .highlights-home .highlights-home-first {
     display: none;
@@ -1567,6 +1583,11 @@ em {
   }
   .menu-floating .logo img {
     width: auto;
+  }
+  .header .logo-top h1 {
+    background-image: url('../images/logo-modo-meu.png');
+    width: 167px;
+    height: 160px;
   }
   /*.header {
 		.header-right {
@@ -1624,9 +1645,6 @@ em {
     width: 17%;
     margin: 4% 0 0 0;
   }
-  .sidebar {
-    display: none;
-  }
 }
 /* Tablet landscape */
 @media screen and (min-width: 768px) and (orientation: landscape) {
@@ -1637,8 +1655,11 @@ em {
     width: 75%;
     /*.banner-top { display: block; } */
   }
+  .main-content .content {
+    width: 66%;
+  }
   .sidebar {
-    display: none;
+    width: 32%;
   }
 }
 /* Desktop */
@@ -1657,9 +1678,6 @@ em {
   }
   .header .header-right .menu-category li:hover ul {
     display: block;
-  }
-  .main-content .content {
-    width: 66%;
   }
   .main-content .content-pages {
     width: 100%;
