@@ -1058,20 +1058,24 @@ em {
 .main-content .sidebar .textwidget img {
   width: auto;
 }
-.main-content .sidebar .highlights-podcast {
+.main-content .sidebar .highlights-post-sidebar {
   text-align: left;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.main-content .sidebar .highlights-podcast .highlights-podcast-img {
+.main-content .sidebar .highlights-post-sidebar .highlights-post-sidebar-img {
   width: 100%;
 }
-.main-content .sidebar .highlights-podcast .post-data {
+.main-content .sidebar .highlights-post-sidebar h3 {
+  margin: 5px 0 10px 0;
+  text-align: left;
+}
+.main-content .sidebar .highlights-post-sidebar .post-data {
   margin-top: 10%;
   padding: 0 4%;
 }
-.main-content .sidebar .highlights-podcast .post-data p {
+.main-content .sidebar .highlights-post-sidebar .post-data p {
   color: #12aec0;
 }
 .main-content .sidebar .search {
