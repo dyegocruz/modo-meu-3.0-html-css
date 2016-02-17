@@ -70,8 +70,10 @@ body {
 /*------- Icons --------*/
 .icon-category {
   padding: 0.7em;
+  width: 33px;
 }
 .icon-513,
+.videos,
 .colunas,
 .fotografia,
 .modomeu {
@@ -327,7 +329,7 @@ em {
 .header .header-right .menu-category li a {
   display: block;
   text-decoration: none;
-  margin: 10px 8px;
+  margin: 10px 7px;
 }
 .header .header-right .menu-category li ul {
   background: #fff;
