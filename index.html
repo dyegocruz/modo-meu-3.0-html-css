@@ -228,7 +228,7 @@
                                 <h2><a href="#">Mariana Fernandes</a></h2>
                             </div>
                             <div class="social a-center post-meta">
-                                <div>                                    
+                                <div>
                                     <a href="#"><img src="assets/images/facebook.png"></a>
                                     <a href="#"><img src="assets/images/twitter.png"></a>
                                     <a href="#"><img src="assets/images/gplus.png"></a>
@@ -239,7 +239,7 @@
                                     <img class="f-left" src="assets/images/icon-comments.png" />
                                     Comentário(s) >
                                 </a>
-                            </div>                            
+                            </div>
                             <div class="post-category-tag f-left">
                                 Categoria(s): <a href="#">Música</a> Tags: <a href="#">country</a>, <a href="#">Dave Grohl</a>, <a href="#">foo fighters</a>, <a href="#">The Foundation</a>, <a href="#">The Grohl Sessions</a>, <a href="#">Zac Brown Band</a>
                             </div>
@@ -358,7 +358,7 @@
                     </div>
                     <h3>
                          <a href="#">Nossa coleção de Star Wars</a>
-                    </h3>                    
+                    </h3>
                 </div>
                 <div class="search widget b-bottom-gray">
                     <form>
@@ -366,6 +366,59 @@
                         <input type="submit" class="input-submit" value="" />
                     </form>
                 </div>
+				<div class="newsletter widget newsletter-subscription">
+					<script type="text/javascript">
+						//<![CDATA[
+						if (typeof newsletter_check !== "function") {
+						window.newsletter_check = function (f) {
+						    var re = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
+						    if (!re.test(f.elements["ne"].value)) {
+						        alert("The email is not correct");
+						        return false;
+						    }
+						    if (f.elements["nn"] && (f.elements["nn"].value == "" || f.elements["nn"].value == f.elements["nn"].defaultValue)) {
+						        alert("The name is not correct");
+						        return false;
+						    }
+						    for (var i=1; i<20; i++) {
+						    if (f.elements["np" + i] && f.elements["np" + i].required && f.elements["np" + i].value == "") {
+						        alert("");
+						        return false;
+						    }
+						    }
+						    if (f.elements["ny"] && !f.elements["ny"].checked) {
+						        alert("You must accept the privacy statement");
+						        return false;
+						    }
+						    return true;
+						}
+						}
+						//]]>
+					</script>
+
+					<!--<div class="newsletter widget">
+	                    <h2>Receber por e-mail</h2>
+	                    <form>
+	                        <dt>Nome</dt>
+	                        <dd><input type="text" class="input-text newsletter-firstname" name="nn" size="30"required /></dd>
+
+	                        <dt>E-mail</dt>
+	                        <dd><input type="email" class="input-text" /></dd>
+	                        <input type="submit" class="input-submit newsletter-email" value="Enviar" />
+	                    </form>
+	                </div>-->
+
+					<h2>Receber por e-mail</h2>
+					<form method="post" action="http://localhost/modomeu/?na=s" onsubmit="return newsletter_check(this)">
+						<dt>Nome</dt>
+						<dd><input class="input-text" type="text" name="nn" size="30"required></dd>
+
+						<dt>E-mail</dt>
+						<dd><input class="input-text" type="email" name="ne" size="30" required></dd>
+
+						<input type="submit" class="input-submit newsletter-email" value="Enviar" />
+					</form>
+				</div>
                 <div class="social widget">
                      <nav>
                          <a href="#"><img src="assets/images/twitter.png" /></a>
@@ -413,18 +466,6 @@
                 <div class="gplus-box widget">
                     <h2>Maisinhos</h2>
                     <div class="g-page" data-href="//plus.google.com/u/0/113887936914797894628" data-layout="landscape" data-rel="publisher"></div>
-                </div>
-
-                <div class="newsletter widget">
-                    <h2>Receber por e-mail</h2>
-                    <form>
-                        <dt>Nome</dt>
-                        <dd><input type="text" class="input-text newsletter-firstname" name="nn" size="30"required /></dd>
-
-                        <dt>E-mail</dt>
-                        <dd><input type="email" class="input-text" /></dd>
-                        <input type="submit" class="input-submit newsletter-email" value="Enviar" />
-                    </form>
                 </div>
 			</aside>
 		</div>
