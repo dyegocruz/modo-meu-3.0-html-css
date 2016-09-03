@@ -382,6 +382,17 @@ em {
 .main-content .content .content-highlights .highlights-home .post-data,
 .main-content .content-pages .content-highlights .highlights-home .post-data {
   padding: 2% 5%;
+  font-family: 'Dosis';
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 11pt;
+}
+.main-content .content .content-highlights .highlights-home .post-data a,
+.main-content .content-pages .content-highlights .highlights-home .post-data a {
+  font-family: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  font-size: inherit;
 }
 .main-content .content .content-highlights .highlights-home .highlights-home-first,
 .main-content .content-pages .content-highlights .highlights-home .highlights-home-first {
@@ -540,7 +551,7 @@ em {
 .main-content .content .content-posts .post .post-content p,
 .main-content .content-pages .content-posts .post .post-content p {
   font-family: "Arial";
-  font-size: 11pt;
+  font-size: 12pt;
 }
 .main-content .content .content-posts .post .post-content p iframe,
 .main-content .content-pages .content-posts .post .post-content p iframe {
@@ -1440,7 +1451,7 @@ em {
 }
 /*------- Media Queries -------*/
 /* Mobile  */
-@media screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) {
   .menu-top {
     display: none;
   }
@@ -1527,7 +1538,7 @@ em {
   }
 }
 /* Mobile landscape */
-@media screen and (min-width: 480px) and (orientation: landscape) {
+@media only screen and (min-width: 480px) and (orientation: landscape) {
   .menu-top {
     display: none;
   }
@@ -1582,7 +1593,7 @@ em {
   }
 }
 /* Tablet */
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .menu-floating .logo {
     width: auto;
     float: none;
@@ -1653,7 +1664,7 @@ em {
   }
 }
 /* Tablet landscape */
-@media screen and (min-width: 768px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   .header .logo-top {
     margin: 0 0 0 2%;
   }
@@ -1669,7 +1680,7 @@ em {
   }
 }
 /* Desktop */
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .menu-top {
     display: block;
   }
