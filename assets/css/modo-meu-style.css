@@ -385,7 +385,7 @@ em {
   font-family: 'Dosis';
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 11pt;
+  font-size: 10pt;
 }
 .main-content .content .content-highlights .highlights-home .post-data a,
 .main-content .content-pages .content-highlights .highlights-home .post-data a {
@@ -532,8 +532,8 @@ em {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 0;
+  margin-bottom: 1%;
 }
 .main-content .content .content-posts .post .post-content .podPress_content,
 .main-content .content-pages .content-posts .post .post-content .podPress_content {
@@ -1556,7 +1556,7 @@ em {
     display: none;
   }
   .main-content .content .content-posts .post .post-content {
-    margin: 2% 0;
+    margin: 0;
   }
   .main-content .content .content-posts .post .post-footer .post-meta {
     width: 32.5%;
