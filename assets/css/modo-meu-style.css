@@ -521,6 +521,15 @@ em {
 .main-content .content .content-posts .post .post-header .post-data,
 .main-content .content-pages .content-posts .post .post-header .post-data {
   left: 1.5em;
+  font-size: 9pt;
+  font-family: 'Dosis';
+  text-transform: uppercase;
+}
+.main-content .content .content-posts .post .post-header .post-data a,
+.main-content .content-pages .content-posts .post .post-header .post-data a {
+  font-size: inherit;
+  font-family: inherit;
+  text-transform: inherit;
 }
 .main-content .content .content-posts .post .post-content,
 .main-content .content-pages .content-posts .post .post-content {
