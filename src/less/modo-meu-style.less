@@ -14,6 +14,10 @@ Tags: -
 @screen-desktop: 1200px;
 @screen-tv: 1600px;
 
+/*------- Fonts File -------*/
+@import "fonts.less";
+/*------- Fonts File -------*/
+
 @main-font-family: 'Archive', sans-serif;
 @second-font-family: 'Dosis', sans-serif;
 @color-text: #898989; //texto cinza claro
@@ -26,16 +30,6 @@ Tags: -
 @color-menu-top: #f1f1f1;
 @max-width-container: 1170px;
 @default-radius: 3px;
-
-@font-face {
-    font-family: "Archive";
-    src: url("fonts/Archive.eot?") format("eot"),
-        url("fonts/Archive.woff") format("woff"),
-        url("fonts/Archive.ttf") format("truetype"),
-        url("fonts/Archive.svg#Archive") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
 
 html, body { height: 100%; }
 
@@ -61,6 +55,7 @@ body {
 .f-left { float: left; }
 .f-right { float: right; }
 .margin-auto { margin: 0 auto; }
+.display-inline { display: inline; }
 .no-mp { margin: 0; padding: 0; }
 .opacity-background-white { background: rgba(255, 255, 255, 0.9); }
 .opacity-background-gray { background: rgba(137, 137, 137, 0.2); }
@@ -223,15 +218,21 @@ em {
     z-index: 9999;
     position: fixed;
 
-    nav{
-
+    nav {
         max-width: @max-width-container;
         width: 100%;
         position: relative;
 
-        a {
-            font-size: 11pt;
-            padding-right: 1%;
+        ul {
+            width: 50%;
+            li {
+                display: inline;
+
+                a {
+                    font-size: 11pt;
+                    padding-right: 1%;
+                }
+            }
         }
 
     }
@@ -504,10 +505,10 @@ em {
                         }
                     }
 
-                    .post-data { 
+                    .post-data {
                         left: 1.5em;
                         font-size: 9pt;
-                        font-family: 'Dosis';                        
+                        font-family: 'Dosis';
                         text-transform: uppercase;
 
                         a {

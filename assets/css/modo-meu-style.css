@@ -7,12 +7,42 @@ Author URI: http://benjaminstudio.com.br/
 Version: 1.0
 Tags: -
  */
+/*------- Fonts File -------*/
 @font-face {
   font-family: "Archive";
   src: url("fonts/Archive.eot?") format("eot"), url("fonts/Archive.woff") format("woff"), url("fonts/Archive.ttf") format("truetype"), url("fonts/Archive.svg#Archive") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+.archive {
+  font-family: 'Archive';
+  font-weight: normal;
+}
+.opensans {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.opensans-bold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+.assistant {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 400;
+}
+.assistant-bold {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 700;
+}
+.assistant-semi-bold {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+}
+.assistant-exta-bold {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 800;
+}
+/*------- Fonts File -------*/
 html,
 body {
   height: 100%;
@@ -49,6 +79,9 @@ body {
 }
 .margin-auto {
   margin: 0 auto;
+}
+.display-inline {
+  display: inline;
 }
 .no-mp {
   margin: 0;
@@ -249,7 +282,13 @@ em {
   width: 100%;
   position: relative;
 }
-.menu-top nav a {
+.menu-top nav ul {
+  width: 50%;
+}
+.menu-top nav ul li {
+  display: inline;
+}
+.menu-top nav ul li a {
   font-size: 11pt;
   padding-right: 1%;
 }
