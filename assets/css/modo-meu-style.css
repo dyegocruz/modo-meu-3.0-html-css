@@ -14,31 +14,31 @@ Tags: -
   font-weight: normal;
   font-style: normal;
 }
-.archive {
+.font-archive {
   font-family: 'Archive';
   font-weight: normal;
 }
-.opensans {
+.font-opensans {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
-.opensans-bold {
+.font-opensans-bold {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
-.assistant {
+.font-assistant {
   font-family: 'Assistant', sans-serif;
   font-weight: 400;
 }
-.assistant-bold {
+.font-assistant-bold {
   font-family: 'Assistant', sans-serif;
   font-weight: 700;
 }
-.assistant-semi-bold {
+.font-assistant-semi-bold {
   font-family: 'Assistant', sans-serif;
   font-weight: 600;
 }
-.assistant-exta-bold {
+.font-assistant-exta-bold {
   font-family: 'Assistant', sans-serif;
   font-weight: 800;
 }
@@ -289,8 +289,11 @@ em {
   display: inline;
 }
 .menu-top nav ul li a {
-  font-size: 11pt;
-  padding-right: 1%;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10pt;
+  padding-right: 2%;
 }
 .menu-floating {
   display: none;
@@ -333,60 +336,110 @@ em {
 }
 .header {
   margin-top: 5%;
+  /*.header-right {
+        width: 80%;
+        margin-top: 1%;
+
+        .menu-category {
+            position: relative;
+            text-align: center;
+            margin-bottom: 40px;
+            background: #fff;
+
+            li {
+                .transition(0.3s);
+                display: inline-block;
+                background: none;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    margin: 10px 7px;
+                }
+
+                ul {
+                    background: #fff;
+                    display: none;
+                    li {
+                        a {
+                            margin: 0px 5px;
+                            padding: 0;
+                            font-size: 10pt;
+                            color: @color-rosa;
+                        }
+
+                        &:hover {
+                            background: none;
+
+                            a {
+                                color: @color-turquesa;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+
+                    ul {
+                        .fadeIn(0.5s);
+                        position: absolute;
+                        text-align: left;
+                        width: auto;
+                        top: 38px;
+                    }
+                }
+
+            }
+        }
+
+    }*/
 }
 .header .logo-top {
   display: block;
-  margin-left: 2%;
+  width: 291px;
+  height: 102px;
 }
 .header .logo-top h1 {
+  background-image: url('../images/logo-modo-meu.png');
+  width: inherit;
+  height: inherit;
   background-repeat: no-repeat;
   text-indent: -9999px;
 }
-.header .header-right {
-  width: 80%;
-  margin-top: 1%;
-}
-.header .header-right .banner-top {
-  /*max-width: 728px;
-            max-height: 90px;
-            width: 90%;
-            height: 90px;*/
-  width: 75%;
-}
-.header .header-right .menu-category {
+.header .menu-category {
   position: relative;
   text-align: center;
   margin-bottom: 40px;
   background: #fff;
 }
-.header .header-right .menu-category li {
+.header .menu-category li {
   webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   display: inline-block;
   background: none;
 }
-.header .header-right .menu-category li a {
+.header .menu-category li a {
   display: block;
   text-decoration: none;
   margin: 10px 7px;
 }
-.header .header-right .menu-category li ul {
+.header .menu-category li ul {
   background: #fff;
   display: none;
 }
-.header .header-right .menu-category li ul li a {
+.header .menu-category li ul li a {
   margin: 0px 5px;
   padding: 0;
   font-size: 10pt;
   color: #e73064;
 }
-.header .header-right .menu-category li ul li:hover {
+.header .menu-category li ul li:hover {
   background: none;
 }
-.header .header-right .menu-category li ul li:hover a {
+.header .menu-category li ul li:hover a {
   color: #12aec0;
 }
-.header .header-right .menu-category li:hover ul {
+.header .menu-category li:hover ul {
   -webkit-animation-name: fadeIn;
   -webkit-animation-duration: 0.5s;
   animation-name: fadeIn;
@@ -1512,23 +1565,27 @@ em {
   .menu-floating .logo img {
     width: 50%;
   }
-  .header .logo-top {
-    margin: 0 25%;
+  .header {
+    /*.header-right {
+			width: 100%;
+
+            .menu-category {
+                li {
+                    &:hover{
+                        background: none;
+
+                        ul{
+                            display: none;
+                        }
+                    }
+                }
+            }
+		}*/
   }
-  .header .logo-top h1 {
-    background-image: url('../images/logo-modo-meu-mobile.png');
-    width: 175px;
-    height: 55px;
-    margin-bottom: 10%;
-  }
-  .header .header-right {
-    width: 100%;
-    /*.banner-top { display: none; }*/
-  }
-  .header .header-right .menu-category li:hover {
+  .header .menu-category li:hover {
     background: none;
   }
-  .header .header-right .menu-category li:hover ul {
+  .header .menu-category li:hover ul {
     display: none;
   }
   .main-content .content {
@@ -1593,13 +1650,6 @@ em {
   .menu-floating .logo img {
     width: 30%;
   }
-  .header .logo-top {
-    margin: 0 40%;
-  }
-  .header .header-right {
-    width: 100%;
-    /*.banner-top { display: none; }*/
-  }
   .main-content .content .content-highlights .highlights-home .highlights-home-first {
     display: none;
   }
@@ -1648,11 +1698,6 @@ em {
   }
   .menu-floating .logo img {
     width: auto;
-  }
-  .header .logo-top h1 {
-    background-image: url('../images/logo-modo-meu.png');
-    width: 167px;
-    height: 160px;
   }
   /*.header {
 		.header-right {
@@ -1713,13 +1758,6 @@ em {
 }
 /* Tablet landscape */
 @media only screen and (min-width: 768px) and (orientation: landscape) {
-  .header .logo-top {
-    margin: 0 0 0 2%;
-  }
-  .header .header-right {
-    width: 75%;
-    /*.banner-top { display: block; } */
-  }
   .main-content .content {
     width: 66%;
   }
@@ -1732,16 +1770,33 @@ em {
   .menu-top {
     display: block;
   }
-  .header .header-right {
-    width: 83%;
+  .header {
+    /*.header-right {
+            width: 83%;
+
+            .menu-category {
+                li {
+                    padding: 0px;
+
+                    &:hover{
+                        background: url('../images/arrow-down-gray.png') 50% 85% no-repeat;
+
+                        ul{
+
+                            display: block;
+                        }
+                    }
+                }
+            }
+		}*/
   }
-  .header .header-right .menu-category li {
+  .header .menu-category li {
     padding: 0px;
   }
-  .header .header-right .menu-category li:hover {
+  .header .menu-category li:hover {
     background: url('../images/arrow-down-gray.png') 50% 85% no-repeat;
   }
-  .header .header-right .menu-category li:hover ul {
+  .header .menu-category li:hover ul {
     display: block;
   }
   .main-content .content-pages {
