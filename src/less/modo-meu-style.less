@@ -579,6 +579,13 @@ em {
                         text-align: justify;
                     }
 
+                    blockquote {
+                        padding: 2%;
+                        border: 2px solid @color-turquesa;
+                        color: @color-roxo;
+                        text-align: justify;
+                    }
+
                     p {
 
                         iframe {
@@ -592,7 +599,7 @@ em {
                     }
 
                     ul {
-                        list-style-type: disc;;
+                        list-style-type: disc;
                         list-style-position: inside;
                     }
 
@@ -609,117 +616,128 @@ em {
                 }
 
                 .post-footer {                    
-                    border-top: 2px solid @color-border;
-                    border-bottom: 1px solid @color-border;
+                    margin-top: 3%;
+                    
+                    .post-footer-info {
+                        border-top: 2px solid @color-border;
+                        border-bottom: 1px solid @color-border;
+                        position: relative;
 
-                    .post-footer-author {
-                        .font-assistant-semi-bold();
-                        color: @color-text;
-                        text-align: center;
-                        display: table;
-
-                        .post-footer-author-name,
-                        .post-footer-author-photo {
-                            width: 30%;
-                        }
-
-                        .post-footer-author-name,
-                        .post-footer-author-photo,
-                        .post-footer-author-desc {
-                            display: table-cell;
-                            vertical-align: middle;
-                        }
-
-                        .post-footer-author-name {
-                            text-align: right;
-                            font-size: 12px;
-
-                            h2 {
-                                .font-archive();
-                                color: @color-roxo;
-                            }
-                        }
-
-                        .post-footer-author-photo {
-                            width: 11%;
-                            padding: 0 2%;
+                        .post-footer-author-photo {                        
+                            position: absolute;
+                            left: 45%;
+                            top: -7px;
                             img {
-                                width: 100%;
+                                width: 80px;
+                                height: 80px;
                                 .border-radius(5%);
                                 border: 2px solid @color-border;
                             }
                         }
 
-                        .post-footer-author-desc {
-                            width: 35%;
-                            font-size: 14px;
-                            text-align: left;
-                            padding-right: 10%;
+                        .post-footer-author {
+                            .font-assistant-semi-bold();
+                            color: @color-text;
+                            text-align: center;
+                            display: table;
+                            position: relative;
+
+                            .post-footer-author-name {
+                                width: 35%;
+                            }
+
+                            .white-space {
+                                width: 10%;
+                            }
+
+                            .post-footer-author-name,
+                            .white-space {
+                                padding: 12px 0;
+                            }
+
+                            .post-footer-author-name,
+                            .white-space,
+                            .post-footer-author-desc {
+                                display: table-cell;
+                                vertical-align: middle;
+                            }
+
+                            .post-footer-author-name {
+                                text-align: right;
+                                font-size: 12px;
+
+                                h2 {
+                                    .font-archive();
+                                    color: @color-roxo;
+                                }
+                            }                        
+
+                            .post-footer-author-desc {
+                                width: 34%;
+                                font-size: 14px;
+                                text-align: left;
+                                padding-right: 10%;
+                            }
                         }
                     }
+                    
+                    .post-footer-meta {
+                        margin-top: 1%;
+                        padding: 2%;
+                        border-bottom: 2px solid @color-border;
+                        .post-footer-tags {
+                            width: 40%;                            
+                            vertical-align: middle;
+                            a {
+                                color: @color-turquesa;
+                                &:hover {
+                                    color: @color-roxo;
+                                }                                
+                            }
+                        }
 
-                    //.post-meta { float: left; }
-                    // .author {
-                    //     img {
-                    //         width: 33%;
-                    //         margin-right: 1em;
-                    //         .f-left();
-                    //         .border-radius(5%);
-                    //         border: 2px solid @color-border;
-                    //     }
-                    //     p { font-size: 10pt; margin: .4em 0 0 0; }
-                    //     h2 { line-height: 1.3em; }
-                    // }
-                    //
-                    // .social {
-                    //     margin-top: .5em;
-                    //     .fb-like { position: relative; top: -6px; }
-                    //     img { width: auto; }
-                    // }
-                    //
-                    // .comments {
-                    //     margin-top: 1%;
-                    //     a {
-                    //         font-size: 15pt;
-                    //         img {
-                    //             width: 32px;
-                    //             margin: 0 0 0 1.5em;
-                    //         }
-                    //     }
-                    // }
-                    //
-                    // .button-share-facebook {
-                    //     width: 35%;
-                    //     text-align: center;
-                    //     margin-top: 1%;
-                    // }
-                    //
-                    // .post-category-tag {
-                    //     font-family: @second-font-family;
-                    //     text-transform: uppercase;
-                    //     color: @color-text;
-                    //     width: 100%;
-                    //     font-size: 10pt;
-                    //     margin: 1em 0;
-                    //
-                    //     a {
-                    //         font-family: @second-font-family;
-                    //         font-weight: bold;
-                    //         color: @color-turquesa;
-                    //         &:hover {
-                    //             color: @color-roxo;
-                    //         }
-                    //     }
-                    // }
+                        .post-footer-tags,
+                        .post-footer-social {
+                            .font-assistant-semi-bold();
+                            font-size: 12px;
+                            color: @color-text;
+                            text-transform: uppercase;
+                        }
+
+                        .post-footer-social {
+                            width: 35%;
+                            .font-assistant-semi-bold();
+                            .post-meta-ico-social {
+                                width: 29px;
+                                height: 29px;
+                            }
+
+                            ul {
+                                display: table-row;
+                                li {
+                                    display: table-cell;                                
+                                    vertical-align: middle;
+                                    padding: 0 3%;
+                                }
+                            }
+                        }
+
+                        .post-footer-comments {
+                            width: 25%;
+                            .font-assistant-bold();
+                            color: @color-roxo;
+                            font-size: 14px;
+                            text-transform: uppercase;  
+                            vertical-align: middle;                          
+                        }
+
+                        .post-footer-tags,
+                        .post-footer-social,
+                        .post-footer-comments {
+                            display: table-cell;
+                        }
+                    }   
                 }
-
-                // hr {
-                //     border: none;
-                //     width: 90%;
-                //     height: 2px;
-                //     background: @color-border;
-                // }
-
             }
 
             .banners {
@@ -732,7 +750,8 @@ em {
             .pagination {
                 width: 100%;
                 margin: 2.5em 0;
-                font-size: 14pt;
+                font-size: 16px;
+                .font-assistant-bold();
 
                 a {
                     color: #fff;
@@ -1258,6 +1277,8 @@ em {
     background: @color-turquesa;
 
     .footer {
+        .font-assistant-semi-bold();
+        text-transform: uppercase;
         max-width: @max-width-container;
         width: 100%;
 
@@ -1273,15 +1294,13 @@ em {
                 height: 87px;
             }
 
-            .copyright {
-                font-family: @second-font-family;
-                font-size: 9pt;
+            .copyright {                
+                font-size: 11px;
                 color:  @color-roxo;
-                text-transform: uppercase;
             }
         }
 
-        .menu-bottom {
+        /*.menu-bottom {
             background: #fff;
             margin-top: 3%;
             .border-radius();
@@ -1311,44 +1330,51 @@ em {
                     &:hover { color: @color-turquesa; }
                 }
             }
-        }
+        }*/
 
         .archive {
+            font-size: 12px;
             margin-top: 4%;
-            font-family: @main-font-family;
-            font-size: 10pt;
             color: #fff;
 
             select {
+                font-family: inherit;
+                font-size: inherit;
                 width: 100%;
                 height: 36px;
                 margin-top: 5%;
-                padding-left: 10px;
-                font-family: @second-font-family;
-                font-size: 10pt;
-                text-transform: uppercase;
+                padding-left: 10px;                
                 color: @color-roxo;
                 background: url("../images/arrow-down.png") no-repeat 95% 50% #fff;
                 border: none;
                 -webkit-appearance: none;
-                 -moz-appearance: none;
+                -moz-appearance: none;
                 .border-radius();
             }
         }
 
-        .postal-code {
-            margin-top: 4%;
-            font-family: @main-font-family;
-            font-size: 10pt;
-            text-transform: uppercase;
+        .partners {
+            font-size: 14px;
             color: #fff;
 
-            .postal-code-data {
-                margin-top: 10%;
-                font-family: @second-font-family;
-                font-size: 10pt;
-                color: @color-roxo;
+            ul {
+                display: table-row;
+                li {
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding: 0 1%;
+                }
             }
+
+            .logo-partner {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        .partners,
+        .social-footer {
+            margin-top: 4%;
         }
 
         .social-footer {
@@ -1407,8 +1433,8 @@ em {
     }
 
     .footer-benjamin {
-        font-family: @second-font-family;
-        font-size: 9pt;
+        .font-assistant-semi-bold();
+        font-size: 11px;
         text-transform: uppercase;
         color: #fff;
         width: 100%;
