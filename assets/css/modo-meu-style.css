@@ -317,7 +317,7 @@ body {
   padding: 0;
 }
 .opacity-background-white {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.85);
 }
 .opacity-background-gray {
   background: rgba(137, 137, 137, 0.2);
@@ -363,13 +363,13 @@ body {
   height: 31px;
 }
 /*------- Icons --------*/
-.link-rosa {
-  color: #e73064;
-}
 .post-data {
   font-size: 9pt;
   font-family: 'Archive', sans-serif;
   color: #12aec0;
+}
+.link-rosa {
+  color: #e73064;
 }
 .d-block {
   display: block;
@@ -407,15 +407,17 @@ body {
   border-bottom-right-radius: 3px;
 }
 .input-text {
-  font-family: 'Archive', sans-serif;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 700;
   color: #898989;
   border: none;
   background: none;
   outline: none;
 }
 .input-submit-generic {
-  font-family: 'Archive', sans-serif;
-  font-size: 12pt;
+  font-family: 'Archive';
+  font-weight: normal;
+  font-size: 16px;
   color: #3a4192;
   background: none;
   border: none;
@@ -1025,7 +1027,7 @@ em {
   -moz-border-radius: 3px;
   border-radius: 3px;
   border-bottom: 2px solid #d6d6d6;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.85);
 }
 .posts-related ul li:nth-child(1) {
   margin: 0;
@@ -1053,7 +1055,7 @@ em {
   width: 95%;
   padding: 0 2%;
   float: left;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.85);
   border-bottom: 2px solid #d6d6d6;
 }
 .form-comment form .form-left {
@@ -1085,8 +1087,9 @@ em {
 }
 .form-comment form .input-submit {
   padding: 2% 0;
-  font-family: 'Archive', sans-serif;
-  font-size: 12pt;
+  font-family: 'Archive';
+  font-weight: normal;
+  font-size: 16px;
   color: #3a4192;
   background: none;
   border: none;
@@ -1114,7 +1117,7 @@ em {
   margin-bottom: 5%;
   padding: 1% 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.85);
 }
 .content-pages .content-page .text-page,
 .content-pages .content-page .template-page,
@@ -1293,12 +1296,12 @@ em {
   float: left;
   text-align: center;
   text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.85);
 }
 .sidebar .widget h2 {
+  font-family: 'Archive';
+  font-weight: normal;
   color: #12aec0;
-  font-family: 'Archive', sans-serif;
-  min-height: 32px;
   margin-bottom: 5%;
 }
 .sidebar .widget p {
@@ -1315,8 +1318,6 @@ em {
   width: auto;
 }
 .sidebar .highlights-post-sidebar {
-  font-family: 'Archive';
-  font-weight: normal;
   text-align: left;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1326,8 +1327,16 @@ em {
   width: 100%;
 }
 .sidebar .highlights-post-sidebar h3 {
-  margin: 5px 0 10px 0;
+  padding: 3%;
   text-align: left;
+}
+.sidebar .highlights-post-sidebar h3 a {
+  font-family: 'Archive';
+  font-weight: normal;
+  color: #3a4192;
+}
+.sidebar .highlights-post-sidebar h3 a:hover {
+  color: #12aec0;
 }
 .sidebar .search {
   -webkit-border-radius: 3px;
@@ -1360,53 +1369,31 @@ em {
   width: 300px;
   height: 250px;
 }
-.sidebar .postal-code h2 {
-  background: url('../images/icon-postal-code.png') no-repeat 20% 20%;
-}
-.sidebar .postal-code p {
-  font-family: 'Dosis', sans-serif;
-  color: #898989;
-}
-.sidebar .partners h2 {
-  background: url('../images/icon-partners.png') no-repeat 18% 20%;
-}
-.sidebar .partners nav {
-  width: 80%;
-  margin: 0 auto;
-}
-.sidebar .partners nav img {
-  width: 80px;
-  height: 80px;
-}
 .sidebar .facebook-box h2 {
   background: url('../images/icon-like.png') no-repeat 22%;
   padding-top: 2%;
 }
-.sidebar .gplus-box h2 {
-  background: url('../images/icon-plus.png') no-repeat 27%;
-}
 .sidebar .newsletter h2 {
-  padding: 0 32%;
-  background: url('../images/icon-postal-code.png') no-repeat 22%;
-  text-align: left;
+  font-family: 'Archive';
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.sidebar .newsletter h5 {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #3a4192;
 }
 .sidebar .newsletter form {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 700;
   color: #898989;
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
 }
-.sidebar .newsletter form dt,
-.sidebar .newsletter form dd {
-  margin: 4% 0;
-}
-.sidebar .newsletter form dt {
-  float: left;
-}
-.sidebar .newsletter form dd {
-  text-align: right;
-}
-.sidebar .newsletter form dd .input-text {
+.sidebar .newsletter form .input-text {
+  margin: 2% 0;
   padding: 5%;
   background: rgba(137, 137, 137, 0.2);
   -webkit-border-radius: 3px;
@@ -1414,8 +1401,11 @@ em {
   border-radius: 3px;
 }
 .sidebar .newsletter form .input-submit {
-  font-family: 'Archive', sans-serif;
-  font-size: 12pt;
+  width: 100%;
+  margin: 3% 0%;
+  font-family: 'Archive';
+  font-weight: normal;
+  font-size: 16px;
   color: #3a4192;
   background: none;
   border: none;

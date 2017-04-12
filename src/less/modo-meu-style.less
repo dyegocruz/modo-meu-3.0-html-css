@@ -60,7 +60,7 @@ body {
 .margin-auto { margin: 0 auto; }
 .display-inline { display: inline; }
 .no-mp { margin: 0; padding: 0; }
-.opacity-background-white { background: rgba(255, 255, 255, 0.95); }
+.opacity-background-white { background: rgba(255, 255, 255, 0.85); }
 .opacity-background-gray { background: rgba(137, 137, 137, 0.2); }
 .opacity-background-gray-internal { background: rgba(239, 240, 255, 0.9); }
 
@@ -107,9 +107,13 @@ body {
 }
 
 /*------- Icons --------*/
+.post-data { 
+    font-size: 9pt; 
+    font-family: @main-font-family; 
+    color: @color-turquesa; 
+}
 
 .link-rosa { color: @color-rosa; }
-.post-data { font-size: 9pt; font-family: @main-font-family; color: @color-turquesa; }
 .d-block { display: block;}
 .d-inline { display: inline;}
 .d-inline-block { display: inline-block;}
@@ -123,7 +127,7 @@ body {
 .border-bottom-right-radius { -webkit-border-bottom-right-radius: @default-radius; -moz-border-bottom-right-radius: @default-radius; border-bottom-right-radius: @default-radius; }
 
 .input-text {
-    font-family: @main-font-family;
+    .font-assistant-bold();
     color: @color-text;
     border: none;
     background: none;
@@ -131,8 +135,8 @@ body {
 }
 
 .input-submit-generic {
-    font-family: @main-font-family;
-    font-size: 12pt;
+    .font-archive();
+    font-size: 16px;
     color: @color-roxo;
     background: none;
     border: none;
@@ -1069,9 +1073,8 @@ em {
             .opacity-background-white();
 
             h2 {
-                color: @color-turquesa;
-                font-family: @main-font-family;
-                min-height: 32px;
+                .font-archive();
+                color: @color-turquesa;                
                 margin-bottom: 5%;
             }
 
@@ -1089,8 +1092,7 @@ em {
             img { width: auto; }
         }
 
-        .highlights-post-sidebar {
-            .font-archive();
+        .highlights-post-sidebar {                        
             .a-left();
             .border-radius();
 
@@ -1099,9 +1101,18 @@ em {
             }
 
             h3 {                
-                margin: 5px 0 10px 0;
+                padding: 3%;
                 text-align: left;
-            }            
+
+                a {
+                    .font-archive();
+                    color: @color-roxo;
+
+                    &:hover {
+                        color: @color-turquesa;
+                    }
+                }
+            }
         }
 
         .search {
@@ -1137,28 +1148,7 @@ em {
                 width: 300px;
                 height: 250px;
             }
-        }
-
-        .postal-code {
-
-            h2 { background: url('../images/icon-postal-code.png') no-repeat 20% 20%; }
-            p {
-                font-family: @second-font-family;
-                color: @color-text;
-            }
-        }
-
-        .partners {
-
-            h2 { background: url('../images/icon-partners.png') no-repeat 18% 20%; }
-
-            nav {
-                width: 80%;
-                margin: 0 auto;
-
-                img { width: 80px; height: 80px; }
-            }
-        }
+        }        
 
         .facebook-box{
             h2 {
@@ -1167,38 +1157,37 @@ em {
             }
         }
 
-        .gplus-box {
-            h2 { background: url('../images/icon-plus.png') no-repeat 27%; }
-        }
-
         .newsletter {
             h2 {
-                padding: 0 32%;
-                background: url('../images/icon-postal-code.png') no-repeat 22%;
+                .font-archive();
+                font-size: 18px;
+                margin-bottom: 0;
+            }
 
-                .a-left();
+            h5 {
+                .font-assistant-bold();
+                font-size: 12px;
+                color: @color-roxo;
             }
 
             form {
-                font-family: @second-font-family;
+                .font-assistant-bold();
                 color: @color-text;
-                width: 70%;
+                width: 85%;
                 margin: 0 auto;
+                
+                .input-text {
+                    margin: 2% 0;
+                    padding: 5%;
+                    .opacity-background-gray();
+                    .border-radius();
+                }                
 
-                dt, dd { margin: 4% 0; }
-
-                dt { .f-left(); }
-
-                dd {
-                    text-align: right;
-                    .input-text {
-                        padding: 5%;
-                        .opacity-background-gray();
-                        .border-radius();
-                    }
+                .input-submit {
+                    width: 100%;
+                    margin: 3% 0%;
+                    .input-submit-generic();                     
                 }
-
-                .input-submit { .input-submit-generic(); }
             }
         }
 
