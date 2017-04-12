@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/modo-meu-style.css">
 
 	<!-- JS -->
-	<script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="assets/js/scripts.js"></script>
 	<!-- /JS -->
 </head>
@@ -262,39 +262,33 @@
                     </nav>
 
                 </section>
-                <!-- /Content posts -->
+                <!-- /Content posts -->                
 
             </div>
 
-			<aside class="sidebar a-left f-right">
-				<div class="highlights-post-sidebar widget b-bottom-gray">
-                    <img class="highlights-post-sidebar-img" src="assets/images/hightlight-podcast.jpg">
-                    <div class="icon-category icon-513 f-left">
-                        <a href="#">
-                            <img src="assets/images/cat-513.png" />
-                        </a>
-                    </div>
-                    <h3>
-                         <a href="#">513 podcast 24 – gays e guerreiros da música</a>
-                    </h3>            
-                </div>
+			<aside class="sidebar a-left f-right">				
+				<nav class="social widget">
+					<ul>
+						<li><a href="#"><img src="assets/images/twitter.png" /></a></li>
+						<li><a href="#"><img src="assets/images/facebook.png" /></a></li>
+						<li><a href="#"><img src="assets/images/instagram.png" /></a></li>
+						<li><a href="#"><img src="assets/images/youtube.png" /></a></li>
+						<li><a href="#"><img src="assets/images/pinterest.png" /></a></li>
+						<li><a href="#"><img src="assets/images/feed.png" /></a></li>
+					</ul>                           
+				</nav>                
+				<div class="search widget b-bottom-gray">
+                    <form>
+                        <input type="text" class="input-text" placeholder="BUSQUE O QUE DESEJA" />
+                        <input type="submit" class="input-submit" value="" />
+                    </form>
+                </div>		
                 <div class="highlights-post-sidebar widget b-bottom-gray">
-                    <img class="highlights-post-sidebar-img" src="assets/images/hightlight-canal-modomeu.png">
-                    <div class="icon-category icon-513 f-left">
-                        <a href="#">
-                            <img src="assets/images/cat-513.png" />
-                        </a>
-                    </div>
+                    <img class="highlights-post-sidebar-img" src="assets/images/hightlight-canal-modomeu.png">                    
                     <h3>
                          <a href="#">Nossa coleção de Star Wars</a>
                     </h3>
-                </div>
-                <div class="search widget b-bottom-gray">
-                    <form>
-                        <input type="text" class="input-text" placeholder="Busque o que deseja" />
-                        <input type="submit" class="input-submit" value="" />
-                    </form>
-                </div>
+                </div>                
 				<div class="newsletter widget newsletter-subscription">
 					<script type="text/javascript">
 						//<![CDATA[
@@ -347,19 +341,7 @@
 
 						<input type="submit" class="input-submit newsletter-email" value="Enviar" />
 					</form>
-				</div>
-                <div class="social widget">
-                     <nav>
-                         <a href="#"><img src="assets/images/twitter.png" /></a>
-                         <a href="#"><img src="assets/images/facebook.png" /></a>
-                         <a href="#"><img src="assets/images/feed.png" /></a>
-                         <a href="#"><img src="assets/images/gplus.png" /></a>
-                         <a href="#"><img src="assets/images/youtube.png" /></a>
-                         <a href="#"><img src="assets/images/pinterest.png" /></a>
-                         <a href="#"><img src="assets/images/filmow.png" /></a>
-                         <a href="#"><img src="assets/images/instagram.png" /></a>
-                     </nav>
-                </div>
+				</div>                
                 <div class="adsense widget">
                    <div class="box">
                        publicidade
@@ -398,11 +380,15 @@
                 </div>
 			</aside>
 		</div>
-
-	</main>
+        
+        <div class="feed-instagram f-left">
+            <h3><a href="#">@modomeu</a></3>
+            <ul></ul>
+        </div>
+	</main>    
 
     <footer class="main-footer-container f-left">
-       <a href="#" class="button-back-to-top"><img src="assets/images/arrow-up-white.png" /></a>
+        <a href="#" class="button-back-to-top"><img src="assets/images/arrow-up-white.png" /></a>        
         <div class="footer margin-auto">
             <div class="logo-modo-meu widget">
                 <a href="#"><img src="assets/images/logo-modo-meu-white.png" /></a>

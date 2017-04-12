@@ -146,12 +146,18 @@ body {
 }
 
 .social {
-    nav {
-        a {
-            float: left;
-            margin: 0 0 0 3px;
+    ul {        
+        width: 100%;
+        text-align: center;
 
-            img { width: auto; }
+        li {
+            display: inline-block;
+            width: 32px;
+            padding: 0 1%;
+            
+            img {
+                width: inherit;
+            }
         }
     }
 }
@@ -617,7 +623,7 @@ em {
 
                 .post-footer {                    
                     margin-top: 3%;
-                    
+
                     .post-footer-info {
                         border-top: 2px solid @color-border;
                         border-bottom: 1px solid @color-border;
@@ -1056,7 +1062,7 @@ em {
 
         .widget {
             width: 100%;
-            margin-bottom: 9%;
+            margin-bottom: 3%;
             float: left;
             text-align: center;
             text-transform: uppercase;
@@ -1084,6 +1090,7 @@ em {
         }
 
         .highlights-post-sidebar {
+            .font-archive();
             .a-left();
             .border-radius();
 
@@ -1091,19 +1098,10 @@ em {
                 width: 100%;
             }
 
-            h3 {
+            h3 {                
                 margin: 5px 0 10px 0;
                 text-align: left;
-            }
-
-            .post-data {
-                margin-top: 10%;
-                padding: 0 4%;
-
-                p {
-                    color: @color-turquesa;
-                }
-            }
+            }            
         }
 
         .search {
@@ -1117,7 +1115,7 @@ em {
                     width: 87%;
                     height: 1.5em;
                     padding-left: 4%;
-                    font-family: @main-font-family;
+                    .font-assistant-bold();                    
                     color: @color-text;
                     border: none;
                 }
@@ -1265,6 +1263,37 @@ em {
     img {
         width: 13px;
         height: 7px;
+    }
+}
+
+.feed-instagram {
+    width: 100%;
+    text-align: center;
+
+    a {
+        .font-archive();
+        color: @color-turquesa;
+
+        &:hover {
+            color: @color-roxo;
+        }
+    }
+
+    ul {
+        width: 100%;
+        text-align: center;
+
+        li {
+            width: 150px;
+            display: inline-block;
+            padding: 1% 0.7%;
+
+            .photo-instagram {
+                width: inherit;
+                height: inherit;
+                border: 1px solid @color-border;
+            }
+        }
     }
 }
 
