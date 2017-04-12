@@ -266,31 +266,37 @@ em {
     background: @color-roxo;
 
     nav {
-        max-width: @max-width-container;
-        min-height: 70px;
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
+        ul {
+            max-width: @max-width-container;
+            width: 100%;
+            padding: 1% 0;            
+            margin: 0 auto;
+            text-align: center;
 
-        .logo { padding-left:  1%; }
+            .logo { padding-left:  1%; }
 
-        a{
-            padding-right: 0.3%;
-            color: #fff;
+            li {
+                display: inline-block;
+                padding: 0% 1%;
 
-            &:hover {
-                color: @color-turquesa;
-                .transition(0.3s);
-            }
+                a {
+                    .font-archive();
+                    font-size: 16px;                    
+                    color: #fff;
 
-            img {
-                width: auto;
-                position: relative;
-                top: 0.8em;
-            }
+                    &:hover {
+                        color: @color-turquesa;
+                        .transition(0.3s);
+                    }
+
+                    img {
+                        width: auto;
+                        position: relative;
+                        top: 0.8em;
+                    }
+                }
+            }            
         }
-
-        .link-rosa { .link-rosa(); }
     }
 }
 

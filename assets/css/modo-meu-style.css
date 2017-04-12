@@ -539,32 +539,35 @@ em {
   padding: 0;
   background: #3a4192;
 }
-.menu-floating nav {
+.menu-floating nav ul {
   max-width: 1170px;
-  min-height: 70px;
   width: 100%;
+  padding: 1% 0;
   margin: 0 auto;
   text-align: center;
 }
-.menu-floating nav .logo {
+.menu-floating nav ul .logo {
   padding-left: 1%;
 }
-.menu-floating nav a {
-  padding-right: 0.3%;
+.menu-floating nav ul li {
+  display: inline-block;
+  padding: 0% 1%;
+}
+.menu-floating nav ul li a {
+  font-family: 'Archive';
+  font-weight: normal;
+  font-size: 16px;
   color: #fff;
 }
-.menu-floating nav a:hover {
+.menu-floating nav ul li a:hover {
   color: #12aec0;
   webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.menu-floating nav a img {
+.menu-floating nav ul li a img {
   width: auto;
   position: relative;
   top: 0.8em;
-}
-.menu-floating nav .link-rosa {
-  color: #e73064;
 }
 .site {
   max-width: 1170px;
