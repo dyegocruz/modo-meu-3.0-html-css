@@ -330,10 +330,6 @@ body {
 }
 /*------- Aligns, Margins, Paddings and floats --------*/
 /*------- Icons --------*/
-.icon-category {
-  padding: 0.7em;
-  width: 33px;
-}
 .icon-513,
 .videos,
 .colunas,
@@ -738,9 +734,6 @@ em {
   animation-duration: 0.5s;
   background: rgba(239, 240, 255, 0.9);
 }
-.content-highlights .highlights-internal a .highlight-title .icon-category {
-  margin: 0 auto;
-}
 .content-highlights .highlights-internal a .highlight-title h4 {
   padding: 0 15%;
   text-align: center;
@@ -755,28 +748,44 @@ em {
   width: 100%;
 }
 .content-posts .post {
-  width: 100%;
   float: left;
+  width: 100%;
   margin-bottom: 5%;
 }
 .content-posts .post .post-header {
-  padding: .5em;
+  padding: 1%;
 }
-.content-posts .post .post-header .title h2 {
-  font-family: 'Archive', sans-serif;
-  color: #3a4192;
-  padding: 1% 0;
+.content-posts .post .post-header .icon-category {
+  width: 41px !important;
+  height: 60px;
+  display: inline-block;
+  width: auto;
+  vertical-align: top;
+  margin-right: 1%;
 }
-.content-posts .post .post-header .post-data {
-  left: 1.5em;
-  font-size: 9pt;
-  font-family: 'Dosis';
+.content-posts .post .post-header .title {
+  display: inline-block;
+  width: 93%;
   text-transform: uppercase;
 }
-.content-posts .post .post-header .post-data a {
-  font-size: inherit;
-  font-family: inherit;
-  text-transform: inherit;
+.content-posts .post .post-header .title .post-data {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+}
+.content-posts .post .post-header .title h2 {
+  font-family: 'Archive';
+  font-weight: normal;
+  color: #3a4192;
+}
+.content-posts .post .post-header .title .post-meta {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #12aec0;
+}
+.content-posts .post .post-header .title .post-meta a:hover {
+  color: #3a4192;
 }
 .content-posts .post .post-content {
   color: #898989;

@@ -68,10 +68,10 @@ body {
 /*------- Aligns, Margins, Paddings and floats --------*/
 
 /*------- Icons --------*/
-.icon-category {
-    padding: 0.7em;
-    width: 33px;
-}
+// .icon-category {
+//     padding: 0.7em;
+//     width: 33px;
+// }
 
 .icon-513,
 .videos,
@@ -504,8 +504,6 @@ em {
                         .fadeIn(0.5s);
                         .opacity-background-gray-internal();
 
-                        .icon-category { margin: 0 auto; }
-
                         h4 {
                             padding: 0 15%;
                             text-align: center;
@@ -528,34 +526,47 @@ em {
             width: 100%;
 
             .post {
-                width: 100%;
                 .f-left();
+                width: 100%;                
                 margin-bottom: 5%;
 
                 .post-header {
-                    padding: .5em;
+                    padding: 1%;
 
-                    .title {
-
-                        h2 {
-                            font-family: @main-font-family;
-                            color: @color-roxo;
-                            padding: 1% 0;
-                        }
+                    .icon-category {
+                        width: 41px !important;//temp
+                        height: 60px;//temp
+                        display: inline-block;
+                        width: auto;
+                        vertical-align: top;
+                        margin-right: 1%;
                     }
 
-                    .post-data {
-                        left: 1.5em;
-                        font-size: 9pt;
-                        font-family: 'Dosis';
+                    .title {                       
+                        display: inline-block;
+                        width: 93%;
                         text-transform: uppercase;
 
-                        a {
-                            font-size: inherit;
-                            font-family: inherit;
-                            text-transform: inherit;
+                        .post-data {
+                            .font-assistant-exta-bold();
+                            font-size: 14px;                            
                         }
-                    }
+
+                        h2 {
+                            .font-archive();
+                            color: @color-roxo;                            
+                        }
+
+                        .post-meta {
+                            .font-assistant-semi-bold();
+                            font-size: 12px;                            
+                            color: @color-turquesa;
+
+                            a:hover {
+                                color: @color-roxo;
+                            }
+                        }
+                    }                    
                 }
 
                 .post-content {
