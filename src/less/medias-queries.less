@@ -33,20 +33,26 @@
 
             .content-highlights {
                 .highlights-home {
-                    .highlights-home-first { display: none; }
+                    .highlights-home-first { 
+                        display: none;
+
+                        .highlight-home-info {
+                            position: relative;
+                        }
+                    }
                     .highlights-home-right { width: 100%; }
                 }
 
                 .highlights-internal{ display: none; }
             }
 
-            .content-posts {
-                .post {
-                    .post-content{
-                        margin: 10% 0;
-                    }
-                }
-            }
+            // .content-posts {
+            //     .post {
+            //         .post-content{
+            //             margin: 10% 0;
+            //         }
+            //     }
+            // }
 
             .posts-related {
                 ul {
@@ -261,10 +267,10 @@
 
     .main-footer-container {
         .footer{
-            .widget { width: auto; text-align: left; }
+            .widget { text-align: left; }
             .logo-modo-meu{ width: 8%; }            
-            .archive { width: 20%; }
-            .partners { width: 44%; }                
+            .archive { width: 14%; }
+            .partners { width: 53%; }
             .social-footer { width: 12%; margin: 4% 0 0 0; }
         }
     }

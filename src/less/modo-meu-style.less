@@ -107,11 +107,6 @@ body {
 }
 
 /*------- Icons --------*/
-.post-data { 
-    font-size: 9pt; 
-    font-family: @main-font-family; 
-    color: @color-turquesa; 
-}
 
 .link-rosa { color: @color-rosa; }
 .d-block { display: block;}
@@ -188,10 +183,10 @@ body {
 }
 
 /*------- Defaults -------*/
-h2 { font-size: 14pt; }
-h3 { font-size: 12pt; }
-h4 { font-size: 10pt; }
-h5 { font-size: 9pt; }
+h2 { font-size: 20px; }
+h3 { font-size: 16px; }
+h4 { font-size: 12pt; }
+h5 { font-size: 8px; }
 
 img { border: none; }
 strong, b { font-weight: bold; }
@@ -549,7 +544,8 @@ em {
 
                         .post-data {
                             .font-assistant-exta-bold();
-                            font-size: 14px;                            
+                            font-size: 14px;              
+                            color: @color-turquesa;              
                         }
 
                         h2 {
@@ -652,7 +648,7 @@ em {
 
                         .post-footer-author-photo {                        
                             position: absolute;
-                            left: 45%;
+                            left: 44%;
                             top: -7px;
                             img {
                                 width: 80px;
@@ -665,16 +661,15 @@ em {
                         .post-footer-author {
                             .font-assistant-semi-bold();
                             color: @color-text;
-                            text-align: center;
-                            display: table;
+                            text-align: center;                            
                             position: relative;
 
                             .post-footer-author-name {
-                                width: 35%;
+                                width: 43%;
                             }
 
                             .white-space {
-                                width: 10%;
+                                width: 12%;
                             }
 
                             .post-footer-author-name,
@@ -685,7 +680,7 @@ em {
                             .post-footer-author-name,
                             .white-space,
                             .post-footer-author-desc {
-                                display: table-cell;
+                                display: inline-block;
                                 vertical-align: middle;
                             }
 
@@ -739,10 +734,10 @@ em {
                                 height: 29px;
                             }
 
-                            ul {
-                                display: table-row;
+                            ul {    
+                                text-align: center;                            
                                 li {
-                                    display: table-cell;                                
+                                    display: inline-block;
                                     vertical-align: middle;
                                     padding: 0 3%;
                                 }
@@ -1318,7 +1313,7 @@ em {
         width: 100%;
 
         .widget {
-            margin: 2%;
+            margin: 2% 0%;
             float: left;
         }
 
@@ -1369,8 +1364,9 @@ em {
 
         .archive {
             font-size: 12px;
-            margin-top: 4%;
+            margin: 4% 5%;
             color: #fff;
+            text-align: center;
 
             select {
                 font-family: inherit;
@@ -1392,10 +1388,9 @@ em {
             font-size: 14px;
             color: #fff;
 
-            ul {
-                display: table-row;
+            ul {                
                 li {
-                    display: table-cell;
+                    display: inline-block;
                     vertical-align: middle;
                     padding: 0 1%;
                 }
@@ -1413,6 +1408,12 @@ em {
         }
 
         .social-footer {
+            text-align: end;
+
+            li {
+                display: inline-block;
+            }
+
             .social{
                 margin: 1%;
                 float: left;
