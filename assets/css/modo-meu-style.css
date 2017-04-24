@@ -64,20 +64,11 @@ Tags: -
   .header .menu-category li:hover ul {
     display: none;
   }
+  .content-highlights {
+    display: none;
+  }
   .main-content .content {
     width: 100%;
-  }
-  .main-content .content .content-highlights .highlights-home .highlights-home-first {
-    display: none;
-  }
-  .main-content .content .content-highlights .highlights-home .highlights-home-first .highlight-home-info {
-    position: relative;
-  }
-  .main-content .content .content-highlights .highlights-home .highlights-home-right {
-    width: 100%;
-  }
-  .main-content .content .content-highlights .highlights-internal {
-    display: none;
   }
   .main-content .content .posts-related ul li {
     width: 47%;
@@ -126,7 +117,7 @@ Tags: -
   .menu-floating .logo img {
     width: 30%;
   }
-  .main-content .content .content-highlights .highlights-home .highlights-home-first {
+  .content-highlights {
     display: none;
   }
   .main-content .content .content-posts .post .post-content {
@@ -175,14 +166,7 @@ Tags: -
   .menu-floating .logo img {
     width: auto;
   }
-  .main-content .content .content-highlights .highlights-home .highlights-home-first {
-    display: block;
-    width: 33%;
-  }
-  .main-content .content .content-highlights .highlights-home .highlights-home-right {
-    width: 64%;
-  }
-  .main-content .content .content-highlights .highlights-internal {
+  .content-highlights {
     display: block;
   }
   .main-content .content-pages .content-highlights .highlights-internal {
@@ -643,9 +627,6 @@ em {
   margin-right: 3%;
   position: relative;
 }
-.content-highlights .highlights-home .highlight-home-second {
-  margin-bottom: 6%;
-}
 .content-highlights .highlights-home .highlight-home-text {
   vertical-align: top;
 }
@@ -674,6 +655,7 @@ em {
   width: 100%;
   position: relative;
   display: flex;
+  margin-bottom: 6%;
 }
 .content-highlights .highlights-home .highlight-home-secondaries .highlight-home-secondary-img {
   width: 45%;
@@ -1522,37 +1504,6 @@ em {
   text-transform: uppercase;
   max-width: 1170px;
   width: 100%;
-  /*.menu-bottom {
-            background: #fff;
-            margin-top: 3%;
-            .border-radius();
-
-            a { font-size: 11pt; }
-            .menu-bottom-element { padding: 2.5% 0; }
-
-            .menu-bottom-header {
-                font-family: @main-font-family;
-                color: @color-text;
-                font-size: 10pt;
-            }
-
-            nav {
-                a {
-                    padding: 0 2%;
-                }
-            }
-
-            .menu-bottom-footer {
-                background: @color-roxo;
-                .border-bottom-left-radius();
-                .border-bottom-right-radius();
-
-                a {
-                    color: #fff;
-                    &:hover { color: @color-turquesa; }
-                }
-            }
-        }*/
 }
 .main-footer-container .footer .widget {
   margin: 2% 0%;
