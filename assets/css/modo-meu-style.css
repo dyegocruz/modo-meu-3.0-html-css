@@ -74,6 +74,9 @@ Tags: -
     width: 47%;
     margin-bottom: 5%;
   }
+  .main-content .content-posts .post .post-header .title {
+    width: 83%;
+  }
   .main-content .content-posts .post .post-footer .post-meta {
     width: 100%;
   }
@@ -104,9 +107,6 @@ Tags: -
   }
   .main-footer-container .footer-benjamin .logo-container {
     padding-top: 3%;
-  }
-  .sidebar {
-    width: 100%;
   }
 }
 /* Mobile landscape */
@@ -155,6 +155,9 @@ Tags: -
   }
   .main-footer-container .footer-benjamin .logo-container {
     padding-top: 0.3%;
+  }
+  .sidebar {
+    width: 100%;
   }
 }
 /* Tablet */
@@ -249,6 +252,9 @@ Tags: -
   .main-content .content .content-highlights .highlights-internal a:hover .highlight-title,
   .main-content .content-pages .content-highlights .highlights-internal a:hover .highlight-title {
     display: block;
+  }
+  .main-content .content-posts .post .post-header .title {
+    width: 93%;
   }
   .sidebar {
     display: block;
@@ -741,7 +747,6 @@ em {
 }
 .content-posts .post .post-header .title {
   display: inline-block;
-  width: 93%;
   text-transform: uppercase;
 }
 .content-posts .post .post-header .title .post-data {
@@ -1381,6 +1386,7 @@ em {
   margin: 0 auto;
 }
 .sidebar .newsletter form .input-text {
+  width: 80%;
   margin: 2% 0;
   padding: 5%;
   background: rgba(137, 137, 137, 0.2);
@@ -1507,7 +1513,8 @@ em {
 }
 .main-footer-container .footer .widget {
   margin: 2% 0%;
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
 }
 .main-footer-container .footer .logo-modo-meu img {
   width: 90px;
@@ -1557,7 +1564,7 @@ em {
   margin-top: 4%;
 }
 .main-footer-container .footer .social-footer {
-  text-align: end;
+  text-align: center;
 }
 .main-footer-container .footer .social-footer li {
   display: inline-block;

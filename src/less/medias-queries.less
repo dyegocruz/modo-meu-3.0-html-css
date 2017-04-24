@@ -29,25 +29,11 @@
 
     .content-highlights {
         display: none;
-    }
-
-    // .site {
-    //     .main-content {
-    //         .content {
-    //             .content-highlights {
-    //                 display: none;
-    //             }
-    //         }
-    //     }
-    // }
+    }    
 
     .main-content {
         .content{
             width: 100%;
-
-            // .content-highlights {
-            //     display: none;
-            // }
 
             .posts-related {
                 ul {
@@ -59,9 +45,13 @@
             }
         }
 
-
         .content-posts {
             .post {
+
+                .post-header {
+                    .title { width: 83%; }
+                }
+
                 .post-footer {
                     .post-meta {
                         width: 100%;
@@ -112,10 +102,7 @@
                 padding-top: 3%;
             }
         }
-    }
-
-    //.sidebar { display: none; }
-    .sidebar { width: 100%; }
+    }    
 }
 
 /* Mobile landscape */
@@ -201,6 +188,8 @@
         }
     }
 
+    .sidebar { width: 100%; }
+
 }
 
 /* Tablet */
@@ -215,44 +204,11 @@
         }
     }
 
-    // .site {
-    //     .main-content {
-    //         .content {
-    //             .content-highlights {
-    //                 display: block;
-
-    //                 // .highlights-home {
-    //                 //     .highlight-home-first, .highlight-home-secondaries {
-    //                 //         display: inline-block;
-    //                 //     }
-    //                 //     .highlight-home-first { width: 35%; }
-    //                 //     .highlight-home-secondaries { width: 60%; }
-    //                 // }
-    //             }
-    //         }
-    //     }
-    // }
-
     .content-highlights {
         display: block;
     }
 
     .main-content {
-        // .content{
-
-        //     .content-highlights {
-        //         display: block;
-
-        //         .highlights-home {
-        //             .highlight-home-first, .highlight-home-secondaries {
-        //                 display: inline-block;
-        //             }
-        //             .highlight-home-first { width: 35%; }
-        //             .highlight-home-secondaries { width: 60%; }
-        //         }
-        //     }
-            
-        // }
 
         .content-pages {
             .content-highlights {
@@ -288,8 +244,6 @@
             .social-footer { width: 12%; margin: 4% 0 0 0; }
         }
     }
-
-    //.sidebar {  display: none; }
 }
 
 /* Tablet landscape */
@@ -297,11 +251,7 @@
 
     .main-content {
         .content { 
-            width: 66%;            
-
-            // .content-highlights {
-            //     .highlights-internal{ display: block; }
-            // }
+            width: 66%;
         }
     }
 
@@ -355,6 +305,16 @@
                 }
             }
         }
+
+        .content-posts {
+            .post {
+                .post-header {
+                    .title { width: 93%; }
+                }
+            }
+        }
+
+
     }
 
     .sidebar {  display: block; }
