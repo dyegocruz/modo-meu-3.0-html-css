@@ -15,7 +15,7 @@ Tags: -
   font-style: normal;
 }
 .font-archive {
-  font-family: 'Archive';
+  font-family: 'Archive', sans-serif;
   font-weight: normal;
 }
 .font-opensans {
@@ -395,7 +395,7 @@ body {
   outline: none;
 }
 .input-submit-generic {
-  font-family: 'Archive';
+  font-family: 'Archive', sans-serif;
   font-weight: normal;
   font-size: 16px;
   color: #3a4192;
@@ -447,7 +447,7 @@ h3 {
   font-size: 16px;
 }
 h4 {
-  font-size: 12pt;
+  font-size: 12px;
 }
 h5 {
   font-size: 8px;
@@ -534,7 +534,7 @@ em {
   padding: 0% 1%;
 }
 .menu-floating nav ul li a {
-  font-family: 'Archive';
+  font-family: 'Archive', sans-serif;
   font-weight: normal;
   font-size: 16px;
   color: #fff;
@@ -579,7 +579,7 @@ em {
   display: inline-block;
   background: none;
   margin: 10px 7px;
-  font-family: 'Archive';
+  font-family: 'Archive', sans-serif;
   font-weight: normal;
   font-size: 16px;
   color: #3a4192;
@@ -589,7 +589,7 @@ em {
   display: none;
 }
 .header .menu-category li ul li {
-  font-family: 'Archive';
+  font-family: 'Archive', sans-serif;
   font-weight: normal;
   font-size: 13px;
   color: #e73064;
@@ -674,7 +674,7 @@ em {
 }
 .content-highlights .highlights-home .highlight-home-title {
   padding: 0% 4% 0%;
-  font-family: 'Archive';
+  font-family: 'Archive', sans-serif;
   font-weight: normal;
   color: #3a4192;
   font-size: 18px;
@@ -723,6 +723,7 @@ em {
 .page-title {
   padding: 1% 0;
   font-family: 'Archive', sans-serif;
+  font-weight: normal;
   color: #898989;
   text-transform: uppercase;
 }
@@ -756,7 +757,7 @@ em {
   color: #12aec0;
 }
 .content-posts .post .post-header .title h2 {
-  font-family: 'Archive';
+  font-family: 'Archive', sans-serif;
   font-weight: normal;
   color: #3a4192;
 }
@@ -888,7 +889,7 @@ em {
   font-size: 12px;
 }
 .content-posts .post .post-footer .post-footer-info .post-footer-author .post-footer-author-name h2 {
-  font-family: 'Archive';
+  font-family: 'Archive', sans-serif;
   font-weight: normal;
   color: #3a4192;
 }
@@ -1005,7 +1006,6 @@ em {
   margin-bottom: 2%;
   font-family: 'Archive', sans-serif;
   font-weight: normal;
-  text-transform: uppercase;
   color: #898989;
 }
 .posts-related ul {
@@ -1032,7 +1032,8 @@ em {
   padding: 3% 5%;
 }
 .form-comment {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 700;
   color: #898989;
   text-transform: uppercase;
 }
@@ -1080,7 +1081,7 @@ em {
 }
 .form-comment form .input-submit {
   padding: 2% 0;
-  font-family: 'Archive';
+  font-family: 'Archive', sans-serif;
   font-weight: normal;
   font-size: 16px;
   color: #3a4192;
@@ -1141,7 +1142,7 @@ em {
 .content-pages .content-page .template-page h4,
 .content-pages .content-page .page-parceiros h4 {
   font-family: 'Archive', sans-serif;
-  text-transform: uppercase;
+  font-weight: normal;
 }
 .content-pages .content-page .text-page h2,
 .content-pages .content-page .template-page h2,
@@ -1292,7 +1293,7 @@ em {
   background: rgba(255, 255, 255, 0.85);
 }
 .sidebar .widget h2 {
-  font-family: 'Archive';
+  font-family: 'Archive', sans-serif;
   font-weight: normal;
   color: #12aec0;
   margin-bottom: 5%;
@@ -1324,7 +1325,7 @@ em {
   text-align: left;
 }
 .sidebar .highlights-post-sidebar h3 a {
-  font-family: 'Archive';
+  font-family: 'Archive', sans-serif;
   font-weight: normal;
   color: #3a4192;
 }
@@ -1367,7 +1368,7 @@ em {
   padding-top: 2%;
 }
 .sidebar .newsletter h2 {
-  font-family: 'Archive';
+  font-family: 'Archive', sans-serif;
   font-weight: normal;
   font-size: 18px;
   margin-bottom: 0;
@@ -1397,7 +1398,7 @@ em {
 .sidebar .newsletter form .input-submit {
   width: 100%;
   margin: 3% 0%;
-  font-family: 'Archive';
+  font-family: 'Archive', sans-serif;
   font-weight: normal;
   font-size: 16px;
   color: #3a4192;
@@ -1429,7 +1430,8 @@ em {
 }
 .sidebar .send-email p {
   padding: 0 10%;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 700;
 }
 .sidebar .button-subscribe-feed {
   text-align: center;
@@ -1475,7 +1477,7 @@ em {
   text-align: center;
 }
 .feed-instagram a {
-  font-family: 'Archive';
+  font-family: 'Archive', sans-serif;
   font-weight: normal;
   color: #12aec0;
 }
