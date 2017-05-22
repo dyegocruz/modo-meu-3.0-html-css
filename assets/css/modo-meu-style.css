@@ -43,20 +43,84 @@ Tags: -
   font-weight: 800;
 }
 /*------- Fonts File -------*/
+/*------- Font Icos -------*/
+@font-face {
+  font-family: 'Fonte_ModoMeu';
+  src: url('fonts/Fonte_ModoMeu.eot?3atkrp');
+  src: url('fonts/Fonte_ModoMeu.eot?3atkrp#iefix') format('embedded-opentype'), url('fonts/Fonte_ModoMeu.ttf?3atkrp') format('truetype'), url('fonts/Fonte_ModoMeu.woff?3atkrp') format('woff'), url('fonts/Fonte_ModoMeu.svg?3atkrp#Fonte_ModoMeu') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Fonte_ModoMeu' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  width: 100%;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-513:before {
+  content: "\e900";
+}
+.icon-caixa_postal:before {
+  content: "\e901";
+}
+.icon-cine-tv:before {
+  content: "\e902";
+}
+.icon-coluna:before {
+  content: "\e903";
+}
+.icon-comentarios:before {
+  content: "\e904";
+}
+.icon-design:before {
+  content: "\e905";
+}
+.icon-facebook:before {
+  content: "\e906";
+}
+.icon-fotografia:before {
+  content: "\e907";
+}
+.icon-games:before {
+  content: "\e908";
+}
+.icon-internet:before {
+  content: "\e909";
+}
+.icon-literatura:before {
+  content: "\e90a";
+}
+.icon-lugares:before {
+  content: "\e90b";
+}
+.icon-mais:before {
+  content: "\e90c";
+}
+.icon-modo-meu:before {
+  content: "\e90d";
+}
+.icon-musica:before {
+  content: "\e90e";
+}
+.icon-parceiros:before {
+  content: "\e90f";
+}
+/*------- Font Icons -------*/
 /*------- Media Queries -------*/
 /* Mobile  */
 @media only screen and (min-width: 320px) {
   .menu-top {
     display: none;
-  }
-  .menu-floating .logo {
-    width: 100%;
-    float: left;
-    text-align: center;
-    margin-bottom: 5%;
-  }
-  .menu-floating .logo img {
-    width: 50%;
   }
   .header .menu-category li:hover {
     background: none;
@@ -77,8 +141,21 @@ Tags: -
   .main-content .content-posts .post .post-header .title {
     width: 83%;
   }
-  .main-content .content-posts .post .post-footer .post-meta {
+  .main-content .content-posts .post .post-footer .post-footer-tags {
     width: 100%;
+  }
+  .main-content .content-posts .post .post-footer .post-footer-comments {
+    text-align: center;
+    width: 100%;
+  }
+  .main-content .content-posts .post-footer-info {
+    padding-left: 0;
+  }
+  .main-content .content-posts .post-footer-info .post-footer-author-photo {
+    text-align: center;
+  }
+  .main-content .content-posts .post-footer-info .post-footer-author {
+    border-top: 2px solid #d6d6d6;
   }
   .main-content .content-pages .content-highlights .highlights-internal {
     display: none;
@@ -114,20 +191,11 @@ Tags: -
   .menu-top {
     display: none;
   }
-  .menu-floating .logo img {
-    width: 30%;
-  }
   .content-highlights {
     display: none;
   }
   .main-content .content .content-posts .post .post-content {
     margin: 0;
-  }
-  .main-content .content .content-posts .post .post-footer .post-meta {
-    width: 32.5%;
-  }
-  .main-content .content .content-posts .post .post-footer .post-meta.comments {
-    width: 34%;
   }
   .main-content .content .posts-related ul li {
     width: 23%;
@@ -162,15 +230,14 @@ Tags: -
 }
 /* Tablet */
 @media only screen and (min-width: 768px) {
-  .menu-floating .logo {
-    width: auto;
-    float: none;
-  }
-  .menu-floating .logo img {
-    width: auto;
-  }
   .content-highlights {
     display: block;
+  }
+  .main-content .content-posts .post .post-footer .post-footer-tags {
+    width: 45%;
+  }
+  .main-content .content-posts .post .post-footer .post-footer-comments {
+    width: 20%;
   }
   .main-content .content-pages .content-highlights .highlights-internal {
     display: block;
@@ -210,6 +277,18 @@ Tags: -
 @media only screen and (min-width: 768px) and (orientation: landscape) {
   .main-content .content {
     width: 66%;
+  }
+  .main-content .content-posts .post-footer-info {
+    padding-left: 15%;
+  }
+  .main-content .content-posts .post-footer-info .post-footer-author-photo {
+    display: block;
+    position: absolute;
+    left: 2%;
+    top: -7px;
+  }
+  .main-content .content-posts .post-footer-info .post-footer-author {
+    border-top: none;
   }
   .sidebar {
     width: 32%;
@@ -254,7 +333,7 @@ Tags: -
     display: block;
   }
   .main-content .content-posts .post .post-header .title {
-    width: 93%;
+    width: 89%;
   }
   .sidebar {
     display: block;
@@ -318,6 +397,13 @@ body {
   border-bottom: 2px solid #d6d6d6;
 }
 /*------- Aligns, Margins, Paddings and floats --------*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 /*------- Icons --------*/
 .icon-513,
 .videos,
@@ -557,15 +643,6 @@ em {
 }
 .header .logo-top {
   display: block;
-  width: 291px;
-  height: 102px;
-}
-.header .logo-top h1 {
-  background-image: url('../images/logo-modo-meu.png');
-  width: inherit;
-  height: inherit;
-  background-repeat: no-repeat;
-  text-indent: -9999px;
 }
 .header .menu-category {
   position: relative;
@@ -736,18 +813,21 @@ em {
   margin-bottom: 5%;
 }
 .content-posts .post .post-header {
-  padding: 1%;
+  display: block;
 }
-.content-posts .post .post-header .icon-category {
-  width: 41px !important;
-  height: 60px;
-  display: inline-block;
-  width: auto;
-  vertical-align: top;
-  margin-right: 1%;
+.content-posts .post .post-header .icone-categoria {
+  background: #60c093;
+  color: #fff;
+  font-size: 30px;
+  float: left;
+  position: relative;
+  z-index: 10;
+  padding: 4% 2.5%;
+  margin: 0% 2% 2% 0;
 }
 .content-posts .post .post-header .title {
-  display: inline-block;
+  padding: 1% 0;
+  float: left;
   text-transform: uppercase;
 }
 .content-posts .post .post-header .title .post-data {
@@ -844,68 +924,54 @@ em {
   margin-top: 3%;
 }
 .content-posts .post .post-footer .post-footer-info {
-  border-top: 2px solid #d6d6d6;
-  border-bottom: 1px solid #d6d6d6;
   position: relative;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  color: #898989;
+  border-top: 2px solid #d6d6d6;
+  border-bottom: 2px solid #d6d6d6;
 }
-.content-posts .post .post-footer .post-footer-info .post-footer-author-photo {
-  position: absolute;
-  left: 44%;
-  top: -7px;
+.content-posts .post .post-footer .post-footer-info .post-footer-author {
+  display: block;
 }
 .content-posts .post .post-footer .post-footer-info .post-footer-author-photo img {
-  width: 80px;
-  height: 80px;
+  width: 83px;
+  height: 83px;
   -webkit-border-radius: 5%;
   -moz-border-radius: 5%;
   border-radius: 5%;
   border: 2px solid #d6d6d6;
 }
-.content-posts .post .post-footer .post-footer-info .post-footer-author {
-  font-family: 'Assistant', sans-serif;
-  font-weight: 600;
-  color: #898989;
-  text-align: center;
-  position: relative;
-}
-.content-posts .post .post-footer .post-footer-info .post-footer-author .post-footer-author-name {
-  width: 43%;
-}
-.content-posts .post .post-footer .post-footer-info .post-footer-author .white-space {
-  width: 12%;
-}
-.content-posts .post .post-footer .post-footer-info .post-footer-author .post-footer-author-name,
-.content-posts .post .post-footer .post-footer-info .post-footer-author .white-space {
-  padding: 12px 0;
-}
-.content-posts .post .post-footer .post-footer-info .post-footer-author .post-footer-author-name,
-.content-posts .post .post-footer .post-footer-info .post-footer-author .white-space,
-.content-posts .post .post-footer .post-footer-info .post-footer-author .post-footer-author-desc {
+.content-posts .post .post-footer .post-footer-info .post-footer-author-name,
+.content-posts .post .post-footer .post-footer-info .post-footer-author-desc {
   display: inline-block;
-  vertical-align: middle;
 }
-.content-posts .post .post-footer .post-footer-info .post-footer-author .post-footer-author-name {
-  text-align: right;
+.content-posts .post .post-footer .post-footer-info .post-footer-author-name {
+  display: table-cell;
+  width: 30%;
+  vertical-align: top;
+  text-align: left;
   font-size: 12px;
 }
-.content-posts .post .post-footer .post-footer-info .post-footer-author .post-footer-author-name h2 {
+.content-posts .post .post-footer .post-footer-info .post-footer-author-name h2 {
   font-family: 'Archive', sans-serif;
   font-weight: normal;
   color: #3a4192;
 }
-.content-posts .post .post-footer .post-footer-info .post-footer-author .post-footer-author-desc {
-  width: 34%;
+.content-posts .post .post-footer .post-footer-info .post-footer-author-desc {
+  display: table-cell;
+  vertical-align: middle;
+  width: 70%;
   font-size: 14px;
-  text-align: left;
-  padding-right: 10%;
+  border-left: 2px solid #d6d6d6;
+  padding: 0 2%;
 }
 .content-posts .post .post-footer .post-footer-meta {
   margin-top: 1%;
-  padding: 2%;
+  padding: 0 2%;
   border-bottom: 2px solid #d6d6d6;
 }
 .content-posts .post .post-footer .post-footer-meta .post-footer-tags {
-  width: 40%;
   vertical-align: middle;
 }
 .content-posts .post .post-footer .post-footer-meta .post-footer-tags a {
@@ -923,7 +989,6 @@ em {
   text-transform: uppercase;
 }
 .content-posts .post .post-footer .post-footer-meta .post-footer-social {
-  width: 35%;
   font-family: 'Assistant', sans-serif;
   font-weight: 600;
 }
@@ -937,10 +1002,10 @@ em {
 .content-posts .post .post-footer .post-footer-meta .post-footer-social ul li {
   display: inline-block;
   vertical-align: middle;
-  padding: 0 3%;
+  padding-right: 1%;
+  max-width: 80px;
 }
 .content-posts .post .post-footer .post-footer-meta .post-footer-comments {
-  width: 25%;
   font-family: 'Assistant', sans-serif;
   font-weight: 700;
   color: #3a4192;
@@ -951,7 +1016,8 @@ em {
 .content-posts .post .post-footer .post-footer-meta .post-footer-tags,
 .content-posts .post .post-footer .post-footer-meta .post-footer-social,
 .content-posts .post .post-footer .post-footer-meta .post-footer-comments {
-  display: table-cell;
+  display: inline-block;
+  padding: 2% 0;
 }
 .content-posts .banners {
   width: 100%;
@@ -961,17 +1027,17 @@ em {
   max-width: 468px;
 }
 .content-posts .pagination {
-  width: 100%;
-  margin: 2.5em 0;
-  font-size: 16px;
   font-family: 'Assistant', sans-serif;
   font-weight: 700;
+  font-size: 16px;
+  width: 100%;
+  margin: 5% 0;
 }
 .content-posts .pagination a {
   color: #fff;
   background: #d1d1d3;
-  padding: 0.5em 0.7em 0.4em 0.7em;
-  margin: 0 0.1em;
+  padding: 1% 2%;
+  margin: 0 1%;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;

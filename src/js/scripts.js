@@ -31,7 +31,7 @@ $( document ).ready(function() {
     //     type: 'GET',
     //     data: {access_token: token, count: num_photos},
     //     success: function(data){            
-    //         for( x in data.data ){         
+    //         for( x in data.data ){          
     //             $('.feed-instagram ul').append('<li><img class="photo-instagram" src="'+data.data[x].images.thumbnail.url+'"></li>');
     //             //$('ul').append('<li><img src="'+data.data[x].images.low_resolution.url+'"></li>'); // data.data[x].images.low_resolution.url - URL of image, 306х306
     //             // data.data[x].images.thumbnail.url - URL of image 150х150

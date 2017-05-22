@@ -8,19 +8,12 @@ Version: 1.0
 Tags: -
  */
 
+
 @screen-mobile-1: 320px;
 @screen-mobile-2: 480px;
 @screen-tablet: 768px;
 @screen-desktop: 1200px;
 @screen-tv: 1600px;
-
-/*------- Fonts File -------*/
-@import "fonts.less";
-/*------- Fonts File -------*/
-
-/*------- Media Queries -------*/
-@import "medias-queries.less";
-/*------- Media Queries -------*/
 
 @color-text: #898989; //texto cinza claro
 @color-border: #d6d6d6; //borda cinza escura
@@ -32,6 +25,19 @@ Tags: -
 @color-menu-top: #f1f1f1;
 @max-width-container: 1170px;
 @default-radius: 3px;
+
+/*------- Fonts File -------*/
+@import "fonts.less";
+/*------- Fonts File -------*/
+
+/*------- Font Icos -------*/
+@import "font-icons.less";
+/*------- Font Icons -------*/
+
+/*------- Media Queries -------*/
+@import "medias-queries.less";
+/*------- Media Queries -------*/
+
 html, body { height: 100%; }
 
 body {
@@ -64,6 +70,12 @@ body {
 
 .b-bottom-gray { border-bottom: 2px solid @color-border; }
 /*------- Aligns, Margins, Paddings and floats --------*/
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
 
 /*------- Icons --------*/
 
@@ -298,17 +310,6 @@ em {
 
     .logo-top {
         display: block;
-
-        width: 291px;
-        height: 102px;
-
-        h1 {
-            background-image: url('../images/logo-modo-meu.png');
-            width: inherit;
-            height: inherit;
-            background-repeat: no-repeat;
-            text-indent: -9999px;
-        }
     }
 
     .menu-category {
@@ -500,20 +501,22 @@ em {
         margin-bottom: 5%;
 
         .post-header {
-            padding: 1%;
-
-            .icon-category {
-                width: 41px !important;//temp
-                height: 60px;//temp
-                display: inline-block;
-                width: auto;
-                vertical-align: top;
-                margin-right: 1%;
+            //padding-bottom: 1%;
+            display: block;
+            .icone-categoria {
+                background: #60c093;
+                color: #fff;
+                font-size: 30px;                
+                float: left;
+                position: relative;
+                z-index: 10;                
+                padding: 4% 2.5%;
+                margin: 0% 2% 2% 0;
             }
 
-            .title {                       
-                display: inline-block;
-                //width: 93%;
+            .title {
+                padding: 1% 0;
+                float: left;
                 text-transform: uppercase;
 
                 .post-data {
@@ -536,7 +539,7 @@ em {
                         color: @color-roxo;
                     }
                 }
-            }                    
+            }
         }
 
         .post-content {
@@ -616,73 +619,59 @@ em {
             margin-top: 3%;
 
             .post-footer-info {
+                position: relative;                
+                .font-assistant-semi-bold();
+                color: @color-text;
                 border-top: 2px solid @color-border;
-                border-bottom: 1px solid @color-border;
-                position: relative;
+                border-bottom: 2px solid @color-border;                
 
-                .post-footer-author-photo {                        
-                    position: absolute;
-                    left: 44%;
-                    top: -7px;
+                .post-footer-author {
+                    display: block;
+                }
+
+                .post-footer-author-photo {                    
                     img {
-                        width: 80px;
-                        height: 80px;
+                        width: 83px;
+                        height: 83px;
                         .border-radius(5%);
                         border: 2px solid @color-border;
                     }
                 }
 
-                .post-footer-author {
-                    .font-assistant-semi-bold();
-                    color: @color-text;
-                    text-align: center;                            
-                    position: relative;
+                .post-footer-author-name,
+                .post-footer-author-desc {
+                    display: inline-block;
+                }
 
-                    .post-footer-author-name {
-                        width: 43%;
-                    }
+                .post-footer-author-name {
+                    display: table-cell;
+                    width: 30%;
+                    vertical-align: top;
+                    text-align: left;
+                    font-size: 12px;
 
-                    .white-space {
-                        width: 12%;
-                    }
-
-                    .post-footer-author-name,
-                    .white-space {
-                        padding: 12px 0;
-                    }
-
-                    .post-footer-author-name,
-                    .white-space,
-                    .post-footer-author-desc {
-                        display: inline-block;
-                        vertical-align: middle;
-                    }
-
-                    .post-footer-author-name {
-                        text-align: right;
-                        font-size: 12px;
-
-                        h2 {
-                            .font-archive();
-                            color: @color-roxo;
-                        }
-                    }                        
-
-                    .post-footer-author-desc {
-                        width: 34%;
-                        font-size: 14px;
-                        text-align: left;
-                        padding-right: 10%;
+                    h2 {
+                        .font-archive();
+                        color: @color-roxo;
                     }
                 }
+
+                .post-footer-author-desc {
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 70%;
+                    font-size: 14px;
+                    border-left: 2px solid #d6d6d6;
+                    padding: 0 2%;
+                }
             }
-            
+ 
             .post-footer-meta {
                 margin-top: 1%;
-                padding: 2%;
+                padding: 0 2%;
                 border-bottom: 2px solid @color-border;
                 .post-footer-tags {
-                    width: 40%;                            
+                    // width: 45%;
                     vertical-align: middle;
                     a {
                         color: @color-turquesa;
@@ -700,8 +689,7 @@ em {
                     text-transform: uppercase;
                 }
 
-                .post-footer-social {
-                    width: 35%;
+                .post-footer-social {            
                     .font-assistant-semi-bold();
                     .post-meta-ico-social {
                         width: 29px;
@@ -713,13 +701,13 @@ em {
                         li {
                             display: inline-block;
                             vertical-align: middle;
-                            padding: 0 3%;
+                            padding-right: 1%;
+                            max-width: 80px;
                         }
                     }
                 }
 
                 .post-footer-comments {
-                    width: 25%;
                     .font-assistant-bold();
                     color: @color-roxo;
                     font-size: 14px;
@@ -730,7 +718,8 @@ em {
                 .post-footer-tags,
                 .post-footer-social,
                 .post-footer-comments {
-                    display: table-cell;
+                    display: inline-block;
+                    padding: 2% 0;
                 }
             }   
         }
@@ -744,16 +733,16 @@ em {
     }
 
     .pagination {
-        width: 100%;
-        margin: 2.5em 0;
-        font-size: 16px;
         .font-assistant-bold();
+        font-size: 16px;
+        width: 100%;
+        margin: 5% 0;                
 
         a {
             color: #fff;
             background: @color-pagination;
-            padding: 0.5em 0.7em 0.4em 0.7em;
-            margin: 0 0.1em;
+            padding: 1% 2%;
+            margin: 0 1%;
 
             .border-radius();
 
