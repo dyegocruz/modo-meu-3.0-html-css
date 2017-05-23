@@ -315,6 +315,10 @@ em {
     max-width: @max-width-container;
 }
 
+.menu-arrow {
+    background: url('../images/arrow-down-gray.png') center bottom no-repeat;
+}
+
 .header {
     margin-top: 5%;
 
@@ -328,41 +332,25 @@ em {
         margin-bottom: 2%;
         background: #fff;
 
-        li {
+        li {            
             .transition(0.3s);
             display: inline-block;
-            background: none;
-            margin: 10px 7px;
+            margin: 0 1%;
+            padding: 5px 0;
             .font-archive();
             font-size: 16px;
             color: @color-roxo;
 
-            // ul {
-            //     background: #fff;
-            //     display: none;
-            //     li {
-            //         .font-archive();
-            //         font-size: 13px;
-            //         color: @color-rosa;
-            //         margin: 0px 5px;
-            //         padding: 0;                 
+            // &:hover {
 
-            //         &:hover {
-            //             background: none;
-            //         }
+            //     ul {
+            //         .fadeIn(0.5s);
+            //         position: absolute;
+            //         text-align: left;
+            //         width: auto;
+            //         top: 32px;
             //     }
             // }
-
-            &:hover {
-
-                ul {
-                    .fadeIn(0.5s);
-                    position: absolute;
-                    text-align: left;
-                    width: auto;
-                    top: 32px;
-                }
-            }
 
         }
     }

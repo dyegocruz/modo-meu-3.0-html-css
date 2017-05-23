@@ -122,12 +122,6 @@ Tags: -
   .menu-top {
     display: none;
   }
-  .header .menu-category li:hover {
-    background: none;
-  }
-  .header .menu-category li:hover ul {
-    display: none;
-  }
   .content-highlights {
     display: none;
   }
@@ -301,12 +295,6 @@ Tags: -
   }
   .header .menu-category li {
     padding: 0px;
-  }
-  .header .menu-category li:hover {
-    background: url('../images/arrow-down-gray.png') 50% 85% no-repeat;
-  }
-  .header .menu-category li:hover ul {
-    display: block;
   }
   .main-content .content-pages {
     width: 100%;
@@ -660,6 +648,9 @@ em {
 .site {
   max-width: 1170px;
 }
+.menu-arrow {
+  background: url('../images/arrow-down-gray.png') center bottom no-repeat;
+}
 .header {
   margin-top: 5%;
 }
@@ -676,22 +667,12 @@ em {
   webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   display: inline-block;
-  background: none;
-  margin: 10px 7px;
+  margin: 0 1%;
+  padding: 5px 0;
   font-family: 'Archive', sans-serif;
   font-weight: normal;
   font-size: 16px;
   color: #3a4192;
-}
-.header .menu-category li:hover ul {
-  -webkit-animation-name: fadeIn;
-  -webkit-animation-duration: 0.5s;
-  animation-name: fadeIn;
-  animation-duration: 0.5s;
-  position: absolute;
-  text-align: left;
-  width: auto;
-  top: 32px;
 }
 .main-content {
   width: 100%;
