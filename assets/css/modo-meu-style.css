@@ -285,7 +285,7 @@ Tags: -
     display: block;
     position: absolute;
     left: 2%;
-    top: -7px;
+    top: -5px;
   }
   .main-content .content-posts .post-footer-info .post-footer-author {
     border-top: none;
@@ -472,6 +472,18 @@ body {
   -moz-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
+.linear-grad-defaul-colors {
+  background: #3a4192;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #12aec0, #3a4192, #e73064);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #12aec0, #3a4192, #e73064);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #12aec0, #3a4192, #e73064);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #12aec0, #3a4192, #e73064);
+  /* Standard syntax */
+}
 .input-text {
   font-family: 'Assistant', sans-serif;
   font-weight: 700;
@@ -597,6 +609,10 @@ em {
   padding-right: 2%;
 }
 .menu-floating {
+  font-family: 'Archive', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
   display: none;
   position: fixed;
   top: 0;
@@ -604,25 +620,32 @@ em {
   width: 100%;
   padding: 0;
   background: #3a4192;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #12aec0, #3a4192, #e73064);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #12aec0, #3a4192, #e73064);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #12aec0, #3a4192, #e73064);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #12aec0, #3a4192, #e73064);
+  /* Standard syntax */
 }
 .menu-floating nav ul {
   max-width: 1170px;
   width: 100%;
-  padding: 1% 0;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 .menu-floating nav ul .logo {
-  padding-left: 1%;
+  padding-left: 3%;
+  margin-right: 10%;
 }
 .menu-floating nav ul li {
   display: inline-block;
-  padding: 0% 1%;
+  padding: 0.5%;
+  vertical-align: middle;
 }
 .menu-floating nav ul li a {
-  font-family: 'Archive', sans-serif;
-  font-weight: normal;
-  font-size: 16px;
   color: #fff;
 }
 .menu-floating nav ul li a:hover {
@@ -633,7 +656,6 @@ em {
 .menu-floating nav ul li a img {
   width: auto;
   position: relative;
-  top: 0.8em;
 }
 .site {
   max-width: 1170px;
@@ -660,21 +682,6 @@ em {
   font-weight: normal;
   font-size: 16px;
   color: #3a4192;
-}
-.header .menu-category li ul {
-  background: #fff;
-  display: none;
-}
-.header .menu-category li ul li {
-  font-family: 'Archive', sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  color: #e73064;
-  margin: 0px 5px;
-  padding: 0;
-}
-.header .menu-category li ul li:hover {
-  background: none;
 }
 .header .menu-category li:hover ul {
   -webkit-animation-name: fadeIn;
@@ -855,7 +862,6 @@ em {
 }
 .content-posts .post .post-content img {
   max-width: 100%;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -1446,16 +1452,17 @@ em {
   color: #3a4192;
 }
 .sidebar .newsletter form {
-  font-family: 'Assistant', sans-serif;
-  font-weight: 700;
   color: #898989;
   width: 85%;
   margin: 0 auto;
 }
 .sidebar .newsletter form .input-text {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
   width: 80%;
   margin: 2% 0;
-  padding: 5%;
+  padding: 15px;
   background: rgba(137, 137, 137, 0.2);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;

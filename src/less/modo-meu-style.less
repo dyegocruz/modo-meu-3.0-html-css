@@ -126,6 +126,13 @@ body {
 .border-top-right-radius { -webkit-border-top-right-radius: @default-radius; -moz-border-top-right-radius: @default-radius; border-top-right-radius: @default-radius; }
 .border-bottom-left-radius { -webkit-border-bottom-left-radius: @default-radius; -moz-border-bottom-left-radius: @default-radius; border-bottom-left-radius: @default-radius; }
 .border-bottom-right-radius { -webkit-border-bottom-right-radius: @default-radius; -moz-border-bottom-right-radius: @default-radius; border-bottom-right-radius: @default-radius; }
+.linear-grad-defaul-colors {
+  background: @color-roxo; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, @color-turquesa, @color-roxo, @color-rosa); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, @color-turquesa, @color-roxo, @color-rosa); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, @color-turquesa, @color-roxo, @color-rosa); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, @color-turquesa, @color-roxo, @color-rosa); /* Standard syntax */
+}
 
 .input-text {
     .font-assistant-bold();
@@ -258,31 +265,35 @@ em {
 }
 
 .menu-floating {
+    .font-archive();
+    font-size: 12px;
+    text-transform: uppercase;
     display: none;
     position: fixed;
     top: 0;
     z-index: 99999;
     width: 100%;
-    padding: 0;
-    background: @color-roxo;
+    padding: 0;    
+    .linear-grad-defaul-colors();
 
     nav {
         ul {
             max-width: @max-width-container;
-            width: 100%;
-            padding: 1% 0;            
+            width: 100%;      
             margin: 0 auto;
-            text-align: center;
+            text-align: left;
 
-            .logo { padding-left:  1%; }
+            .logo { 
+                padding-left: 3%;
+                margin-right: 10%;
+            }
 
             li {
                 display: inline-block;
-                padding: 0% 1%;
+                padding: 0.5%;
+                vertical-align: middle;
 
-                a {
-                    .font-archive();
-                    font-size: 16px;                    
+                a {                                        
                     color: #fff;
 
                     &:hover {
@@ -292,8 +303,7 @@ em {
 
                     img {
                         width: auto;
-                        position: relative;
-                        top: 0.8em;
+                        position: relative;                        
                     }
                 }
             }            
@@ -327,21 +337,21 @@ em {
             font-size: 16px;
             color: @color-roxo;
 
-            ul {
-                background: #fff;
-                display: none;
-                li {
-                    .font-archive();
-                    font-size: 13px;
-                    color: @color-rosa;
-                    margin: 0px 5px;
-                    padding: 0;                 
+            // ul {
+            //     background: #fff;
+            //     display: none;
+            //     li {
+            //         .font-archive();
+            //         font-size: 13px;
+            //         color: @color-rosa;
+            //         margin: 0px 5px;
+            //         padding: 0;                 
 
-                    &:hover {
-                        background: none;
-                    }
-                }
-            }
+            //         &:hover {
+            //             background: none;
+            //         }
+            //     }
+            // }
 
             &:hover {
 
@@ -546,8 +556,7 @@ em {
             color: @color-text;
 
             img {
-                max-width: 100%;
-                display: block;
+                max-width: 100%;                
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: 0;
@@ -1142,16 +1151,17 @@ em {
             color: @color-roxo;
         }
 
-        form {
-            .font-assistant-bold();
+        form {                        
             color: @color-text;
             width: 85%;
             margin: 0 auto;
             
             .input-text {
+                .font-assistant-semi-bold();
+                font-size: 12px;
                 width: 80%;
                 margin: 2% 0;
-                padding: 5%;
+                padding: 15px;
                 .opacity-background-gray();
                 .border-radius();
             }                
