@@ -327,12 +327,13 @@ em {
     }
 
     .menu-category {
-        position: relative;
+        
         text-align: center;
         margin-bottom: 2%;
         background: #fff;
 
-        li {            
+        .menu { 
+            position: relative;     
             .transition(0.3s);
             display: inline-block;
             margin: 0 1%;
@@ -340,6 +341,37 @@ em {
             .font-archive();
             font-size: 16px;
             color: @color-roxo;
+
+            // &:hover {
+                .submenu-container {
+                    position: absolute;
+                    display: block;                                    
+                    border: 1px solid;
+                    top: calc(100% - 7px);
+                    z-index: 20;
+                    .opacity-background-white();
+
+                    .submenu {
+                        width: 20%;
+                        padding: 1%;
+                        line-height: 25px;
+
+                        .active {
+                            color: @color-turquesa;
+                        }
+
+                        li {
+                            .font-assistant-bold();
+                            font-size: 13px;
+                            text-transform: uppercase;
+                            text-align: left;
+                            color: @color-rosa;
+                        }                        
+                    }
+                }
+            // }
+
+            
 
             // &:hover {
 
