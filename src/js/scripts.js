@@ -11,8 +11,8 @@ $( document ).ready(function() {
             $(this).find('.submenu-container').css('width',$('.menu-category').width());
             $(this).find('.submenu-container').fadeIn();
             $('.child-row:eq(0)').show();
-    }, function() {
-        // $(this).find('.submenu-container').fadeOut();
+    }, function() { 
+        $(this).find('.submenu-container').fadeOut();
     });
 
     $('.submenu li').hover(function() {

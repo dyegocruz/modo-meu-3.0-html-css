@@ -677,7 +677,6 @@ em {
 .header .menu-category .menu .submenu-container {
   position: absolute;
   display: block;
-  border: 1px solid;
   top: calc(93%);
   z-index: 20;
   background: rgba(255, 255, 255, 0.85);
@@ -698,8 +697,26 @@ em {
   text-align: left;
   color: #e73064;
 }
+.header .menu-category .menu .submenu-container .category-children {
+  width: 80%;
+}
 .header .menu-category .menu .submenu-container .category-children .child-row {
   display: none;
+}
+.header .menu-category .menu .submenu-container .category-children .child-row .highlight-home-text {
+  width: inherit;
+}
+.header .menu-category .menu .submenu-container .category-children .child-row .highlight-home-secondary {
+  text-align: left;
+  display: inline-block;
+  width: 45%;
+  margin: 0;
+}
+.header .menu-category .menu .submenu-container .category-children .child-row .highlight-home-info {
+  padding: 0% 1% 1%;
+}
+.header .menu-category .menu .submenu-container .category-children .child-row .highlight-home-secondary-img {
+  width: auto;
 }
 .main-content {
   width: 100%;
@@ -709,6 +726,58 @@ em {
 }
 .highlight-podcast-mobile h3 {
   padding-top: 5px;
+}
+.highlight-home-secondary-img,
+.highlight-home-text {
+  display: inline-block;
+}
+.highlight-home-secondary {
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-bottom: 6%;
+}
+.highlight-home-secondary-img {
+  width: 45%;
+}
+.highlight-home-text {
+  width: 50%;
+}
+.highlight-home-info {
+  padding: 0% 2% 1%;
+}
+.highlight-home-text {
+  vertical-align: top;
+  width: 100%;
+}
+.highlight-home-info {
+  padding: 0% 5% 1%;
+  position: absolute;
+  vertical-align: bottom;
+  bottom: 0;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #12aec0;
+  text-transform: uppercase;
+}
+.highlight-home-info a:hover {
+  color: #3a4192;
+}
+.highlight-home-title {
+  padding: 0% 4% 0%;
+  font-family: 'Archive', sans-serif;
+  font-weight: normal;
+  color: #3a4192;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.highlight-home-data {
+  padding: 2% 5% 0%;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  color: #12aec0;
 }
 .content-highlights {
   width: 100%;
@@ -725,59 +794,8 @@ em {
   margin-right: 3%;
   position: relative;
 }
-.content-highlights .highlights-home .highlight-home-text {
-  vertical-align: top;
-}
-.content-highlights .highlights-home .highlight-home-info {
-  padding: 0% 5% 1%;
-  position: absolute;
-  vertical-align: bottom;
-  bottom: 0;
-  font-family: 'Assistant', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  color: #12aec0;
-  text-transform: uppercase;
-}
-.content-highlights .highlights-home .highlight-home-info a:hover {
-  color: #3a4192;
-}
 .content-highlights .highlights-home .highlight-home-secondaries {
   width: 60%;
-}
-.content-highlights .highlights-home .highlight-home-secondaries .highlight-home-secondary-img,
-.content-highlights .highlights-home .highlight-home-secondaries .highlight-home-text {
-  display: inline-block;
-}
-.content-highlights .highlights-home .highlight-home-secondaries .highlight-home-secondary {
-  width: 100%;
-  position: relative;
-  display: flex;
-  margin-bottom: 6%;
-}
-.content-highlights .highlights-home .highlight-home-secondaries .highlight-home-secondary-img {
-  width: 45%;
-}
-.content-highlights .highlights-home .highlight-home-secondaries .highlight-home-text {
-  width: 50%;
-}
-.content-highlights .highlights-home .highlight-home-secondaries .highlight-home-info {
-  padding: 0% 2% 1%;
-}
-.content-highlights .highlights-home .highlight-home-title {
-  padding: 0% 4% 0%;
-  font-family: 'Archive', sans-serif;
-  font-weight: normal;
-  color: #3a4192;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-.content-highlights .highlights-home .highlight-home-data {
-  padding: 2% 5% 0%;
-  font-family: 'Assistant', sans-serif;
-  font-weight: 800;
-  font-size: 14px;
-  color: #12aec0;
 }
 .content-highlights .highlights-internal {
   width: 100%;
@@ -1440,7 +1458,7 @@ em {
 }
 .sidebar .adsense .box {
   margin: 0 auto;
-  width: 300px;
+  width: auto;
   height: 250px;
 }
 .sidebar .facebook-box h2 {

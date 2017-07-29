@@ -345,13 +345,12 @@ em {
             // &:hover {
                 .submenu-container {
                     position: absolute;
-                    display: block;                                    
-                    border: 1px solid;
+                    display: block;                    
                     top: calc(100% - 7px);
                     z-index: 20;
                     .opacity-background-white();
 
-                    .submenu {
+                    .submenu { 
                         width: 20%;
                         padding: 1%;
                         line-height: 25px;
@@ -370,9 +369,30 @@ em {
                     }
 
                     .category-children {
+                        width: 80%;
+
                         .child-row {
                             display: none;
-                        }
+
+                            .highlight-home-text {
+                                width: inherit;
+                            }
+
+                            .highlight-home-secondary {
+                                text-align: left;
+                                display: inline-block;
+                                width: 45%;
+                                margin: 0;
+                            }
+
+                            .highlight-home-info {
+                                padding: 0% 1% 1%;
+                            }
+
+                            .highlight-home-secondary-img {
+                                width: auto;
+                            }                            
+                        }                        
                     }
                 }
             // }
@@ -406,6 +426,67 @@ em {
     }
 }
 
+// ------- Destaques
+.highlight-home-secondary-img, .highlight-home-text {
+    display: inline-block;
+}
+
+.highlight-home-secondary {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-bottom: 6%;
+}
+
+.highlight-home-secondary-img {
+    width: 45%
+}
+
+.highlight-home-text {
+    width: 50%;
+}
+
+.highlight-home-info {
+    padding: 0% 2% 1%;
+}
+
+.highlight-home-text {
+    vertical-align: top;
+    width: 100%;
+}
+
+.highlight-home-info {
+    padding: 0% 5% 1%;
+    position: absolute;
+    vertical-align: bottom;
+    bottom: 0;
+
+    .font-assistant-semi-bold();
+    font-size: 12px;
+    color: @color-turquesa;
+    text-transform: uppercase;
+
+    a:hover {
+        color: @color-roxo;
+    }
+}
+
+.highlight-home-title {
+    padding: 0% 4% 0%;
+    .font-archive();
+    color: @color-roxo;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.highlight-home-data {
+    padding: 2% 5% 0%;
+    .font-assistant-exta-bold();
+    font-size: 14px;
+    color: @color-turquesa;
+}
+// /------ Destaques
+
 .content-highlights {
     width: 100%;
     .f-left();
@@ -423,66 +504,8 @@ em {
             position: relative;
         }
 
-        .highlight-home-text {
-            vertical-align: top;
-        }
-
-        .highlight-home-info {
-            padding: 0% 5% 1%;
-            position: absolute;
-            vertical-align: bottom;
-            bottom: 0;
-
-            .font-assistant-semi-bold();
-            font-size: 12px;
-            color: @color-turquesa;
-            text-transform: uppercase;
-
-            a:hover {
-                color: @color-roxo;
-            }
-        }
-
         .highlight-home-secondaries {
-            width: 60%;
-
-            .highlight-home-secondary-img, .highlight-home-text {
-                display: inline-block;
-            }
-
-            .highlight-home-secondary {
-                width: 100%;
-                position: relative;
-                display: flex;
-                margin-bottom: 6%;
-            }
-
-            .highlight-home-secondary-img {
-                width: 45%
-            }
-
-            .highlight-home-text {
-                width: 50%;
-            }
-
-            .highlight-home-info {
-                padding: 0% 2% 1%;
-            }
-        }
-
-        .highlight-home-title {
-            padding: 0% 4% 0%;
-            .font-archive();
-            color: @color-roxo;
-            font-size: 18px;
-            text-transform: uppercase;
-        }
-
-        .highlight-home-data {
-            padding: 2% 5% 0%;
-            .font-assistant-exta-bold();
-            font-size: 14px;
-            color: @color-turquesa;
+            width: 60%;   
         }
     }
     .highlights-internal {
@@ -1152,9 +1175,9 @@ em {
     .adsense {
         .box{
             margin: 0 auto;
-            width: 300px;
+            width: auto;
             height: 250px;
-        }
+        }   
     }        
 
     .facebook-box{
