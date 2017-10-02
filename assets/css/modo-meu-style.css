@@ -174,7 +174,10 @@ Tags: -
   }
   .main-footer-container .footer .social-footer {
     width: 50%;
-    margin: 0 28%;
+    /*margin: 0 28%;*/
+  }
+  .main-footer-container .footer .archive {
+    margin: 4% 2%;
   }
   .main-footer-container .footer-benjamin .logo-container {
     padding-top: 3%;
@@ -258,6 +261,7 @@ Tags: -
   }
   .main-footer-container .footer .archive {
     width: 14%;
+    margin: 4% 2%;
   }
   .main-footer-container .footer .partners {
     width: 53%;
@@ -1613,7 +1617,6 @@ em {
   width: 100%;
 }
 .main-footer-container .footer .widget {
-  margin: 2% 0%;
   display: inline-block;
   vertical-align: middle;
 }
@@ -1627,7 +1630,6 @@ em {
 }
 .main-footer-container .footer .archive {
   font-size: 12px;
-  margin: 4% 5%;
   color: #fff;
   text-align: center;
 }
