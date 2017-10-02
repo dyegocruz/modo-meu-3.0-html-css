@@ -1,10 +1,10 @@
 /*
-Theme Name: Modo Meu 5.0
+Theme Name: Modo Meu 3.0
 Theme URI: http://modomeu.com
-Description: Modo Meu 5.0
-Author: Modocromático
-Author URI: http://modocromatico.com
-Version: 1.1
+Description: Modo Meu 3.0
+Author: Benjamin Studio
+Author URI: http://benjaminstudio.com.br/
+Version: 1.0
 Tags: -
  */
 /*------- Fonts File -------*/
@@ -841,10 +841,10 @@ em {
   text-align: center;
 }
 .page-title {
-  padding: 1% 0;
+  margin: 2% 0;
   font-family: 'Archive', sans-serif;
   font-weight: normal;
-  color: #898989;
+  color: #e73064;
   text-transform: uppercase;
 }
 .content-posts {
@@ -1227,110 +1227,107 @@ em {
   cursor: pointer;
   color: #12aec0;
 }
-.content-pages {
+.content-highlights {
   width: 100%;
 }
-.content-pages .content-highlights {
-  width: 100%;
-}
-.content-pages .content-highlights .highlights-internal {
+.content-highlights .highlights-internal {
   width: 66%;
 }
-.content-pages .content-highlights .sidebar {
+.content-highlights .sidebar {
   float: right;
 }
-.content-pages .content-page {
+.content-page {
   margin-bottom: 5%;
   padding: 1% 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.85);
 }
-.content-pages .content-page .text-page,
-.content-pages .content-page .template-page,
-.content-pages .content-page .page-parceiros {
+.content-page .text-page,
+.content-page .template-page,
+.content-page .page-parceiros {
   color: #898989;
 }
-.content-pages .content-page .text-page p,
-.content-pages .content-page .template-page p,
-.content-pages .content-page .page-parceiros p,
-.content-pages .content-page .text-page h2,
-.content-pages .content-page .template-page h2,
-.content-pages .content-page .page-parceiros h2,
-.content-pages .content-page .text-page h3,
-.content-pages .content-page .template-page h3,
-.content-pages .content-page .page-parceiros h3,
-.content-pages .content-page .text-page h4,
-.content-pages .content-page .template-page h4,
-.content-pages .content-page .page-parceiros h4 {
+.content-page .text-page p,
+.content-page .template-page p,
+.content-page .page-parceiros p,
+.content-page .text-page h2,
+.content-page .template-page h2,
+.content-page .page-parceiros h2,
+.content-page .text-page h3,
+.content-page .template-page h3,
+.content-page .page-parceiros h3,
+.content-page .text-page h4,
+.content-page .template-page h4,
+.content-page .page-parceiros h4 {
   padding: 1% 2%;
 }
-.content-pages .content-page .text-page h2,
-.content-pages .content-page .template-page h2,
-.content-pages .content-page .page-parceiros h2,
-.content-pages .content-page .text-page h3,
-.content-pages .content-page .template-page h3,
-.content-pages .content-page .page-parceiros h3,
-.content-pages .content-page .text-page h4,
-.content-pages .content-page .template-page h4,
-.content-pages .content-page .page-parceiros h4 {
+.content-page .text-page h2,
+.content-page .template-page h2,
+.content-page .page-parceiros h2,
+.content-page .text-page h3,
+.content-page .template-page h3,
+.content-page .page-parceiros h3,
+.content-page .text-page h4,
+.content-page .template-page h4,
+.content-page .page-parceiros h4 {
   font-family: 'Archive', sans-serif;
   font-weight: normal;
 }
-.content-pages .content-page .text-page h2,
-.content-pages .content-page .template-page h2,
-.content-pages .content-page .page-parceiros h2 {
+.content-page .text-page h2,
+.content-page .template-page h2,
+.content-page .page-parceiros h2 {
   font-size: 20pt;
   color: #3a4192;
 }
-.content-pages .content-page .text-page h3,
-.content-pages .content-page .template-page h3,
-.content-pages .content-page .page-parceiros h3 {
+.content-page .text-page h3,
+.content-page .template-page h3,
+.content-page .page-parceiros h3 {
   color: #12aec0;
 }
-.content-pages .content-page .text-page a,
-.content-pages .content-page .template-page a,
-.content-pages .content-page .page-parceiros a {
+.content-page .text-page a,
+.content-page .template-page a,
+.content-page .page-parceiros a {
   color: #3a4192;
   webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.content-pages .content-page .text-page a:hover,
-.content-pages .content-page .template-page a:hover,
-.content-pages .content-page .page-parceiros a:hover {
+.content-page .text-page a:hover,
+.content-page .template-page a:hover,
+.content-page .page-parceiros a:hover {
   color: #12aec0;
 }
-.content-pages .content-page .page-parceiros {
+.content-page .page-parceiros {
   width: 70%;
 }
-.content-pages .content-page .page-parceiros .parceiros-lista {
+.content-page .page-parceiros .parceiros-lista {
   width: 100%;
   float: left;
 }
-.content-pages .content-page .page-parceiros .parceiros-lista .parceiro-item,
-.content-pages .content-page .page-parceiros .parceiros-lista .parceiro-item-full {
+.content-page .page-parceiros .parceiros-lista .parceiro-item,
+.content-page .page-parceiros .parceiros-lista .parceiro-item-full {
   float: left;
 }
-.content-pages .content-page .page-parceiros .parceiros-lista .parceiro-item {
+.content-page .page-parceiros .parceiros-lista .parceiro-item {
   width: 80px;
   margin: 15px;
 }
-.content-pages .content-page .page-parceiros .parceiros-lista .parceiro-item-full {
+.content-page .page-parceiros .parceiros-lista .parceiro-item-full {
   width: 100%;
   margin: 15px 0;
 }
-.content-pages .content-page .template-page {
+.content-page .template-page {
   width: 95%;
 }
-.content-pages .content-page .template-page .editores {
+.content-page .template-page .editores {
   margin: 2% 0;
   float: left;
 }
-.content-pages .content-page .template-page .editores .editor {
+.content-page .template-page .editores .editor {
   text-align: left;
   position: relative;
   float: left;
 }
-.content-pages .content-page .template-page .editores .editor .editor-photo {
+.content-page .template-page .editores .editor .editor-photo {
   width: 40%;
   margin-right: 4%;
   max-height: 200px;
@@ -1341,76 +1338,76 @@ em {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.content-pages .content-page .template-page .editores .editor .editor-photo img {
+.content-page .template-page .editores .editor .editor-photo img {
   width: 100%;
 }
-.content-pages .content-page .template-page .editores .editor p {
+.content-page .template-page .editores .editor p {
   width: 50%;
   padding: 0;
   margin-top: 2%;
   float: left;
 }
-.content-pages .content-page .template-page .editores .editor p a {
+.content-page .template-page .editores .editor p a {
   margin-right: 1%;
   float: left;
 }
-.content-pages .content-page .template-page .colaboradores {
+.content-page .template-page .colaboradores {
   width: 100%;
   margin: 2% 0;
   float: left;
 }
-.content-pages .content-page .template-page .colaboradores .colaborador {
+.content-page .template-page .colaboradores .colaborador {
   margin: 0 2% 3% 2%;
   float: left;
 }
-.content-pages .content-page .template-page .colaboradores .colaborador .colaborador-photo {
+.content-page .template-page .colaboradores .colaborador .colaborador-photo {
   margin-bottom: 5%;
 }
-.content-pages .content-page .template-page .colaboradores .colaborador p {
+.content-page .template-page .colaboradores .colaborador p {
   margin-top: 5%;
 }
-.content-pages .content-page .template-page .editor p,
-.content-pages .content-page .template-page .colaborador p {
+.content-page .template-page .editor p,
+.content-page .template-page .colaborador p {
   font-size: 11pt;
 }
-.content-pages .content-page .template-page .editor p img,
-.content-pages .content-page .template-page .colaborador p img {
+.content-page .template-page .editor p img,
+.content-page .template-page .colaborador p img {
   width: 43px;
 }
-.content-pages .content-page .template-page hr {
+.content-page .template-page hr {
   width: 65%;
   border: none;
   height: 2px;
   background: #d6d6d6;
 }
-.content-pages .content-page .template-page .sobre {
+.content-page .template-page .sobre {
   margin-bottom: 3%;
   float: left;
 }
-.content-pages .content-page .template-page .sobre .sobre-photo {
+.content-page .template-page .sobre .sobre-photo {
   width: 30%;
   float: left;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.content-pages .content-page .template-page .sobre P {
+.content-page .template-page .sobre P {
   text-align: left;
   width: 65%;
   font-size: 11pt;
   float: left;
 }
-.content-pages .content-page .template-page .podcast-513 {
+.content-page .template-page .podcast-513 {
   float: left;
 }
-.content-pages .content-page .template-page .podcast-513 .podcast-513-photo {
+.content-page .template-page .podcast-513 .podcast-513-photo {
   width: 25%;
   float: left;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.content-pages .content-page .template-page .podcast-513 p {
+.content-page .template-page .podcast-513 p {
   text-align: left;
   width: 100%;
   font-size: 11pt;
