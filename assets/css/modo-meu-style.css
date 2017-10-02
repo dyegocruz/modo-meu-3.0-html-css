@@ -1,10 +1,10 @@
 /*
-Theme Name: Modo Meu 3.0
+Theme Name: Modo Meu 5.0
 Theme URI: http://modomeu.com
-Description: Modo Meu 3.0
-Author: Benjamin Studio
-Author URI: http://benjaminstudio.com.br/
-Version: 1.0
+Description: Modo Meu 5.0
+Author: Modocromático
+Author URI: http://modocromatico.com
+Version: 1.1
 Tags: -
  */
 /*------- Fonts File -------*/
@@ -142,6 +142,9 @@ Tags: -
     text-align: center;
     width: 100%;
   }
+  .main-content .content-posts .post-list {
+    width: 100%;
+  }
   .main-content .content-posts .post-footer-info {
     padding-left: 0;
   }
@@ -235,6 +238,9 @@ Tags: -
   }
   .main-content .content-posts .post .post-footer .post-footer-comments {
     width: 20%;
+  }
+  .main-content .content-posts .post-list {
+    width: 45%;
   }
   .main-content .content-pages .content-highlights .highlights-internal {
     display: block;
@@ -1054,6 +1060,30 @@ em {
 .content-posts .post .post-footer .post-footer-meta .post-footer-comments {
   display: inline-block;
   padding: 2% 0;
+}
+.content-posts .post-list {
+  vertical-align: top;
+  text-align: left;
+  display: inline-block;
+  margin: 0% 0% 4% 2%;
+}
+.content-posts .post-list .post-list-img {
+  width: 100%;
+}
+.content-posts .post-list .post-list-header {
+  padding: 2%;
+}
+.content-posts .post-list .post-list-cat {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #3a4192;
+}
+.content-posts .post-list .post-list-title {
+  font-family: 'Archive', sans-serif;
+  font-weight: normal;
+  color: #3a4192;
 }
 .content-posts .banners {
   width: 100%;
