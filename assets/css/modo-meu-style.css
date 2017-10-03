@@ -744,8 +744,14 @@ em {
 .highlight-home-secondary {
   width: 100%;
   position: relative;
-  display: flex;
-  margin-bottom: 6%;
+  margin-bottom: 10px;
+}
+.highlight-home-cat {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #3a4192;
 }
 .highlight-home-secondary-img {
   width: 45%;
@@ -758,7 +764,7 @@ em {
 }
 .highlight-home-text {
   vertical-align: top;
-  width: 100%;
+  padding: 0 5px;
 }
 .highlight-home-info {
   padding: 0% 5% 1%;
@@ -775,7 +781,6 @@ em {
   color: #3a4192;
 }
 .highlight-home-title {
-  padding: 0% 4% 0%;
   font-family: 'Archive', sans-serif;
   font-weight: normal;
   color: #3a4192;
@@ -793,19 +798,24 @@ em {
   width: 100%;
   float: left;
 }
+.content-highlights .highlights-home {
+  margin-bottom: 20px;
+}
 .content-highlights .highlights-home .highlight-home-first,
 .content-highlights .highlights-home .highlight-home-secondaries {
   display: inline-block;
 }
 .content-highlights .highlights-home .highlight-home-first {
-  width: 35%;
-  min-height: 370px;
+  width: 39%;
   vertical-align: top;
-  margin-right: 3%;
+  margin-right: 2%;
   position: relative;
 }
+.content-highlights .highlights-home .highlight-home-first .highlight-home-text {
+  width: 100%;
+}
 .content-highlights .highlights-home .highlight-home-secondaries {
-  width: 60%;
+  width: 55%;
 }
 .content-highlights .highlights-internal {
   width: 100%;
