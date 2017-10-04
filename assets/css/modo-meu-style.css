@@ -749,7 +749,7 @@ em {
 .highlight-home-cat {
   font-family: 'Assistant', sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   color: #3a4192;
 }
@@ -784,7 +784,7 @@ em {
   font-family: 'Archive', sans-serif;
   font-weight: normal;
   color: #3a4192;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 .highlight-home-data {
@@ -813,6 +813,9 @@ em {
 }
 .content-highlights .highlights-home .highlight-home-first .highlight-home-text {
   width: 100%;
+}
+.content-highlights .highlights-home .highlight-home-first .highlight-home-title {
+  margin-bottom: 9px;
 }
 .content-highlights .highlights-home .highlight-home-secondaries {
   width: 55%;
@@ -1075,13 +1078,13 @@ em {
   vertical-align: top;
   text-align: left;
   display: inline-block;
-  margin: 0% 1% 4% 3%;
+  margin: 0% 1% 1% 3%;
 }
 .content-posts .post-list .post-list-img {
   width: 100%;
 }
 .content-posts .post-list .post-list-header {
-  padding: 2%;
+  padding: 5px;
 }
 .content-posts .post-list .post-list-cat {
   font-family: 'Assistant', sans-serif;
