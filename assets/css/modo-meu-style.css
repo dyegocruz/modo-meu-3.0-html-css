@@ -1463,7 +1463,8 @@ em {
   width: 100%;
 }
 .sidebar .highlights-post-sidebar h3 {
-  padding: 3%;
+  padding: 5px;
+  font-size: 14px;
   text-align: left;
 }
 .sidebar .highlights-post-sidebar h3 a {
