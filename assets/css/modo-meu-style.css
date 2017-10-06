@@ -662,7 +662,7 @@ em {
   background: url('../images/arrow-down-gray.png') center bottom no-repeat;
 }
 .header {
-  margin-top: 5%;
+  margin-top: 15px;
 }
 .header .logo-top {
   display: block;
@@ -712,6 +712,7 @@ em {
 }
 .header .menu-category .menu .submenu-container .category-children .child-row {
   display: none;
+  padding-top: 15px;
 }
 .header .menu-category .menu .submenu-container .category-children .child-row .highlight-home-text {
   width: inherit;
@@ -724,9 +725,6 @@ em {
 }
 .header .menu-category .menu .submenu-container .category-children .child-row .highlight-home-info {
   padding: 0% 1% 1%;
-}
-.header .menu-category .menu .submenu-container .category-children .child-row .highlight-home-secondary-img {
-  width: auto;
 }
 .main-content {
   width: 100%;
