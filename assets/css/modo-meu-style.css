@@ -1,10 +1,10 @@
 /*
-Theme Name: Modo Meu 3.0
+Theme Name: Modo Meu 5.0
 Theme URI: http://modomeu.com
-Description: Modo Meu 3.0
-Author: Benjamin Studio
-Author URI: http://benjaminstudio.com.br/
-Version: 1.0
+Description: Modo Meu 5.0
+Author: Modocromático
+Author URI: http://modocromatico.com
+Version: 1.1
 Tags: -
  */
 /*------- Fonts File -------*/
@@ -718,6 +718,7 @@ em {
   width: inherit;
 }
 .header .menu-category .menu .submenu-container .category-children .child-row .highlight-home-secondary {
+  vertical-align: top;
   text-align: left;
   display: inline-block;
   width: 45%;
