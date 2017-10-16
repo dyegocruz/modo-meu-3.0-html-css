@@ -133,7 +133,8 @@ Tags: -
     margin-bottom: 5%;
   }
   .main-content .content-posts .post .post-header .title {
-    width: 83%;
+    width: 100%;
+    padding: 10px;
   }
   .main-content .content-posts .post .post-footer .post-footer-tags {
     width: 100%;
@@ -329,9 +330,6 @@ Tags: -
   .main-content .content .content-highlights .highlights-internal a:hover .highlight-title,
   .main-content .content-pages .content-highlights .highlights-internal a:hover .highlight-title {
     display: block;
-  }
-  .main-content .content-posts .post .post-header .title {
-    width: 89%;
   }
   .sidebar {
     display: block;
@@ -1021,6 +1019,7 @@ em {
   padding: 0 2%;
 }
 .content-posts .post .post-footer .post-footer-meta {
+  width: 100%;
   margin-top: 1%;
   padding: 0 2%;
   border-bottom: 2px solid #d6d6d6;
@@ -1041,6 +1040,7 @@ em {
   font-size: 12px;
   color: #898989;
   text-transform: uppercase;
+  width: 49%;
 }
 .content-posts .post .post-footer .post-footer-meta .post-footer-social {
   font-family: 'Assistant', sans-serif;
