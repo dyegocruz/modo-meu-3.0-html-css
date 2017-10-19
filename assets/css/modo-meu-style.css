@@ -1161,18 +1161,18 @@ em {
   padding: 0 2%;
 }
 .posts-related ul li {
-  min-height: 190px;
-  margin-left: 2.5%;
+  min-height: 150px;
+  margin: 0 1%;
   padding-bottom: 2%;
+  /*&:nth-child(1){
+                margin: 0;
+            }*/
   float: left;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   border-bottom: 2px solid #d6d6d6;
   background: rgba(255, 255, 255, 0.85);
-}
-.posts-related ul li:nth-child(1) {
-  margin: 0;
 }
 .posts-related ul li .icon-category {
   padding: 3% 5%;
