@@ -1152,6 +1152,11 @@ em {
   font-weight: normal;
   color: #898989;
 }
+.posts-related {
+  color: #3a4192;
+  font-family: 'Archive', sans-serif;
+  font-weight: normal;
+}
 .posts-related ul {
   padding: 0 2%;
 }
@@ -1168,9 +1173,6 @@ em {
 }
 .posts-related ul li:nth-child(1) {
   margin: 0;
-}
-.posts-related ul li .thumb-related-post {
-  height: 120px;
 }
 .posts-related ul li .icon-category {
   padding: 3% 5%;
