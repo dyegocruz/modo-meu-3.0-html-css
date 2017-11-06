@@ -1652,6 +1652,7 @@ em {
   background: #12aec0;
 }
 .main-footer-container .footer {
+  padding: 20px 0;
   font-family: 'Assistant', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
