@@ -9,8 +9,8 @@ And please use the appropriate [Editorconfig](http://editorconfig.org/) plugin f
 
 ## Install
 
-    $ git clone https://github.com/dyegocruz/modo-meu-3.0-html-css.git
-    $ cd modo-meu-3.0-html-css
+    $ git clone https://github.com/dyegocruz/modo-meu-front-5.0.git
+    $ cd modo-meu-front-5.0
     $ npm install
 
 ## Languages & tools
