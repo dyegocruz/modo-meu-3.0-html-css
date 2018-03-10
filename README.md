@@ -1,4 +1,4 @@
-# modo-meu-3.0-html-css
+# modo-meu-front-5.0
 
 Project Front-end of my blog [Modo Meu](http://modomeu.com/)
 
