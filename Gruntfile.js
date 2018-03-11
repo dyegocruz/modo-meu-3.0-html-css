@@ -28,6 +28,10 @@ module.exports = function(grunt) {
                     'src/js/**/*.js'
                 ],
                 tasks: ['uglify']
+            },
+            pug: {
+                files: "src/templates/**/*.pug",
+                tasks: ['pug']
             }
         },
         uglify: {
@@ -36,17 +40,30 @@ module.exports = function(grunt) {
           },
           build: {
             files: {
-                'assets/js/scripts.js': ['src/js/scripts.js'],
-                '../modomeu/wp-content/themes/modo-meu-5.0/js/scripts.js': ['src/js/scripts.js']
+                'assets/js/scripts.js': ['src/js/scripts.js']/*,
+                '../modomeu/wp-content/themes/modo-meu-5.0/js/scripts.js': ['src/js/scripts.js']*/
             }
           }
         },
+        pug: {
+            compile: {
+              options: {
+                data: {
+                  debug: false,
+                  pretty: true
+                }
+              },
+              files: {
+                'home.html': ['src/templates/home.pug']
+              }
+            }
+          },
         
         less: {
             main: {                
                 files: {
-                    "assets/css/modo-meu-style.css": "src/less/modo-meu-style.less",
-                    "../modomeu/wp-content/themes/modo-meu-5.0/css/modo-meu-style.css": "src/less/modo-meu-style.less"
+                    "assets/css/modo-meu-style.css": "src/less/modo-meu-style.less"/*,
+                    "../modomeu/wp-content/themes/modo-meu-5.0/css/modo-meu-style.css": "src/less/modo-meu-style.less"*/
                 }
             }
         },
@@ -67,7 +84,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-pug');
+    grunt.loadNpmTasks('grunt-contrib-connect');    
 
     // Default task(s).
     grunt.registerTask('serve', ['connect:server','watch']);
