@@ -400,36 +400,50 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/*------- Icons --------*/
-.icon-513,
-.videos,
-.colunas,
-.fotografia,
-.modomeu {
-  width: 33px;
-  height: 31px;
+/*------- Categories Colors --------*/
+.cinema-e-tv {
+  background: #EE3246;
+  color: #fff;
 }
-.cinema-e-tv,
-.design,
-.musica,
+.colunas {
+  background: #414042;
+  color: #fff;
+}
+.design {
+  background: #8A5CA6;
+  color: #fff;
+}
+.games {
+  background: #8EC640;
+  color: #fff;
+}
 .internet {
-  width: 32px;
-  height: 31px;
-}
-.eventos,
-.lugar {
-  width: 24px;
-  height: 32px;
+  background: #49BFA8;
+  color: #fff;
 }
 .literatura {
-  width: 24px;
-  height: 34px;
+  background: #FDCE0C;
+  color: #fff;
 }
-.game {
-  width: 24px;
-  height: 31px;
+.musica {
+  background: #F05355;
+  color: #fff;
 }
-/*------- Icons --------*/
+.tecnologia {
+  background: #2866B0;
+  color: #fff;
+}
+.youtube,
+.videos {
+  background: #12AEC0;
+  color: #fff;
+}
+.podcast,
+.podcast-513 {
+  background: #E73064;
+  color: #fff;
+}
+/*------- Categories Colors --------*/
 .link-rosa {
   color: #e73064;
 }
@@ -744,24 +758,23 @@ em {
   margin-bottom: 10px;
 }
 .highlight-home-cat {
-  font-family: 'Assistant', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
+  font-family: 'Archive', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
   text-transform: uppercase;
-  color: #3a4192;
 }
 .highlight-home-secondary-img {
-  width: 45%;
+  width: 59%;
 }
 .highlight-home-text {
-  width: 50%;
+  width: 40%;
 }
 .highlight-home-info {
   padding: 0% 2% 1%;
 }
 .highlight-home-text {
   vertical-align: top;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 .highlight-home-info {
   padding: 0% 5% 1%;
@@ -781,7 +794,7 @@ em {
   font-family: 'Archive', sans-serif;
   font-weight: normal;
   color: #3a4192;
-  font-size: 14px;
+  font-size: 18px;
   text-transform: uppercase;
 }
 .highlight-home-data {
@@ -798,14 +811,25 @@ em {
 .content-highlights .highlights-home {
   margin-bottom: 20px;
 }
+.content-highlights .highlights-home h3 {
+  display: table;
+  padding: 1px 5px;
+}
+.content-highlights .highlights-home .post-meta {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #12aec0;
+}
 .content-highlights .highlights-home .highlight-home-first,
 .content-highlights .highlights-home .highlight-home-secondaries {
   display: inline-block;
 }
 .content-highlights .highlights-home .highlight-home-first {
-  width: 39%;
+  width: 35%;
   vertical-align: top;
-  margin-right: 2%;
+  margin-right: 4%;
   position: relative;
 }
 .content-highlights .highlights-home .highlight-home-first .highlight-home-text {
@@ -814,8 +838,13 @@ em {
 .content-highlights .highlights-home .highlight-home-first .highlight-home-title {
   margin-bottom: 9px;
 }
+.content-highlights .highlights-home .highlight-home-first .post-meta {
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+}
 .content-highlights .highlights-home .highlight-home-secondaries {
-  width: 55%;
+  width: 60%;
 }
 .content-highlights .highlights-internal {
   width: 100%;

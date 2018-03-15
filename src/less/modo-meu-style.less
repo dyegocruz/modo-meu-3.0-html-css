@@ -76,42 +76,18 @@ body {
             box-sizing: border-box;
 }
 
-/*------- Icons --------*/
-
-.icon-513,
-.videos,
-.colunas,
-.fotografia,
-.modomeu {
-    width: 33px;
-    height: 31px;
-}
-
-.cinema-e-tv,
-.design,
-.musica,
-.internet {
-    width: 32px;
-    height: 31px;
-}
-
-.eventos,
-.lugar {
-    width: 24px;
-    height: 32px;
-}
-
-.literatura {
-    width: 24px;
-    height: 34px;
-}
-
-.game {
-    width: 24px;
-    height: 31px;
-}
-
-/*------- Icons --------*/
+/*------- Categories Colors --------*/
+.cinema-e-tv { background: #EE3246; color: #fff; }
+.colunas { background: #414042; color: #fff; }
+.design { background: #8A5CA6; color: #fff; }
+.games { background: #8EC640; color: #fff; }
+.internet { background: #49BFA8; color: #fff; }
+.literatura { background: #FDCE0C; color: #fff; }
+.musica { background: #F05355; color: #fff; }
+.tecnologia { background: #2866B0; color: #fff; }
+.youtube, .videos { background: #12AEC0; color: #fff; }
+.podcast, .podcast-513 { background: #E73064; color: #fff; }
+/*------- Categories Colors --------*/
 
 .link-rosa { color: @color-rosa; }
 .d-block { display: block;}
@@ -378,7 +354,7 @@ em {
                             }
 
                             .highlight-home-secondary {
-								vertical-align: top;							
+								                vertical-align: top;							
                                 text-align: left;
                                 display: inline-block;
                                 width: 45%;
@@ -422,18 +398,17 @@ em {
 }
 
 .highlight-home-cat {
-    .font-assistant-semi-bold();
-    font-size: 12px;
-    text-transform: uppercase;
-    color: @color-roxo;
+  .font-archive();
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .highlight-home-secondary-img {
-    width: 45%
+  width: 59%
 }
 
 .highlight-home-text {
-    width: 50%;
+    width: 40%;
 }
 
 .highlight-home-info {
@@ -441,31 +416,31 @@ em {
 }
 
 .highlight-home-text {
-    vertical-align: top;
-    padding: 0 5px;
+  vertical-align: top;
+  padding: 0 10px;
 }
 
 .highlight-home-info {
-    padding: 0% 5% 1%;
-    position: absolute;
-    vertical-align: bottom;
-    bottom: 0;
+  padding: 0% 5% 1%;
+  position: absolute;
+  vertical-align: bottom;
+  bottom: 0;
 
-    .font-assistant-semi-bold();
-    font-size: 12px;
-    color: @color-turquesa;
-    text-transform: uppercase;
+  .font-assistant-semi-bold();
+  font-size: 12px;
+  color: @color-turquesa;
+  text-transform: uppercase;
 
-    a:hover {
-        color: @color-roxo;
-    }
+  a:hover {
+    color: @color-roxo;
+  }
 }
 
 .highlight-home-title {
     //padding: 0% 4% 0%;
     .font-archive();
     color: @color-roxo;
-    font-size: 14px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 
@@ -484,15 +459,27 @@ em {
     .highlights-home {
         margin-bottom: 20px;
 
+        h3 {
+          display: table;    
+          padding: 1px 5px;
+        }
+
+        .post-meta {
+          .font-assistant-semi-bold();
+          text-transform: uppercase;          
+          font-size: 12px;
+          color: @color-turquesa;          
+        }
+
         .highlight-home-first, .highlight-home-secondaries {
             display: inline-block;
         }
 
         .highlight-home-first {
-            width: 39%;
+            width: 35%;
             //min-height: 370px;
             vertical-align: top;
-            margin-right: 2%;
+            margin-right: 4%;
             position: relative;
 
             .highlight-home-text {
@@ -502,12 +489,19 @@ em {
             .highlight-home-title {
                 margin-bottom: 9px;
             }
+
+            .post-meta {
+              padding: 10px;             
+              position: absolute;
+              bottom: 0;
+            }
         }
 
         .highlight-home-secondaries {
-            width: 55%;   
+            width: 60%;   
         }
     }
+
     .highlights-internal {
         width: 100%;
         margin-bottom: 3%;

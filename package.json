@@ -23,6 +23,8 @@
     "grunt-contrib-uglify": "^0.6.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-serve": "^0.1.6",
-    "jquery": "^3.2.1"
-  }
+    "jquery": "^3.2.1",
+    "pug": "^2.0.1"
+  },
+  "dependencies": {}
 }

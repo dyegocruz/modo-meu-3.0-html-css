@@ -104,29 +104,44 @@ html(lang="en" dir="ltr")
                   div.highlight-home-first-img
                     img(src="assets/images/image-post.png")
                   div.highlight-home-text
-                    h4.highlight-home-cat
-                      a(href="#") Série
-                    h3.highlight-home-title
+                    h3.highlight-home-cat.design
+                      a(href="#") Design
+                    h2.highlight-home-title
                       a(href="#") O que é Sangria? | Quiz de design para leigos
+                  div.post-meta
+                    p 28/09/2017
+                    p
+                      | Autor: 
+                      a(href='#') Dyego Cruz
 
                 div.highlight-home-secondaries
                   div.highlight-home-secondary.highlight-home-second.opacity-background-white.b-bottom-gray
                     div.highlight-home-secondary-img
                       img(src="assets/images/image-post-01.jpg")
                     div.highlight-home-text
-                      h3.highlight-home-cat
+                      h3.highlight-home-cat.musica
                         a(href="#") Música
-                      h4.highlight-home-title
+                      h2.highlight-home-title
                         a(href="#") Fuuka – música, sonhos e atitudes
+                      div.post-meta
+                        p 30/08/2017
+                        p
+                          | Autor: 
+                          a(href='#') Dyego Cruz
 
                     div.highlight-home-secondary.highlight-home-second.opacity-background-white.b-bottom-gray
                     div.highlight-home-secondary-img
                       img(src="assets/images/image-post-02.jpg")
-                    div.highlight-home-text
-                      h3.highlight-home-cat
-                        a(href="#") Música
-                      h4.highlight-home-title
+                    div.highlight-home-text 
+                      h3.highlight-home-cat.literatura
+                        a(href="#") Literatura
+                      h2.highlight-home-title
                         a(href="#") Muita ação e correria com Coração de Aço | Resenha
+                      div.post-meta
+                        p 08/08/2017
+                        p
+                          | Autor: 
+                          a(href='#') Dyego Cruz
 
             section.content-posts.f-left
               article.post.opacity-background-white
@@ -261,88 +276,7 @@ html(lang="en" dir="ltr")
                 a.arrow(href='#')
                   img.arrow-img(src='assets/images/pagination-arrow-right.png')
 
-          aside.sidebar.a-left.f-right
-            nav.social.widget
-              ul
-                li
-                  a(href='#')
-                    img(src='assets/images/twitter.png')
-                li
-                  a(href='#')
-                    img(src='assets/images/facebook.png')
-                li
-                  a(href='#')
-                    img(src='assets/images/instagram.png')
-                li
-                  a(href='#')
-                    img(src='assets/images/youtube.png')
-                li
-                  a(href='#')
-                    img(src='assets/images/pinterest.png')
-                li
-                  a(href='#')
-                    img(src='assets/images/feed.png')
-            .search.widget.b-bottom-gray
-              form
-                input.input-text(type='text', placeholder='BUSCA AQUI Ó')
-                input.input-submit(type='submit', value='')
-            .highlights-post-sidebar.widget.b-bottom-gray
-              img.highlights-post-sidebar-img(src='assets/images/hightlight-canal-modomeu.png')
-              h3
-                a(href='#') Nossa coleção de Star Wars
-            .newsletter.widget.newsletter-subscription
-              script(type='text/javascript').
-                //<![CDATA[
-                if (typeof newsletter_check !== "function") {
-                window.newsletter_check = function (f) {
-                var re = /^([a-zA-Z0-9_\\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
-                if (!re.test(f.elements["ne"].value)) {
-                alert("The email is not correct");
-                return false;
-                }
-                if (f.elements["nn"] && (f.elements["nn"].value == "" || f.elements["nn"].value == f.elements["nn"].defaultValue)) {
-                alert("The name is not correct");
-                return false;
-                }
-                for (var i=1; i<20; i++) {
-                if (f.elements["np" + i] && f.elements["np" + i].required && f.elements["np" + i].value == "") {
-                alert("");
-                return false;
-                }
-                }
-                if (f.elements["ny"] && !f.elements["ny"].checked) {
-                alert("You must accept the privacy statement");
-                return false;
-                }
-                return true;
-                }
-                }
-                //]]>
-              h2 RECEBA NOSSOS E-MAILS
-              h5 CHEIOS DE AMOR
-              form(method='post', action='http://localhost/modomeu/?na=s', onsubmit='return newsletter_check(this)')
-                input.input-text(type='text', name='nn', placeholder='NOME', required='')
-                input.input-text(type='email', name='ne', placeholder='E-MAIL', required='')
-                input.input-submit.newsletter-email(type='submit', value='Enviar')
-            .adsense.widget
-              .box
-                | publicidade
-            .pinterest-box.widget
-              h2 Pinterest
-            .facebook-box.widget
-              h2 Já curtiu?!
-              .fb-like-box(data-href='https://www.facebook.com/ModoMeu', data-colorscheme='light', data-show-faces='true', data-header='false', data-stream='false', data-show-border='false')
-            .adsense.widget
-              .box
-                | publicidade
-        .feed-instagram.f-left
-          h3
-            a(href='#') @modomeu
-            ul
+          include sidebar.pug
   
-
-
-
-
     block footer
       include partials/footer.pug 
