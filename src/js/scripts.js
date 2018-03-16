@@ -1,6 +1,7 @@
 $( document ).ready(function() {
 
-  $('.highlight-home-first').css('height',$('.highlight-home-secondaries').innerHeight()-10);  
+  $('.highlight-home-first').css('height',$('.highlight-home-secondaries').innerHeight()-10);
+  $('.highlight-home-secondaries .highlight-home-text').css('height',$('.highlight-home-secondary-img img').innerHeight());
 
   $('.menu-category li').hover(
       function() {        

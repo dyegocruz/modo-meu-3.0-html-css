@@ -140,7 +140,7 @@ body {
         li {
             display: inline-block;
             width: 32px;
-            padding: 0 1%;
+            margin: 0 5px;
             
             img {
                 width: inherit;
@@ -202,12 +202,34 @@ em {
 
 /*------- Defaults -------*/
 
-.category, .search {
-    .page-title {
-        background: #fff;
-        width: 100%;
-        .f-left();
-    }
+.search {
+  .page-title {
+    background: #fff;
+    width: 100%;
+    .f-left();
+  }
+}
+
+.btn-default {
+  cursor: pointer;
+  .font-assistant-bold();
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  background: @color-roxo;
+  color: #fff;
+  padding: 15px;
+  margin-top: 10px;          
+  display: inherit;
+  text-align: center;
+}
+
+.category {
+  .font-archive();
+  display: table;
+  padding: 0px 6px;  
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .menu-top {
@@ -397,18 +419,13 @@ em {
     margin-bottom: 10px;
 }
 
-.highlight-home-cat {
-  .font-archive();
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
 .highlight-home-secondary-img {
   width: 59%
 }
 
 .highlight-home-text {
     width: 40%;
+    position: relative;
 }
 
 .highlight-home-info {
@@ -453,22 +470,19 @@ em {
 // /------ Destaques
 
 .content-highlights {
-    width: 100%;
+    width: 66%;
     .f-left();
 
     .highlights-home {
         margin-bottom: 20px;
-
-        h3 {
-          display: table;    
-          padding: 1px 5px;
-        }
-
+        
         .post-meta {
           .font-assistant-semi-bold();
           text-transform: uppercase;          
           font-size: 12px;
-          color: @color-turquesa;          
+          color: @color-turquesa;
+          position: absolute;
+          bottom: 0;      
         }
 
         .highlight-home-first, .highlight-home-secondaries {
@@ -491,9 +505,7 @@ em {
             }
 
             .post-meta {
-              padding: 10px;             
-              position: absolute;
-              bottom: 0;
+              padding: 10px;              
             }
         }
 
@@ -545,8 +557,22 @@ em {
     text-transform: uppercase;
 }
 
-.content-posts {
+.home {
+
+  position: relative;
+
+  .post-list {
     width: 100%;
+    display: table;
+
+    .post {
+      width: 20%;
+    }
+  }
+}
+
+.content-posts {
+    width: 66%;
 
     .post {
         .f-left();
@@ -572,9 +598,10 @@ em {
                 text-transform: uppercase;
 
                 .post-data {
-                    .font-assistant-exta-bold();
-                    font-size: 14px;              
-                    color: @color-turquesa;              
+                    .font-assistant-semi-bold();
+                    font-size: 12px;              
+                    color: @color-turquesa;
+                    margin-top: 5px;
                 }
 
                 h2 {
@@ -654,7 +681,7 @@ em {
                 list-style-position: inside;
             }
 
-            p, ul, h1, h2, h3 { padding: 1%; }
+            p, ul, h1, h2, h3 { padding: 5px; }
             h1, h2, h3 {
                 color: @color-roxo;
                 font-weight: bold;
@@ -718,7 +745,7 @@ em {
             }
  
             .post-footer-meta {
-				width: 100%;
+				        width: 100%;
                 margin-top: 1%;
                 padding: 0 2%;
                 border-bottom: 2px solid @color-border;
@@ -739,7 +766,7 @@ em {
                     font-size: 12px;
                     color: @color-text;
                     text-transform: uppercase;
-					width: 49%;
+					          width: 49%;
                 }
 
                 .post-footer-social {            
@@ -775,7 +802,7 @@ em {
                     padding: 2% 0;
                 }
             }   
-        }
+        }        
     }
 
     .post-list {
@@ -950,12 +977,12 @@ em {
     }
 }
 
-.content-highlights {
+/*.content-highlights {
     width: 100%;
 
     .highlights-internal { width: 66%; }
     .sidebar{ .f-right(); }
-}
+}*/
 
 .content-page {
     margin-bottom: 5%;
@@ -1113,6 +1140,10 @@ em {
 
 .sidebar {
 
+    position: absolute;
+    right: 0;
+    top: 0;
+
     .widget {
         width: 100%;
         margin-bottom: 3%;
@@ -1173,12 +1204,11 @@ em {
             padding: 2% 0;
 
             .input-text {
-                width: 87%;
-                height: 1.5em;
-                padding-left: 4%;
+                width: 90%;                
                 .font-assistant-bold();                    
                 color: @color-text;
                 border: none;
+                text-transform: uppercase;                
             }
 
             .input-submit {
@@ -1200,11 +1230,11 @@ em {
         }   
     }        
 
-    .facebook-box{
-        h2 {
-            background: url('../images/icon-like.png') no-repeat 22%;
-            padding-top: 2%;
-        }
+    .facebook-box {
+      .btn-default {
+        width: 300px;
+        margin: 0 auto;
+      }
     }
 
     .newsletter {

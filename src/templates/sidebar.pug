@@ -21,12 +21,15 @@ aside.sidebar.a-left.f-right
           img(src='assets/images/feed.png')
   .search.widget.b-bottom-gray
     form
-      input.input-text(type='text', placeholder='BUSCA AQUI Ó')
-      input.input-submit(type='submit', value='')
-  .highlights-post-sidebar.widget.b-bottom-gray
-    img.highlights-post-sidebar-img(src='assets/images/hightlight-canal-modomeu.png')
-    h3
-      a(href='#') Nossa coleção de Star Wars
+      input.input-text(type='text', placeholder='Busque o que deseja')
+      input.input-submit(type='submit', value='')  
+  .adsense.widget
+    .box
+      | publicidade
+  .facebook-box.widget
+    a(href="#", class="btn-default") facebook
+  .pinterest-box.widget
+    h2 Pinterest  
   .newsletter.widget.newsletter-subscription
     script(type='text/javascript').
       //<![CDATA[
@@ -61,18 +64,3 @@ aside.sidebar.a-left.f-right
       input.input-text(type='text', name='nn', placeholder='NOME', required='')
       input.input-text(type='email', name='ne', placeholder='E-MAIL', required='')
       input.input-submit.newsletter-email(type='submit', value='Enviar')
-  .adsense.widget
-    .box
-      | publicidade
-  .pinterest-box.widget
-    h2 Pinterest
-  .facebook-box.widget
-    h2 Já curtiu?!
-    .fb-like-box(data-href='https://www.facebook.com/ModoMeu', data-colorscheme='light', data-show-faces='true', data-header='false', data-stream='false', data-show-border='false')
-  .adsense.widget
-    .box
-      | publicidade
-.feed-instagram.f-left
-h3
-  a(href='#') @modomeu
-  ul

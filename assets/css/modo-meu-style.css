@@ -281,7 +281,7 @@ Tags: -
 /* Tablet landscape */
 @media only screen and (min-width: 768px) and (orientation: landscape) {
   .main-content .content {
-    width: 66%;
+    width: 100%;
   }
   .main-content .content-posts .post-footer-info {
     padding-left: 15%;
@@ -524,7 +524,7 @@ body {
 .social ul li {
   display: inline-block;
   width: 32px;
-  padding: 0 1%;
+  margin: 0 5px;
 }
 .social ul li img {
   width: inherit;
@@ -586,11 +586,32 @@ em {
   font-style: italic;
 }
 /*------- Defaults -------*/
-.category .page-title,
 .search .page-title {
   background: #fff;
   width: 100%;
   float: left;
+}
+.btn-default {
+  cursor: pointer;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  background: #3a4192;
+  color: #fff;
+  padding: 15px;
+  margin-top: 10px;
+  display: inherit;
+  text-align: center;
+}
+.category {
+  font-family: 'Archive', sans-serif;
+  font-weight: normal;
+  display: table;
+  padding: 0px 6px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 .menu-top {
   background: #f1f1f1;
@@ -757,17 +778,12 @@ em {
   position: relative;
   margin-bottom: 10px;
 }
-.highlight-home-cat {
-  font-family: 'Archive', sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  text-transform: uppercase;
-}
 .highlight-home-secondary-img {
   width: 59%;
 }
 .highlight-home-text {
   width: 40%;
+  position: relative;
 }
 .highlight-home-info {
   padding: 0% 2% 1%;
@@ -805,15 +821,11 @@ em {
   color: #12aec0;
 }
 .content-highlights {
-  width: 100%;
+  width: 66%;
   float: left;
 }
 .content-highlights .highlights-home {
   margin-bottom: 20px;
-}
-.content-highlights .highlights-home h3 {
-  display: table;
-  padding: 1px 5px;
 }
 .content-highlights .highlights-home .post-meta {
   font-family: 'Assistant', sans-serif;
@@ -821,6 +833,8 @@ em {
   text-transform: uppercase;
   font-size: 12px;
   color: #12aec0;
+  position: absolute;
+  bottom: 0;
 }
 .content-highlights .highlights-home .highlight-home-first,
 .content-highlights .highlights-home .highlight-home-secondaries {
@@ -840,8 +854,6 @@ em {
 }
 .content-highlights .highlights-home .highlight-home-first .post-meta {
   padding: 10px;
-  position: absolute;
-  bottom: 0;
 }
 .content-highlights .highlights-home .highlight-home-secondaries {
   width: 60%;
@@ -886,8 +898,18 @@ em {
   color: #e73064;
   text-transform: uppercase;
 }
-.content-posts {
+.home {
+  position: relative;
+}
+.home .post-list {
   width: 100%;
+  display: table;
+}
+.home .post-list .post {
+  width: 20%;
+}
+.content-posts {
+  width: 66%;
 }
 .content-posts .post {
   float: left;
@@ -914,9 +936,10 @@ em {
 }
 .content-posts .post .post-header .title .post-data {
   font-family: 'Assistant', sans-serif;
-  font-weight: 800;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 12px;
   color: #12aec0;
+  margin-top: 5px;
 }
 .content-posts .post .post-header .title h2 {
   font-family: 'Archive', sans-serif;
@@ -989,7 +1012,7 @@ em {
 .content-posts .post .post-content h1,
 .content-posts .post .post-content h2,
 .content-posts .post .post-content h3 {
-  padding: 1%;
+  padding: 5px;
 }
 .content-posts .post .post-content h1,
 .content-posts .post .post-content h2,
@@ -1270,15 +1293,12 @@ em {
   cursor: pointer;
   color: #12aec0;
 }
-.content-highlights {
-  width: 100%;
-}
-.content-highlights .highlights-internal {
-  width: 66%;
-}
-.content-highlights .sidebar {
-  float: right;
-}
+/*.content-highlights {
+    width: 100%;
+
+    .highlights-internal { width: 66%; }
+    .sidebar{ .f-right(); }
+}*/
 .content-page {
   margin-bottom: 5%;
   padding: 1% 0;
@@ -1456,6 +1476,11 @@ em {
   font-size: 11pt;
   text-align: center;
 }
+.sidebar {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .sidebar .widget {
   width: 100%;
   margin-bottom: 3%;
@@ -1514,13 +1539,12 @@ em {
   padding: 2% 0;
 }
 .sidebar .search form .input-text {
-  width: 87%;
-  height: 1.5em;
-  padding-left: 4%;
+  width: 90%;
   font-family: 'Assistant', sans-serif;
   font-weight: 700;
   color: #898989;
   border: none;
+  text-transform: uppercase;
 }
 .sidebar .search form .input-submit {
   border: none;
@@ -1536,9 +1560,9 @@ em {
   width: auto;
   height: 250px;
 }
-.sidebar .facebook-box h2 {
-  background: url('../images/icon-like.png') no-repeat 22%;
-  padding-top: 2%;
+.sidebar .facebook-box .btn-default {
+  width: 300px;
+  margin: 0 auto;
 }
 .sidebar .newsletter h2 {
   font-family: 'Archive', sans-serif;
