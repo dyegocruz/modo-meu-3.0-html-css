@@ -529,6 +529,10 @@ body {
 .social ul li img {
   width: inherit;
 }
+.banner-big {
+  margin: 20px auto;
+  text-align: center;
+}
 /*------- Functions -------*/
 @-webkit-keyframes fadeIn {
   0% {
@@ -591,19 +595,25 @@ em {
   width: 100%;
   float: left;
 }
-.btn-default {
+.btn {
   cursor: pointer;
   font-family: 'Assistant', sans-serif;
   font-weight: 700;
   font-size: 14px;
   width: 100%;
   border: none;
-  background: #3a4192;
-  color: #fff;
   padding: 15px;
   margin-top: 10px;
   display: inherit;
   text-align: center;
+}
+.btn-default {
+  background: #3a4192;
+  color: #fff;
+}
+.btn-others {
+  background: #d6d6d6;
+  color: #3a4192;
 }
 .category {
   font-family: 'Archive', sans-serif;
@@ -904,9 +914,40 @@ em {
 .home .post-list {
   width: 100%;
   display: table;
+  margin-bottom: 20px;
 }
 .home .post-list .post {
-  width: 20%;
+  vertical-align: top;
+  margin: 0 15px;
+  width: 23%;
+  display: inline-block;
+  border-bottom: 2px solid #d6d6d6;
+  background: rgba(255, 255, 255, 0.85);
+}
+.home .post-list .post:nth-child(1) {
+  margin-left: 0;
+}
+.home .post-list .post:nth-child(4) {
+  margin-right: 0;
+}
+.home .post-list .post .post-text,
+.home .post-list .post .post-meta {
+  padding: 5px;
+}
+.home .post-list .post .post-title {
+  font-family: 'Archive', sans-serif;
+  font-weight: normal;
+  color: #3a4192;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.home .post-list .post .post-meta {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #12aec0;
+  text-transform: uppercase;
 }
 .content-posts {
   width: 66%;
@@ -1148,13 +1189,6 @@ em {
   font-family: 'Archive', sans-serif;
   font-weight: normal;
   color: #3a4192;
-}
-.content-posts .banners {
-  width: 100%;
-  text-align: center;
-}
-.content-posts .banners img {
-  max-width: 468px;
 }
 .content-posts .pagination {
   font-family: 'Assistant', sans-serif;

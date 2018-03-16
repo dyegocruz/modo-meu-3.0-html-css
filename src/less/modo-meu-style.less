@@ -149,6 +149,11 @@ body {
     }
 }
 
+.banner-big {
+  margin: 20px auto;
+  text-align: center;
+}
+
 /*------- Functions -------*/
 
 @-webkit-keyframes fadeIn {  0% { opacity: 0; } 100% { opacity: 1; } }
@@ -210,18 +215,26 @@ em {
   }
 }
 
-.btn-default {
+.btn {
   cursor: pointer;
   .font-assistant-bold();
   font-size: 14px;
   width: 100%;
-  border: none;
-  background: @color-roxo;
-  color: #fff;
+  border: none;  
   padding: 15px;
   margin-top: 10px;          
   display: inherit;
   text-align: center;
+}
+
+.btn-default {
+  background: @color-roxo;
+  color: #fff;
+}
+
+.btn-others {
+  background: @color-border;
+  color: @color-roxo;
 }
 
 .category {
@@ -563,10 +576,43 @@ em {
 
   .post-list {
     width: 100%;
-    display: table;
+    display: table;    
+    margin-bottom: 20px;
 
     .post {
-      width: 20%;
+      vertical-align: top;
+      margin: 0 15px;
+      width: 23%;
+      display: inline-block;
+      .b-bottom-gray();
+      .opacity-background-white();
+
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+
+      &:nth-child(4) {
+        margin-right: 0;
+      }      
+      
+      .post-text, .post-meta {
+        padding: 5px;
+      }
+
+      .post-title {
+        .font-archive();
+        color: @color-roxo;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-top: 10px; 
+      }
+
+      .post-meta {
+        .font-assistant-semi-bold();
+        font-size: 12px;
+        color: @color-turquesa;
+        text-transform: uppercase;
+      }
     }
   }
 }
@@ -611,7 +657,7 @@ em {
 
                 .post-meta {
                     .font-assistant-semi-bold();
-                    font-size: 12px;                            
+                    font-size: 12px;
                     color: @color-turquesa;
 
                     a:hover {
@@ -830,14 +876,7 @@ em {
             .font-archive();
             color: @color-roxo;                            
         }
-    }
-
-    .banners {
-        width: 100%;
-        text-align: center;
-
-        img { max-width: 468px; }
-    }
+    }    
 
     .pagination {
         .font-assistant-bold();
