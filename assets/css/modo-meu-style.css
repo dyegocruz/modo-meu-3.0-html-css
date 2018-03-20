@@ -1799,7 +1799,7 @@ em {
   bottom: 0px;
   left: 0px;
   z-index: 9999;
-  background: #12aec0;
+  background: #3a4192;
 }
 .main-footer-container .footer {
   padding: 20px 0;
@@ -1819,7 +1819,7 @@ em {
 }
 .main-footer-container .footer .logo-modo-meu .copyright {
   font-size: 11px;
-  color: #3a4192;
+  color: #12aec0;
 }
 .main-footer-container .footer .archive {
   font-size: 12px;
@@ -1864,6 +1864,7 @@ em {
 }
 .main-footer-container .footer .social-footer li {
   display: inline-block;
+  margin: 2px;
 }
 .main-footer-container .footer .social-footer .social {
   margin: 1%;
@@ -1880,9 +1881,7 @@ em {
 .main-footer-container .footer .social-footer .gplus,
 .main-footer-container .footer .social-footer .youtube,
 .main-footer-container .footer .social-footer .pinterest,
-.main-footer-container .footer .social-footer .filmow,
 .main-footer-container .footer .social-footer .instagram {
-  background-color: #35bac9;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1892,7 +1891,6 @@ em {
 .main-footer-container .footer .social-footer .gplus:hover,
 .main-footer-container .footer .social-footer .youtube:hover,
 .main-footer-container .footer .social-footer .pinterest:hover,
-.main-footer-container .footer .social-footer .filmow:hover,
 .main-footer-container .footer .social-footer .instagram:hover {
   background-color: #fff;
 }
@@ -1951,7 +1949,7 @@ em {
   text-transform: uppercase;
   color: #fff;
   width: 100%;
-  background: #3a4192;
+  background: #12aec0;
   padding: 1.2em 0;
 }
 .main-footer-container .footer-benjamin .text {
