@@ -122,9 +122,6 @@ Tags: -
   .menu-top {
     display: none;
   }
-  .content-highlights {
-    display: none;
-  }
   .posts-related ul li {
     width: 47%;
     margin-bottom: 5%;
@@ -151,9 +148,6 @@ Tags: -
   }
   .content-posts .post-footer-info .post-footer-author {
     border-top: 2px solid #d6d6d6;
-  }
-  .content-pages .content-highlights .highlights-internal {
-    display: none;
   }
   .content-pages .content-page .text-page {
     width: 90%;
@@ -183,14 +177,38 @@ Tags: -
   .main-footer-container .footer-benjamin .logo-container {
     padding-top: 3%;
   }
+  .sidebar {
+    display: none;
+  }
 }
 /* Mobile landscape */
 @media only screen and (min-width: 480px) and (orientation: landscape) {
   .menu-top {
     display: none;
   }
+  .highlight-home-secondary-img,
+  .highlight-home-text {
+    width: 100%;
+  }
+  .highlight-home-secondary {
+    display: block;
+  }
   .content-highlights {
-    display: none;
+    width: 100%;
+  }
+  .content-highlights .highlights-home .highlight-home-first,
+  .content-highlights .highlights-home .highlight-home-secondaries {
+    width: 100%;
+  }
+  .content-highlights .highlights-home .highlight-home-first {
+    margin-right: 0px;
+  }
+  .content-highlights .highlights-home .post-meta {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .content-posts {
+    width: 100%;
   }
   .content-posts .post .post-content {
     margin: 0;
@@ -198,20 +216,11 @@ Tags: -
   .posts-related ul li {
     width: 23%;
   }
-  .content-pages .content-highlights .highlights-internal {
-    display: none;
-  }
   .content-pages .content-page .template-page .editores .editor .social {
     width: 50%;
   }
   .content-pages .content-page .template-page .colaboradores .colaborador {
     width: 29%;
-  }
-  .content-pages .content-highlights .highlights-internal a {
-    color: #3a4192;
-  }
-  .content-pages .content-highlights .highlights-internal a .highlight-title {
-    display: block;
   }
   .main-footer-container .footer .social-footer {
     margin: 4% 38%;
@@ -221,13 +230,38 @@ Tags: -
     padding-top: 0.3%;
   }
   .sidebar {
-    width: 100%;
+    display: none;
+    /*width: 100%; position: relative;*/
   }
 }
 /* Tablet */
 @media only screen and (min-width: 768px) {
+  .highlight-home-secondary-img {
+    width: 59%;
+  }
+  .highlight-home-text {
+    width: 40%;
+  }
+  .highlight-home-secondary {
+    display: flex;
+  }
   .content-highlights {
     display: block;
+    width: 100%;
+  }
+  .content-highlights .highlights-home .highlight-home-first {
+    width: 40%;
+    margin-right: 4%;
+  }
+  .content-highlights .highlights-home .highlight-home-secondaries {
+    width: 55%;
+  }
+  .content-highlights .highlights-home .post-meta {
+    bottom: 0;
+    margin-bottom: 0;
+  }
+  .content-posts {
+    width: 100%;
   }
   .content-posts .post .post-footer .post-footer-tags {
     width: 45%;
@@ -237,10 +271,6 @@ Tags: -
   }
   .content-posts .post-list {
     width: 45%;
-  }
-  .content-pages .content-highlights .highlights-internal {
-    display: block;
-    width: 100%;
   }
   .content-pages .content-page .text-page {
     width: 53%;
@@ -272,9 +302,18 @@ Tags: -
     width: 12%;
     margin: 4% 0 0 0;
   }
+  .sidebar {
+    display: none;
+  }
 }
 /* Tablet landscape */
 @media only screen and (min-width: 768px) and (orientation: landscape) {
+  .content-highlights {
+    width: 66%;
+  }
+  .content-posts {
+    width: 66%;
+  }
   .content-posts .post-footer-info {
     padding-left: 15%;
   }
@@ -288,7 +327,11 @@ Tags: -
     border-top: none;
   }
   .sidebar {
+    display: block;
     width: 32%;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 /* Desktop */
@@ -305,23 +348,9 @@ Tags: -
   .content-pages .content-highlights {
     width: 100%;
   }
-  .content-pages .content-highlights .highlights-internal {
-    width: 66%;
-  }
   .content-pages .content-highlights .sidebar {
     float: right;
-  }
-  .content-pages .content-highlights .highlights-internal a .highlight-title {
-    display: none;
-  }
-  .content-pages .content-highlights .highlights-internal a:hover {
-    color: #3a4192;
-  }
-  .content-pages .content-highlights .highlights-internal a:hover .highlight-title {
-    display: block;
-  }
-  .sidebar {
-    display: block;
+    position: relative;
   }
 }
 /*------- Media Queries -------*/
@@ -810,33 +839,9 @@ em {
   position: relative;
   margin-bottom: 10px;
 }
-.highlight-home-secondary-img {
-  width: 59%;
-}
-.highlight-home-text {
-  width: 40%;
-  position: relative;
-}
-.highlight-home-info {
-  padding: 0% 2% 1%;
-}
 .highlight-home-text {
   vertical-align: top;
-  padding: 0 10px;
-}
-.highlight-home-info {
-  padding: 0% 5% 1%;
-  position: absolute;
-  vertical-align: bottom;
-  bottom: 0;
-  font-family: 'Assistant', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  color: #12aec0;
-  text-transform: uppercase;
-}
-.highlight-home-info a:hover {
-  color: #3a4192;
+  padding: 5px 10px 0px;
 }
 .highlight-home-title {
   font-family: 'Archive', sans-serif;
@@ -845,15 +850,7 @@ em {
   font-size: 18px;
   text-transform: uppercase;
 }
-.highlight-home-data {
-  padding: 2% 5% 0%;
-  font-family: 'Assistant', sans-serif;
-  font-weight: 800;
-  font-size: 14px;
-  color: #12aec0;
-}
 .content-highlights {
-  width: 66%;
   float: left;
 }
 .content-highlights .post-meta {
@@ -862,20 +859,19 @@ em {
   text-transform: uppercase;
   font-size: 12px;
   color: #12aec0;
-  position: absolute;
-  bottom: 0;
 }
 .content-highlights .highlights-home {
   margin-bottom: 20px;
+}
+.content-highlights .highlights-home img {
+  display: block;
 }
 .content-highlights .highlights-home .highlight-home-first,
 .content-highlights .highlights-home .highlight-home-secondaries {
   display: inline-block;
 }
 .content-highlights .highlights-home .highlight-home-first {
-  width: 35%;
   vertical-align: top;
-  margin-right: 4%;
   position: relative;
 }
 .content-highlights .highlights-home .highlight-home-first .highlight-home-text {
@@ -885,43 +881,7 @@ em {
   margin-bottom: 9px;
 }
 .content-highlights .highlights-home .highlight-home-first .post-meta {
-  padding: 10px;
-}
-.content-highlights .highlights-home .highlight-home-secondaries {
-  width: 60%;
-}
-.content-highlights .highlights-internal {
-  width: 100%;
-  margin-bottom: 3%;
-  float: left;
-}
-.content-highlights .highlights-internal a {
-  position: relative;
-  width: 30%;
-  max-height: 167px;
-  overflow: hidden;
-  border: 2px solid #d6d6d6;
-  float: left;
-}
-.content-highlights .highlights-internal a:nth-child(2) {
-  margin: 0 4%;
-}
-.content-highlights .highlights-internal a .highlight-title {
-  display: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  padding: 9.5% 0;
-  -webkit-animation-name: fadeIn;
-  -webkit-animation-duration: 0.5s;
-  animation-name: fadeIn;
-  animation-duration: 0.5s;
-  background: rgba(239, 240, 255, 0.9);
-}
-.content-highlights .highlights-internal a .highlight-title h4 {
-  padding: 0 15%;
-  text-align: center;
+  padding: 2px 10px;
 }
 .page-title {
   margin: 2% 0;
@@ -970,9 +930,6 @@ em {
   font-size: 12px;
   color: #12aec0;
   text-transform: uppercase;
-}
-.content-posts {
-  width: 66%;
 }
 .content-posts .post {
   float: left;
@@ -1273,8 +1230,8 @@ em {
   margin: 0 1%;
   padding-bottom: 2%;
   /*&:nth-child(1){
-                margin: 0;
-            }*/
+          margin: 0;
+      }*/
   float: left;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1362,7 +1319,7 @@ em {
 }
 .item-video {
   background: #fff;
-  margin-bottom: 19px;
+  margin-bottom: 3.3%;
   border-bottom: 2px solid #d6d6d6;
   float: left;
 }
@@ -1572,11 +1529,6 @@ em {
   width: 100%;
   font-size: 11pt;
   text-align: center;
-}
-.sidebar {
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 .sidebar .widget {
   width: 100%;
@@ -1882,6 +1834,7 @@ em {
 .main-footer-container .footer .social-footer .youtube,
 .main-footer-container .footer .social-footer .pinterest,
 .main-footer-container .footer .social-footer .instagram {
+  background-color: #585d9b;
   background-repeat: no-repeat;
   background-position: center;
 }
