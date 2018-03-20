@@ -7,7 +7,7 @@ html(lang="en" dir="ltr")
 
   body
 
-    div.menu-top
+    menu.menu-top
       nav(class="margin-auto", role="navigation")
         ul.display-inline.f-left
           li
@@ -24,7 +24,7 @@ html(lang="en" dir="ltr")
           li
            a(href="#", class="link-rosa") [513] Podcast
     
-    div(class="menu-floating", style="display: none;")
+    menu(class="menu-floating", style="display: none;")
       nav(role="navigation")
         ul
           li.logo
@@ -50,11 +50,12 @@ html(lang="en" dir="ltr")
             a(href="#") Podcast
     
     block content
-      main.site.margin-auto 
+      section.container
+
         header.header
           h1
             a(href="http://modomeu.com", class="logo-top margin-auto")
-              img(src="assets/images/logo-modo-meu-top.gif", alt="Modo Meu")        
+              img(src="assets/images/logo-modo-meu-top.gif", alt="Modo Meu")
 
           nav(role="navigation")
             ul.menu-category
@@ -94,137 +95,245 @@ html(lang="en" dir="ltr")
               for cat in categoriesMainMeun
                 li.menu
                   a(href="#") #{cat}
+        
+        div.home.f-left
+          section.content-highlights
 
-        div.main-content.f-left
-          div.content.home.f-left
-            section.content-highlights
+            div.highlights-home
+              div.highlight-home-first.opacity-background-white.b-bottom-gray
+                div.highlight-home-first-img
+                  img(src="assets/images/image-post.png")
+                div.highlight-home-text
+                  h3.category.design
+                    a(href="#") Design
+                  h2.highlight-home-title
+                    a(href="#") O que é Sangria? | Quiz de design para leigos
+                div.post-meta
+                  p 28/09/2017
+                  p
+                    | Autor: 
+                    a(href='#') Dyego Cruz
 
-              div.highlights-home
-                div.highlight-home-first.opacity-background-white.b-bottom-gray
-                  div.highlight-home-first-img
-                    img(src="assets/images/image-post.png")
+              div.highlight-home-secondaries
+                div.highlight-home-secondary.highlight-home-second.opacity-background-white.b-bottom-gray
+                  div.highlight-home-secondary-img
+                    img(src="assets/images/image-post-01.jpg")
                   div.highlight-home-text
-                    h3.category.design
-                      a(href="#") Design
+                    h3.category.musica
+                      a(href="#") Música
                     h2.highlight-home-title
-                      a(href="#") O que é Sangria? | Quiz de design para leigos
-                  div.post-meta
-                    p 28/09/2017
-                    p
-                      | Autor: 
-                      a(href='#') Dyego Cruz
-
-                div.highlight-home-secondaries
-                  div.highlight-home-secondary.highlight-home-second.opacity-background-white.b-bottom-gray
-                    div.highlight-home-secondary-img
-                      img(src="assets/images/image-post-01.jpg")
-                    div.highlight-home-text
-                      h3.category.musica
-                        a(href="#") Música
-                      h2.highlight-home-title
-                        a(href="#") Fuuka – música, sonhos e atitudes
-                      div.post-meta
-                        p 30/08/2017
-                        p
-                          | Autor: 
-                          a(href='#') Dyego Cruz
-
-                  div.highlight-home-secondary.highlight-home-second.opacity-background-white.b-bottom-gray
-                    div.highlight-home-secondary-img
-                      img(src="assets/images/image-post-02.jpg")
-                    div.highlight-home-text 
-                      h3.category.literatura
-                        a(href="#") Literatura
-                      h2.highlight-home-title
-                        a(href="#") Muita ação e correria com Coração de Aço | Resenha
-                      div.post-meta
-                        p 08/08/2017
-                        p
-                          | Autor: 
-                          a(href='#') Dyego Cruz
-
-            section.content-posts.f-left
-              article.post.opacity-background-white
-
-                header.post-header
-                  div.title
-                    div.category.cinema-e-tv
-                      a(href="#") Cinema e TV
-                    div.post-data
-                      p 20 de Abril de 2017
-                    h2
-                      a(href="#") Ouvindo o Country encantador de Zac Brown Band os apadrinhados de dave Grohl (H2)
+                      a(href="#") Fuuka – música, sonhos e atitudes
                     div.post-meta
-                      p Autor: 
-                        a(href="#") Mariana Fernandes
-                
-                div.post-content
-                  a(href="#")
-                    img(src="assets/images/image-post-01.jpg")                                   
-                  p H5 - A alguns meses atrás comentei sobre o novo álbum da banda Foo Fighters, que está previsto para o segundo semestre de 2014 e de acordo com o próprio Dave Grohl, esse será o trabalho mais revolucionário dos últimos tempos (<a href="#">falei disso aqui - h2</a>). Bem, mas o objetivo desse post não é falar de como o Foo Fighters é uma banda incrível (afinal, todo mundo já sabe), mas sim do grupo <strong>Zac Brown Band (h4)</strong>, no qual Dave apadrinhou e esteve presente na produção de seus últimos álbuns, (The Grohl Sessions Vol. 1 e 2).
- 
-                a(href="#" class="btn btn-default") LEIA MAIS
+                      p 30/08/2017
+                      p
+                        | Autor: 
+                        a(href='#') Dyego Cruz
 
-            include sidebar.pug
+                div.highlight-home-secondary.highlight-home-second.opacity-background-white.b-bottom-gray
+                  div.highlight-home-secondary-img
+                    img(src="assets/images/image-post-02.jpg")
+                  div.highlight-home-text 
+                    h3.category.literatura
+                      a(href="#") Literatura
+                    h2.highlight-home-title
+                      a(href="#") Muita ação e correria com Coração de Aço | Resenha
+                    div.post-meta
+                      p 08/08/2017
+                      p
+                        | Autor: 
+                        a(href='#') Dyego Cruz
 
-            section.post-list
-              article.post
-                div.post-image
-                  img(src="assets/images/image-post-02.jpg")
-                div.post-text
-                  h3.category.literatura
-                    a(href="#") Literatura
-                  h2.post-title
-                    a(href="#") Muita ação e correria com Coração de Aço | Resenha
-                div.post-meta
-                  p 08/08/2017
-                  p
-                    | Autor: 
-                    a(href='#') Dyego Cruz
-              article.post
-                div.post-image
-                  img(src="assets/images/image-post-02.jpg")
-                div.post-text
-                  h3.category.cinema-e-tv
+          section.content-posts.f-left
+            article.post.opacity-background-white
+
+              header.post-header
+                div.title
+                  div.category.cinema-e-tv
                     a(href="#") Cinema e TV
-                  h2.post-title
-                    a(href="#") Star Trek – Portal do Tempo de A. C. Crispin | Resenha
-                div.post-meta
-                  p 08/08/2017
-                  p
-                    | Autor: 
-                    a(href='#') Dyego Cruz
-              article.post
-                div.post-image
-                  img(src="assets/images/image-post-02.jpg")
-                div.post-text
-                  h3.category.games
-                    a(href="#") Games
-                  h2.post-title
-                    a(href="#") Alto’s Adventure, simulando o snowboarding atrás de lhamas
-                div.post-meta
-                  p 08/08/2017
-                  p
-                    | Autor: 
-                    a(href='#') Dyego Cruz
-              article.post
-                div.post-image
-                  img(src="assets/images/image-post-02.jpg")
-                div.post-text
-                  h3.category.tecnologia
-                    a(href="#") Tecnologia
-                  h2.post-title
-                    a(href="#") Deixando seus pensamentos mais estilosos com Notegraphy
-                div.post-meta
-                  p 08/08/2017
-                  p
-                    | Autor: 
-                    a(href='#') Dyego Cruz
+                  div.post-data
+                    p 20 de Abril de 2017
+                  h2
+                    a(href="#") Ouvindo o Country encantador de Zac Brown Band os apadrinhados de dave Grohl (H2)
+                  div.post-meta
+                    p Autor: 
+                      a(href="#") Mariana Fernandes
+              
+              div.post-content
+                a(href="#")
+                  img(src="assets/images/image-post-01.jpg")                                   
+                p H5 - A alguns meses atrás comentei sobre o novo álbum da banda Foo Fighters, que está previsto para o segundo semestre de 2014 e de acordo com o próprio Dave Grohl, esse será o trabalho mais revolucionário dos últimos tempos (<a href="#">falei disso aqui - h2</a>). Bem, mas o objetivo desse post não é falar de como o Foo Fighters é uma banda incrível (afinal, todo mundo já sabe), mas sim do grupo <strong>Zac Brown Band (h4)</strong>, no qual Dave apadrinhou e esteve presente na produção de seus últimos álbuns, (The Grohl Sessions Vol. 1 e 2).
 
-            a(href="#" class="btn btn-others") VEJA MAIS  
-            div.banner-big BANNER DO SUCESSO
+              a(href="#" class="btn btn-default") LEIA MAIS
 
-            div teste      
-  
+          include sidebar.pug
+
+          section.post-list
+            article.post
+              div.post-image
+                img(src="assets/images/image-post-02.jpg")
+              div.post-text
+                h3.category.literatura
+                  a(href="#") Literatura
+                h2.post-title
+                  a(href="#") Muita ação e correria com Coração de Aço | Resenha
+              div.post-meta
+                p 08/08/2017
+                p
+                  | Autor: 
+                  a(href='#') Dyego Cruz
+            article.post
+              div.post-image
+                img(src="assets/images/image-post-02.jpg")
+              div.post-text
+                h3.category.cinema-e-tv
+                  a(href="#") Cinema e TV
+                h2.post-title
+                  a(href="#") Star Trek – Portal do Tempo de A. C. Crispin | Resenha
+              div.post-meta
+                p 08/08/2017
+                p
+                  | Autor: 
+                  a(href='#') Dyego Cruz
+            article.post
+              div.post-image
+                img(src="assets/images/image-post-02.jpg")
+              div.post-text
+                h3.category.games
+                  a(href="#") Games
+                h2.post-title
+                  a(href="#") Alto’s Adventure, simulando o snowboarding atrás de lhamas
+              div.post-meta
+                p 08/08/2017
+                p
+                  | Autor: 
+                  a(href='#') Dyego Cruz
+            article.post
+              div.post-image
+                img(src="assets/images/image-post-02.jpg")
+              div.post-text
+                h3.category.tecnologia
+                  a(href="#") Tecnologia
+                h2.post-title
+                  a(href="#") Deixando seus pensamentos mais estilosos com Notegraphy
+              div.post-meta
+                p 08/08/2017
+                p
+                  | Autor: 
+                  a(href='#') Dyego Cruz
+
+          a(href="#" class="btn btn-others") VEJA MAIS  
+          div.banner-big BANNER DO SUCESSO
+
+      div.container-full.container-full-videos.f-left 
+        div.container
+          div.a-center.link-youtube
+            h2
+              a(href="#") youtube
+          div.main-video
+            a(href="#") 
+              img(src="assets/images/thumb-video-01.png" alt="Montando um Gunpla")
+            a(href="#" class="btn btn-turquoise") VEJA MAIS
+          div.list-videos             
+            div.item-video               
+              div.item-image
+                img(src="assets/images/image-post-01.jpg")
+              div.item-text
+                h3.category.videos
+                  a(href="#") Videos
+                h2.item-title
+                  a(href="#") Fuuka – música, sonhos e atitudes
+                div.post-meta
+                  p 30/08/2017
+                  p
+                    | Autor: 
+                    a(href='#') Dyego Cruz
+            div.item-video               
+              div.item-image
+                img(src="assets/images/image-post-01.jpg")
+              div.item-text
+                h3.category.videos
+                  a(href="#") Videos
+                h2.item-title
+                  a(href="#") Fuuka – música, sonhos e atitudes
+                div.post-meta
+                  p 30/08/2017
+                  p
+                    | Autor: 
+                    a(href='#') Dyego Cruz
+            div.item-video               
+              div.item-image
+                img(src="assets/images/image-post-01.jpg")
+              div.item-text
+                h3.category.videos
+                  a(href="#") Videos
+                h2.item-title
+                  a(href="#") Fuuka – música, sonhos e atitudes
+                div.post-meta
+                  p 30/08/2017
+                  p
+                    | Autor: 
+                    a(href='#') Dyego Cruz
+            a(href="#" class="btn btn-default f-left") Se inscreve no canal ;)
+
+      div.container
+        div.home.f-left                
+          section.post-list
+            article.post
+              div.post-image
+                img(src="assets/images/image-post-02.jpg")
+              div.post-text
+                h3.category.literatura
+                  a(href="#") Literatura
+                h2.post-title
+                  a(href="#") Muita ação e correria com Coração de Aço | Resenha
+              div.post-meta
+                p 08/08/2017
+                p
+                  | Autor: 
+                  a(href='#') Dyego Cruz
+            article.post
+              div.post-image
+                img(src="assets/images/image-post-02.jpg")
+              div.post-text
+                h3.category.cinema-e-tv
+                  a(href="#") Cinema e TV
+                h2.post-title
+                  a(href="#") Star Trek – Portal do Tempo de A. C. Crispin | Resenha
+              div.post-meta
+                p 08/08/2017
+                p
+                  | Autor: 
+                  a(href='#') Dyego Cruz
+            article.post
+              div.post-image
+                img(src="assets/images/image-post-02.jpg")
+              div.post-text
+                h3.category.games
+                  a(href="#") Games
+                h2.post-title
+                  a(href="#") Alto’s Adventure, simulando o snowboarding atrás de lhamas
+              div.post-meta
+                p 08/08/2017
+                p
+                  | Autor: 
+                  a(href='#') Dyego Cruz
+            article.post
+              div.post-image
+                img(src="assets/images/image-post-02.jpg")
+              div.post-text
+                h3.category.tecnologia
+                  a(href="#") Tecnologia
+                h2.post-title
+                  a(href="#") Deixando seus pensamentos mais estilosos com Notegraphy
+              div.post-meta
+                p 08/08/2017
+                p
+                  | Autor: 
+                  a(href='#') Dyego Cruz
+          a(href="#" class="btn btn-others") VEJA MAIS
+
+      div.container-full.f-left
+        hr.separator
+
     block footer
       include partials/footer.pug 
