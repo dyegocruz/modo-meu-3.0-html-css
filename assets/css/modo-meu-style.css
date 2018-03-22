@@ -185,6 +185,14 @@ Tags: -
   .main-footer-container .footer .archive {
     margin: 4% 2%;
   }
+  .main-footer-container .footer .partners {
+    margin-bottom: 5%;
+  }
+  .main-footer-container .footer .partners ul li:nth-child(1) {
+    width: 100%;
+    text-align: center;
+    margin: 5% 0;
+  }
   .main-footer-container .footer-benjamin .logo-container {
     padding-top: 3%;
   }
@@ -319,6 +327,12 @@ Tags: -
   }
   .main-footer-container .footer .partners {
     width: 53%;
+    margin-bottom: 0;
+  }
+  .main-footer-container .footer .partners ul li:nth-child(1) {
+    width: inherit;
+    text-align: left;
+    margin: 0;
   }
   .main-footer-container .footer .social-footer {
     width: 12%;
