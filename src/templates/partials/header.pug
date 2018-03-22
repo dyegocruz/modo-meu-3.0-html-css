@@ -1,0 +1,43 @@
+header.header
+  h1
+    a(href="http://modomeu.com", class="logo-top margin-auto")
+      img(src="assets/images/logo-modo-meu-top.gif", alt="Modo Meu")
+
+  nav(role="navigation")
+    ul.menu-category
+      li.menu.menu-arrow
+        a(href="#") Cinema & TV
+        div(class="submenu-container b-bottom-gray", style="display: none;")
+          ul.submenu.f-left
+            li.active
+              a(href="#") Animação
+            li
+              a(href="#") Animes
+          div.category-children.f-left
+            div.child-row
+              div.cat-posts
+                div.highlight-home-secondary.highlight-home-second.opacity-background-white
+                  img(src="assets/images/image-post.png", class="highlight-home-secondary-img")
+                  div.highlight-home-text
+                    div.highlight-home-title
+                      a(href="#") Projeto criando meu planner | 513 Design
+                div.highlight-home-secondary.highlight-home-second.opacity-background-white
+                  img(src="assets/images/image-post.png", class="highlight-home-secondary-img")
+                  div.highlight-home-text
+                    div.highlight-home-title
+                      a(href="#") Teste legal do sucesso 
+            div.child-row
+              div.cat-posts
+                div.highlight-home-secondary.highlight-home-second.opacity-background-white
+                  img(src="assets/images/image-post.png", class="highlight-home-secondary-img")
+                  div.highlight-home-text
+                    div.highlight-home-title
+                      a(href="#") Outro sucesso | 513 Design
+                div.highlight-home-secondary.highlight-home-second.opacity-background-white
+                  img(src="assets/images/image-post.png", class="highlight-home-secondary-img")
+                  div.highlight-home-text
+                    div.highlight-home-title
+                      a(href="#") Mais outro teste legal do sucesso              
+      for cat in categoriesMainMeun
+        li.menu
+          a(href="#") #{cat}

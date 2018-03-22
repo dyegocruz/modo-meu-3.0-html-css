@@ -54,7 +54,8 @@ module.exports = function(grunt) {
                 }
               },
               files: {
-                'home.html': ['src/templates/home.pug']
+                'home.html': ['src/templates/home.pug'],
+                'single.html': ['src/templates/single.pug'],
               }
             }
           },

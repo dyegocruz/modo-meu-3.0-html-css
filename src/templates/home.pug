@@ -7,141 +7,15 @@ html(lang="en" dir="ltr")
 
   body
 
-    menu.menu-top
-      nav(class="margin-auto", role="navigation")
-        ul.display-inline.f-left
-          li
-           a(href="#") Sobre
-          li
-           a(href="#") Anunciar
-          li
-           a(href="#") Contato
-        ul.display-inline.f-right.a-right
-          li
-           a(href="#", class="link-rosa") Modo Meu no Youtube
-          li
-           a(href="#", class="link-rosa") [513] Design
-          li
-           a(href="#", class="link-rosa") [513] Podcast
-    
-    menu(class="menu-floating", style="display: none;")
-      nav(role="navigation")
-        ul
-          li.logo
-            a(href="#")
-              img(src="assets/images/logo-modo-meu-mm.png")
-          li
-            a(href="#") Cinema & TV
-          li
-            a(href="#") Colunas
-          li
-            a(href="#") Design
-          li
-            a(href="#") Evento
-          li
-            a(href="#") Fotografia
-          li
-            a(href="#") Game
-          li
-            a(href="#") Internet
-          li
-            a(href="#") Música
-          li
-            a(href="#") Podcast
+    include partials/menus-top.pug
     
     block content
       section.container
 
-        header.header
-          h1
-            a(href="http://modomeu.com", class="logo-top margin-auto")
-              img(src="assets/images/logo-modo-meu-top.gif", alt="Modo Meu")
-
-          nav(role="navigation")
-            ul.menu-category
-              li.menu.menu-arrow
-                a(href="#") Cinema & TV
-                div(class="submenu-container b-bottom-gray", style="display: none;")
-                  ul.submenu.f-left
-                    li.active
-                      a(href="#") Animação
-                    li
-                      a(href="#") Animes
-                  div.category-children.f-left
-                    div.child-row
-                      div.cat-posts
-                        div.highlight-home-secondary.highlight-home-second.opacity-background-white
-                          img(src="assets/images/image-post.png", class="highlight-home-secondary-img")
-                          div.highlight-home-text
-                            div.highlight-home-title
-                              a(href="#") Projeto criando meu planner | 513 Design
-                        div.highlight-home-secondary.highlight-home-second.opacity-background-white
-                          img(src="assets/images/image-post.png", class="highlight-home-secondary-img")
-                          div.highlight-home-text
-                            div.highlight-home-title
-                              a(href="#") Teste legal do sucesso 
-                    div.child-row
-                      div.cat-posts
-                        div.highlight-home-secondary.highlight-home-second.opacity-background-white
-                          img(src="assets/images/image-post.png", class="highlight-home-secondary-img")
-                          div.highlight-home-text
-                            div.highlight-home-title
-                              a(href="#") Outro sucesso | 513 Design
-                        div.highlight-home-secondary.highlight-home-second.opacity-background-white
-                          img(src="assets/images/image-post.png", class="highlight-home-secondary-img")
-                          div.highlight-home-text
-                            div.highlight-home-title
-                              a(href="#") Mais outro teste legal do sucesso              
-              for cat in categoriesMainMeun
-                li.menu
-                  a(href="#") #{cat}
+        include partials/header.pug
         
-        div.home.f-left
-          section.content-highlights
-
-            div.highlights-home
-              div.highlight-home-first.opacity-background-white.b-bottom-gray
-                div.highlight-home-first-img
-                  img(src="assets/images/image-post.png")
-                div.highlight-home-text
-                  h3.category.design
-                    a(href="#") Design
-                  h2.highlight-home-title
-                    a(href="#") O que é Sangria? | Quiz de design para leigos
-                div.post-meta
-                  p 28/09/2017
-                  p
-                    | Autor: 
-                    a(href='#') Dyego Cruz
-
-              div.highlight-home-secondaries
-                div.highlight-home-secondary.highlight-home-second.opacity-background-white.b-bottom-gray
-                  div.highlight-home-secondary-img
-                    img(src="assets/images/image-post-01.jpg")
-                  div.highlight-home-text
-                    h3.category.musica
-                      a(href="#") Música
-                    h2.highlight-home-title
-                      a(href="#") Fuuka – música, sonhos e atitudes
-                    div.post-meta
-                      p 30/08/2017
-                      p
-                        | Autor: 
-                        a(href='#') Dyego Cruz
-
-                div.highlight-home-secondary.highlight-home-second.opacity-background-white.b-bottom-gray
-                  div.highlight-home-secondary-img
-                    img(src="assets/images/image-post-02.jpg")
-                  div.highlight-home-text 
-                    h3.category.literatura
-                      a(href="#") Literatura
-                    h2.highlight-home-title
-                      a(href="#") Muita ação e correria com Coração de Aço
-                    div.post-meta
-                      p 08/08/2017
-                      p
-                        | Autor: 
-                        a(href='#') Dyego Cruz
+        div.content.f-left
+          include partials/highlights.pug
 
           section.content-posts.f-left
             article.post.opacity-background-white
@@ -167,61 +41,8 @@ html(lang="en" dir="ltr")
 
           include sidebar.pug
 
-          section.post-list
-            article.post
-              div.post-image
-                img(src="assets/images/image-post-02.jpg")
-              div.post-text
-                h3.category.literatura
-                  a(href="#") Literatura
-                h2.post-title
-                  a(href="#") Muita ação e correria com Coração de Aço | Resenha
-              div.post-meta
-                p 08/08/2017
-                p
-                  | Autor: 
-                  a(href='#') Dyego Cruz
-            article.post
-              div.post-image
-                img(src="assets/images/image-post-02.jpg")
-              div.post-text
-                h3.category.cinema-e-tv
-                  a(href="#") Cinema e TV
-                h2.post-title
-                  a(href="#") Star Trek – Portal do Tempo de A. C. Crispin | Resenha
-              div.post-meta
-                p 08/08/2017
-                p
-                  | Autor: 
-                  a(href='#') Dyego Cruz
-            article.post
-              div.post-image
-                img(src="assets/images/image-post-02.jpg")
-              div.post-text
-                h3.category.games
-                  a(href="#") Games
-                h2.post-title
-                  a(href="#") Alto’s Adventure, simulando o snowboarding atrás de lhamas
-              div.post-meta
-                p 08/08/2017
-                p
-                  | Autor: 
-                  a(href='#') Dyego Cruz
-            article.post
-              div.post-image
-                img(src="assets/images/image-post-02.jpg")
-              div.post-text
-                h3.category.tecnologia
-                  a(href="#") Tecnologia
-                h2.post-title
-                  a(href="#") Deixando seus pensamentos mais estilosos com Notegraphy
-              div.post-meta
-                p 08/08/2017
-                p
-                  | Autor: 
-                  a(href='#') Dyego Cruz
+          include partials/post-list.pug
 
-          a(href="#" class="btn btn-others") VEJA MAIS  
           div.banner-big BANNER DO SUCESSO
 
       div.container-full.container-full-videos.f-left 
@@ -276,69 +97,8 @@ html(lang="en" dir="ltr")
             a(href="#" class="btn btn-default f-left") Se inscreve no canal ;)
 
       div.container
-        div.home.f-left                
-          section.post-list
-            article.post
-              div.post-image
-                img(src="assets/images/image-post-02.jpg")
-              div.post-text
-                h3.category.literatura
-                  a(href="#") Literatura
-                h2.post-title
-                  a(href="#") Muita ação e correria com Coração de Aço | Resenha
-              div.post-meta
-                p 08/08/2017
-                p
-                  | Autor: 
-                  a(href='#') Dyego Cruz
-            article.post
-              div.post-image
-                img(src="assets/images/image-post-02.jpg")
-              div.post-text
-                h3.category.cinema-e-tv
-                  a(href="#") Cinema e TV
-                h2.post-title
-                  a(href="#") Star Trek – Portal do Tempo de A. C. Crispin | Resenha
-              div.post-meta
-                p 08/08/2017
-                p
-                  | Autor: 
-                  a(href='#') Dyego Cruz
-            article.post
-              div.post-image
-                img(src="assets/images/image-post-02.jpg")
-              div.post-text
-                h3.category.games
-                  a(href="#") Games
-                h2.post-title
-                  a(href="#") Alto’s Adventure, simulando o snowboarding atrás de lhamas
-              div.post-meta
-                p 08/08/2017
-                p
-                  | Autor: 
-                  a(href='#') Dyego Cruz
-            article.post
-              div.post-image
-                img(src="assets/images/image-post-02.jpg")
-              div.post-text
-                h3.category.tecnologia
-                  a(href="#") Tecnologia
-                h2.post-title
-                  a(href="#") Deixando seus pensamentos mais estilosos com Notegraphy
-              div.post-meta
-                p 08/08/2017
-                p
-                  | Autor: 
-                  a(href='#') Dyego Cruz
-          a(href="#" class="btn btn-others") VEJA MAIS
-
-      div.container-full.f-left
-        hr.separator
-        div.feed-instagram.f-left
-          h3
-            a(href='#') @modomeu
-            ul     
-
+        div.content.f-left                
+          include partials/post-list.pug
 
     block footer
       include partials/footer.pug 
