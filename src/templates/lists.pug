@@ -1,0 +1,62 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.pug  
+
+- var categoriesMainMeun = ['Colunas','Design','Evento','Fotografia','Game','Internet','Literatura','Música','Youtube','Podcast']
+
+  body
+
+    include partials/menus-top.pug
+    
+    block content
+      section.container
+
+        include partials/header.pug
+
+        div.content.f-left
+          include partials/highlights.pug
+
+          include sidebar-lists.pug
+
+          div.container.f-left
+            div.content.f-left
+
+              div.page-title
+                h2 
+                  | Categoria: 
+                  a(href='#') Cinema e TV
+                p
+                  | TOTAL: 150 posts - 
+                  a(href='#') Filmes (80)
+                  |  - 
+                  a(href='#') Séries (30)
+                  |  - 
+                  a(href='#') Animes (25)
+                  |  - 
+                  a(href='#') Animação (5)                  
+
+
+              include partials/post-list.pug
+              include partials/post-list.pug
+
+              div.banner-big BANNER DO SUCESSO
+
+              include partials/post-list.pug
+              include partials/post-list.pug
+
+              nav.pagination.a-center.f-left
+                a.arrow(href='#')
+                  img.arrow-img(src='assets/images/pagination-arrow-left.png')
+                a.current(href='#') 1
+                a(href='#') 2
+                a(href='#') 3
+                a(href='#') 4
+                a(href='#') 5
+                a.ellipsis(href='#') ...
+                a(href='#') 175
+                a.arrow(href='#')
+                  img.arrow-img(src='assets/images/pagination-arrow-right.png')
+  
+    block footer
+      include partials/footer.pug

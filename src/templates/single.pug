@@ -17,6 +17,8 @@ html(lang="en" dir="ltr")
         div.content.f-left
           include partials/highlights.pug
 
+          include sidebar.pug
+
           section.content-posts.f-left
             article.post.opacity-background-white
 
@@ -134,11 +136,12 @@ html(lang="en" dir="ltr")
                         a(href='#', title='Compartilhar postagem no Whatsapp')
                           img.post-meta-ico-social(src='assets/images/whatsapp.png', alt='Ícone Whatsapp')
 
-          include sidebar.pug
+          //include sidebar.pug
 
       div.container
         div.content.f-left
-          include partials/post-list.pug                
+          include partials/post-list.pug
+          a(href="#" class="btn btn-others") VEJA MAIS
   
     block footer
       include partials/footer.pug 
