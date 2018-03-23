@@ -156,20 +156,6 @@ Tags: -
   .content-posts .post-footer-info .post-footer-author {
     border-top: 2px solid #d6d6d6;
   }
-  .content-pages .content-page .text-page {
-    width: 90%;
-  }
-  .content-pages .content-page .template-page .editores .editor {
-    width: 100%;
-    margin-bottom: 5%;
-  }
-  .content-pages .content-page .template-page .editores .editor .social {
-    margin-top: 2%;
-    width: 100%;
-  }
-  .content-pages .content-page .template-page .colaboradores .colaborador {
-    width: 45%;
-  }
   .main-footer-container .footer .widget {
     width: 95%;
     text-align: center;
@@ -227,12 +213,6 @@ Tags: -
   }
   .content-posts .post .post-content {
     margin: 0;
-  }
-  .content-pages .content-page .template-page .editores .editor .social {
-    width: 50%;
-  }
-  .content-pages .content-page .template-page .colaboradores .colaborador {
-    width: 29%;
   }
   .main-footer-container .footer .social-footer {
     margin: 4% 38%;
@@ -294,19 +274,6 @@ Tags: -
   .content-posts .post-list {
     width: 45%;
   }
-  .content-pages .content-page .text-page {
-    width: 53%;
-  }
-  .content-pages .content-page .template-page .editores .editor {
-    width: 50%;
-    margin-bottom: 0;
-  }
-  .content-pages .content-page .template-page .editores .editor .social {
-    margin-top: 5%;
-  }
-  .content-pages .content-page .template-page .colaboradores .colaborador {
-    width: 20%;
-  }
   .main-footer-container .footer .widget {
     text-align: left;
   }
@@ -366,16 +333,6 @@ Tags: -
   }
   .header .menu-category li {
     padding: 0px;
-  }
-  .content-pages {
-    width: 100%;
-  }
-  .content-pages .content-highlights {
-    width: 100%;
-  }
-  .content-pages .content-highlights .sidebar {
-    float: right;
-    position: relative;
   }
 }
 /*------- Media Queries -------*/
@@ -947,7 +904,7 @@ em {
 }
 .content .post-list .post {
   vertical-align: top;
-  margin: 0 1%;
+  margin: 0 1.3%;
   display: inline-block;
   border-bottom: 2px solid #d6d6d6;
   background: rgba(255, 255, 255, 0.85);
@@ -976,6 +933,11 @@ em {
   font-size: 12px;
   color: #12aec0;
   text-transform: uppercase;
+}
+.special-page-logo {
+  float: left;
+  text-align: center;
+  margin-bottom: 1%;
 }
 .content-posts .post {
   float: left;
