@@ -40,8 +40,7 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'assets/js/scripts.js': ['src/js/scripts.js']/*,
-          '../modomeu/wp-content/themes/modo-meu-5.0/js/scripts.js': ['src/js/scripts.js']*/
+          'assets/js/scripts.js': ['src/js/scripts.js']
         }
       }
     },
@@ -66,8 +65,7 @@ module.exports = function(grunt) {
     less: {
       main: {                
         files: {
-          "assets/css/modo-meu-style.css": "src/less/modo-meu-style.less"/*,
-          "../modomeu/wp-content/themes/modo-meu-5.0/css/modo-meu-style.css": "src/less/modo-meu-style.less"*/
+          "assets/css/modo-meu-style.css": "src/less/modo-meu-style.less"
         }
       }
     },
