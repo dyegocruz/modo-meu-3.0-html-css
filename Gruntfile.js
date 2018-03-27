@@ -48,10 +48,10 @@ module.exports = function(grunt) {
       options: {
         pretty: true
       },
-      compile: {          
+      compile: {
         options: {
           data: {
-            debug: false            
+            debug: false
           }
         },
         files: {
@@ -61,15 +61,15 @@ module.exports = function(grunt) {
         }
       }
     },
-    
+
     less: {
-      main: {                
+      main: {
         files: {
           "assets/css/modo-meu-style.css": "src/less/modo-meu-style.less"
         }
       }
     },
-    
+
     cssmin: {
       minify: {
         expand: true,
@@ -77,7 +77,7 @@ module.exports = function(grunt) {
         src: ['*style.css', '!*.min.css'],
         dest: 'assets/css/',
         ext: '.min.css'
-      }        
+      }
     }
   });
 
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-pug');
-  grunt.loadNpmTasks('grunt-contrib-connect');    
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Default task(s).
   grunt.registerTask('serve', ['connect:server','watch']);

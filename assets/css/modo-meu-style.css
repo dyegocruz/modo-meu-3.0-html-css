@@ -255,11 +255,11 @@ Tags: -
     width: 23%;
   }
   .main-video {
-    width: 60%;
+    width: 58%;
   }
   .list-videos {
-    width: 40%;
-    padding-left: 5%;
+    width: 42%;
+    padding-left: 3%;
     margin-top: 0;
   }
   .content-posts {
@@ -433,15 +433,21 @@ body {
   background: #2866B0;
   color: #fff;
 }
-.youtube,
-.videos {
-  background: #12AEC0;
-  color: #fff;
-}
 .podcast,
 .podcast-513 {
   background: #E73064;
   color: #fff;
+}
+.youtube,
+.videos,
+.modo-meu {
+  background: #12AEC0;
+  color: #fff;
+}
+.youtube a:hover,
+.videos a:hover,
+.modo-meu a:hover {
+  color: #3a4192;
 }
 /*------- Categories Colors --------*/
 .color-turquoise {
@@ -670,7 +676,7 @@ em {
   font-family: 'Archive', sans-serif;
   font-weight: normal;
   display: table;
-  padding: 0px 6px;
+  padding: 1px 6px;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -935,6 +941,7 @@ em {
   font-size: 15px;
   text-transform: uppercase;
   margin-top: 10px;
+  min-height: 50px;
 }
 .content .post-list .post .post-meta {
   font-family: 'Assistant', sans-serif;
@@ -1302,9 +1309,25 @@ em {
 .list-videos {
   float: left;
 }
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .item-video {
   background: #fff;
-  margin-bottom: 5.3%;
+  margin-bottom: 4.2%;
   border-bottom: 2px solid #d6d6d6;
   float: left;
 }
@@ -1314,8 +1337,6 @@ em {
   text-transform: uppercase;
   font-size: 12px;
   color: #12aec0;
-  position: absolute;
-  bottom: 0;
 }
 .item-image,
 .item-text {
@@ -1323,6 +1344,9 @@ em {
 }
 .item-image {
   width: 45%;
+}
+.item-image img {
+  display: block;
 }
 .item-text {
   width: 55%;
