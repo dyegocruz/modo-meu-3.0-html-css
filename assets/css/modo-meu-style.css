@@ -1130,7 +1130,8 @@ body.category {
   width: 70%;
   font-size: 14px;
   border-left: 2px solid #d6d6d6;
-  padding: 2.8% 2%;
+  padding: 0% 2%;
+  height: 74px;
 }
 .content-posts .post .post-footer .post-footer-meta {
   width: 100%;
@@ -1817,7 +1818,7 @@ body.category {
   margin-top: 5%;
   padding-left: 10px;
   color: #3a4192;
-  background: url("../images/arrow-down.png") no-repeat 95% 50% #ffffff;
+  background: url("../images/arrow-down.png") no-repeat 95% 50% #fff;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
