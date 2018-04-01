@@ -429,7 +429,8 @@ body {
   background: #F05355;
   color: #fff;
 }
-.tecnologia {
+.tecnologia,
+.fotografia {
   background: #2866B0;
   color: #fff;
 }
@@ -440,13 +441,15 @@ body {
 }
 .youtube,
 .videos,
-.modo-meu {
+.modo-meu,
+.lugar {
   background: #12AEC0;
   color: #fff;
 }
 .youtube a:hover,
 .videos a:hover,
-.modo-meu a:hover {
+.modo-meu a:hover,
+.lugar a:hover {
   color: #3a4192;
 }
 /*------- Categories Colors --------*/
@@ -629,11 +632,8 @@ em {
   font-weight: 700;
   color: #3a4192;
 }
-.page-title h2 a {
+.page-title h2 span {
   color: #e73064;
-}
-.page-title h2 a:hover {
-  color: #12aec0;
 }
 .page-title p {
   font-family: 'Assistant', sans-serif;
@@ -679,6 +679,10 @@ em {
   padding: 1px 6px;
   font-size: 14px;
   text-transform: uppercase;
+}
+body.category {
+  display: inherit;
+  padding: 0;
 }
 .menu-top {
   background: #f1f1f1;
@@ -902,6 +906,7 @@ em {
 }
 .content-highlights .highlights-home .highlight-home-first .highlight-home-text {
   width: 100%;
+  min-height: 95px;
 }
 .content-highlights .highlights-home .highlight-home-first .highlight-home-title {
   margin-bottom: 9px;
@@ -930,6 +935,13 @@ em {
 .content .post-list .post:nth-child(4) {
   margin-right: 0;
 }
+.content .post-list .post .post-image {
+  max-height: 151px;
+  overflow: hidden;
+}
+.content .post-list .post .post-image img {
+  display: block;
+}
 .content .post-list .post .post-text,
 .content .post-list .post .post-meta {
   padding: 5px;
@@ -941,7 +953,7 @@ em {
   font-size: 15px;
   text-transform: uppercase;
   margin-top: 10px;
-  min-height: 50px;
+  min-height: 65px;
 }
 .content .post-list .post .post-meta {
   font-family: 'Assistant', sans-serif;
@@ -1008,6 +1020,7 @@ em {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 1%;
+  display: block;
 }
 .content-posts .post .post-content .podPress_content {
   padding: 0 1%;
@@ -1112,7 +1125,7 @@ em {
   width: 70%;
   font-size: 14px;
   border-left: 2px solid #d6d6d6;
-  padding: 0 2%;
+  padding: 2.8% 2%;
 }
 .content-posts .post .post-footer .post-footer-meta {
   width: 100%;
