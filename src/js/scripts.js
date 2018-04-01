@@ -1,13 +1,16 @@
 $( document ).ready(function() {
 
-  //$('.highlight-home-first').css('height',$('.highlight-home-secondaries').innerHeight()-10);
-  //$('.highlight-home-secondaries .highlight-home-text').css('height',$('.highlight-home-secondary-img img').innerHeight());
-  //$('.item-video .item-text').css('height',$('.item-image img').innerHeight());
+	$('.post-content').find('iframe').each(function(i, elm) {
+		var domElem = $(elm);
+		if (domElem.attr('src').indexOf('youtube') >= 0) {
+			domElem.parent().addClass('video-container');
+		}
+	});
 
   $('.menu-category li').hover(
-    function() {        
-        
-      var newOffSet = ($('.menu-category').offset().left - $(this).find('a').first().offset().left);            
+    function() {
+
+      var newOffSet = ($('.menu-category').offset().left - $(this).find('a').first().offset().left);
       if (newOffSet < 0) {
           $(this).find('.submenu-container').css('left',newOffSet);
       }
@@ -15,7 +18,7 @@ $( document ).ready(function() {
       $(this).find('.submenu-container').css('width',$('.menu-category').width());
       $(this).find('.submenu-container').fadeIn();
       $(this).find('.submenu-container').find('.child-row:eq(0)').show();
-  }, function() { 
+  }, function() {
       $(this).find('.submenu-container').fadeOut();
   });
 
@@ -24,10 +27,10 @@ $( document ).ready(function() {
     $(this).addClass('active');
 
     var subMenuCatIndex = $(this).index();
-  
-    var thisCategoryChildren = $(this).parent().parent().find('.category-children');		
+
+    var thisCategoryChildren = $(this).parent().parent().find('.category-children');
     $(thisCategoryChildren).find('.child-row').hide();
-    $(thisCategoryChildren).find('.child-row:eq(' + subMenuCatIndex + ')').show();	
+    $(thisCategoryChildren).find('.child-row:eq(' + subMenuCatIndex + ')').show();
   });
 
   $('.button-back-to-top').click( function(e) {
@@ -35,28 +38,29 @@ $( document ).ready(function() {
       return false;
   });
 
-  var token = '30666716.1b6f424.e88abbf4a7434ca0acd1f1b530a091e4', // learn how to obtain it below
-      userid = '30666716', // User ID - Modo Meu - get it in source HTML of your Instagram profile or look at the next example :)
+  var token = '10793400.242a293.27ea1bf6816948f187bb11755ef8566d', // learn how to obtain it below
+      userid = '10793400', // User ID - Modo Meu - get it in source HTML of your Instagram profile or look at the next example :)
       num_photos = 7; // how much photos do you want to get*/
 
-  // $.ajax({
-  //     url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent', // or /users/self/media/recent for Sandbox
-  //     dataType: 'jsonp',
-  //     type: 'GET',
-  //     data: {access_token: token, count: num_photos},
-  //     success: function(data){            
-  //         for( x in data.data ){          
-  //             $('.feed-instagram ul').append('<li><img class="photo-instagram" src="'+data.data[x].images.thumbnail.url+'"></li>');
-  //             //$('ul').append('<li><img src="'+data.data[x].images.low_resolution.url+'"></li>'); // data.data[x].images.low_resolution.url - URL of image, 306х306
-  //             // data.data[x].images.thumbnail.url - URL of image 150х150
-  //             // data.data[x].images.standard_resolution.url - URL of image 612х612
-  //             // data.data[x].link - Instagram post URL 
-  //         }
-  //     },
-  //     error: function(data){
-  //         console.log(data); // send the error notifications to console
-  //     }
-  // });
+  $.ajax({
+      url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent', // or /users/self/media/recent for Sandbox
+      dataType: 'jsonp',
+      type: 'GET',
+      data: {access_token: token, count: num_photos},
+      success: function(data) {
+          for( x in data.data ) {
+						var string = '<li><a href="'+data.data[x].link+'"><img class="photo-instagram" src="'+data.data[x].images.thumbnail.url+'"></a></li>';
+						$('.feed-instagram ul').append(string);
+						//$('ul').append('<li><img src="'+data.data[x].images.low_resolution.url+'"></li>'); // data.data[x].images.low_resolution.url - URL of image, 306х306
+						// data.data[x].images.thumbnail.url - URL of image 150х150
+						// data.data[x].images.standard_resolution.url - URL of image 612х612
+						// data.data[x].link - Instagram post URL
+          }
+			}/*,
+      error: function(data){
+          console.log(data); // send the error notifications to console
+			}*/
+  });
 
 });
 

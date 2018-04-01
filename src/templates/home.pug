@@ -1,19 +1,19 @@
 doctype html
 html(lang="en" dir="ltr")
   block head
-    include partials/head.pug  
+    include partials/head.pug
 
 - var categoriesMainMeun = ['Colunas','Design','Evento','Fotografia','Game','Internet','Literatura','Música','Youtube','Podcast']
 
   body
 
     include partials/menus-top.pug
-    
+
     block content
-      section.container
+      section.container.home
 
         include partials/header.pug
-        
+
         div.content.f-left
           include partials/highlights.pug
 
@@ -31,12 +31,12 @@ html(lang="en" dir="ltr")
                   h2
                     a(href="#") Ouvindo o Country encantador de Zac Brown Band os apadrinhados de dave Grohl (H2)
                   div.post-meta
-                    p Autor: 
+                    p Autor:
                       a(href="#") Mariana Fernandes
-              
+
               div.post-content
                 a(href="#")
-                  img(src="assets/images/image-post-01.jpg")                                   
+                  img(src="assets/images/image-post-01.jpg")
                 p H5 - A alguns meses atrás comentei sobre o novo álbum da banda Foo Fighters, que está previsto para o segundo semestre de 2014 e de acordo com o próprio Dave Grohl, esse será o trabalho mais revolucionário dos últimos tempos (<a href="#">falei disso aqui - h2</a>). Bem, mas o objetivo desse post não é falar de como o Foo Fighters é uma banda incrível (afinal, todo mundo já sabe), mas sim do grupo <strong>Zac Brown Band (h4)</strong>, no qual Dave apadrinhou e esteve presente na produção de seus últimos álbuns, (The Grohl Sessions Vol. 1 e 2).
 
               a(href="#" class="btn btn-default") LEIA MAIS
@@ -48,17 +48,17 @@ html(lang="en" dir="ltr")
 
           div.banner-big BANNER DO SUCESSO
 
-      div.container-full.container-full-videos.f-left 
+      div.container-full.container-full-videos.f-left
         div.container
           div.a-center.link-youtube
             h2
               a(href="#") youtube
           div.main-video
             div.video-container
-              iframe(src='https://www.youtube.com/embed/JWu-8h0YN98', width='560', height='315', frameborder='0', allowfullscreen='allowfullscreen')            
+              iframe(src='https://www.youtube.com/embed/JWu-8h0YN98', width='560', height='315', frameborder='0', allowfullscreen='allowfullscreen')
             a(href="#" class="btn btn-turquoise") VEJA MAIS
-          div.list-videos             
-            div.item-video               
+          div.list-videos
+            div.item-video
               div.item-image
                 img(src="assets/images/image-post-01.jpg")
               div.item-text
@@ -69,9 +69,9 @@ html(lang="en" dir="ltr")
                 div.post-meta
                   p 30/08/2017
                   p
-                    | Autor: 
+                    | Autor:
                     a(href='#') Dyego Cruz
-            div.item-video               
+            div.item-video
               div.item-image
                 img(src="assets/images/image-post-01.jpg")
               div.item-text
@@ -82,9 +82,9 @@ html(lang="en" dir="ltr")
                 div.post-meta
                   p 30/08/2017
                   p
-                    | Autor: 
+                    | Autor:
                     a(href='#') Dyego Cruz
-            div.item-video               
+            div.item-video
               div.item-image
                 img(src="assets/images/image-post-01.jpg")
               div.item-text
@@ -95,14 +95,14 @@ html(lang="en" dir="ltr")
                 div.post-meta
                   p 30/08/2017
                   p
-                    | Autor: 
+                    | Autor:
                     a(href='#') Dyego Cruz
             a(href="#" class="btn btn-default f-left") Se inscreve no canal ;)
-
+						
       div.container
-        div.content.f-left                
+        div.content.f-left
           include partials/post-list.pug
           a(href="#" class="btn btn-others") VEJA MAIS
 
     block footer
-      include partials/footer.pug 
+      include partials/footer.pug			
