@@ -1273,7 +1273,8 @@ body.category {
   font-weight: normal;
   color: #3a4192;
 }
-.page-template-page-posts .banner-big {
+.page-template-page-posts .banner-big,
+.archive .banner-big {
   margin-bottom: 2%;
 }
 .post-box-element {
