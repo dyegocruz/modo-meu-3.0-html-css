@@ -618,6 +618,8 @@ body.category {
 
 .home {
 	.content-posts {
+    margin-bottom: 3%;
+
 		.post {
 			.post-content {
 				img {
@@ -628,11 +630,10 @@ body.category {
 	}
 }
 
-.content-posts {
+.content-posts, .content-page {
   .post {
     .f-left();
-    width: 100%;
-    margin-bottom: 5%;
+    width: 100%;    
 
     .post-header {
       display: block;
@@ -648,6 +649,8 @@ body.category {
       }
 
       .title {
+        width: 100%;
+        float: left;
         padding: 5px;
         float: left;
         text-transform: uppercase;
@@ -867,7 +870,7 @@ body.category {
     vertical-align: top;
     text-align: left;
     display: inline-block;
-    margin: 0% 1% 1% 3%;
+    margin: 0% 1% 1% 3%;    
 
     .post-list-img {
       width: 100%;
@@ -888,6 +891,12 @@ body.category {
       .font-archive();
       color: @color-violet;
     }
+  }
+}
+
+.page-template-page-posts {
+  .banner-big {
+    margin-bottom: 2%;
   }
 }
 
@@ -1064,158 +1073,158 @@ body.category {
 }
 
 
-.content-page {
-  margin-bottom: 5%;
-  padding: 1% 0;
-  width: 100%;
-  .opacity-background-white();
+// .content-page {
+//   margin-bottom: 5%;
+//   padding: 1% 0;
+//   width: 100%;
+//   .opacity-background-white();
 
-  .text-page, .template-page, .page-parceiros {
-    color: @color-text;
+//   .text-page, .template-page, .page-parceiros {
+//     color: @color-text;
 
-    p,h2,h3,h4 { padding: 1% 2%; }
-    h2, h3, h4 { .font-archive(); }
+//     p,h2,h3,h4 { padding: 1% 2%; }
+//     h2, h3, h4 { .font-archive(); }
 
-    h2 {
-      font-size: 20pt;
-      color: @color-violet;
-    }
+//     h2 {
+//       font-size: 20pt;
+//       color: @color-violet;
+//     }
 
-    h3 { color: @color-turquesa; }
+//     h3 { color: @color-turquesa; }
 
-    a {
-      color: @color-violet;
-      .transition(0.3s);
+//     a {
+//       color: @color-violet;
+//       .transition(0.3s);
 
-      &:hover { color: @color-turquesa; }
-    }
-  }
+//       &:hover { color: @color-turquesa; }
+//     }
+//   }
 
-  .page-parceiros {
-    width: 70%;
+//   .page-parceiros {
+//     width: 70%;
 
-    .parceiros-lista {
-      width: 100%;
-      .f-left();
+//     .parceiros-lista {
+//       width: 100%;
+//       .f-left();
 
-      .parceiro-item, .parceiro-item-full {
-        float: left;
-      }
+//       .parceiro-item, .parceiro-item-full {
+//         float: left;
+//       }
 
-      .parceiro-item {
-        width: 80px;
-        margin: 15px;
-      }
+//       .parceiro-item {
+//         width: 80px;
+//         margin: 15px;
+//       }
 
-      .parceiro-item-full {
-        width: 100%;
-        margin: 15px 0;
-      }
-    }
-  }
+//       .parceiro-item-full {
+//         width: 100%;
+//         margin: 15px 0;
+//       }
+//     }
+//   }
 
-  .template-page {
-    width: 95%;
+//   .template-page {
+//     width: 95%;
 
-    .editores {
-      margin: 2% 0;
-      .f-left();
+//     .editores {
+//       margin: 2% 0;
+//       .f-left();
 
-      .editor {
-        text-align: left;
-        position: relative;
-        .f-left();
+//       .editor {
+//         text-align: left;
+//         position: relative;
+//         .f-left();
 
-        .editor-photo {
-          width: 40%;
-          margin-right: 4%;
-          max-height: 200px;
-          overflow: hidden;
-          position: relative;
-          .f-left();
-          .border-radius();
+//         .editor-photo {
+//           width: 40%;
+//           margin-right: 4%;
+//           max-height: 200px;
+//           overflow: hidden;
+//           position: relative;
+//           .f-left();
+//           .border-radius();
 
-          img { width: 100%; }
-        }
+//           img { width: 100%; }
+//         }
 
-        p {
-          width: 50%;
-          padding: 0;
-          margin-top: 2%;
-          .f-left();
+//         p {
+//           width: 50%;
+//           padding: 0;
+//           margin-top: 2%;
+//           .f-left();
 
-          a {
-              margin-right: 1%;
-              .f-left();
-          }
-        }
-      }
-    }
+//           a {
+//               margin-right: 1%;
+//               .f-left();
+//           }
+//         }
+//       }
+//     }
 
-    .colaboradores {
-      width: 100%;
-      margin: 2% 0;
-      .f-left();
+//     .colaboradores {
+//       width: 100%;
+//       margin: 2% 0;
+//       .f-left();
 
-      .colaborador {
-        margin: 0 2% 3% 2%;
-        .f-left();
+//       .colaborador {
+//         margin: 0 2% 3% 2%;
+//         .f-left();
 
-        .colaborador-photo { margin-bottom: 5%; }
-        p { margin-top: 5%; }
-      }
-    }
+//         .colaborador-photo { margin-bottom: 5%; }
+//         p { margin-top: 5%; }
+//       }
+//     }
 
-    .editor, .colaborador {
-      p {
-        font-size: 11pt;
-        img { width: 43px; }
-      }
-    }
+//     .editor, .colaborador {
+//       p {
+//         font-size: 11pt;
+//         img { width: 43px; }
+//       }
+//     }
 
-    hr {
-      width: 65%;
-      border: none;
-      height: 2px;
-      background: @color-border;
-    }
+//     hr {
+//       width: 65%;
+//       border: none;
+//       height: 2px;
+//       background: @color-border;
+//     }
 
-    .sobre {
-      margin-bottom: 3%;
-      .f-left();
+//     .sobre {
+//       margin-bottom: 3%;
+//       .f-left();
 
-      .sobre-photo {
-        width: 30%;
-        .f-left();
-        .border-radius();
-      }
+//       .sobre-photo {
+//         width: 30%;
+//         .f-left();
+//         .border-radius();
+//       }
 
-      P {
-        text-align: left;
-        width: 65%;
-        font-size: 11pt;
-        .f-left();
-      }
-    }
+//       P {
+//         text-align: left;
+//         width: 65%;
+//         font-size: 11pt;
+//         .f-left();
+//       }
+//     }
 
-    .podcast-513 {
-      .f-left();
+//     .podcast-513 {
+//       .f-left();
 
-      .podcast-513-photo {
-        width: 25%;
-        .f-left();
-        .border-radius();
-      }
+//       .podcast-513-photo {
+//         width: 25%;
+//         .f-left();
+//         .border-radius();
+//       }
 
-      p {
-        text-align: left;
-        width: 100%;
-        font-size: 11pt;
-        .a-center();
-      }
-    }
-  }
-}
+//       p {
+//         text-align: left;
+//         width: 100%;
+//         font-size: 11pt;
+//         .a-center();
+//       }
+//     }
+//   }
+// }
 
 .sidebar {
 
@@ -1614,4 +1623,4 @@ body.category {
 }
 
 //Ajustes Disqus
-#comments, #disqus_thread { width: 100%; .f-left(); }
+#comments, #disqus_thread { width: 100%; margin-top: 2%; .f-left(); }
