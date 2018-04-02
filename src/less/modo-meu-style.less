@@ -569,20 +569,27 @@ body.category {
     width: 100%;
     display: table;
     margin-bottom: 20px;
+    //margin-left: -20px;
+    //margin-right: -20px;
 
     .post {
       vertical-align: top;
-      margin: 0 1.3%;
-      display: inline-block;
-      .b-bottom-gray();
+      //margin: 0 1%;
+      //display: inline-block;
+      float: left;
+      padding: 0 10px;      
       .opacity-background-white();
 
       &:nth-child(1) {
         margin-left: 0;
+        padding-left: 0px;
+        padding-right: 10px;
       }
 
       &:nth-child(4) {
         margin-right: 0;
+        padding-right: 0px;
+        padding-left: 10px;
       }
 
 			.post-image {
@@ -610,6 +617,7 @@ body.category {
         font-size: 12px;
         color: @color-turquesa;
         text-transform: uppercase;
+        .b-bottom-gray();
       }
     }
   }
