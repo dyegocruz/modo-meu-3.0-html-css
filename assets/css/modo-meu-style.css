@@ -945,7 +945,6 @@ body.category {
   padding-left: 10px;
 }
 .content .post-list .post .post-image {
-  max-height: 151px;
   overflow: hidden;
 }
 .content .post-list .post .post-image img {
@@ -1823,7 +1822,7 @@ body.category {
 .main-footer-container .footer .social-footer .instagram:hover {
   background-image: url('../images/instagram-turquesa.png');
 }
-.main-footer-container .footer-benjamin {
+.main-footer-container .footer-modocromatico {
   font-family: 'Assistant', sans-serif;
   font-weight: 600;
   font-size: 11px;
@@ -1833,16 +1832,16 @@ body.category {
   background: #12aec0;
   padding: 1.2em 0;
 }
-.main-footer-container .footer-benjamin .text {
+.main-footer-container .footer-modocromatico .text {
   width: 49%;
   padding-right: 0.5em;
 }
-.main-footer-container .footer-benjamin .logo-container {
+.main-footer-container .footer-modocromatico .logo-container {
   width: 49%;
 }
-.main-footer-container .footer-benjamin .logo-container .logo-benjamin img {
-  width: 146px;
-  height: 26px;
+.main-footer-container .footer-modocromatico .logo-container .logo-modocromatico img {
+  width: 90px;
+  height: 24px;
 }
 #comments,
 #disqus_thread {
