@@ -834,6 +834,7 @@ body.category {
   background: rgba(137, 137, 137, 0.2);
   padding-bottom: 30px;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 .site,
 .container {
@@ -983,7 +984,7 @@ body.category {
   margin-bottom: 9px;
 }
 .content-highlights .highlights-home .highlight-home-first .post-meta {
-  padding: 2px 10px;
+  padding: 5px 10px;
 }
 .content {
   position: relative;
@@ -1046,6 +1047,9 @@ body.category {
 }
 .home .content-posts .post .post-content img {
   width: 100%;
+}
+.home .post-image {
+  max-height: 155px;
 }
 .content-posts .post,
 .content-page .post {
