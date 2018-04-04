@@ -364,7 +364,7 @@ a img.aligncenter {
 .wp-caption {
   background: #fff;
   text-align: center;
-  width: 100% !important;
+  max-width: 100%;
 }
 .content-posts .post .post-content .wp-caption p {
   font-size: 12px;
