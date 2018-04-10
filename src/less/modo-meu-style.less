@@ -380,7 +380,8 @@ body.category {
 .container-full-videos {
   background: @color-border;
   .opacity-background-gray();
-  padding-bottom: 30px;
+	padding-bottom: 30px;
+	padding-top: 30px;
 	margin-bottom: 30px;
 	margin-top: 20px;
 }
@@ -1327,19 +1328,26 @@ body.category {
   }
 
   .adsense {
-      .box{
-          margin: 0 auto;
-          width: auto;
-          height: 250px;
-      }
-  }
+		.box{
+			margin: 0 auto;
+			width: auto;
+			height: 250px;
+		}
+	}
 
   .facebook-box {
     .btn-default {
       width: 300px;
       margin: 0 auto;
     }
-  }
+	}
+	
+	.pinterest-box {
+		span {
+			overflow: hidden;
+			box-shadow: none;
+		}
+	}
 
   .newsletter {
     h2 {

@@ -834,6 +834,7 @@ body.category {
   background: #d6d6d6;
   background: rgba(137, 137, 137, 0.2);
   padding-bottom: 30px;
+  padding-top: 30px;
   margin-bottom: 30px;
   margin-top: 20px;
 }
@@ -1610,6 +1611,10 @@ body.category {
 .sidebar .facebook-box .btn-default {
   width: 300px;
   margin: 0 auto;
+}
+.sidebar .pinterest-box span {
+  overflow: hidden;
+  box-shadow: none;
 }
 .sidebar .newsletter h2 {
   font-family: 'Archive', sans-serif;

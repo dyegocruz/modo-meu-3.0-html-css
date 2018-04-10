@@ -161,14 +161,16 @@
         </div>
         <div class="facebook-box widget"><a class="btn btn-default" href="#">facebook</a></div>
         <div class="pinterest-box widget">
-          <h2>Pinterest  </h2>
+          <div class="box">
+            <script async="" defer="" src="//assets.pinterest.com/js/pinit.js"></script><a data-pin-do="embedUser" data-pin-board-width="300" data-pin-scale-height="250" data-pin-scale-width="80" href="https://www.pinterest.com/modomeu/"></a>
+          </div>
         </div>
         <div class="newsletter widget newsletter-subscription">
           <script type="text/javascript">
             //<![CDATA[
             if (typeof newsletter_check !== "function") {
             window.newsletter_check = function (f) {
-            var re = /^([a-zA-Z0-9_\\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
+            var re = /^([a-zA-Z0-9_\\\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
             if (!re.test(f.elements["ne"].value)) {
             alert("The email is not correct");
             return false;
@@ -271,10 +273,7 @@
     </div>
   </section>
   <div class="container-full container-full-videos f-left">
-    <div class="container">
-      <div class="a-center link-youtube">
-        <h2><a href="#">youtube</a></h2>
-      </div>
+    <div class="container">         
       <div class="main-video">
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/JWu-8h0YN98" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

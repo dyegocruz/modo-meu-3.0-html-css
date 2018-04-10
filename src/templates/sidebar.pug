@@ -22,20 +22,21 @@ aside.sidebar.a-left.f-right
   .search.widget.b-bottom-gray
     form
       input.input-text(type='text', placeholder='Busque o que deseja')
-      input.input-submit(type='submit', value='')  
+      input.input-submit(type='submit', value='')
   .adsense.widget
-    .box
-      | publicidade
+    .box publicidade
   .facebook-box.widget
-    a(href="#", class="btn btn-default") facebook
+    a.btn.btn-default(href='#') facebook
   .pinterest-box.widget
-    h2 Pinterest  
+    .box
+      script(async='', defer='', src='//assets.pinterest.com/js/pinit.js')
+      a(data-pin-do='embedUser', data-pin-board-width='300', data-pin-scale-height='250', data-pin-scale-width='80', href='https://www.pinterest.com/modomeu/')
   .newsletter.widget.newsletter-subscription
     script(type='text/javascript').
       //<![CDATA[
       if (typeof newsletter_check !== "function") {
       window.newsletter_check = function (f) {
-      var re = /^([a-zA-Z0-9_\\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
+      var re = /^([a-zA-Z0-9_\\\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
       if (!re.test(f.elements["ne"].value)) {
       alert("The email is not correct");
       return false;
