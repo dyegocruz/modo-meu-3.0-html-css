@@ -1155,6 +1155,10 @@ body.category {
   color: #898989;
   text-align: justify;
 }
+.content-posts .post .post-content li,
+.content-page .post .post-content li {
+  padding-left: 15px;
+}
 .content-posts .post .post-content blockquote,
 .content-page .post .post-content blockquote {
   padding: 2%;
