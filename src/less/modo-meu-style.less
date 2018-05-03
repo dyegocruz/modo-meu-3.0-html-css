@@ -65,7 +65,7 @@ body {
 .margin-auto { margin: 0 auto; }
 .display-inline { display: inline; }
 .no-mp { margin: 0; padding: 0; }
-.opacity-background-white { background: rgba(255, 255, 255, 0.85); }
+.opacity-background-white { background: rgba(255, 255, 255, 0.90); }
 .opacity-background-gray { background: rgba(137, 137, 137, 0.2); }
 .opacity-background-gray-internal { background: rgba(239, 240, 255, 0.9); }
 
@@ -187,6 +187,7 @@ body {
 }
 
 /*------- Defaults -------*/
+h1 { font-size: 24px; }
 h2 { font-size: 20px; }
 h3 { font-size: 16px; }
 h4 { font-size: 12px; }
@@ -652,17 +653,7 @@ body.category {
     width: 100%;    
 
     .post-header {
-      display: block;
-      .icone-categoria {
-        background: #60c093;
-        color: #fff;
-        font-size: 30px;
-        float: left;
-        position: relative;
-        z-index: 10;
-        padding: 4% 2.5%;
-        margin: 0% 2% 2% 0;
-      }
+      display: block;      
 
       .title {
         width: 100%;
@@ -678,7 +669,7 @@ body.category {
           margin-top: 5px;
         }
 
-        h2 {
+        h1, h2 {
           .font-archive();
           color: @color-violet;
         }
@@ -747,7 +738,8 @@ body.category {
         padding: 2%;
         border: 2px solid @color-turquesa;
         color: @color-violet;
-        text-align: justify;
+				text-align: justify;
+				font-style: italic;
       }
 
       p {
@@ -757,7 +749,7 @@ body.category {
         }
 
         strong {
-          color: @color-turquesa;
+          color: @color-violet;
         }
       }
 
@@ -1096,160 +1088,6 @@ body.category {
     margin-top: 10px;
   }
 }
-
-
-// .content-page {
-//   margin-bottom: 5%;
-//   padding: 1% 0;
-//   width: 100%;
-//   .opacity-background-white();
-
-//   .text-page, .template-page, .page-parceiros {
-//     color: @color-text;
-
-//     p,h2,h3,h4 { padding: 1% 2%; }
-//     h2, h3, h4 { .font-archive(); }
-
-//     h2 {
-//       font-size: 20pt;
-//       color: @color-violet;
-//     }
-
-//     h3 { color: @color-turquesa; }
-
-//     a {
-//       color: @color-violet;
-//       .transition(0.3s);
-
-//       &:hover { color: @color-turquesa; }
-//     }
-//   }
-
-//   .page-parceiros {
-//     width: 70%;
-
-//     .parceiros-lista {
-//       width: 100%;
-//       .f-left();
-
-//       .parceiro-item, .parceiro-item-full {
-//         float: left;
-//       }
-
-//       .parceiro-item {
-//         width: 80px;
-//         margin: 15px;
-//       }
-
-//       .parceiro-item-full {
-//         width: 100%;
-//         margin: 15px 0;
-//       }
-//     }
-//   }
-
-//   .template-page {
-//     width: 95%;
-
-//     .editores {
-//       margin: 2% 0;
-//       .f-left();
-
-//       .editor {
-//         text-align: left;
-//         position: relative;
-//         .f-left();
-
-//         .editor-photo {
-//           width: 40%;
-//           margin-right: 4%;
-//           max-height: 200px;
-//           overflow: hidden;
-//           position: relative;
-//           .f-left();
-//           .border-radius();
-
-//           img { width: 100%; }
-//         }
-
-//         p {
-//           width: 50%;
-//           padding: 0;
-//           margin-top: 2%;
-//           .f-left();
-
-//           a {
-//               margin-right: 1%;
-//               .f-left();
-//           }
-//         }
-//       }
-//     }
-
-//     .colaboradores {
-//       width: 100%;
-//       margin: 2% 0;
-//       .f-left();
-
-//       .colaborador {
-//         margin: 0 2% 3% 2%;
-//         .f-left();
-
-//         .colaborador-photo { margin-bottom: 5%; }
-//         p { margin-top: 5%; }
-//       }
-//     }
-
-//     .editor, .colaborador {
-//       p {
-//         font-size: 11pt;
-//         img { width: 43px; }
-//       }
-//     }
-
-//     hr {
-//       width: 65%;
-//       border: none;
-//       height: 2px;
-//       background: @color-border;
-//     }
-
-//     .sobre {
-//       margin-bottom: 3%;
-//       .f-left();
-
-//       .sobre-photo {
-//         width: 30%;
-//         .f-left();
-//         .border-radius();
-//       }
-
-//       P {
-//         text-align: left;
-//         width: 65%;
-//         font-size: 11pt;
-//         .f-left();
-//       }
-//     }
-
-//     .podcast-513 {
-//       .f-left();
-
-//       .podcast-513-photo {
-//         width: 25%;
-//         .f-left();
-//         .border-radius();
-//       }
-
-//       p {
-//         text-align: left;
-//         width: 100%;
-//         font-size: 11pt;
-//         .a-center();
-//       }
-//     }
-//   }
-// }
 
 .sidebar {
 

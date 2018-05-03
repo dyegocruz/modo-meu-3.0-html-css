@@ -1,9 +1,10 @@
+- var page = { title: 'Home' }
+- var categoriesMainMeun = ['Colunas','Design','Evento','Fotografia','Game','Internet','Literatura','Música','Youtube','Podcast']
+
 doctype html
 html(lang="en" dir="ltr")
   block head
     include partials/head.pug
-
-- var categoriesMainMeun = ['Colunas','Design','Evento','Fotografia','Game','Internet','Literatura','Música','Youtube','Podcast']
 
   body
 
@@ -24,7 +25,7 @@ html(lang="en" dir="ltr")
 
               header.post-header
                 div.title
-                  div.category.cinema-e-tv
+                  h3.category.cinema-e-tv
                     a(href="#") Cinema e TV
                   div.post-data
                     p 20 de Abril de 2017
