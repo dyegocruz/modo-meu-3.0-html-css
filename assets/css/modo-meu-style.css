@@ -1071,6 +1071,10 @@ body.category {
   padding: 5px;
   float: left;
 }
+.content-posts .post .post-header .title p,
+.content-page .post .post-header .title p {
+  text-transform: uppercase;
+}
 .content-posts .post .post-header .title .post-data,
 .content-page .post .post-header .title .post-data {
   font-family: 'Assistant', sans-serif;
