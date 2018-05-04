@@ -1070,7 +1070,6 @@ body.category {
   width: 100%;
   padding: 5px;
   float: left;
-  text-transform: uppercase;
 }
 .content-posts .post .post-header .title .post-data,
 .content-page .post .post-header .title .post-data {
