@@ -254,6 +254,7 @@ Tags: -
     margin-bottom: 0;
   }
   .container .content .post-list .post {
+    padding: 0 10px;
     width: 25%;
   }
   .main-video {
@@ -975,6 +976,8 @@ body.category {
 .content-highlights .highlights-home .highlight-home-secondaries {
   display: inline-block;
 }
+.content-highlights .highlights-home .highlight-home-first .highlight-home-secondary-img,
+.content-highlights .highlights-home .highlight-home-secondaries .highlight-home-secondary-img,
 .content-highlights .highlights-home .highlight-home-first img,
 .content-highlights .highlights-home .highlight-home-secondaries img {
   width: 100%;
@@ -1004,7 +1007,6 @@ body.category {
 .content .post-list .post {
   vertical-align: top;
   float: left;
-  padding: 0 10px;
   background: rgba(255, 255, 255, 0.85);
 }
 .content .post-list .post:nth-child(1) {
