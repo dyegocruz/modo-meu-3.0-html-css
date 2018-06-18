@@ -253,7 +253,7 @@ Tags: -
     bottom: 0;
     margin-bottom: 0;
   }
-  .content .post-list .post {
+  .container .content .post-list .post {
     width: 25%;
   }
   .main-video {
