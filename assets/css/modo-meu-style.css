@@ -650,6 +650,9 @@ body {
 }
 /*------- Functions -------*/
 /*------- Defaults -------*/
+h1 {
+  font-size: 24px;
+}
 h2 {
   font-size: 20px;
 }
@@ -878,7 +881,7 @@ body.category {
 .header .menu-category .menu .submenu-container {
   position: absolute;
   display: block;
-  top: calc(100% - 7px);
+  top: calc(93%);
   z-index: 20;
   background: rgba(255, 255, 255, 0.85);
 }
@@ -1093,6 +1096,8 @@ body.category {
   color: #12aec0;
   margin-top: 5px;
 }
+.content-posts .post .post-header .title h1,
+.content-page .post .post-header .title h1,
 .content-posts .post .post-header .title h2,
 .content-page .post .post-header .title h2 {
   font-family: 'Archive', sans-serif;
