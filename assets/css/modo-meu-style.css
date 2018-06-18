@@ -135,6 +135,10 @@ Tags: -
     padding-left: 0;
     margin-top: 5%;
   }
+  .content-highlights .highlights-home .highlight-home-secondary-img,
+  .content-highlights .highlights-home img {
+    width: 100%;
+  }
   .content-posts .post .post-header .title {
     width: 100%;
     padding: 10px;
@@ -229,7 +233,7 @@ Tags: -
 }
 /* Tablet */
 @media only screen and (min-width: 768px) {
-  .highlight-home-secondary-img {
+  .content-highlights .highlights-home .highlight-home-secondary-img {
     width: 59%;
   }
   .highlight-home-text {
@@ -975,12 +979,6 @@ body.category {
 .content-highlights .highlights-home .highlight-home-first,
 .content-highlights .highlights-home .highlight-home-secondaries {
   display: inline-block;
-}
-.content-highlights .highlights-home .highlight-home-first .highlight-home-secondary-img,
-.content-highlights .highlights-home .highlight-home-secondaries .highlight-home-secondary-img,
-.content-highlights .highlights-home .highlight-home-first img,
-.content-highlights .highlights-home .highlight-home-secondaries img {
-  width: 100%;
 }
 .content-highlights .highlights-home .highlight-home-first {
   vertical-align: top;
