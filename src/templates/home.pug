@@ -1,219 +1,109 @@
-<<<<<<< HEAD
-- var page = { title: 'Home' }
 - var categoriesMainMeun = ['Colunas','Design','Evento','Fotografia','Game','Internet','Literatura','Música','Youtube','Podcast']
 
 doctype html
 html(lang="en" dir="ltr")
-  block head
-    include partials/head.pug
+	block head
+		include partials/head.pug
 
-  body
+	body
 
-    include partials/menus-top.pug
+		include partials/menus-top.pug
 
-    block content
-      section.container.home
+		block content
+			section.container.home
 
-        include partials/header.pug
+				include partials/header.pug
 
-        div.content.f-left
-          include partials/highlights.pug
+				div.content.f-left
+					include partials/highlights.pug
 
-          include sidebar.pug
+					include sidebar.pug
 
-          section.content-posts.f-left
-            article.post.opacity-background-white
+					section.content-posts.f-left
+						article.post.opacity-background-white
 
-              header.post-header
-                div.title
-                  h3.category.cinema-e-tv
-                    a(href="#") Cinema e TV
-                  div.post-data
-                    p 20 de Abril de 2017
-                  h2
-                    a(href="#") Ouvindo o Country encantador de Zac Brown Band os apadrinhados de dave Grohl (H2)
-                  div.post-meta
-                    p Autor:
-                      a(href="#") Mariana Fernandes
+							header.post-header
+								div.title
+									div.category.games
+										a(href="#") Games
+									div.post-data
+										p 12 de Junho de 2018
+									h2
+										a(href="#") Resumo da E3 2018 - Terceiro Dia Parte 01 | Square Enix e Ubisoft
+									div.post-meta
+										p Autor:
+											a(href="#") Diego Celedonio
 
-              div.post-content
-                a(href="#")
-                  img(src="assets/images/image-post-01.jpg")
-                p H5 - A alguns meses atrás comentei sobre o novo álbum da banda Foo Fighters, que está previsto para o segundo semestre de 2014 e de acordo com o próprio Dave Grohl, esse será o trabalho mais revolucionário dos últimos tempos (<a href="#">falei disso aqui - h2</a>). Bem, mas o objetivo desse post não é falar de como o Foo Fighters é uma banda incrível (afinal, todo mundo já sabe), mas sim do grupo <strong>Zac Brown Band (h4)</strong>, no qual Dave apadrinhou e esteve presente na produção de seus últimos álbuns, (The Grohl Sessions Vol. 1 e 2).
+							div.post-content
+								a(href="#")
+									img(src="assets/images/image-post-01.png")
+								p Chegamos ao terceiro dia da nossa feira querida com um misto de alegria com a quantidade de jogos anunciados até o momento e preocupação com a saúde de nossas carteiras.
 
-              a(href="#" class="btn btn-default") LEIA MAIS
+							a(href="#" class="btn btn-default") LEIA MAIS
 
-          //include sidebar.pug
+					//include sidebar.pug
 
-          include partials/post-list.pug
-          a(href="#" class="btn btn-others") VEJA MAIS
+					include partials/post-list.pug
+					a(href="#" class="btn btn-others") VEJA MAIS
 
-          div.banner-big BANNER DO SUCESSO
+					div.banner-big BANNER DO SUCESSO
 
-      div.container-full.container-full-videos.f-left
-        div.container          
-          div.main-video
-            div.video-container
-              iframe(src='https://www.youtube.com/embed/JWu-8h0YN98', width='560', height='315', frameborder='0', allowfullscreen='allowfullscreen')
-            a(href="#" class="btn btn-turquoise") VEJA MAIS
-          div.list-videos
-            div.item-video
-              div.item-image
-                img(src="assets/images/image-post-01.jpg")
-              div.item-text
-                h3.category.videos
-                  a(href="#") Videos
-                h2.item-title
-                  a(href="#") Fuuka – música, sonhos e atitudes
-                div.post-meta
-                  p 30/08/2017
-                  p
-                    | Autor:
-                    a(href='#') Dyego Cruz
-            div.item-video
-              div.item-image
-                img(src="assets/images/image-post-01.jpg")
-              div.item-text
-                h3.category.videos
-                  a(href="#") Videos
-                h2.item-title
-                  a(href="#") Fuuka – música, sonhos e atitudes
-                div.post-meta
-                  p 30/08/2017
-                  p
-                    | Autor:
-                    a(href='#') Dyego Cruz
-            div.item-video
-              div.item-image
-                img(src="assets/images/image-post-01.jpg")
-              div.item-text
-                h3.category.videos
-                  a(href="#") Videos
-                h2.item-title
-                  a(href="#") Fuuka – música, sonhos e atitudes
-                div.post-meta
-                  p 30/08/2017
-                  p
-                    | Autor:
-                    a(href='#') Dyego Cruz
-            a(href="#" class="btn btn-default f-left") Se inscreve no canal ;)
+			div.container-full.container-full-videos.f-left
+				div.container
+					div.a-center.link-youtube
+						h2
+							a(href="#") youtube
+					div.main-video
+						div.video-container
+							iframe(src='https://www.youtube.com/embed/JWu-8h0YN98', width='560', height='315', frameborder='0', allowfullscreen='allowfullscreen')
+						a(href="#" class="btn btn-turquoise") VEJA MAIS
+					div.list-videos
+						div.item-video
+							div.item-image
+								img(src="assets/images/image-post-01.jpg")
+							div.item-text
+								h3.category.videos
+									a(href="#") Videos
+								h2.item-title
+									a(href="#") Fuuka – música, sonhos e atitudes
+								div.post-meta
+									p 30/08/2017
+									p
+										| Autor:
+										a(href='#') Dyego Cruz
+						div.item-video
+							div.item-image
+								img(src="assets/images/image-post-01.jpg")
+							div.item-text
+								h3.category.videos
+									a(href="#") Videos
+								h2.item-title
+									a(href="#") Fuuka – música, sonhos e atitudes
+								div.post-meta
+									p 30/08/2017
+									p
+										| Autor:
+										a(href='#') Dyego Cruz
+						div.item-video
+							div.item-image
+								img(src="assets/images/image-post-01.jpg")
+							div.item-text
+								h3.category.videos
+									a(href="#") Videos
+								h2.item-title
+									a(href="#") Fuuka – música, sonhos e atitudes
+								div.post-meta
+									p 30/08/2017
+									p
+										| Autor:
+										a(href='#') Dyego Cruz
+						a(href="#" class="btn btn-default f-left") Se inscreve no canal ;)
 						
-      div.container
-        div.content.f-left
-          include partials/post-list.pug
-          a(href="#" class="btn btn-others") VEJA MAIS
+			div.container
+				div.content.f-left
+					include partials/post-list.pug
+					a(href="#" class="btn btn-others") VEJA MAIS
 
-    block footer
-      include partials/footer.pug
+		block footer
+			include partials/footer.pug
 	
-=======
-doctype html
-html(lang="en" dir="ltr")
-  block head
-    include partials/head.pug
-
-- var categoriesMainMeun = ['Colunas','Design','Evento','Fotografia','Game','Internet','Literatura','Música','Youtube','Podcast']
-
-  body
-
-    include partials/menus-top.pug
-
-    block content
-      section.container.home
-
-        include partials/header.pug
-
-        div.content.f-left
-          include partials/highlights.pug
-
-          include sidebar.pug
-
-          section.content-posts.f-left
-            article.post.opacity-background-white
-
-              header.post-header
-                div.title
-                  div.category.games
-                    a(href="#") Games
-                  div.post-data
-                    p 12 de Junho de 2018
-                  h2
-                    a(href="#") Resumo da E3 2018 - Terceiro Dia Parte 01 | Square Enix e Ubisoft
-                  div.post-meta
-                    p Autor:
-                      a(href="#") Diego Celedonio
-
-              div.post-content
-                a(href="#")
-                  img(src="assets/images/image-post-01.png")
-                p Chegamos ao terceiro dia da nossa feira querida com um misto de alegria com a quantidade de jogos anunciados até o momento e preocupação com a saúde de nossas carteiras.
-
-              a(href="#" class="btn btn-default") LEIA MAIS
-
-          //include sidebar.pug
-
-          include partials/post-list.pug
-          a(href="#" class="btn btn-others") VEJA MAIS
-
-          div.banner-big BANNER DO SUCESSO
-
-      div.container-full.container-full-videos.f-left
-        div.container
-          div.a-center.link-youtube
-            h2
-              a(href="#") youtube
-          div.main-video
-            div.video-container
-              iframe(src='https://www.youtube.com/embed/JWu-8h0YN98', width='560', height='315', frameborder='0', allowfullscreen='allowfullscreen')
-            a(href="#" class="btn btn-turquoise") VEJA MAIS
-          div.list-videos
-            div.item-video
-              div.item-image
-                img(src="assets/images/image-post-01.jpg")
-              div.item-text
-                h3.category.videos
-                  a(href="#") Videos
-                h2.item-title
-                  a(href="#") Fuuka – música, sonhos e atitudes
-                div.post-meta
-                  p 30/08/2017
-                  p
-                    | Autor:
-                    a(href='#') Dyego Cruz
-            div.item-video
-              div.item-image
-                img(src="assets/images/image-post-01.jpg")
-              div.item-text
-                h3.category.videos
-                  a(href="#") Videos
-                h2.item-title
-                  a(href="#") Fuuka – música, sonhos e atitudes
-                div.post-meta
-                  p 30/08/2017
-                  p
-                    | Autor:
-                    a(href='#') Dyego Cruz
-            div.item-video
-              div.item-image
-                img(src="assets/images/image-post-01.jpg")
-              div.item-text
-                h3.category.videos
-                  a(href="#") Videos
-                h2.item-title
-                  a(href="#") Fuuka – música, sonhos e atitudes
-                div.post-meta
-                  p 30/08/2017
-                  p
-                    | Autor:
-                    a(href='#') Dyego Cruz
-            a(href="#" class="btn btn-default f-left") Se inscreve no canal ;)
-						
-      div.container
-        div.content.f-left
-          include partials/post-list.pug
-          a(href="#" class="btn btn-others") VEJA MAIS
-
-    block footer
-      include partials/footer.pug
-	
->>>>>>> v2018
