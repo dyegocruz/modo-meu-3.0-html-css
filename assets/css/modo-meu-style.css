@@ -352,16 +352,19 @@ div.aligncenter {
 }
 .alignright {
   float: right;
-  margin: 5px 0 20px 20px;
+  margin-left: 10px !important;
 }
 .alignleft {
   float: left;
+  margin-right: 10px !important;
 }
 a img.alignright {
   float: right;
+  margin-left: 10px !important;
 }
 a img.alignleft {
   float: left;
+  margin-right: 10px !important;
 }
 a img.aligncenter {
   display: block;
@@ -372,7 +375,7 @@ a img.aligncenter {
   background: #fff;
   text-align: center;
   max-width: 100%;
-  width: 100% !important;
+  width: inherit !important;
 }
 .content-posts .post .post-content .wp-caption p {
   font-size: 12px;
@@ -882,7 +885,7 @@ body.category {
 .header .menu-category .menu .submenu-container {
   position: absolute;
   display: block;
-  top: calc(93%);
+  top: calc(100% - 7px);
   z-index: 20;
   background: rgba(255, 255, 255, 0.85);
 }
