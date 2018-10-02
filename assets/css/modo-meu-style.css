@@ -631,8 +631,6 @@ body {
 }
 .banner-big {
   text-align: center;
-  display: block;
-  float: left;
 }
 /*------- Functions -------*/
 @-webkit-keyframes fadeIn {

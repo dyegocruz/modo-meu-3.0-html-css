@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-
 	$('.post-content').find('iframe').each(function(i, elm) {
 		var domElem = $(elm);
 		if (domElem.attr('src').indexOf('youtube') >= 0) {
@@ -38,10 +37,9 @@ $( document ).ready(function() {
       return false;
   });
 
-  var token = '10793400.242a293.27ea1bf6816948f187bb11755ef8566d', // learn how to obtain it below
-      userid = '10793400', // User ID - Modo Meu - get it in source HTML of your Instagram profile or look at the next example :)
+  var token = 'your token here', // learn how to obtain it below
+      userid = 'User ID', // User ID - Modo Meu - get it in source HTML of your Instagram profile or look at the next example :)
       num_photos = 7; // how much photos do you want to get*/
-
   $.ajax({
       url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent', // or /users/self/media/recent for Sandbox
       dataType: 'jsonp',
@@ -56,10 +54,10 @@ $( document ).ready(function() {
 						// data.data[x].images.standard_resolution.url - URL of image 612х612
 						// data.data[x].link - Instagram post URL
           }
-			}/*,
+			},
       error: function(data){
           console.log(data); // send the error notifications to console
-			}*/
+			}
   });
 
 });
