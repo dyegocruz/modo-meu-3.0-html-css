@@ -163,6 +163,8 @@ Tags: -
  
  .banner-big {
 	 text-align: center;
+	 display: block;
+	 float: left;
  }
  
  /*------- Functions -------*/
@@ -1246,36 +1248,62 @@ Tags: -
  //     }
  //   }
  // }
+
+ .sidebar, .sidebar-header {
  
- .sidebar {
+	.widget {
+		width: 100%;
+		margin-bottom: 3%;
+		float: left;
+		text-align: center;
+		text-transform: uppercase;
+		.opacity-background-white();
+	
+		h2 {
+			.font-archive();
+			color: @color-turquesa;
+			margin-bottom: 5%;
+		}
+	
+		p {
+			font-size: 11pt;
+			color: @color-text;
+		}
+	
+		.widget-url { margin: 5% 0; }
+	}
+	
+	.search {
+		.border-radius();
+	
+		form {
+	
+			padding: 2% 0;
+	
+			.input-text {
+				width: 90%;
+				.font-assistant-bold();
+				color: @color-text;
+				border: none;
+				text-transform: uppercase;
+			}
+	
+			.input-submit {
+				border: none;
+				width: 16px;
+				height: 16px;
+				background: url('../images/button-search.png') no-repeat center;
+	
+				&:hover { cursor: pointer; }
+			}
+		}
+	}
+
+	.textwidget {
+		text-align: center;
  
-	 .widget {
-		 width: 100%;
-		 margin-bottom: 3%;
-		 float: left;
-		 text-align: center;
-		 text-transform: uppercase;
-		 .opacity-background-white();
- 
-		 h2 {
-			 .font-archive();
-			 color: @color-turquesa;
-			 margin-bottom: 5%;
-		 }
- 
-		 p {
-			 font-size: 11pt;
-			 color: @color-text;
-		 }
- 
-		 .widget-url { margin: 5% 0; }
-	 }
- 
-	 .textwidget {
-		 text-align: center;
- 
-		 img { width: auto; }
-	 }
+		img { width: auto; }
+	}
  
 	 .highlights-post-sidebar {
 		 .a-left();
@@ -1297,32 +1325,6 @@ Tags: -
 				 &:hover {
 						 color: @color-turquesa;
 				 }
-			 }
-		 }
-	 }
- 
-	 .search {
-		 .border-radius();
- 
-		 form {
- 
-			 padding: 2% 0;
- 
-			 .input-text {
-				 width: 90%;
-				 .font-assistant-bold();
-				 color: @color-text;
-				 border: none;
-				 text-transform: uppercase;
-			 }
- 
-			 .input-submit {
-				 border: none;
-				 width: 16px;
-				 height: 16px;
-				 background: url('../images/button-search.png') no-repeat center;
- 
-				 &:hover { cursor: pointer; }
 			 }
 		 }
 	 }
