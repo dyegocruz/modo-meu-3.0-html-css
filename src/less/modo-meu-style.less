@@ -13,7 +13,7 @@ Tags: -
 @screen-tablet: 768px;
 @screen-desktop: 1200px;
 @screen-tv: 1600px;
-@color-text: #898989; //texto cinza claro
+@color-text: #6B6B6B; //texto cinza claro -- #898989
 @color-border: #d6d6d6; //borda cinza escura
 @color-pagination: #d1d1d3;
 @color-turquesa: #12aec0;
@@ -348,23 +348,57 @@ body {
 /*------- Defaults -------*/
 
 h1 {
-    font-size: 24px;
+    display: block;
+    font-size: 1.8em; // margin-top: 0.67em;
+    // margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 20px;
+    display: block;
+    font-size: 1.5em; // margin-top: 0.83em;
+    // margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
 }
 
 h3 {
-    font-size: 16px;
+    display: block;
+    font-size: 1.17em; // margin-top: 1em;
+    // margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
 }
 
 h4 {
-    font-size: 12px;
+    display: block;
+    font-size: 1em; // margin-top: 1.33em;
+    // margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
 }
 
 h5 {
-    font-size: 8px;
+    display: block;
+    font-size: .83em; // margin-top: 1.67em;
+    // margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h6 {
+    display: block;
+    font-size: .67em; // margin-top: 2.33em;
+    // margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
 }
 
 img {
@@ -858,7 +892,7 @@ body.category {
             p,
             li {
                 .font-opensans();
-                font-size: 15px;
+                font-size: 16px;
                 color: @color-text;
                 text-align: justify;
             }
@@ -1033,10 +1067,10 @@ body.category {
     width: 100%;
     .f-left();
     h2 {
-			padding: 0 2%;
-			margin-bottom: 2%;
-			.font-archive();
-			color: @color-text;
+        padding: 0 2%;
+        margin-bottom: 2%;
+        .font-archive();
+        color: @color-text;
     }
 }
 
@@ -1138,15 +1172,16 @@ body.category {
     position: relative;
     padding-bottom: 56.25% !important; //  padding-top: 30px;
     height: 0;
-		overflow: hidden; 
-		
-		iframe, object, embed {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
+    overflow: hidden;
+    iframe,
+    object,
+    embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .item-video {
@@ -1600,7 +1635,8 @@ body.category {
             .gplus,
             .youtube,
             .pinterest,
-            .instagram {
+            .instagram,
+            .twitch {
                 background-color: #585d9b;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -1654,6 +1690,12 @@ body.category {
                 background-image: url('../images/instagram-branco.png');
                 &:hover {
                     background-image: url('../images/instagram-turquesa.png');
+                }
+            }
+            .twitch {
+                background-image: url('../images/twitch-branco.png');
+                &:hover {
+                    background-image: url('../images/twitch-turquesa.png');
                 }
             }
         }

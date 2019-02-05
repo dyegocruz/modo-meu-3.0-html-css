@@ -298,7 +298,7 @@ Tags: -
     margin: 0;
   }
   .main-footer-container .footer .social-footer {
-    width: 12%;
+    width: 15%;
     margin: 4% 0 0 0;
   }
   .sidebar {
@@ -597,7 +597,7 @@ body {
 .input-text {
   font-family: 'Assistant', sans-serif;
   font-weight: 700;
-  color: #898989;
+  color: #6B6B6B;
   border: none;
   background: none;
   outline: none;
@@ -652,19 +652,46 @@ body {
 /*------- Functions -------*/
 /*------- Defaults -------*/
 h1 {
-  font-size: 24px;
+  display: block;
+  font-size: 1.8em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }
 h2 {
-  font-size: 20px;
+  display: block;
+  font-size: 1.5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }
 h3 {
-  font-size: 16px;
+  display: block;
+  font-size: 1.17em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }
 h4 {
-  font-size: 12px;
+  display: block;
+  font-size: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }
 h5 {
-  font-size: 8px;
+  display: block;
+  font-size: .83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+h6 {
+  display: block;
+  font-size: .67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }
 img {
   border: none;
@@ -1119,7 +1146,7 @@ body.category {
 }
 .content-posts .post .post-content,
 .content-page .post .post-content {
-  color: #898989;
+  color: #6B6B6B;
 }
 .content-posts .post .post-content img,
 .content-page .post .post-content img {
@@ -1163,8 +1190,8 @@ body.category {
 .content-page .post .post-content li {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 15px;
-  color: #898989;
+  font-size: 16px;
+  color: #6B6B6B;
   text-align: justify;
 }
 .content-posts .post .post-content blockquote,
@@ -1223,7 +1250,7 @@ body.category {
   position: relative;
   font-family: 'Assistant', sans-serif;
   font-weight: 600;
-  color: #898989;
+  color: #6B6B6B;
   border-top: 2px solid #d6d6d6;
   border-bottom: 2px solid #d6d6d6;
 }
@@ -1296,7 +1323,7 @@ body.category {
   font-family: 'Assistant', sans-serif;
   font-weight: 600;
   font-size: 12px;
-  color: #898989;
+  color: #6B6B6B;
   text-transform: uppercase;
   width: 49%;
 }
@@ -1381,7 +1408,7 @@ body.category {
   margin-bottom: 2%;
   font-family: 'Archive', sans-serif;
   font-weight: normal;
-  color: #898989;
+  color: #6B6B6B;
 }
 .pagination {
   font-family: 'Assistant', sans-serif;
@@ -1423,7 +1450,7 @@ body.category {
 .form-comment {
   font-family: 'Assistant', sans-serif;
   font-weight: 700;
-  color: #898989;
+  color: #6B6B6B;
   text-transform: uppercase;
 }
 .form-comment input,
@@ -1562,7 +1589,7 @@ body.category {
 .sidebar .widget p,
 .sidebar-header .widget p {
   font-size: 11pt;
-  color: #898989;
+  color: #6B6B6B;
 }
 .sidebar .widget .widget-url,
 .sidebar-header .widget .widget-url {
@@ -1583,7 +1610,7 @@ body.category {
   width: 90%;
   font-family: 'Assistant', sans-serif;
   font-weight: 700;
-  color: #898989;
+  color: #6B6B6B;
   border: none;
   text-transform: uppercase;
 }
@@ -1660,7 +1687,7 @@ body.category {
 }
 .sidebar .newsletter form,
 .sidebar-header .newsletter form {
-  color: #898989;
+  color: #6B6B6B;
   width: 85%;
   margin: 0 auto;
 }
@@ -1882,7 +1909,8 @@ body.category {
 .main-footer-container .footer .social-footer .gplus,
 .main-footer-container .footer .social-footer .youtube,
 .main-footer-container .footer .social-footer .pinterest,
-.main-footer-container .footer .social-footer .instagram {
+.main-footer-container .footer .social-footer .instagram,
+.main-footer-container .footer .social-footer .twitch {
   background-color: #585d9b;
   background-repeat: no-repeat;
   background-position: center;
@@ -1893,7 +1921,8 @@ body.category {
 .main-footer-container .footer .social-footer .gplus:hover,
 .main-footer-container .footer .social-footer .youtube:hover,
 .main-footer-container .footer .social-footer .pinterest:hover,
-.main-footer-container .footer .social-footer .instagram:hover {
+.main-footer-container .footer .social-footer .instagram:hover,
+.main-footer-container .footer .social-footer .twitch:hover {
   background-color: #fff;
 }
 .main-footer-container .footer .social-footer .twitter {
@@ -1943,6 +1972,12 @@ body.category {
 }
 .main-footer-container .footer .social-footer .instagram:hover {
   background-image: url('../images/instagram-turquesa.png');
+}
+.main-footer-container .footer .social-footer .twitch {
+  background-image: url('../images/twitch-branco.png');
+}
+.main-footer-container .footer .social-footer .twitch:hover {
+  background-image: url('../images/twitch-turquesa.png');
 }
 .main-footer-container .footer-modocromatico {
   font-family: 'Assistant', sans-serif;
